@@ -11,8 +11,7 @@ last_name: Huang
 
 # Status emoji
 status:
-  icon: ![alt text](<S1Z%HX@]7N)4YN})834H7AG.png>)
-
+  icon: 🦧 
 # Is this the primary user of the site?
 superuser: true
 
@@ -46,7 +45,7 @@ education:
   - area: BSc Statistics and Data Science
     institution: Nankai University
     date_start: 2023-09-01
-    date_end: Now 
+    #date_end: 2024-10-23 
     summary: |
       GPA: 0.0/4.0
 
@@ -101,6 +100,7 @@ languages:
 #    summary: |
 #      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
 
+---
 
 ## About Me
 
