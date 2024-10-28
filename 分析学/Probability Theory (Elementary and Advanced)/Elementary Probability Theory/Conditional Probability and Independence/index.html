@@ -1,0 +1,2699 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Combinatorial%20Analysis/">
+      
+      
+        <link rel="next" href="../Continuous%20Random%20Variables/">
+      
+      
+      <link rel="icon" href="../../../../imgs/xiaoju.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Conditional_probability #Independence #Chapter_3 #Elementary_Probability_Theory - Eurekaimer的数学小站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14.184 1.143zl1.422 2.464a1.75 1.75 0 0 1-.757 2.451L3.104 11.713a1.75 1.75 0 0 1-2.275-.702l-.447-.775a1.75 1.75 0 0 1 .53-2.32L11.682.573a1.75 1.75 0 0 1 2.502.57m-4.709 9.32zl2.644 3.863a.75.75 0 1 1-1.238.848l-1.881-2.75v2.826a.75.75 0 0 1-1.5 0v-2.826l-1.881 2.75a.75.75 0 1 1-1.238-.848l2.049-2.992a.75.75 0 0 1 .293-.253l1.809-.87a.75.75 0 0 1 .944.252M9.436 3.92zl-4.97 3.39.942 1.63 5.42-2.61Zm3.091-2.108h.001l-1.85 1.26 1.505 2.605 2.016-.97a.25.25 0 0 0 .13-.151.25.25 0 0 0-.022-.199l-1.422-2.464a.25.25 0 0 0-.161-.119.25.25 0 0 0-.197.038M1.756 9.157a.25.25 0 0 0-.075.33l.447.775a.25.25 0 0 0 .325.1l1.598-.769-.83-1.436z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Serif:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inria Serif";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conditional_probability-independence-chapter_3-elementary_probability_theory" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../.." title="Eurekaimer的数学小站" class="md-header__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
+      
+  <img src="../../../../imgs/xiaoju.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Eurekaimer的数学小站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conditional_probability #Independence #Chapter_3 #Elementary_Probability_Theory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Eurekaimer/Eurekaimer.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Eurekaimer.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../GTM/Measure%20and%20Category/" class="md-tabs__link">
+          
+  
+  GTM
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Tutorial/C/" class="md-tabs__link">
+          
+  
+  Tutorial
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-tabs__link">
+          
+  
+  代数学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Talor%20expansion/" class="md-tabs__link">
+          
+  
+  分析学
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Eurekaimer的数学小站" class="md-nav__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
+      
+  <img src="../../../../imgs/xiaoju.jpg" alt="logo">
+
+    </a>
+    Eurekaimer的数学小站
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Eurekaimer/Eurekaimer.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Eurekaimer.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GTM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            GTM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../GTM/Measure%20and%20Category/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GTM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tutorial/C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tutorial/Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tutorial/Python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    代数学
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            代数学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    行列式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E9%80%86%E5%BA%8F%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    逆序数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    抽象代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            抽象代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/%E5%9F%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    域
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/%E7%8E%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/%E7%BE%A4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    群
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    高等代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            高等代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    高等代数 #代数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    分析学
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            分析学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Talor%20expansion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talor expansion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mathematical Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematical Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/NKU%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析 #答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/The%20Principle%20of%20Mathematical%20Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rudin #Mathematical_Analysis #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析 #Mathematical_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_4" id="__nav_5_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数学分析(Chapter Parts)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            数学分析(Chapter Parts)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/Fourier%20Analysis%200.excalidraw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier Analysis 0.excalidraw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/Fourier%20%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier #数学分析 #Mathematical_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/The%20Real%20and%20Complex%20Number%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rudin #数学分析 #Mathematical_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E6%9E%81%E9%99%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析I #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E6%9E%81%E9%99%90_NKU%28%E7%AD%94%E6%A1%88%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    练习 2.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析I #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0_NKU%28%E7%AD%94%E6%A1%88%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    连续函数 NKU(答案)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析I #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86_NKU%28%E7%AD%94%E6%A1%88%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_5" id="__nav_5_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数学分析真题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            数学分析真题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E7%9C%9F%E9%A2%98/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901%20%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6%E7%9C%9F%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2020级数学分析第1次月考
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Measure Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Measure Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Measure%20Theory/GTM%2018%20Measure%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measure_Theory #Halmos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Probability Theory (Elementary and Advanced)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Probability Theory (Elementary and Advanced)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_1" id="__nav_5_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/Axioms%20of%20Probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Axioms of Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/Bayes%27s%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bayes's Formula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/Sample%20Space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/probability%20space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_2" id="__nav_5_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elementary Probability Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Elementary Probability Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Combinatorial%20Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combinatorial_Analysis #Chapter_1 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Conditional_probability #Independence #Chapter_3 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Continuous%20Random%20Variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous_random_variables #Chapter_5 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discrete%20Random%20Variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discrete_Random_Variables #Chapter_4 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Elementary%20Probability%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability_Theory #概率论 #Elementary #Lecture_notes #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sets%2C%20Axioms%20of%20Probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sets, Axioms of Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Wrong%20HW%20of%20Elementary%20Probability%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_3" id="__nav_5_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Interesting Problem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Interesting Problem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Birthday%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Birthday Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Laplace%E2%80%99s%20rule%20of%20succession/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Laplace’s rule of succession
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Matching%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matching Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Polya%27s%20urn%20scheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polya's urn scheme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/The%20Banach%20matchbox%20problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Banach matchbox problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/The%20gambler%E2%80%99s%20ruin%20problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The gambler’s ruin problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Real Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Real Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Real%20Analysis/Real%20Analysis%28Royden%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Real_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Real%20Analysis/Real%20Analysis%28Stein%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stein #Real_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Real%20Analysis/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E5%92%8C%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E5%88%9D%E6%AD%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实变函数 #夏道行
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="conditional_probability-independence-chapter_3-elementary_probability_theory">Conditional_probability #Independence #Chapter_3 #Elementary_Probability_Theory</h1>
+<h1 id="chapter-3-conditional-probability-and-independence">Chapter 3 : Conditional Probability and Independence</h1>
+<h2 id="conditional-probabilities">Conditional Probabilities</h2>
+<blockquote>
+<p>[!question]<br />
+<strong>Motivation</strong></p>
+<p>Suppose we toss 2 dice, and suppose all the possible outcomes equally occur. Suppose further that we observe that the first die is a 3, what is the probability that the sum of the 2 dice equals 8?</p>
+<p>[!example]<br />
+<strong>Example3.1(Slandard discussion)</strong><br />
+$$<br />
+ F={the  first die is 3}<br />
+ \E={the  sum is 8 } <br />
+ $$<br />
+We want to discuss<br />
+ $$<br />
+ \begin{align}<br />
+ P(E|F)&amp;=\frac{P(E\cap F)}{P(F)}<br />
+ \&amp;=\frac{P(1^{th}  die  is 3 ,2^{th} die is 5)}{P(F)}<br />
+ \&amp;=\frac{\frac{1}{36}}{\frac{6}{36}}=\frac{1}{6}<br />
+ \end{align}<br />
+ $$</p>
+</blockquote>
+<h3 id="conditional-probability">Conditional probability</h3>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 3.1 ([[Conditional probability]])</strong></p>
+<p>Let <span class="arithmatex">\((S,\mathcal{A},P)\)</span> be a probability space and <span class="arithmatex">\(F\in \mathcal{A}\)</span> be an event such that <span class="arithmatex">\(P(F)&gt;0\)</span> ,we define the <strong>conditional probability</strong> that an event <span class="arithmatex">\(E\in\mathcal{A}\)</span> occurs given or knowing that <span class="arithmatex">\(F\)</span> has occurred,which is denoted by <span class="arithmatex">\(P(E|F)\)</span>,as follows:<br />
+$$<br />
+P(E|F)=\frac{P(E\cap F)}{P(F)}<br />
+$$</p>
+<p>[!tip]<br />
+<strong>Remark 3.2</strong> </p>
+<p>Conditional probability gives us a prediction upon partial information. <span class="arithmatex">\(F\)</span> acts as a new but reduced sample space.</p>
+</blockquote>
+<h3 id="pf-as-a-probability-measure"><span class="arithmatex">\(P(·|F)\)</span> as a probability measure</h3>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 3.3</strong><br />
+Let <span class="arithmatex">\((S, \mathcal{A}, P)\)</span>be a probability space and <span class="arithmatex">\(F \in \mathcal{A}\)</span> be an event such that <span class="arithmatex">\(P(F) &gt; 0\)</span>. The function mapping  <span class="arithmatex">\(P_F : \mathcal{A} → R\)</span> defined by <span class="arithmatex">\(P_F (E) = P(E|F)\)</span> is a probability measure on <span class="arithmatex">\((S, \mathcal{A})\)</span>. </p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>We need to verify <span class="arithmatex">\(P_F\)</span> satisfies 3 axioms</p>
+<ol>
+<li>nonnegativity For amy <span class="arithmatex">\(E\in \mathcal{A},P_F(E)\ge0\)</span></li>
+<li><span class="arithmatex">\(P_F(S)=1\)</span></li>
+<li>For <span class="arithmatex">\(E_1,...,E_n\)</span> countable,<strong>mutually exclusive</strong></li>
+</ol>
+<div class="arithmatex">\[
+P(\bigcup_{i=1}^{\infty}E_i)=\sum_{i=1}^{\infty}P_{F}(E_i)
+\]</div>
+<p><code>Proof of 1</code></p>
+<div class="arithmatex">\[
+P_F(E)=P(E|F)=\frac{P(EF)}{P(F)}\ge0
+$$
+`Proof of 2`
+$$
+P_F(S)=P(S|F)=\frac{P(SF)}{P(F)}=1
+$$
+`Proof of 3`
+$$
+\begin{align}
+P_F(\bigcup_{i=1}^{\infty}E_i)&amp;=P(\bigcup_{i=1}^{\infty}E_i|F)=\frac{P((\bigcup_{i=1}^{\infty}E_i)\cap F)}{P(F)}
+\\&amp;=\frac{P(\bigcup_{i=1}^{\infty}(E_i\cap F))}{P(F)}=\frac{\sum_{i=1}^{\infty}P(E_i\cap F)}{P(F)}
+\\&amp;=\sum_{i=1}^{\infty}P(E_i|F)=\sum_{i=1}^{\infty}P_F(E_i)
+\end{align}
+\]</div>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 3.4</strong><br />
+Let <span class="arithmatex">\(S\)</span> be a finite sample space and consider the associated probability space <span class="arithmatex">\((S, \mathcal{A}, P)\)</span> with uniform probability measure <span class="arithmatex">\(P\)</span>. Let <span class="arithmatex">\(F \in A\)</span> be an event with <span class="arithmatex">\(P(F) &gt; 0\)</span>, the conditional probability of event <span class="arithmatex">\(E \in A\)</span> given that F has occurred can be computed as:<br />
+$$<br />
+P(E|F)=\frac{|E\cap F|}{|F|}<br />
+$$</p>
+<p>[!example]<br />
+<strong>Example 3.2</strong><br />
+Suppose we toss 2 dice, and suppose all the possible outcomes equally occur. Suppose further that we observe that the first die is a 3, what is the probability that the sum of the 2 dice is odd?</p>
+</blockquote>
+<p><code>Solution</code><br />
+$$<br />
+\begin{align}<br />
+\E_1&amp;={the sum is odd}<br />
+\P(E_1|F)&amp;=\frac{|E_1\cap F|}{|F|}<br />
+\&amp;=\frac{3}{6}=\frac{1}{2}<br />
+\end{align}<br />
+$$</p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 3.3 (Coin flipping)</strong><br />
+A coin is flipped twice. Suppose that all four outcomes in sample space <span class="arithmatex">\(S = {(h,h),(h,t),(t,h),(t,t)}\)</span> are equally likely, what is the probability that both flips land on heads, given that (a) the first flip lands on heads? (b) at least one flip lands on heads?</p>
+</blockquote>
+<p><code>Solution</code><br />
+$$<br />
+\begin{align}<br />
+E&amp;={(h,h)}<br />
+\(a)F_1&amp;={(h,h)(h,t)}<br />
+\P(E|F_1)&amp;=\frac{|E\cap F_1|}{|F|}=\frac{1}{2}<br />
+\(b)F_2&amp;={(t,t)}<br />
+\P(E|F_2)&amp;=\frac{|E\cap F_2|}{|F|}=\frac{1}{3}<br />
+\end{align}<br />
+$$</p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 3.5 (Multiplication rule)</strong><br />
+Let <span class="arithmatex">\(E_1, . . . , E_n\)</span> be a sequence of <span class="arithmatex">\(n \in N\)</span>, n ≥ 1 events. Then we have<br />
+$$<br />
+P(\bigcap_{i=1}^{n}E_i)=P(E_1)P(E_2|E_1)P(E_3|E_1\cap E_2)...P(E_n|\bigcap_{i=1}^{n-1}E_i)<br />
+$$</p>
+</blockquote>
+<p><code>Proof</code><br />
+$$<br />
+RHS=P(E_1)\frac{P(E_1E_2)}{P(E_1)}\frac{P(E_1E_2E_3)}{P(E_1E_2)}...\frac{P(\bigcap_{i=1}^{n}E_i)}{P(\bigcap_{i=1}^{n-1}E_i)}=P(\bigcap_{i=1}^{n}E_i)<br />
+$$</p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 3.4 (Poker game revisited)</strong><br />
+A deck of 52 cards is randomly divided into 4 piles of 13 cards each. Compute the probability that each pile has exactly 1 ace.</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>Let <span class="arithmatex">\(E_i\)</span> be the event that pile i has exactly 1 ace(i=1,2,3,4)<br />
+$$<br />
+P(E_1E_2E_3E_4)=P(E_1)P(E_2|E_1)P(E_3|E_1E_2)P(E_4|E_1E_2E_3)<br />
+\=\frac{\binom{4}{1}\binom{48}{12}}{\binom{52}{13}}\frac{\binom{3}{1}\binom{36}{12}}{\binom{39}{13}}\frac{\binom{2}{1}\binom{24}{12}}{\binom{26}{13}}<br />
+$$</p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 3.5 (The matching problem[[#^matching-problem]] revisited)</strong> <br />
+In the matching problem we discussed in the previous class, it was shown that the probability that no matches occur when <span class="arithmatex">\(N\)</span> people randomly select from <span class="arithmatex">\(N\)</span> mixed-up hats, denoted by <span class="arithmatex">\(P_N\)</span> , is given by<br />
+$$<br />
+P_N=\sum_{i=0}^{N}(-1)^i\frac{1}{i!}=1-1+\frac{1}{2!}-\frac{1}{3!}+...<br />
+$$<br />
+What is the probability that exactly k of the N people have matches?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p><span class="arithmatex">\(P_N:\)</span> the probability that none of N people gets his own hat</p>
+<p><span class="arithmatex">\(P_N\approx e^{-1}\)</span> <em>when N is large</em></p>
+<p>Firstly, a group of k people can be chosen in <span class="arithmatex">\(\binom{N}{k}\)</span> ways.</p>
+<p>For one fixed k-people group <em>without loss of generality</em> ([[WLOG]]),we label them as people 1,2,...,k.</p>
+<p>Let <span class="arithmatex">\(E\)</span> be the event that <span class="arithmatex">\(1,2,...,k\)</span>, have matchs.</p>
+<p>Let <span class="arithmatex">\(G\)</span> be the event that no matchs occur among people <span class="arithmatex">\(k+1,...,N\)</span>,(N-k people)<br />
+$$<br />
+P(G|E)=P_{N-k}=\sum_{i=0}^{N-k}(-1)^i\frac{1}{i!}<br />
+$$<br />
+the probability that exactly k people have matchs is <span class="arithmatex">\(\binom{N}{k}P(E\cap G)\)</span> </p>
+<p><span class="arithmatex">\(P(E\cap G)=P(E)P(G|E)=P(E)P_{N-k}\)</span> ,</p>
+<p>Let <span class="arithmatex">\(E_i\)</span>={the <span class="arithmatex">\(i^{th}\)</span> person gets his own hat}</p>
+<p><em>By multiplication rule</em><br />
+$$<br />
+\begin{align}<br />
+P(E)&amp;\overset{directly from permutation}{=}P(\bigcap_{i=1}^{k}E_i)=P(E_1)...P(E_k|\bigcap_{i=1}^{k-1}E_i)<br />
+\&amp;=\frac{1}{N}\frac{1}{N-1}...\frac{1}{N-k+1}<br />
+\&amp;=\frac{(N-k)!}{N!}<br />
+\end{align}<br />
+$$<br />
+The probability that exactly k people get their own hat is<br />
+$$<br />
+\binom{N}{k}\frac{(N-k)!}{N!}P_{N-k}=\frac{1}{k!}P_{N-k}\approx\frac{1}{k!}e^{-1}<br />
+$$<br />
+for a fixed k and N is large</p>
+<h2 id="bayess-formula">[[Bayes's Formula]]</h2>
+<h3 id="first-bayess-formula">[[First Bayes's formula]]</h3>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 3.6 (First Bayes’s formula)</strong><br />
+Let <span class="arithmatex">\(E, F\)</span> be two events such that <span class="arithmatex">\(P(E) &gt; 0, P(F) &gt; 0\)</span>. We have that <br />
+$$<br />
+P(F|E)=\frac{P(E|F)P(F)}{P(E)}<br />
+$$</p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>By definition of conditional probability<br />
+$$<br />
+P(F|E)=\frac{P(F\cap E)}{P(E)}=\frac{P(F)P(E|F)}{P(E)}<br />
+$$</p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 3.6</strong><br />
+According to a study, 0.5% of the population has symptoms of video game addiction. The study highlights that the proportion of addicts is 2% among teenagers. We also know that there are 15% teenagers in the population. What is the probability that a randomly selected addict is a teenager?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>Let  A be the event that a preson is on addicts<br />
+    T be the event that a person is a teenager<br />
+$$<br />
+P(A)=0.005    P(A|T)=0.02    P(T)=0.15<br />
+\P(T|A)=\frac{P(A|T)P(T)}{P(A)}=0.6<br />
+$$</p>
+<h3 id="law-of-total-probability">[[Law of total probability]]</h3>
+<blockquote>
+<p>[!important] <br />
+<strong>[[Law of total probability]]</strong><br />
+Let <span class="arithmatex">\(E \in A\)</span> be an event and <span class="arithmatex">\(\{F_i\}_{i≥1}\)</span> be a countable partition of the sample space <span class="arithmatex">\(S\)</span> (that is, <span class="arithmatex">\(\bigcup_{i=1}^{\infty}F_i = S\ and \ F_i \cap F_j = \emptyset \  for\  i \neq j)\)</span>,<br />
+$$<br />
+P(E)=\sum_{j=1}^{\infty}P(E\cap F_i)<br />
+$$<br />
+Now, with the knowledge of conditional probabilities, we can rewrite the expression as follows:<br />
+$$<br />
+P(E)=\sum_{j=1}^{\infty}P(E|F_i)P(F_i)<br />
+$$<br />
+In particular,<br />
+$$<br />
+P(E)=P(E|F)P(F)+P(E|F^c)(1-P(F))<br />
+$$</p>
+<p>[!example] <br />
+<strong>Example 3.7</strong><br />
+According to a study, 0.5% of the population has symptoms of video game addiction. The study highlights that the proportion of addicts is 2% among teenagers. We also know that there are 15% teenagers in the population. What is the probability that a non-teenager is an addict?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>We want to study <span class="arithmatex">\(P(A|T^c)\)</span> Note that<br />
+$$<br />
+\begin{align}</p>
+<p>P(A)&amp;=P(A|T)P(T)+P(A|T^c)(1-P(T))<br />
+\0.05&amp;=0.02·0.15+P(A|T^c)·0.85<br />
+\P(A|T^c)&amp;\approx0.00235<br />
+\end{align}<br />
+$$</p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 3.8([[Polya's urn scheme]])</strong><br />
+There is an urn containing r red balls and b black balls, suppose each ball can be selected equally likely. Now each time we randomly select one ball, observe the color, then <strong>return</strong> the ball <strong>with s more balls</strong> of the same color. Let <span class="arithmatex">\(R_i\)</span> denote the event that at the <span class="arithmatex">\(i^{th}\)</span> selection, one gets a red ball. Find <span class="arithmatex">\(P(R_2), P(R_n)\)</span>.</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>Note that <span class="arithmatex">\(R_{1}^c\)</span> denotes that one get a black at the <span class="arithmatex">\(1^{th}\)</span> selection<br />
+$$<br />
+\begin{align}<br />
+P(R_{2})&amp;=P(R_2|R_1)P(R_1)+P(R_2|R_1^c)P(R_1^c)<br />
+\&amp;=\frac{r+s}{r+b+s}\frac{r}{r+b}+\frac{r}{r+b+s}\frac{b}{r+b}<br />
+\&amp;=\frac{r}{r+b}<br />
+\end{align}<br />
+$$</p>
+<p>In fact, <span class="arithmatex">\(P(R_n)=\frac{r}{r+b}\)</span> for any value of s . We prove by induction. We've shown it's true for n-2.Now we suppose it's true for n. </p>
+<p>Let's check for n+1</p>
+<div class="arithmatex">\[
+\begin{align}
+P(R_{n+1})&amp;=P(R_{n+1}|R_1)P(R_1)+P(R_{n+1}|R_1^c)P(R_1^c)
+\\&amp;=\frac{r+s}{r+b+s}\frac{r}{r+b}+\frac{r}{r+b+s}\frac{b}{r+b}
+\\&amp;=\frac{r}{r+b}
+\end{align}
+\]</div>
+<blockquote>
+<p>[!tip] Remark<br />
+The most important thing is discussing <span class="arithmatex">\(P(R_{n+1}|R_1)\)</span> is the same as thinking "we start with r+s (r) red balls , b (b+s) blue balls ,the probability we get a red ball at the <span class="arithmatex">\(n^{th}\)</span> round". (If we start with <span class="arithmatex">\(R_1^c\)</span>) </p>
+<p>Make the n+1 to be n (According to the suppose n is true).</p>
+<p>So <span class="arithmatex">\(P(R_{n+1}|R_1)=\frac{r+s}{r+b+s}\)</span> ,<span class="arithmatex">\(P(R_{n+1}|R_1^c)=\frac{r}{r+b+s}\)</span></p>
+</blockquote>
+<p><em>The following example discusses that whether the conditional probability is always greater than the probability or not.</em></p>
+<p><em>Compare conditional probability and unconditional probability</em></p>
+<blockquote>
+<p>[!example]  <strong>Example 3.9</strong><br />
+There is certain probability for the hypothesis of guilt for someone. Now some<br />
+new evidence shows up, how does the probability of hypothesis change?</p>
+<p>H=hypothesis guilit, E=evidence shows up, compare <span class="arithmatex">\(P(H|E)\)</span> and <span class="arithmatex">\(P(H)\)</span></p>
+<p><strong>Conclusion.</strong> If <span class="arithmatex">\(P(H|E) ≥ P(H)\)</span>, that means the new evidence is in support of<br />
+the hypothesis, that is, <br />
+$$<br />
+P(E|H) \ge P(E|H^c)<br />
+$$<br />
+In other words, any new evidence can be considered to be in support of a<br />
+particular hypothesis only if its occurrence is more likely when the hypothesis<br />
+is true than when it is false.</p>
+</blockquote>
+<p>^Eg3-9</p>
+<blockquote>
+<p>[!tip] Remark<br />
+The discussion of Example 3.9[[#^Eg3-9]] can be expressed compactly in terms of the change in the odds.</p>
+</blockquote>
+<div class="arithmatex">\[
+P(H|E)=\frac{P(E|H)P(H)}{P(E|H)P(H)+P(E|H^c)P(H^c)}
+$$
+If $P(H|E)\ge P(H)$,it means the evidence is in support of the hypothesis
+$$
+\begin{align}
+&amp;\Leftrightarrow P(E|H)\ge P(E|H)P(H)+P(E|H^c)P(H^c)
+\\&amp;\Leftrightarrow P(E|H)\ge P(E|H^c)
+\end{align}
+\]</div>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 3.7</strong><br />
+The odds of an event A are <span class="arithmatex">\(\frac{P(A)}{P(A^c )}=\frac{P(A)}{1 − P(A)}\)</span>.<br />
+The odds tell us that how much more likely it is that the event A occurs than it is that it does not occur.</p>
+</blockquote>
+<p>Back to <strong>Example 3.9</strong> discussion, the new odds under the new evidence are</p>
+<p>$$<br />
+\frac{P(H|E)}{P(H^c|E)}=\frac{\frac{P(E|H)P(H)}{P(E)}}{\frac{P(E|H^C)P(H^C)}{P(E)}}=\frac{P(H)}{P(H^c)}\frac{P(E|H)}{P(E|H^c)}<br />
+$$<br />
+That is, the <span class="arithmatex">\(\color{blue}{new\ odds\ of\ H}\)</span> are the <span class="arithmatex">\(\color{blue}old\ odds\)</span> multiplied by the <span class="arithmatex">\(\color{blue}ratio\)</span> of the conditional probability of the new evidence given that H is true to the conditional probability given that H is not true.</p>
+<h3 id="second-bayess-formula">Second Bayes's formula</h3>
+<blockquote>
+<p>[!important]<br />
+<strong>[[Second Bayes’s formula]]</strong><br />
+Let <span class="arithmatex">\(E \in A\)</span> be an event and <span class="arithmatex">\(\{F_i\}^n_{i=1}\)</span> be a countable partition of the sample space <span class="arithmatex">\(S\)</span> (that is, <span class="arithmatex">\(\bigcup\limits _{i=1}^nFi = S \ and\ F_i ∩ F_j =\emptyset \  for\ i \neq j\)</span>). For a given <span class="arithmatex">\(i = 1, . . . , n\)</span>, we have that<br />
+$$<br />
+P(F_i|E) = \frac{P(E|F_i)P(F_i)}{\sum\limits_{j=1}^{n}P(E|F_j)P(F_j).}<br />
+$$</p>
+</blockquote>
+<p><code>Proof</code></p>
+<p><em>Using first Bayes’s formula and law of total probability.</em> </p>
+<p><span class="arithmatex">\(\dfrac{P(H)}{P(H^c)}\)</span>(unconditional probability), <span class="arithmatex">\(\dfrac{P(H|E)}{P(H^c|E)}\)</span>(conditional probability)</p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 3.10</strong><br />
+Smartphones of some brand are produced in three factories. They are responsible for 20%, 30%, 50% of the output, respectively. The fraction of defective smartphones produced is: for the first factory, 5%; for the second, 3%; for the third, 1%. If a phone is chosen at random from the total output, and turns out to be defective, what is the probability that it was produced by the third factory.</p>
+</blockquote>
+<p>Let <span class="arithmatex">\(F_i\)</span> be the event that a phone is produced in the <span class="arithmatex">\(i^{th}\)</span> factory ,<span class="arithmatex">\(i=1,2,3\)</span> </p>
+<p><span class="arithmatex">\(P(F_1)=0.2,P(F_2)=0.3,P(F_3)=0.5\)</span> </p>
+<p>Let <span class="arithmatex">\(D\)</span> be the event that a phone is defective .</p>
+<p><span class="arithmatex">\(P(D|F_1)=0.05,P(D|F_2)=0.03,P(D|F_3)=0.01\)</span> </p>
+<p>We want <span class="arithmatex">\(P(F_3|D)=\dfrac{P(D|F_3)P(F_3)}{\sum\limits_{i=1}^{3}P(D|F_i)P(F_i)}\approx 0.208\)</span></p>
+<blockquote>
+<p>[!example] <br />
+<strong>Example 3.11</strong><br />
+3 cards are identical in form, both sides of the first card are colored red, both sides of the second card are colored black, one side of the third card is colored red and the other black. The 3 cards are mixed up in a hat, and 1 card is randomly selected and put down on the ground. If the upper side is red, what is the probability that the other side is colored black?</p>
+</blockquote>
+<p>Let <span class="arithmatex">\(RR,BB,RB\)</span> be the event that the chosen card is red-red, black-black, red-black card, respectively.</p>
+<p>Let <span class="arithmatex">\(R\)</span> be the event that the upper side of a chosen card is red.</p>
+<p>we want the probability <span class="arithmatex">\(P(RB|R)\)</span><br />
+$$<br />
+P(RB|R)=\frac{P(R|RB)P(RB)}{P(R|RR)P(RR)+P(R|RB)P(RB)+P(R|BB)P(BB)}=\frac{\frac{1}{2}\frac{1}{3}}{1\frac{1}{3}+\frac{1}{2}\frac{1}{3}}=\frac{1}{3}<br />
+$$</p>
+<h2 id="independent-events">Independent Events</h2>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 3.9</strong><br />
+Let <span class="arithmatex">\((\mathcal{S}, \mathcal{A}, P)\)</span> be a probability space and <span class="arithmatex">\(E, F \in \mathcal{A}\)</span> are two events with  <span class="arithmatex">\(P(E) &gt; 0, P(F) &gt; 0\)</span>.  <span class="arithmatex">\(E, F\)</span> are said to be independent if one of the following equivalent identities holds<br />
++ <span class="arithmatex">\(P(E \cap F) = P(E)P(F)\)</span><br />
++ <span class="arithmatex">\(P(E|F) = P(E)\)</span><br />
++ <span class="arithmatex">\(P(F|E) = P(F)\)</span></p>
+<p>[!example] <br />
+<strong>Example 3.12</strong><br />
+A card is selected at random from an ordinary deck of 52 playing cards. If <span class="arithmatex">\(E\)</span> is the event that the selected card is an <strong>ace</strong> and <span class="arithmatex">\(F\)</span> is the event that it is a <strong>spade</strong>, show that <span class="arithmatex">\(E, F\)</span> are independent.</p>
+</blockquote>
+<p><code>Solution</code><br />
+$$<br />
+\begin{align}<br />
+&amp;P(E)=\frac{4}{52}=\frac{1}{13},P(F)=\frac{13}{52}=\frac{1}{4}<br />
+\P(E\cap F)&amp;=P(the selected card is the ace of spades)<br />
+\&amp;=\frac{1}{52}=P(E)P(F)</p>
+<p>\end{align}<br />
+$$<br />
+<span class="arithmatex">\(E,F\)</span> are independece</p>
+<blockquote>
+<p>[!NOTE] <br />
+<strong>Proposition 3.10</strong><br />
+If events <span class="arithmatex">\(E, F\)</span> are independent, then so are:<br />
++ <span class="arithmatex">\(E \ and\ F^c\)</span><br />
++ <span class="arithmatex">\(E^c \ and\ F\)</span><br />
++ <span class="arithmatex">\(E^c \ and\ F^c\)</span></p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>We only verify <span class="arithmatex">\(E\)</span> and <span class="arithmatex">\(F^c\)</span> are independence <strong>(the other two are lefts as exercise)</strong></p>
+<p>We want to show <span class="arithmatex">\(P(E\cap F^c)=P(E)P(F^c)\)</span> <br />
+$$<br />
+\begin{align}<br />
+LHS&amp;=P(E)-P(E\cap F) (law of  total probability)<br />
+\&amp;=P(E)-P(E)P(F) (E,F  are  independence)<br />
+\&amp;=P(E)P(F^c)=RHS<br />
+\end{align}<br />
+$$</p>
+<blockquote>
+<p>[!example] <strong>Example 3.13</strong><br />
+You roll one die followed by another die. Let <span class="arithmatex">\(A\)</span> be the event that <strong>the sum of the dice is 9</strong>, <span class="arithmatex">\(B\)</span> be the event that <strong>the first die lands on an even number</strong>, <span class="arithmatex">\(C\)</span> be the event that <strong>the second die lands on an odd number</strong>. Analyze the relation among <span class="arithmatex">\(A, B, C\)</span>.</p>
+</blockquote>
+<p><code>Solution</code><br />
+$$<br />
+\begin{align}<br />
+P(A)&amp;=\frac{|(3,6)(4,5)(5,4)(6,3)|}{36}<br />
+\&amp;=\frac{4}{36}=\frac{1}{9}<br />
+\end{align}<br />
+$$<br />
+By symmetry, <span class="arithmatex">\(P(B)=P(C)=\frac{1}{2}\)</span></p>
+<p><span class="arithmatex">\(P(AB)=\frac{2}{36}=\frac{1}{18}=P(A)P(B)\)</span>, <span class="arithmatex">\(A,B\)</span> are independent</p>
+<p><span class="arithmatex">\(P(AC)=\frac{1}{18}=P(A)P(C)\)</span>,<span class="arithmatex">\(P(BC)=P(B)P(C)\)</span> , <span class="arithmatex">\(A,C\)</span> are independent, <span class="arithmatex">\(B,C\)</span> are independent</p>
+<p>Consider <span class="arithmatex">\(A,B,C\)</span> are pairwise independent <span class="arithmatex">\(P(ABC)=\frac{1}{18}\neq P(A)P(B)P(C)\)</span></p>
+<h3 id="independent-of-n-events">Independent of n events</h3>
+<blockquote>
+<p>[!NOTE] <br />
+<strong>Definition 3.11</strong><br />
+Let <span class="arithmatex">\(E_1, . . . , E_n\)</span> be a sequence of events, we say <span class="arithmatex">\(\{E_i\}^n_{i=1}\)</span> are pairwise independent if <span class="arithmatex">\(E_i\)</span>and <span class="arithmatex">\(E_j\)</span> are independent, that is, <span class="arithmatex">\(P(E_i\cap E_j) = P(E_i)P(E_j)\)</span> for all <span class="arithmatex">\(i \neq j\)</span>.</p>
+<p>We say that <span class="arithmatex">\(\{E_i\}^n_{i=1}\)</span> are <strong>independent</strong> if for all subsets <span class="arithmatex">\(I ⊂ \{1, 2, . . . , n\}\)</span>,<br />
+$$<br />
+P(\bigcap_{i\in I}E_i)=\prod_{i\in I}P(E_i)<br />
+$$<br />
+For instance, for n = 3, if <span class="arithmatex">\(E_1, E_2, E_3\)</span> are independent, that means<br />
+<span class="arithmatex">\(P(E1 ∩ E2) = P(E1)P(E2), P(E1 ∩ E3) = P(E1)P(E3), P(E2 ∩ E3) = P(E2)P(E3);\)</span><span class="arithmatex">\(P(E1 ∩ E2 ∩ E3) = P(E1)P(E2)P(E3).\)</span></p>
+<p>[!example] <br />
+<strong>Example 3.14: [[The gambler’s ruin problem]]</strong><br />
+Two gamblers, <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, bet on the outcomes of successive flips of a coin.<br />
+On each flip, if the coin comes up heads, <span class="arithmatex">\(A\)</span> collects 1 unit from <span class="arithmatex">\(B\)</span>; if it comesup tails, <span class="arithmatex">\(A\)</span> pays 1 unit to <span class="arithmatex">\(B\)</span>.<br />
+They continue to do this until one of them run out of money.<br />
+Assume that the flips are independent and each flip results in a head with probability <span class="arithmatex">\(p\)</span>, what is the probability that A ends up with all money if he starts with <span class="arithmatex">\(i\)</span> units and B starts with <span class="arithmatex">\(N − i\)</span> units?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>Let <span class="arithmatex">\(E_i\)</span> be the event that <span class="arithmatex">\(A\)</span> collects all the money if he starts with <span class="arithmatex">\(i\)</span> units ,<span class="arithmatex">\(B\)</span> starts with <span class="arithmatex">\(N-i\)</span> units .Want to study <span class="arithmatex">\(P(E_i)=P_i\)</span>, <span class="arithmatex">\(P(E_N)=1=P_N\)</span></p>
+<p>Let <span class="arithmatex">\(H\)</span> be the event that the first flip lands on heads and <span class="arithmatex">\(P(H)=p\)</span>.<br />
+$$<br />
+P_i=P(E_i|H)P(H)+P(E_i|H^c)P(H^c)=pP(E_i|H)+(1-p)P(E_i|H^c)<br />
+$$<br />
+Given the first flip landing on <span class="arithmatex">\(heads\ \color{red}{tails}\)</span>, the probability that <span class="arithmatex">\(E_i\)</span> occurs is the SAME as analyzing the probability that <span class="arithmatex">\(A\)</span> collects all the money if he starts with <span class="arithmatex">\(i+1\ \color{red}{i-1}\)</span> units <span class="arithmatex">\(B\)</span> starts with <span class="arithmatex">\(N-i-1\ \color{red}{N-i+1}\)</span> units (<span class="arithmatex">\(E_{i+1}\ E_{i-1}\)</span>)<br />
+$$<br />
+pP(E_i|H)+(1-p)P(E_i|H^c)=pP_{i+1}+(1-p)P_{i-1}<br />
+$$</p>
+<div class="arithmatex">\[
+\begin{align}
+P_i&amp;=pP_{i+1}+(1-p)P_{i-1}
+\\p(P_{i+1}-P_{i})&amp;=(1-p)(P_i-P_{i-1})
+\\P_{i+1}-P_i&amp;=\frac{1-p}{p}(P_{i}-P_{i-1})
+\end{align}
+\]</div>
+<p>We let <span class="arithmatex">\(q=1-p\)</span> note that <span class="arithmatex">\(P_0=0\)</span><br />
+$$<br />
+P_2-P_1=\frac{q}{p}P_1<br />
+\P_3-P_2=\frac{q}{p}(P_2-P_1)=(\frac{q}{p})^2P_1<br />
+\P_i-P_{i-1}=(\frac{q}{p})^{i-1}P_1<br />
+\P_N-P_{N-1}=(\frac{q}{p})^{N-1}P_1<br />
+$$<br />
+Adding the first $ i-1$ indentities:<br />
+$$<br />
+\begin{align}<br />
+P_i&amp;=[1+\frac{q}{p}+(\frac{q}{p})^2+···+(\frac{q}{p})^{i-1}]P_1<br />
+\&amp;=\left{\begin{matrix} <br />
+  iP_1 if p=q=\frac{1}{2}<br />
+  \  \frac{1-(\frac{q}{p})^i}{1-\frac{q}{p}}P_1 if p\neq\frac{1}{2}<br />
+\end{matrix}\right. <br />
+\end{align}<br />
+$$<br />
+With <span class="arithmatex">\(P_N=1\)</span><br />
+$$<br />
+P_1=\left{\begin{matrix} <br />
+  \frac{1}{N} if  p=\frac{1}{2} \<br />
+  \frac{1-\frac{q}{p}}{1-(\frac{q}{p})^N} if  p\neq\frac{1}{2} <br />
+\end{matrix}\right. <br />
+$$<br />
+then<br />
+$$<br />
+P_i=\left{\begin{matrix} <br />
+  \frac{i}{N} if  p=\frac{1}{2} \<br />
+  \frac{1-(\frac{q}{p})^i}{1-(\frac{q}{p})^N} if  p\neq\frac{1}{2} <br />
+\end{matrix}\right.<br />
+$$</p>
+<blockquote>
+<p>[!example] <br />
+<strong>Example 3.15</strong><br />
+A person has two coins. The first coin comes up heads with probability 1/4 and tails with probability 3/4. The second coin comes up heads with probability 3/4 and tails with probability 1/4. One coin is selected and then flipped twice. Each coin can be equally likely selected.<br />
++ Let <span class="arithmatex">\(H_1\)</span> be the event that <strong>the first flip is heads</strong> and let <span class="arithmatex">\(H_2\)</span> be the event that<br />
+<strong>the second flip is heads</strong>. Show that <span class="arithmatex">\(H_1, H_2\)</span> are not independent.<br />
++ Let <span class="arithmatex">\(F\)</span> be the event that the first coin is selected. Show that <span class="arithmatex">\(P(H_1 ∩ H_2|F) = P(H_1|F)P(H_2|F)\)</span> </p>
+</blockquote>
+<p><code>Solution</code></p>
+<p><span class="arithmatex">\(P(H_1)=P(H_1|F)P(F)+P(H_1|F^c)P(F^c)=\frac{1}{2}\frac{1}{4}+\frac{1}{2}\frac{3}{4}=\frac{1}{2}\)</span></p>
+<p>Similarly, <span class="arithmatex">\(P(H_2)=\frac{1}{2}\)</span> .But note that <br />
+$$<br />
+\begin{align}<br />
+P(H_1H_2)=P(H_1H_2|F)P(F)+P(H_1H_2|F^c)P(F^c)<br />
+\=\frac{1}{2}(\frac{1}{4})^2+\frac{1}{2}(\frac{3}{4})^2=\frac{5}{16}\neq P(H_1)P(H_2)\end{align}<br />
+$$<br />
+$$<br />
+P(H_1\cap H_2|F)=\frac{P(H_1\cap H_2F)}{P(F)}=\frac{\frac{1}{32}}{\frac{1}{2}}=\frac{1}{16}<br />
+\P(H_1|F)P(H_2|F)=\frac{1}{4}\frac{1}{4}=\frac{1}{16}<br />
+$$</p>
+<h3 id="conditional-probability_1">Conditional Probability</h3>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 3.12</strong><br />
+Let <span class="arithmatex">\(E, F, G\)</span> be three events with <span class="arithmatex">\(P(G) &gt; 0\)</span>. We say that <span class="arithmatex">\(E\)</span> and <span class="arithmatex">\(F\)</span> are <strong>conditionally independent</strong> given <span class="arithmatex">\(G\)</span> (or that conditioned on <span class="arithmatex">\(G\)</span> the events <span class="arithmatex">\(E\)</span> and <span class="arithmatex">\(F\)</span> are independent) if<br />
+$$<br />
+P(E ∩ F|G) = P(E|G)P(F|G)<br />
+$$<br />
+An equivalent definition for <span class="arithmatex">\(E, F\)</span> conditionally independent given <span class="arithmatex">\(G\)</span> is<br />
+$$<br />
+P(E|FG) = P(E|G)<br />
+$$<br />
+It can be interpreted as: <em>Given that <span class="arithmatex">\(G\)</span> occurs, the conditional probability that</em> <em><span class="arithmatex">\(E\)</span> occurs is unchanged by information as to whether or not <span class="arithmatex">\(F\)</span> occurs.</em></p>
+<p>[!tip]<br />
+<strong>Remark 3.13</strong><br />
+It is easy to check that if <span class="arithmatex">\(E, F\)</span> are conditionally independent given <span class="arithmatex">\(G\)</span>, then so are <span class="arithmatex">\(E\)</span> and <span class="arithmatex">\(F^c\)</span>. It is also easy to extend this to three or more events being conditionally independent given <span class="arithmatex">\(G\)</span>.</p>
+<p>[!NOTE] <br />
+<strong>Proposition 3.14</strong><br />
+<span class="arithmatex">\(\{F_i\}^n_{i=1}\)</span> is a partition of the sample space <span class="arithmatex">\(S\)</span>, that is, <span class="arithmatex">\(\bigcup\limits _{i=1}^{n}F_i = S\)</span> and <span class="arithmatex">\(Fi ’s\)</span> are mutually exclusive. Then, <br />
+$$<br />
+P(E|F) =\sum\limits_{i=1}^{n} P(E|FF_i)P(F_i|F)<br />
+$$<br />
+In particular, <span class="arithmatex">\(P(E|F) = P(E|FF_1)P(F_1|F) + P(E|FF^c_1)P(F^c_1|F).\)</span></p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>Direct proof by using definitions (exercise)</p>
+<p>Alternative proof by thinking <span class="arithmatex">\(P_F(\cdot)=P(\cdot|F)\)</span> as a <strong>probability measure</strong> </p>
+<p>By law of total probability<br />
+$$<br />
+\begin{align}<br />
+P(E|F)=P_F(E)&amp;=\sum_{i=1}^nP_F(E|F_i)P_F(F_i)({\color{green}{P(F_i|F)}})<br />
+\<br />
+P_F(E|F_i)&amp;=\frac{P_F(EF_i)}{P_F(F_i)}=\frac{P(EF_i|F)}{P(F_i|F)}<br />
+\&amp;=\cdot \cdot \cdot=P(E|FF_i)<br />
+\end{align}<br />
+$$</p>
+<blockquote>
+<p>[!example] <br />
+<strong>Example 3.16: [[ Laplace’s rule of succession]]</strong><br />
+There are <span class="arithmatex">\(k + 1\)</span> coins in a box. When flipped, the ith coin will turn up heads with probability <span class="arithmatex">\(\frac{i}{k}\)</span>,<span class="arithmatex">\(i = 0, 1, . . . , k\)</span>. A coin is randomly selected from the box and is then repeatedly flipped. If the first n flips all result in heads, what is the conditional proability that the <span class="arithmatex">\((n + 1)\)</span> flip will do likewise?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>Let <span class="arithmatex">\(F_n\)</span> be the event that the first <span class="arithmatex">\(n\)</span> flips result in heads.Let <span class="arithmatex">\(H\)</span> be the event that the first <span class="arithmatex">\(n+1\)</span> flips result in heads.</p>
+<p>We want to study <span class="arithmatex">\(P(H|F_n)\)</span> , let <span class="arithmatex">\(C_i\)</span> be the event that the <span class="arithmatex">\(i^{th}\)</span> coin is selected.<br />
+$$<br />
+P(E|F)=\sum_{i=0}^kP(E|F_iF)P(F_i|F)\Rightarrow P(H|F_n)=\sum_{i=0}^kP(H|F_nC_i)P(C_i|F_n)<br />
+$$<br />
+<span class="arithmatex">\(H,F_n\)</span> are conditional independence given <span class="arithmatex">\(C_i\)</span> (common sense) <span class="arithmatex">\(P(H|F_nC_i)=P(H|C_i)=\frac{i}{k}\)</span></p>
+<p>Using the second Bayes's Formula <br />
+$$<br />
+\begin{align}<br />
+P(C_i|F_n)=&amp;\frac{P(F_i|C_i)P(C_i)}{\sum_{j=0}^{l}P(F_n|C_j)P(C_j)}<br />
+\=&amp;\frac{(\frac{i}{k})^n}{\sum_{j=0}^{k}(\frac{j}{k})^n}<br />
+\P(H|F_n)&amp;=\frac{\sum_{i=0}^{k}(\frac{i}{k})^{n+1}}{\sum_{j=0}^{k}(\frac{j}{k})^n}When k is large.<br />
+\\frac{1}{k}\sum_{i=0}^k(\frac{i}{k})^{n+1}&amp;\approx\int_{0}^{1}x^{n+1}dx=\frac{1}{n+2}<br />
+\\frac{1}{k}\sum_{j=0}^k(\frac{i}{k})^{n}&amp;\approx\int_{0}^{1}x^{n}dx=\frac{1}{n+1}<br />
+\P(H|F_n)&amp;\approx\frac{n+1}{n+2}. When  k is large.<br />
+\end{align}<br />
+$$</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        本页面内容是否对您有帮助?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="有帮助" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="没帮助" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              感谢反馈！
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              感谢反馈！
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script>
+      
+        <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+        <script src="../../../../javascripts/config.js"></script>
+      
+        <script src="../../../../javascripts/main.js"></script>
+      
+    
+  </body>
+</html>

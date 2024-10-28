@@ -1,0 +1,3020 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Continuous%20Random%20Variables/">
+      
+      
+        <link rel="next" href="../Elementary%20Probability%20Theory/">
+      
+      
+      <link rel="icon" href="../../../../imgs/xiaoju.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Discrete_Random_Variables #Chapter_4 #Elementary_Probability_Theory - Eurekaimer的数学小站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14.184 1.143zl1.422 2.464a1.75 1.75 0 0 1-.757 2.451L3.104 11.713a1.75 1.75 0 0 1-2.275-.702l-.447-.775a1.75 1.75 0 0 1 .53-2.32L11.682.573a1.75 1.75 0 0 1 2.502.57m-4.709 9.32zl2.644 3.863a.75.75 0 1 1-1.238.848l-1.881-2.75v2.826a.75.75 0 0 1-1.5 0v-2.826l-1.881 2.75a.75.75 0 1 1-1.238-.848l2.049-2.992a.75.75 0 0 1 .293-.253l1.809-.87a.75.75 0 0 1 .944.252M9.436 3.92zl-4.97 3.39.942 1.63 5.42-2.61Zm3.091-2.108h.001l-1.85 1.26 1.505 2.605 2.016-.97a.25.25 0 0 0 .13-.151.25.25 0 0 0-.022-.199l-1.422-2.464a.25.25 0 0 0-.161-.119.25.25 0 0 0-.197.038M1.756 9.157a.25.25 0 0 0-.075.33l.447.775a.25.25 0 0 0 .325.1l1.598-.769-.83-1.436z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Serif:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inria Serif";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#discrete_random_variables-chapter_4-elementary_probability_theory" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../.." title="Eurekaimer的数学小站" class="md-header__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
+      
+  <img src="../../../../imgs/xiaoju.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Eurekaimer的数学小站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Discrete_Random_Variables #Chapter_4 #Elementary_Probability_Theory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Eurekaimer/Eurekaimer.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Eurekaimer.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../GTM/Measure%20and%20Category/" class="md-tabs__link">
+          
+  
+  GTM
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Tutorial/C/" class="md-tabs__link">
+          
+  
+  Tutorial
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-tabs__link">
+          
+  
+  代数学
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Talor%20expansion/" class="md-tabs__link">
+          
+  
+  分析学
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Eurekaimer的数学小站" class="md-nav__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
+      
+  <img src="../../../../imgs/xiaoju.jpg" alt="logo">
+
+    </a>
+    Eurekaimer的数学小站
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Eurekaimer/Eurekaimer.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Eurekaimer.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GTM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            GTM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../GTM/Measure%20and%20Category/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GTM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tutorial/C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tutorial/Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Tutorial/Python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    代数学
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            代数学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E8%A1%8C%E5%88%97%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    行列式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E9%80%86%E5%BA%8F%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    逆序数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    抽象代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            抽象代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/%E5%9F%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    域
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/%E7%8E%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    环
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/%E7%BE%A4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    群
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    高等代数
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            高等代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    高等代数 #代数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    分析学
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            分析学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Talor%20expansion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talor expansion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mathematical Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematical Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/NKU%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析 #答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/The%20Principle%20of%20Mathematical%20Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rudin #Mathematical_Analysis #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析 #Mathematical_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_4" id="__nav_5_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数学分析(Chapter Parts)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            数学分析(Chapter Parts)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/Fourier%20Analysis%200.excalidraw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier Analysis 0.excalidraw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/Fourier%20%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fourier #数学分析 #Mathematical_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/The%20Real%20and%20Complex%20Number%20Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rudin #数学分析 #Mathematical_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E6%9E%81%E9%99%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析I #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E6%9E%81%E9%99%90_NKU%28%E7%AD%94%E6%A1%88%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    练习 2.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析I #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0_NKU%28%E7%AD%94%E6%A1%88%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    连续函数 NKU(答案)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析I #数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Chapter%20Parts%29/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86_NKU%28%E7%AD%94%E6%A1%88%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    答案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_5" id="__nav_5_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数学分析真题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            数学分析真题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Mathematical%20Analysis/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E7%9C%9F%E9%A2%98/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901%20%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6%E7%9C%9F%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2020级数学分析第1次月考
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Measure Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Measure Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Measure%20Theory/GTM%2018%20Measure%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measure_Theory #Halmos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Probability Theory (Elementary and Advanced)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Probability Theory (Elementary and Advanced)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_1" id="__nav_5_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/Axioms%20of%20Probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Axioms of Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/Bayes%27s%20Formula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bayes's Formula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/Sample%20Space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Concepts/probability%20space/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability space
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_2" id="__nav_5_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elementary Probability Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Elementary Probability Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Combinatorial%20Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combinatorial_Analysis #Chapter_1 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conditional%20Probability%20and%20Independence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional_probability #Independence #Chapter_3 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Continuous%20Random%20Variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous_random_variables #Chapter_5 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Discrete_Random_Variables #Chapter_4 #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Elementary%20Probability%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability_Theory #概率论 #Elementary #Lecture_notes #Elementary_Probability_Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sets%2C%20Axioms%20of%20Probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sets, Axioms of Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Wrong%20HW%20of%20Elementary%20Probability%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_3" id="__nav_5_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Interesting Problem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Interesting Problem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Birthday%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Birthday Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Laplace%E2%80%99s%20rule%20of%20succession/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Laplace’s rule of succession
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Matching%20Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matching Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/Polya%27s%20urn%20scheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polya's urn scheme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/The%20Banach%20matchbox%20problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Banach matchbox problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Interesting%20Problem/The%20gambler%E2%80%99s%20ruin%20problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The gambler’s ruin problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Real Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Real Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Real%20Analysis/Real%20Analysis%28Royden%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Real_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Real%20Analysis/Real%20Analysis%28Stein%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stein #Real_Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Real%20Analysis/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E5%92%8C%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E5%88%9D%E6%AD%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实变函数 #夏道行
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="discrete_random_variables-chapter_4-elementary_probability_theory">Discrete_Random_Variables #Chapter_4 #Elementary_Probability_Theory</h1>
+<h1 id="chapter-4-discrete-random-variables">Chapter 4 : Discrete Random Variables</h1>
+<h2 id="definition-of-random-variables">Definition of Random Variables</h2>
+<p><strong>Motivation</strong></p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Example 4.1</strong> </p>
+<p>We toss a fair coin three times. </p>
+<p>The sample space is <span class="arithmatex">\(S = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\}\)</span></p>
+<p>For the convenience of discussions, we can assign a specific value to each outcome in <span class="arithmatex">\(S\)</span>. For example, we can define some variable X to represent the number of heads observed.<br />
+$$<br />
+HTH\Rightarrow X=2<br />
+$$<br />
+Conversely, for a given range of values for <span class="arithmatex">\(X\)</span>, we can find an event related to it. For example,<br />
+$$<br />
+{X\ge2}\Rightarrow {HHH, HHT, HTH, THH}<br />
+$$</p>
+</blockquote>
+<p>So what's random variable?</p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Remark</strong><br />
+The variable <span class="arithmatex">\(X\)</span> here we've defined is called a <strong>random variable</strong></p>
+</blockquote>
+<h3 id="borel-sigma-algebra-on-r">Borel <span class="arithmatex">\(\sigma-algebra\)</span> on <span class="arithmatex">\(R\)</span></h3>
+<p>In this course, we only focus on the case that random variables taking values in R. That is,<br />
+$$<br />
+X:(S,\mathcal{A},P)\rightarrow (R,?,?).<br />
+$$<br />
+The first question mark(is ?) should be a <span class="arithmatex">\(σ-algebra\)</span> on <span class="arithmatex">\(R\)</span>.</p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 4.1 (Borel <span class="arithmatex">\(σ-algebra\)</span> on <span class="arithmatex">\(R/Borel\)</span> set)</strong></p>
+<p>The <span class="arithmatex">\(Borel σ-algebra\)</span> on <span class="arithmatex">\(R\)</span> is the smallest (in the sense of set inclusion) <span class="arithmatex">\(σ-algebra\)</span> that contains all open intervals in <span class="arithmatex">\(R\)</span>. The <span class="arithmatex">\(Borel σ-algebra\)</span> on <span class="arithmatex">\(R\)</span> is denoted by <span class="arithmatex">\(B(R)\)</span>.</p>
+<p>[!NOTE]<br />
+<strong>Remark 4.2</strong><br />
+B(R) also contains all closed intervals</p>
+</blockquote>
+<h3 id="random-variables">Random variables</h3>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.3 (Random variables)</strong></p>
+<p>Let <span class="arithmatex">\((S, \mathcal{A})\)</span> be a sample space with a collection of events. A real-valued random variable X is a function mapping with domain <span class="arithmatex">\(S\)</span>, that is, <span class="arithmatex">\(X : S → R\)</span>, such that for any Borel set <span class="arithmatex">\(B ∈ B(R):\)</span><br />
+$$<br />
+{ω ∈ S|X(ω) ∈ B} ∈ A.<br />
+$$<br />
+The event <span class="arithmatex">\(\{ω ∈ S|X(ω) ∈ B\}\)</span> is simply denoted by <span class="arithmatex">\(\{X ∈ B\}\)</span>.</p>
+<p>[!NOTE]<br />
+<strong>Remark</strong><br />
+<span class="arithmatex">\(X(S)\)</span> represents all possible values that <span class="arithmatex">\(X\)</span> can take this is the range of <span class="arithmatex">\(X\)</span>.<br />
+<span class="arithmatex">\(X(S)=\{0,1,2,3\}\)</span></p>
+</blockquote>
+<p>For <span class="arithmatex">\(a,b\in R,a&lt;b\)</span> .<br />
+$$<br />
+\begin{align}<br />
+&amp;{X\in(a,b)}\Leftrightarrow {a&lt;X&lt;b}={\omega\in S|a&lt;X(\omega)&lt;b}<br />
+\&amp;{X\in(a,b]}\Leftrightarrow {a&lt;X\le b}={\omega\in S|a<X(\omega)\le b\}
+\\&\{X\in[a,\infty)\}\Leftrightarrow \{X>a}={\omega\in S|X(\omega)\ge a}<br />
+\&amp;{X\in(-\infty,b]}\Leftrightarrow {X&lt;b}={\omega\in S|X(\omega)\le b}<br />
+\&amp;X\in{a}\Leftrightarrow X=a<br />
+\end{align}<br />
+$$</p>
+<h2 id="discreter-random-variablesprobability-mass-and-distribution-functions">Discreter random variables:probability mass and distribution functions</h2>
+<p>In this chapter, we only focus on the discussions of discrete random variables. However, some terminologies are defined in <strong>general sense</strong>, for example, distribution function.</p>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.4</strong></p>
+<p>A real-valued random variable <span class="arithmatex">\(X\)</span> is said to be <strong>discrete</strong> if X can take:</p>
+<ul>
+<li>either a finite number of values: <span class="arithmatex">\(X(S) = \{x_i ∈ R, i = 1, . . . , n\}\)</span> for a given <span class="arithmatex">\(n ∈ N\)</span>.</li>
+<li>or a countably infinite number of values : <span class="arithmatex">\(X(S) = \{x_i ∈ R, i ∈ I\}\)</span> for a given subset <span class="arithmatex">\(I ⊂ N.\)</span></li>
+</ul>
+<p>[!note]<br />
+<strong>Example 4.2</strong></p>
+<ul>
+<li>Consider <span class="arithmatex">\(X\)</span> as the number of times you flip a coin until you get a head.<span class="arithmatex">\(X\)</span> is discrete since <span class="arithmatex">\(X(S) = {1, 2, . . . }\)</span>.</li>
+<li>Consider <span class="arithmatex">\(Y\)</span> as the lifetime of a machine in hours, then <span class="arithmatex">\(Y\)</span> can take any positive values and they can not be listed. <span class="arithmatex">\(Y(S) = [0, ∞)\)</span>. Thus, <span class="arithmatex">\(Y\)</span> is not discrete. (We will discuss this case in the next chapter for continuous random variables)</li>
+</ul>
+</blockquote>
+<h3 id="probability-mass-function">Probability mass function</h3>
+<p>Motivation:To study discrete random variables, as all possible outcomes can be listed,we<br />
+introduce the definition of probability mass functions.</p>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.5 (Probability mass function)</strong></p>
+<p>Let <span class="arithmatex">\(X\)</span> be a discrete random variable on probability space <span class="arithmatex">\((S, \mathcal{A}, P)\)</span> that takes values on <span class="arithmatex">\(X(S)\)</span>. The <strong>probability mass function</strong> <strong>(pmf)</strong> p(·) is a function that is defined by:<br />
+$$<br />
+p(x) = P(X = x), for x ∈ X(S).<br />
+$$</p>
+<p>[!note]<br />
+<strong>Example 4.3</strong></p>
+<p>We toss a fair coin three times. Let <span class="arithmatex">\(X\)</span> be the number of heads observed. What is the pmf of <span class="arithmatex">\(X\)</span>?</p>
+</blockquote>
+<p>We can either use a table or a histogram to represent the distribution of <span class="arithmatex">\(X\)</span>.<br />
+$$<br />
+p(0)=P(X=0)=\frac{1}{8}        p(1)=P(X=1)=\frac{3}{8}<br />
+\p(2)=P(X=2)=\frac{3}{8}        p(3)=P(X=3)=\frac{1}{8}<br />
+$$<br />
+(diagram histogram)</p>
+<blockquote>
+<p>[!note]<br />
+<strong>Theorem 4.6 (Distribution of a random variable)</strong></p>
+<p>A probability mass function completely determines the distribution of a discrete real-valued random variable.</p>
+<p>[!note]<br />
+<strong>Proposition 4.7</strong></p>
+<p>Let <span class="arithmatex">\(X\)</span> be a discrete rrv[^1] on probability space $(S, \mathcal{A}, P) $that takes values on <span class="arithmatex">\(X(S)\)</span> with <span class="arithmatex">\(pmf\)</span> p(·), then the following holds:</p>
+<ol>
+<li>
+<p>for <span class="arithmatex">\(x\in X(S),p(x)\ge0\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sum_{x\in X(S)}p(x)=1\)</span></p>
+</li>
+<li>For any subset <span class="arithmatex">\(B\subset X(S)\)</span>,</li>
+</ol>
+<div class="arithmatex">\[
+P(X\in B)=\sum_{x\in B}p(x).
+\]</div>
+</blockquote>
+<p><code>Remark</code><br />
+$$<br />
+\sum_{x\in X(S)}p(x)=P(S)=1<br />
+\\sum_{x\in X(S)}p(x)=\sum_{x\in X(S)}P(X\in{x})<br />
+$$</p>
+<p><em>Question: Given a function, under what conditions can we say it is a probability mass function of a random variable?</em></p>
+<blockquote>
+<p>[!example]<br />
+<strong>Example 4.4</strong></p>
+<p>Consider the function <span class="arithmatex">\(p(x) = cx^ 2\)</span> for <span class="arithmatex">\(x = 1, 2, 3\)</span>. Can we say it is a probability mass function of a random variable?</p>
+</blockquote>
+<p>^eg4-4</p>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.8</strong></p>
+<p>A real-valued function p with countable domain <span class="arithmatex">\(B ⊂ R\)</span> is said to be <strong>valid pmf</strong> if the following holds:</p>
+<ul>
+<li>$p(x) ≥ 0, for x ∈ B. $</li>
+<li><span class="arithmatex">\(\sum_{x\in B}p(x)=1\)</span></li>
+</ul>
+</blockquote>
+<p>So,we can solve the <strong>Example 4.4[[#^eg4-4]]</strong></p>
+<p><span class="arithmatex">\(c\ge 0\)</span> ,condition 1 is satisfied. To verify the second condition,we get the equation.<br />
+$$<br />
+\begin{align}<br />
+\sum_{x\in B}p(x)&amp;=p(1)+p(2)+p(3)=1<br />
+\c+4c+9c=1,c=\frac{1}{14},p(x)&amp;=\frac{1}{14}x^2,x=1,2,3  is a valid pmf <br />
+\end{align}<br />
+$$</p>
+<h3 id="cumulative-distribution-function">Cumulative distribution function</h3>
+<p>For a discrete random variable, we see that pmf can completely determine the distribution. <em>There are other functions that completely determine the distribution of a random variable.</em></p>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.9 (Cumulative distribution function)</strong></p>
+<p>Let <span class="arithmatex">\((S, \mathcal{A}, P)\)</span> be a probability space. The <strong>(cumulative) distribution function</strong><br />
+<strong>(cdf)</strong> of a real-valued random variable <span class="arithmatex">\(X\)</span> is the function <span class="arithmatex">\(F\)</span> given by<br />
+$$<br />
+F(x) = P(X \le x), for all x ∈ R.<br />
+\\color{Red}{P(X \le x)=P({\omega\in S|X(\omega)\in(-\infty,x]})}<br />
+$$</p>
+<p>[!note]<br />
+<strong>Remark 4.10</strong></p>
+<ul>
+<li>
+<p>The above definition is <em>in general sense.</em></p>
+</li>
+<li>
+<p>For discrete random variables taking values in <span class="arithmatex">\(X(S) = \{x_1, x_2, · · · \}\)</span> with $x_1 &lt; x_2 &lt; · · · $,<br />
+  $$<br />
+  F(x)=\sum_{all x_i\le x}p(x_i).<br />
+  $$<br />
+<span class="arithmatex">\(F\)</span> is a <strong>step function</strong>, that is, <span class="arithmatex">\(F\)</span> is constant in the intervals <span class="arithmatex">\((x_{i−1}, x_i)\)</span>, and<br />
+  takes a jump of size <span class="arithmatex">\(p(x_i)\)</span> at <span class="arithmatex">\(x_i\)</span>.</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>Recall</strong> the previous example: <strong>Example 4.3</strong>. We toss a fair coin three times. Let <span class="arithmatex">\(X\)</span> be the number of heads observed. We now discuss the cmf of <span class="arithmatex">\(X\)</span>.</p>
+<p>When <span class="arithmatex">\(x&lt;0,F(x)=P(X\le x)=0\)</span>,when <span class="arithmatex">\(0\le x&lt;1,F(x)=p(0)=\frac{1}{8}\)</span>,when <span class="arithmatex">\(1\le x&lt;2,F(x)=p(0)+p(1)=\frac{1}{2}\)</span>,when <span class="arithmatex">\(2\le x&lt;3,F(x)=p(0)+p(1)+p(2)=\frac{7}{8}\)</span>,when <span class="arithmatex">\(x\ge3,F(x)=P(X\le x)=1\)</span>.</p>
+<p>(A step function picture)<br />
+$$<br />
+F(x)=\left{\begin{matrix}<br />
+\begin{align}<br />
+  0,&amp;if   x \le0\<br />
+  \frac{1}{8},&amp;if    0\le x &lt;1\<br />
+  \frac{1}{2},&amp;if    1\le x &lt;2\<br />
+  \frac{7}{8},&amp;if    2\le x &lt;3\<br />
+  1,&amp;if     x\ge 3\<br />
+  \end{align}<br />
+\end{matrix}\right.<br />
+$$</p>
+<h3 id="properties-for-distribution-function">Properties for distribution function</h3>
+<blockquote>
+<p>[!note]<br />
+<strong>Proposition 4.11 (Properties for distribution function)</strong></p>
+<p>Let <span class="arithmatex">\(F\)</span> be the distribution function of a random variable <span class="arithmatex">\(X\)</span>, then the following<br />
+holds:</p>
+<ol>
+<li><span class="arithmatex">\(F\)</span> is non-decreasing: <span class="arithmatex">\(x ≤ y ⇒ F(x) ≤ F(y)\)</span>.</li>
+<li><span class="arithmatex">\(\lim_{x\to\infty}F(x)=1\ and\ \lim_{x\to-\infty}F(x)=0\)</span></li>
+<li><span class="arithmatex">\(F\ is\ càdlàg:\)</span></li>
+<li><span class="arithmatex">\(F\)</span>  is right continuous: <span class="arithmatex">\(\lim_{x\downarrow x_0}F(x)=F(X_0).\)</span></li>
+<li><span class="arithmatex">\(F\)</span> has left limits : <span class="arithmatex">\(\lim_{x\uparrow x_0}F(x)\)</span> exists for <span class="arithmatex">\(x_0\in R\)</span></li>
+</ol>
+</blockquote>
+<p><code>Remark</code><br />
+$$<br />
+F(x_0^+)=F(x_0),F(x_0^-) exists<br />
+$$<br />
+For example , like the <strong>Example 4.3</strong> ,<span class="arithmatex">\(F(3^-)=\frac{7}{8},F(3)=1\)</span></p>
+<p>For <span class="arithmatex">\(x\le y\)</span> ,<span class="arithmatex">\((-\infty,x]\subset(-\infty,y]\)</span>,<span class="arithmatex">\(P(\{X\in (-\infty,x]\})\le P(\{Y\in (-\infty,y]\})\)</span></p>
+<blockquote>
+<p>[!note]<br />
+<strong>Remark 4.12</strong></p>
+<ul>
+<li>The properties hold for the distribution function of <strong>any random variable</strong>, not restricted to discrete r.v.’s.</li>
+<li>Conversely, if <span class="arithmatex">\(F\)</span> is a function satisfying the three properties in <strong>Proposition 4.11</strong>, then there exists a random variable <span class="arithmatex">\(X\)</span> whose distribution is <span class="arithmatex">\(F\)</span>.</li>
+</ul>
+<p>[!note]<br />
+<strong>Theorem 4.13</strong></p>
+<p>A distribution function completely determines the distribution of a real-valued random variable.</p>
+</blockquote>
+<p>For a discrete r.v,the way that we read pmf from the distribution function is <br />
+$$<br />
+jump position\leftrightarrow possible values<br />
+\jump size\leftrightarrow mass function<br />
+$$<br />
+$$\p(0)=\frac{1}{8},p(1)=\frac{1}{2}-\frac{1}{8}=\frac{3}{8},<br />
+\p(2)=\frac{7}{8}-\frac{1}{2}-\frac{1}{8}=\frac{3}{8},p(3)=1-\frac{7}{8}=\frac{1}{8}<br />
+$$</p>
+<h3 id="identically-distributed-random-variables">Identically distributed random variables</h3>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.14 (Identically distributed random variables)</strong></p>
+<p>Two discrete real-valued random variables <span class="arithmatex">\(X, Y\)</span> that have exactly the same probability mass functions or the same distribution functions are said to be identically distributed.</p>
+</blockquote>
+<p><code>Remark</code></p>
+<p>Denote:<br />
+$$<br />
+X\overset{d}{=}Y<br />
+$$</p>
+<blockquote>
+<p>[!note]<br />
+<strong>Remark 4.15</strong></p>
+<p>Be careful that we say <span class="arithmatex">\(X, Y\)</span> are identically distributed, but it does <strong>NOT</strong> mean that <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span> are equal.</p>
+<p>For example, consider <strong>Example 4.3</strong>, recall that <span class="arithmatex">\(X\)</span> represents the number of heads observed, let <span class="arithmatex">\(Y\)</span> be the number of tails observed. <span class="arithmatex">\(X, Y\)</span> are identically distributed, but <span class="arithmatex">\(X \neq Y\)</span>.</p>
+</blockquote>
+<p><code>Remark</code></p>
+<p><span class="arithmatex">\(X+Y=3\)</span></p>
+<h2 id="expectations">Expectations</h2>
+<p><strong>Motivation:</strong></p>
+<p>You toss a fair die many times, say 100, 000 times. How do you compute the average (or <strong>mean</strong>) of the tosses?</p>
+<p>Assume the tossing result sequence is: <span class="arithmatex">\(1, 5, 4, 1, 2, 3, 6, 2, 5, 4, 2, . . .\)</span> ,</p>
+<div class="arithmatex">\[
+\begin{align}
+&amp;=\frac{1+1+...1}{100000}+\frac{2+2+...2}{100000}+...+\frac{6+6+...6}{100000}
+\\&amp;=i\frac{number\ of\ i\ is\ obtained}{100000}=\sum_{k=1}^6k\cdot frequency \ of\ k=probability
+\end{align}
+\]</div>
+<blockquote>
+<p>[!note]<br />
+<strong>Remark 4.16</strong></p>
+<ul>
+<li>The frequency is related to the classic definition of probability, that is, in the long run, for a fair die, frequencies converge to <span class="arithmatex">\(\frac{1}{6}\)</span>.</li>
+<li>The mean is an average of the values weighted by their respective individual frequencies.</li>
+</ul>
+</blockquote>
+<p><span class="arithmatex">\(\color{Red}{Give\ the\ rigorous\ definition.}\)</span></p>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.17 (Expected value)</strong></p>
+<p>Let <span class="arithmatex">\(X\)</span> be a discrete r.r.v. that takes its value in <span class="arithmatex">\(X(S)\)</span>. Let <span class="arithmatex">\(p\)</span> be the pmf. If <span class="arithmatex">\(\sum_{x\in X(S)}xp(x)\)</span> is absolutely convergent, that is, <span class="arithmatex">\(\sum_{x\in X(S)}|x|p(x)&lt;\infty\)</span>, then we say <span class="arithmatex">\(X\)</span> is integrable. Then the <strong>expected value</strong> (or <strong>mean</strong>) of <span class="arithmatex">\(X\)</span> exists, it is denoted by <span class="arithmatex">\(E[X]\)</span> and is defined as<br />
+$$<br />
+E[X]=\sum_{x\in X(S)}xp(x).<br />
+$$</p>
+<p>[!note]<br />
+<strong>Example 4.5</strong></p>
+<p>Let <span class="arithmatex">\(X\)</span> be a discrete rrv with the probability mass function:<br />
+$$<br />
+p(c)=\frac{c}{n^2},for n\in N,n\ge 1.<br />
+$$</p>
+<ol>
+<li>Determine the constant <span class="arithmatex">\(c\)</span>.</li>
+<li>What is the expected value of <span class="arithmatex">\(X\)</span>?</li>
+</ol>
+</blockquote>
+<p><code>Solution</code></p>
+<ol>
+<li>
+<p>$$<br />
+   c\ge0,c\sum_{n=1}^\infty \frac{1}{n^2}=1 \rightarrow c\cdot\frac{\pi^2}{6}=1(Basel Problem)<br />
+   \c=\frac{6}{\pi^2}<br />
+   $$</p>
+</li>
+<li>
+<p>For expected value <br />
+   $$<br />
+   \begin{align}<br />
+   E[X]&amp;=\sum_{x\in X(S)}xp(x)<br />
+   \&amp;=\sum_{n=1}^\infty np(n)<br />
+   \&amp;=\sum_{n=1}^\infty n\frac{6}{\pi^2}\frac{1}{n^2}<br />
+   \&amp;=\frac{6}{\pi^2}\sum_{n=1}^\infty \frac{1}{n}\rightarrow+\infty<br />
+   \end{align}<br />
+   $$<br />
+   the mean doesn't exist as a finite value.</p>
+</li>
+</ol>
+<blockquote>
+<p>[!note]<br />
+<strong>Example 4.6</strong></p>
+<p>Let <span class="arithmatex">\(X\)</span> be a discrete rrv with the probability mass function:<br />
+$$<br />
+p(n)=c(\frac{1}{4})^n,for n\in N,n\ge1<br />
+$$</p>
+<ol>
+<li>Determine the constant <span class="arithmatex">\(c\)</span>.</li>
+<li>What is the expected value of <span class="arithmatex">\(X\)</span>?</li>
+</ol>
+</blockquote>
+<h3 id="expected-value-of-a-function-of-random-variables">Expected value of a function of random variables</h3>
+<blockquote>
+<p>[!note]<br />
+<strong>Definition 4.18 (Expected value of a function of random variables)</strong></p>
+<p>Let <span class="arithmatex">\(X\)</span> be a discrete rrv that takes its value in <span class="arithmatex">\(X(S)\)</span>. Let <span class="arithmatex">\(p\)</span> be the pmf and let <span class="arithmatex">\(f : X(S) → R\)</span> be a real-valued function. If <span class="arithmatex">\(f(X)\)</span> is integrable, then the expected value of <span class="arithmatex">\(f(X)\)</span> exists, and is denoted by <span class="arithmatex">\(E[f(X)]\)</span> and defined as follows:<br />
+$$<br />
+E[f(X)] = \sum_{<br />
+x∈X(S)}<br />
+f(x)p(x).<br />
+$$<br />
+In particular, when <span class="arithmatex">\(f(x) = x^n\)</span> for <span class="arithmatex">\(n ∈ N, n ≥ 1, E[X^n]\)</span> is called as the <span class="arithmatex">\(n^{th}\)</span> moment of <span class="arithmatex">\(X\)</span>.</p>
+<p>[!note]<br />
+<strong>Proposition 4.19</strong></p>
+<p><strong>Let X be a discrete rrv with pmf p.</strong><br />
++ for all <span class="arithmatex">\(c ∈ \mathbb{R}, \mathbb{E}[c] = c\)</span>.<br />
++ For <span class="arithmatex">\(a, b ∈ \mathbb{R}\)</span>, if <span class="arithmatex">\(X\)</span> is integrable, then<br />
+$$<br />
+E[aX + b] = aE[X] + b.$$<br />
++ If <span class="arithmatex">\(c ∈ \mathbb{R}\)</span> and <span class="arithmatex">\(f : X(S) → \mathbb{R}\)</span> is an integrable function, then<br />
+$$<br />
+\mathbb{E}[cf(X)] = c\mathbb{E}[f(X)].$$<br />
++ If f : X(S) → R is nonnegative and integrable, then<br />
+<span class="arithmatex">\(<span class="arithmatex">\(\mathbb{E}[f(X)] ≥ 0.\)</span>\)</span><br />
++ If f : <span class="arithmatex">\(X(S) → \mathbb{R}\)</span> and <span class="arithmatex">\(g : X(S) → \mathbb{R}\)</span> are two integrable functions, and<br />
+<span class="arithmatex">\(f ≤ g\)</span>, then we have<br />
+$$ \mathbb{E}[f(X)] ≤ \mathbb{E}[g(X)].$$<br />
++ If <span class="arithmatex">\(f : X(S) → \mathbb{R}\)</span> and <span class="arithmatex">\(g : X(S) → \mathbb{R}\)</span> are two integrable functions, and<br />
+<span class="arithmatex">\(a, b ∈ \mathbb{R}\)</span>, then we have<br />
+<span class="arithmatex">\(<span class="arithmatex">\(\mathbb{E}[af(X) + bg(X)] = a\mathbb{E}[f(X)] + b\mathbb{E}[g(X)].\)</span>\)</span><br />
+</p>
+</blockquote>
+<h2 id="variance">Variance</h2>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Motivation example</strong><br />
+Consider two discrete random variables X and Y with probability mass functions<br />
+pX and pY , respectively. They are expressed in the tabular forms</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p_{X}(X)\)</span></th>
+<th style="text-align: center;">0.4</th>
+<th style="text-align: center;">0.1</th>
+<th style="text-align: center;">0.3</th>
+<th style="text-align: center;">0.2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">x</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">8</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(p_{Y}(X)\)</span></td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">0.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">Show that the mean of X and the mean of Y are the same. We can draw histograms corresponding to the two pmfs, and observe the variability of the two distributions.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="variance-standard-deviation">Variance, Standard deviation</h3>
+<blockquote>
+<p>[!NOTE] <br />
+<strong>Definition 4.20 (Variance, Standard Deviation)</strong><br />
+Let <span class="arithmatex">\(X\)</span> be a real-valued random variable. When <span class="arithmatex">\(\mathbb{E}[X^2]\)</span> exists, the variance of <span class="arithmatex">\(X\)</span> is defined as follows:<br />
+$$<br />
+Var(X) = \mathbb{E}[(X − \mathbb{E}[X])^2].<br />
+$$<br />
+<span class="arithmatex">\(Var(X)\)</span> is sometimes denoted by <span class="arithmatex">\(\sigma_{X}^2\)</span>. The positive square root of the variance is called the standard deviation of <span class="arithmatex">\(X\)</span>, and is denoted by <span class="arithmatex">\(\sigma_{X}\)</span> .</p>
+</blockquote>
+<h3 id="properties-of-variance">Properties of variance</h3>
+<ul>
+<li><span class="arithmatex">\(Var(X)\ge 0\)</span></li>
+<li>If <span class="arithmatex">\(a,b \in \mathbb{R}\)</span> are two constants, then <span class="arithmatex">\(Var(aX+b)=a^2Var(X)\)</span>.</li>
+</ul>
+<p><code>Proof</code></p>
+<div class="arithmatex">\[
+\begin{align}
+\mathbb{E}[aX+b]&amp;=a\mathbb{E}[X]+b\\ \\
+Var[aX+b]&amp;=E[(Y-\mathbb{E}[Y]^2)]\\ \\
+&amp;=\mathbb{E}[(aX+b-(a\mathbb{E}[X]+b))^2]\\ \\
+&amp;=a^2\mathbb{E}[(x-\mathbb{E}[x]^2)]\\ \\
+&amp;=a^2Var(X)
+\end{align}
+\]</div>
+<h3 id="alternative-formula">Alternative formula</h3>
+<blockquote>
+<p>[!NOTE] Title<br />
+<strong>Theorem 4.21 ([[König-Huygens formula]])</strong><br />
+Let <span class="arithmatex">\(X\)</span> be a real-valued random variable. When <span class="arithmatex">\(E[X^2]\)</span> exists, the variance of <span class="arithmatex">\(X\)</span><br />
+is also given by:<br />
+$$<br />
+Var(X) = E[X^2] − (E[X])^2.<br />
+$$</p>
+</blockquote>
+<p>We can use the alternative formula to compute the variances in the previous example.</p>
+<h2 id="common-discrete-distributions">Common discrete distributions</h2>
+<h3 id="discrete-uniform-distribution">Discrete uniform distribution</h3>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Example 4.8</strong><br />
+We toss a fair, six-sided die, what is the probability that the die lands on a<br />
+specific side?</p>
+</blockquote>
+<p>We’ve discussed this before in probability with uniform distribution. Now using<br />
+probability mass function, we have<br />
+$$<br />
+p(i) = \dfrac{1}{6}, i = 1, 2 . . . , 6.<br />
+$$</p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 4.22 (Discrete uniform distribution)</strong><br />
+Let <span class="arithmatex">\((S, A, \mathbb{P})\)</span> be a probability space, and let <span class="arithmatex">\(X\)</span> be a random variable that can<br />
+take <span class="arithmatex">\(n ∈ \mathbb{N}, n ≥ 1\)</span> values on <span class="arithmatex">\(X(S) = \{x1, x2, . . . , xn\}\)</span>. <span class="arithmatex">\(X\)</span> is said to have a<br />
+discrete uniform distribution Un if its probability mass function is given by<br />
+$$<br />
+p(x_i) = P(X = x_{i}) =\dfrac {1}{n}<br />
+, for  i = 1, . . . , n.<br />
+$$<br />
+</p>
+</blockquote>
+<h3 id="validity-mean-and-variance">Validity, mean, and variance</h3>
+<p>Validity. We can see easily that p is a valid pmf, since <span class="arithmatex">\(\dfrac{1}{n} ≥ 0\)</span> and<br />
+$$<br />
+\sum_{i=1}^np(x_{i})=\sum_{i=1}^n\dfrac{1}{n}=1 <br />
+$$</p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 4.23 (Mean and variance for a discrete uniform distribution on <span class="arithmatex">\(\{1, . . . , n\}\)</span>)</strong><br />
+If <span class="arithmatex">\(X\)</span> follows a discrete uniform distribution <span class="arithmatex">\(U_n\)</span> on <span class="arithmatex">\(X(S) = {1, . . . , n}\)</span>, then <br />
++ the expected value is <span class="arithmatex">\(\mathbb{E}[X] = \dfrac{n+1}{2};\)</span><br />
++ the variance is <span class="arithmatex">\(Var(X) =\dfrac{n^2-1}{12}\)</span> .</p>
+</blockquote>
+<p><code>Proof</code></p>
+<ol>
+<li>
+<div class="arithmatex">\[
+\begin{align}
+\mathbb{E}[X]&amp;=\sum_{i=1}^nip(i)\end{align}=\sum_{i=1}^n
+i\dfrac{1}{n}=\dfrac{n+1}{2}\]</div>
+</li>
+<li>
+<div class="arithmatex">\[
+\begin{align}
+\mathbb{E}[X^2]=\sum_{i=1}^ni^2\dfrac{1}{n}=\dfrac{(n+1)(2n+1)}{6}\\ \\
+Var[X]=\mathbb{E}[X^2]-(\mathbb{E}[X])^2=\dfrac{n^2-1}{12}
+\end{align}
+\]</div>
+</li>
+</ol>
+<h3 id="bernoulli-and-binomial-random-variables">Bernoulli and Binomial random variables</h3>
+<h4 id="definition">Definition</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 4.24 (Bernoulli and Binomial random variables)</strong><br />
+Let <span class="arithmatex">\((S, A, \mathbb{P})\)</span> be a probability space. Let <span class="arithmatex">\(E ∈ A\)</span> be an event labeled as success, that occurs with probability <span class="arithmatex">\(p\)</span>.<br />
++ If the random variable X is the indicator function of event <span class="arithmatex">\(E\)</span>, that is, <span class="arithmatex">\(X = 1\)</span> if E occurs and <span class="arithmatex">\(X = 0\)</span> if <span class="arithmatex">\(E\)</span> does not occur, then <span class="arithmatex">\(X\)</span> is said to be a Bernoulli random variable, and its probability mass function is given by<br />
+$$<br />
+p(0) = \mathbb{P}(X = 0) = 1 − p  and  p(1) = \mathbb{P}(X = 1) = p<br />
+$$<br />
++ If <span class="arithmatex">\(n ∈ \mathbb{N}, n ≥ 1\)</span> independent trials are performed, the random variable <span class="arithmatex">\(Y\)</span> represents the number of successes among the <span class="arithmatex">\(n\)</span> trials. Then, <span class="arithmatex">\(Y\)</span> is said to be a binomial random variable with parameters <span class="arithmatex">\((n, p)\)</span>. In particular, a Bernoulli random variable is just a binomial random variable with parameters <span class="arithmatex">\((1, p)\)</span>. The pmf of a binomial random variable with parameters <span class="arithmatex">\((n, p)\)</span> is<br />
+$$<br />
+p(i) =\binom{n}{i}p^i(1 − p)^{n−i}, i = 0, 1, . . . , n.<br />
+$$</p>
+</blockquote>
+<h4 id="validty">Validty</h4>
+<p>For <span class="arithmatex">\(i=0,1...n\)</span><br />
+$$<br />
+\sum_{i=0}^np(i)=\sum_{{i=0}}^n\binom{n}{i}p^i(1-p)^{n-i}=1<br />
+$$</p>
+<h4 id="mean-and-variance">Mean and variance</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 4.25 (Mean and variance for a binomial random variable)</strong><br />
+If <span class="arithmatex">\(X\)</span> is <span class="arithmatex">\(a\)</span> binomial random variable with parameters <span class="arithmatex">\((n, p)\)</span>, then the expected value is <span class="arithmatex">\(\mathbb{E}[X] = np\)</span>. the variance is <span class="arithmatex">\(Var(X) = np(1 − p).\)</span></p>
+</blockquote>
+<p><code>Proof</code></p>
+<div class="arithmatex">\[
+\mathbb{E}(X)=\sum_{i=0}^n
+ip(i)=\sum_{i=1}^nn\binom{n-1}{i-1}p^i(1-p)^{n-i}
+$$
+Let $k=i-1$
+$$
+\begin{align}
+=np\sum_{k=0}^{n-1}\binom{n-1}{k}&amp;p^k(1-p)^{n-1-k}=np\\ \\
+\binom{n-1}{k}p^k(1-p)^{n-1-k} \ &amp;is \ pmf\ for\ Binomial(n-1,p)
+\end{align}
+\]</div>
+<div class="arithmatex">\[
+\begin{align}
+Var(X)&amp;=\mathbb{E}[X^2]-\mathbb{E}[X]+\mathbb{E}[X-](\mathbb{E}[X])^2\\ 
+&amp;=\mathbb{E}[X(X-1)]+\mathbb{E}[X]-(\mathbb{E}(X))^2 \\
+\mathbb{E}[X(X-1)]&amp;=\sum_{i=1}^n i(i-1)\binom{n}{i}p^i(1-p)^{n-i} \\
+&amp;=\sum_{i=2}^nn(i-1)\binom{n-1}{i-1}p^i(1-p)^{n-i} \\
+&amp;=n(n-1)\sum_{i=2}^n\binom{n-2}{i-2}p^i(1-p)^{n-i}
+\end{align}
+$$
+Let $k=i-2$
+$$
+\begin{align}
+&amp;=n(n-1)p^2\sum_{k=0}^{n-2}\binom{n-2}{k}p^k(1-p)^{n-2-k}\\ \\
+&amp;=n(n-1)p^2
+\end{align}
+$$
+$$
+Var(X)=n(n-1)p^2
++np-n^2p^2=np(1-p)\]</div>
+<blockquote>
+<p>[!question]<br />
+** How does the probability mass function change? At what value does p(i) reach the largest?**</p>
+<p>[!NOTE]<br />
+<strong>Proposition 4.26</strong><br />
+If <span class="arithmatex">\(X\)</span> is a binomial random variable with parameters <span class="arithmatex">\((n, p)\)</span>, where <span class="arithmatex">\(0 &lt; p &lt; 1\)</span>, then as <span class="arithmatex">\(i\)</span> goes from <span class="arithmatex">\(0 to n\)</span>, <span class="arithmatex">\(p(i) = \mathbb{P}(X = i)\)</span> first increases monotonically and then decrease monotonically, reaching the largest value when <span class="arithmatex">\(i\)</span> is the largest integer less than or equal to <span class="arithmatex">\((n + 1)p\)</span>, or when <span class="arithmatex">\(i = \lfloor  (n + 1)p\rfloor\)</span>.</p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>We consider<br />
+$$<br />
+\begin{align}<br />
+\frac{P(i)}{P(i-1)}&amp;=\frac{\binom{n}{i}p^i(1-p)^{n-i}}{\binom{n}{i-1}p^{i-1}(1-p)^{n-i+1}} \<br />
+&amp;=\frac{(n-i+1)p}{i(1-p)} \<br />
+&amp;&gt;1<br />
+\end{align}<br />
+$$<br />
+Thus, when <span class="arithmatex">\(i&lt;(n+1)p, \dfrac{p(i)}{p(i+1)}&gt;1\)</span>,<span class="arithmatex">\(i\)</span> only takes integer values so when <span class="arithmatex">\(i\le \lfloor (n+1)p \rfloor\)</span> <span class="arithmatex">\(p(i)\)</span> is increasing <span class="arithmatex">\(p(i)\)</span> takes maximum value at <span class="arithmatex">\(\lfloor (n+1)p \rfloor\)</span></p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Example 4.10</strong><br />
+A communication system consists of <span class="arithmatex">\(n\)</span> components, each of which will, independently, function with probability <span class="arithmatex">\(p\)</span>. The total system will be able to operate<br />
+effectively if at least one-half of its components function.<br />
+(a) For what values of <span class="arithmatex">\(p\)</span> is a 5-component system more likely to operate effectively than a 3-component system?<br />
+(b) In general, when is a <span class="arithmatex">\((2k + 1)\)</span>-component system better than a  <span class="arithmatex">\((2k − 1)\)</span>-component system?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>The number of functioning components follows binomial distribution <span class="arithmatex">\((n,p)\)</span></p>
+<p><strong>(a)</strong><br />
+We want <span class="arithmatex">\(\mathbb{P}\)</span>(5-components system operates)&gt;<span class="arithmatex">\(\mathbb{P}\)</span>(3-components system operates)<br />
+equally say we want <span class="arithmatex">\(\mathbb{P}\)</span>(at least 3 out of 5 function)&gt;<span class="arithmatex">\(\mathbb{P}\)</span>(at least 2 out of 3 function)<br />
+$$<br />
+\binom{5}{3}p^{3}(1-p)^{2}+\binom{5}{4}p^{4}(1-p)+p^{5}&gt;\binom{3}{2}p^{2}(1-p)+p^{3}<br />
+$$<br />
+After simplification:<br />
+$$<br />
+3(1-p)^{2}(2p-1)&gt;0<br />
+$$<br />
+the inequality holds only when <span class="arithmatex">\(\frac{1}{2}&lt;p&lt;1.\)</span><br />
+<strong>(b)</strong><br />
+In general,we'll prove that a <span class="arithmatex">\((2k+1)\)</span>-component system is more likely to operate effectively than a <span class="arithmatex">\((2k-1)\)</span>-components system if <span class="arithmatex">\(\frac{1}{2}&lt;p&lt;1\)</span></p>
+<p>To see that, we consider a <span class="arithmatex">\((2k+1)\)</span> system,among the first <span class="arithmatex">\(2k-1\)</span> components. Let <span class="arithmatex">\(X\)</span> denote the number of function components in <span class="arithmatex">\(2k-1\)</span> components.<br />
+![[数学/分析学/Probability Theory (Elementary and Advanced)/pictures/eg4-10.png]]</p>
+<p><span class="arithmatex">\(P(2k+1)\)</span> system effective = <span class="arithmatex">\(P(2k+1|X\ge k+1)P(X\ge k+1)\)</span>+<span class="arithmatex">\(P(2k+1|X= k)P(X= k)\)</span>+<span class="arithmatex">\(P(2k+1|X= k-1)P(X= k-1)+P(2k+1|X\le k-2)P(X= k-2)\)</span> <br />
+And we know <span class="arithmatex">\(P(2k+1|X\ge k+1)=1\)</span>, <span class="arithmatex">\(P(2k+1|X\le k-2)=0\)</span><br />
+$$<br />
+\begin{align}<br />
+&amp;P(2k+1 system effective)\ \<br />
+&amp;=P(X\ge k+1)+(1-(1-p)^{2})\binom{2k-1}{k}p^{k}(1-p)^{k-1}+p^{2}\binom{2k-1}{k-1}p^{k-1}(1-p)^{k}\  \<br />
+&amp;=P(2k-1 system effective)-(1-p)^{2}\binom{2k-1}{k}p^{k}(1-p)^{k-1}+p^{2}\binom{2k-1}{k-1}p^{k-1}(1-p)^{k}<br />
+\end{align}<br />
+$$<br />
+<span class="arithmatex">\((2k+1)\)</span>-system is more likely to operate effective if <span class="arithmatex">\(\binom{2k-1}{k-1}p^{k+1}(1-p)^{k}-\binom{2k-1}{k}p^{k}(1-p)^{k+1}&gt;0\)</span><br />
+We can get the conclusion is <span class="arithmatex">\(\frac{1}{2} &lt;p&lt; 1\)</span></p>
+<h3 id="geometric-random-variable">Geometric random variable</h3>
+<h4 id="definition_1">Definition</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Example 4.11</strong><br />
+I draw a card from a standard deck of 52 cards. If the card I draw is not an<br />
+ace, I put it back in the deck and shuffle the cards then draw a new card.<br />
+Repeat the process until I get an ace.</p>
+<p>[!question]<br />
+1 What is the probability that I draw an ace for the first time at the 4th trial?<br />
+2 What is the probability that I have not drawn an ace yet after 6 trials?<br />
+3 On average, how many trials do I need to draw an ace?</p>
+<p>[!NOTE]<br />
+<strong>Definition 4.27 (Geometric random variable)</strong><br />
+Let <span class="arithmatex">\((S, A, \mathbb{P})\)</span> be a probability space. Let <span class="arithmatex">\(E ∈ A\)</span> be an event labeled as<br />
+success, that occurs with probability <span class="arithmatex">\(p\)</span>. Independent trials are performed, but<br />
+the number of trials is NOT preset. Let <span class="arithmatex">\(X\)</span> respresent the number of trials until<br />
+the first success, then X is said to be a geometric random variable with<br />
+parameter <span class="arithmatex">\(p\)</span>. The pmf is given by<br />
+$$<br />
+p(n) = \mathbb{P}(X = n) = (1 − p)^{n−1}p, n = 1, 2, . . . .<br />
+$$</p>
+</blockquote>
+<h4 id="validty_1">Validty</h4>
+<div class="arithmatex">\[
+\sum_{n=1}^\infty p(n)=p\sum_{n=1}^\infty(1-p)^{n-1}=p \frac{1}{1-(1-p)}=1
+\]</div>
+<h4 id="dstribution-mean-and-variance">Dstribution, mean and variance</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 4.28 (cdf, mean and variance of a geometric random variable)</strong><br />
+If X is a geometric random variable with parameter p, then<br />
++ the distribtion function is<br />
+$$<br />
+F(k)=\mathbb{P}(X\le k)=1-(1-p)^{k},<br />
+$$<br />
++ the expected value is<br />
+$$<br />
+\mathbb{E}[X]=\frac{1}{p}<br />
+$$<br />
++ the variance is<br />
+$$<br />
+Var(X)= \frac{1-p}{p^{2}}<br />
+$$</p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>$$<br />
+\begin{align}<br />
+F(k) &amp; =\mathbb{P}(X\le k) \<br />
+ &amp; =1-\mathbb{P}(X&gt;k) \ <br />
+ &amp; =1-\mathbb{P}(X\ge k+1) \<br />
+ &amp; =1-\sum_{n=k+1}^{\infty}(1-p)^{n-1}p \<br />
+ &amp; =1-(1-p)^{k}<br />
+\end{align}<br />
+$$<br />
+<span class="arithmatex">\(X&gt;k\)</span> means there is no success occuring in the first <span class="arithmatex">\(k\)</span> trials. <span class="arithmatex">\(\mathbb{P}(X&gt;k)=(1-p)^{k}\)</span></p>
+<p>$$<br />
+\begin{align}<br />
+\mathbb{E}[X]&amp;=\sum_{n=1}^\infty n(1-p)^{n-1}p\<br />
+\mathbb{E}[X]&amp;=\sum_{k=1}^\infty k(1-p)^{k-1}p=\sum_{k=1}^\infty (k-1)(1-p)^{k-1}p+\sum_{k=1}^\infty(1-p)^{k-1}p=(1-p)\mathbb{E}[X]+1 \<br />
+ \mathbb{E}[X]&amp;= \frac{1} {p} <br />
+\end{align}</p>
+<p>$$</p>
+<blockquote>
+<p>[!important] Title<br />
+<strong>Remark</strong><br />
+We can also use a non-native way (<em>Theoritical exercise 4.5</em>)<br />
+If <span class="arithmatex">\(N\)</span> is a nonnegative integer-valued random variable  <span class="arithmatex">\(\mathbb{E}[N]=\sum\limits_{k=1}^\infty \mathbb{P}(N\ge k)\)</span> and <span class="arithmatex">\(\mathbb{E}[N(N+1)]=\sum_{k=1}^\infty {2}k\mathbb{P}(N\ge k)\)</span><br />
+use this to verify the <span class="arithmatex">\(\mathbb{E}[X]\)</span>and <span class="arithmatex">\(Var[X]\)</span><br />
+$$<br />
+\mathbb{E}[X]=\sum_{k=1}^\infty \mathbb{P}(X\ge k)=\sum_{k=1}^\infty(1-p)^{k-1}= \frac{1}{p}<br />
+$$<br />
+$$\mathbb{E}[X(X+1)]=\sum_{k=1}^\infty 2k\mathbb{P}(X&gt;k-1)= \frac{2}{p}\sum_{k=1}^{\infty} k(1-p)^{k-1}p=\frac{2}{p^{2}}<br />
+$$<br />
+$$<br />
+Var[X]=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=\mathbb{E}[X(X+1)]-\frac{1}{p}-\frac{1}{p^{2}}=\frac{1-p}{p^{2}}<br />
+$$</p>
+</blockquote>
+<h3 id="negative-binomial-random-variable">Negative binomial random variable</h3>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Example 4.12</strong><br />
+You toss a fair die many times, stop tossing when 6 has occurred 4 times.<br />
+1 Let X represent the number of tossing times. What is the sample space?<br />
+2 What is the probability that we stop at the 7th toss?<br />
+3 What is the probability of the event that 6 has occurred 4 times before other faces (1, 2, 3, 4, 5) show up for 5 times?<br />
+4 On average, how many tosses you need to have 6 occurred 4 times?</p>
+</blockquote>
+<p><code>Solution</code></p>
+<p>(1) <span class="arithmatex">\(X\ge 4\)</span><br />
+(2) <span class="arithmatex">\(7^{th}\)</span> toss is the <span class="arithmatex">\(4^{th}\)</span> occurance of 6 means among the first 6 trials, there're 3 occurances of 6<br />
+$$<br />
+\binom{6}{3} \left( \frac{5}{6} \right)^{3} \left( \frac{1}{6} \right)^{4}<br />
+$$<br />
+(3)Before the <span class="arithmatex">\(4^{th}\)</span> occurance of 6.We allow other faces show at most 4 times <br />
+$$<br />
+\left( \frac{1}{6} \right)^{4}+\binom{4}{3} \left( \frac{5}{6} \right) \left( \frac{1}{6} \right)^{4}+\dots=\sum_{n=4}^{8}\binom{n-1}{3} \left( \frac{1}{6} \right)^{4} \left( \frac{5}{6} \right)^{n-4} <br />
+$$</p>
+<h4 id="definition_2">Definition</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 4.29</strong><br />
+Let <span class="arithmatex">\((S, A, \mathbb{P})\)</span> be a probability space. Let <span class="arithmatex">\(E ∈ A\)</span> be an event labeled as success, that occurs with probability <span class="arithmatex">\(p\)</span>. Independent trials are performed until a total of <span class="arithmatex">\(r\)</span> successes is accumulated. Let <span class="arithmatex">\(X\)</span> be the number of trials required, then <span class="arithmatex">\(X\)</span> is said to be a negative binomial random variable with parameter <span class="arithmatex">\((r, p)\)</span>.<br />
+In particular, <em>a geometric random variable is just a negative binomial r.v. with</em><br />
+<em>parameter (1, p).</em><br />
+The pmf of a negative binomial r.v. is given by<br />
+$$<br />
+\mathbb{P}(X=n)=\binom{n-1}{r-1}p^{r}(1-p)^{n-r},n=r,r+1<br />
+$$</p>
+<p>[!NOTE]<br />
+<strong>Remark 4.30</strong><br />
++ The pmf is obtained by thinking that, the <span class="arithmatex">\(r^{th}\)</span> success at the <span class="arithmatex">\(n^{th}\)</span> trial<br />
+means that: the <span class="arithmatex">\(n^{th}\)</span> trial is a success and there are exactly <span class="arithmatex">\(r − 1\)</span> successes in the first n − 1 trials.<br />
++ Note that the sample space is that <span class="arithmatex">\(\{r, r + 1, . . . \}\)</span>. Some authors define the negative random variable <span class="arithmatex">\(Y\)</span> as the number of failures observed before <span class="arithmatex">\(r\)</span> succeses have occurred.<br />
++ The name “negative binomial" comes from the coefficients.</p>
+</blockquote>
+<h4 id="validty_2">Validty</h4>
+<p>$$<br />
+\begin{align}<br />
+ &amp;   \sum_{n=r}^{\infty}\binom{n-1}{r-1}p^{r}(1-r)^{n-r} = \sum_{k=0}^{\infty}\binom{r+k-1}{r-1}p^{r}(1-p)^{k}<br />
+\end{align}<br />
+$$<br />
+Let  <span class="arithmatex">\(n=r+k\)</span><br />
+$$<br />
+\binom{r+k-1}{r-1}= \frac{(r+k-1)!}{(r-1)!k!}= \frac{(-r-k+1)\dots(-r)}{k!}(-1)^{k}=(-1)^{k}\binom{-r}{k}<br />
+$$<br />
+So the equlity is <br />
+$$<br />
+\begin{align}<br />
+ &amp; =p^{r }\sum_{k=0}^{\infty} \binom{-r}{k}[-(1-p)]^k \<br />
+ &amp; =p^{r}(1-(1-p))^{-r}=1<br />
+\end{align}<br />
+$$<br />
+About <span class="arithmatex">\((1-(1-p))^{-r}\)</span>  <em>Binomial theorem or Talor expansion of <span class="arithmatex">\((1+x)^{-r}\)</span></em></p>
+<h4 id="mean-and-variance_1">Mean and variance</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 4.31 (mean and variance of a negative binomial random variable)</strong><br />
+If X is a negative binomial random variable with parameter (r, p), then<br />
++ the expected value is<br />
+<span class="arithmatex">\(<span class="arithmatex">\(\mathbb{E}[X] = \frac{r}{p}.\)</span>\)</span><br />
++ the variance is<br />
+$$<br />
+Var(X)= \frac{r(1-p)}{p^{2}}<br />
+$$</p>
+</blockquote>
+<p><code>Proof</code></p>
+<div class="arithmatex">\[
+\begin{align}
+\mathbb{E}[X^{k}] &amp; =\sum\limits_{n=r}^{\infty}n^{k}\binom{n-1}{r-1}p^{r}(1-p)^{n-r}  \\
+ &amp; =r\sum\limits_{n=r}^{\infty}n^{k-1}\binom{n}{r}p^{r}(1-p)^{n-r} 
+\end{align}
+$$
+Let $m=n+1$
+$$
+\mathbb{E}[X^{k}]= \frac{r}{p}\sum\limits_{m=r+1}^{\infty}(m-1)^{k-1}\binom{m-1}{r+1-1}p^{r+1}(1-p)^{m-1-r}= \frac{r}{p}\mathbb{E} [(Y-1)^{k-1}]
+$$
+when $k=1,2$ $\mathbb{E}[X]= \frac{r}{p},\mathbb{E}[X^{2}]= \frac{r}{p}\left( \frac{r+1}{p}-1 \right)$
+$$
+Var[X]=\frac{r(1-p)}{p^{2}}
+\]</div>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Example 4.13:[[ The Banach matchbox problem]]</strong><br />
+Suppose a mathematician carries two matchboxes at all times: one in his left  pocket and one in his right. Each time he needs a match, he is equally likely to take it from either pocket. Consider the moment when he first discovers that one of his matchboxes is empty. If it is assumed that both matchboxes originally contained <span class="arithmatex">\(N\)</span> matches (but the mathematician doesn’t know this fact), what is the probability that there are exactly <span class="arithmatex">\(k\)</span> matches in the other box?</p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>Hint: The mathematican should take one more time to find the pocket is empty</p>
+<p>So we just use the combinatorial analysis(left and right are the same)<br />
+$$<br />
+\mathbb{P}=2\mathbb{P}(2N+1-k)=2\binom{2N-k}{N} \left( \frac{1}{2} \right)^{2N-k}<br />
+$$<br />
+Because we know that the last is for the empty matchbox and we should choose N matches from the remaining <span class="arithmatex">\(2N-k+1-1\)</span> .</p>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Generalization</strong>: Change the <span class="arithmatex">\(N\)</span> to <span class="arithmatex">\(N_1,N_2\)</span> and change the probability the man choose the left pocket or right.</p>
+</blockquote>
+<h3 id="hypergeometric-random-variable">Hypergeometric random variable</h3>
+<h4 id="definition_3">Definition</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Definition 4.32 (Hypergeometric random variable)</strong><br />
+Let <span class="arithmatex">\((S, A, \mathbb{P})\)</span> be a probability space. Let <span class="arithmatex">\(E ∈ A\)</span> be an event labeled as success. If the experiment consists in drawing a sample of n items, <strong>without replacement</strong>, from a finite population of size N that contains exactly m successes, then the random variable X defined as the number of successes among the n trials, is said to be a <strong>hypergeometric random variable with parameters</strong> (N, n, m).<br />
+The probability mass function is given by:<br />
+$$<br />
+p(i)=\mathbb{P}(X=i)= \frac{\binom{m}{i}\binom{N-m}{n-i}}{\binom{N}{m}},i\in 0 to m<br />
+$$</p>
+<p>[!tip]<br />
+<strong>Remark:</strong> <br />
+my view: means no order and we get the sample at once so we should consider the question in two parts(success and failure)<br />
+there is a hidden condition for i, that is, <span class="arithmatex">\(n-(N-m)\le i \le min\{m,n\}\)</span> </p>
+<p>[!NOTE]<br />
+<strong>An approximate:</strong><br />
+When N,m,N-m are large in relation to n,a hypergeometric random variable with parameters <span class="arithmatex">\((N, n, m)\)</span> can be approximated by a binomial random variable with parameters <span class="arithmatex">\(\left( n, \frac{m}{N} \right)\)</span>.</p>
+</blockquote>
+<p><code>We can have a proof</code></p>
+<div class="arithmatex">\[
+\begin{align}
+\mathbb{P}(X=i)=\frac{\binom{m}{i}\binom{N-m}{n-i}}{\binom{N}{n}} &amp; = \frac{m!}{i!(m-i)!} \frac{(N-m)!}{(N-m-n+i)!(n-i)!} \frac{n!(N-n)!} {N!} \\
+ &amp; =\binom{n}{i} \frac{m\times\dots(m-i+1)}{N\times (N-i+1)} \frac{(N-m)\dots(N-m-n+i+1)}{(N-i)\dots(N-n+1)} \\
+ &amp; \approx \binom{n}{i} \left( \frac{m}{N} \right)^i \left( \frac{N-m}{N} \right) ^{n-i}
+\end{align}
+\]</div>
+<h4 id="mean-and-variance_2">Mean and variance</h4>
+<blockquote>
+<p>[!NOTE]<br />
+<strong>Proposition 4.35 (mean and variance)</strong><br />
+If X is a hypergeometric random variable with parameters (N, n, m), then<br />
++ the expected value is <span class="arithmatex">\(\mathbb{E}[X] = n \frac{m}{n}\)</span> <br />
++ the variance is <br />
+$$<br />
+Var(X)=\frac{N-n}{N-1}\cdot n\cdot \frac{m}{N}\left( 1- \frac{m}{N} \right)<br />
+$$</p>
+</blockquote>
+<p><code>Proof</code></p>
+<p>We consider<br />
+$$<br />
+\begin{align}<br />
+\mathbb{E}[X^{k}] &amp; =\sum\limits_{i=0}^{n} i^{k} \frac{\binom{m}{i}\binom{N-m}{n-i}}{\binom{N}{n}} \<br />
+ &amp; =\sum\limits_{i=0}^{n}  i^{k-1} \frac{i \binom{m}{i}\binom{N-m}{n-i}}{ \frac{1}{n}n \binom{N}{n}} \<br />
+ &amp; =\frac{mn}{N}\sum\limits_{j=0}^{n-1} (j+1)^{k} \frac{\binom{m-1}{j}\binom{N-m}{n-j-1}}{\binom{N-1}{n-1}} \<br />
+ &amp; =\frac{mn}{N}\mathbb{E}[(z+1)^{k-1}]<br />
+\end{align}<br />
+$$<br />
+Naturlly,let k=1 and we will get the <span class="arithmatex">\(\mathbb{E}[X]= \frac{mn}{N}\)</span><br />
+And <span class="arithmatex">\(\mathbb{E}[X^{2}]= \frac{mn}{N} \frac{(m-1)(n-1)}{(N-1)}\)</span> ,that we get the variance <span class="arithmatex">\(Var(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}\)</span></p>
+<blockquote>
+<p>[!tip]<br />
+<strong>Remark:</strong><br />
+We may have one question, why this following identity holds?<br />
+<span class="arithmatex">\(\sum\limits_{j=0}^{n-1} (j+1)^{k} \frac{\binom{m-1}{j}\binom{N-m}{n-j-1}}{\binom{N-1}{n-1}}=\mathbb{E}[(z+1)^{k-1}]\)</span><br />
+Actually, let <span class="arithmatex">\(z=j+1\)</span> and we will get <span class="arithmatex">\(\sum\limits_{j=0}^{n-1} (j+1)^{k} \frac{\binom{m-1}{j}\binom{N-m}{n-j-1}}{\binom{N-1}{n-1}}=\sum\limits_{z=1}^{n} (z)^{k-1} \frac{\binom{m-1}{z-1}\binom{N-m}{n-z}}{\binom{N-1}{n-1}}=\sum\limits_{z=0}^{n} (z)^{k-1} \frac{\binom{m-1}{z-1}\binom{N-m}{n-z}}{\binom{N-1}{n-1}}\)</span> So we should realize <span class="arithmatex">\(z\)</span>~<span class="arithmatex">\((N-1,n-1,m-1)\)</span> <br />
+We must know <span class="arithmatex">\(\mathbb{E}[z+1]\neq \mathbb{E}[X+1]\)</span> ,they are different random variables and here just use <span class="arithmatex">\(k=1\)</span> to get the mean value.</p>
+<p>[!NOTE]<br />
+<strong>Remark 4.36</strong><br />
+We can observe that when n is relatively small compared to m, N, the mean and variance for a hypergeometric random variable are approximately <span class="arithmatex">\(np, np(1 − p),\)</span> where <span class="arithmatex">\(p = \frac{m}{N}\)</span>.</p>
+</blockquote>
+<h2 id="expected-value-of-sums-of-random-variables">Expected value of sums of random variables</h2>
+<h2 id="poisson-process">Poisson process</h2>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        本页面内容是否对您有帮助?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="有帮助" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="没帮助" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              感谢反馈！
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              感谢反馈！
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script>
+      
+        <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+        <script src="../../../../javascripts/config.js"></script>
+      
+        <script src="../../../../javascripts/main.js"></script>
+      
+    
+  </body>
+</html>
