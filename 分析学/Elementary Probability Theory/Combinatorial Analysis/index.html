@@ -1104,7 +1104,7 @@ Consider a set of <span class="arithmatex">\(n\)</span> antennas of which m are 
 <span class="arithmatex">\(\binom{n+1}{k+1}=\binom{n}{k}+\binom{n}{k+1}\)</span> ,for any <span class="arithmatex">\(n, k\)</span> <span class="arithmatex">\(\in\)</span> <span class="arithmatex">\(\mathbb{N}\)</span> and <span class="arithmatex">\(k\le n\)</span>.</p>
 <p><code>Proof</code></p>
 <p><strong><em>Algebraic verification is OK.</em></strong></p>
-<p>*We will use a combinatorial argument. </p>
+<p>We will use a combinatorial argument. </p>
 <p>Consider a set <strong>S = {s<sub>1</sub>, . . . , s<sub>n+1</sub> }</strong> , combinations of <strong>k+1</strong> elements among <strong>n+1</strong> can be divided as follows: </p>
 <p><strong>(1)</strong> combinations containg <span class="arithmatex">\(s_1\)</span>, there are <span class="arithmatex">\(\binom{n}{k}\)</span> such combinations; </p>
 <p><strong>(2)</strong> there are <span class="arithmatex">\(\binom{n}{k+1}\)</span> combinations without <span class="arithmatex">\(s_1\)</span>.</p>
@@ -1122,10 +1122,10 @@ From the basic counting rule, the coefficient for <span class="arithmatex">\(x_1
 <p><strong>Remark 1.10</strong><br />
 One hidden fact is that <span class="arithmatex">\(n_1,...,n_r\)</span>  satisfies <span class="arithmatex">\(n_1+···+n_r=n\)</span></p>
 <p><strong>Theorem 1.11 (The multinomial theorem)</strong><br />
-We define <span class="arithmatex">\(\binom{n}{n_1,n_2,···,n_r}:=\frac{n!}{n_1!n_2!···n_r!}\)</span>,then we have the multinomial expansion<br />
-$$<br />
- (x_1+x_2+···+x_r)^n=\sum_{(n_1,...,n_r):n_1+···n_r=n}^{}\binom{n}{n_1,n_2,...,n_r} x_1^{n_1}x_2^{n_2}···x_r^{n_r} <br />
-$$</p>
+We define <span class="arithmatex">\(\binom{n}{n_1,n_2,···,n_r}:=\frac{n!}{n_1!n_2!···n_r!}\)</span>,then we have the multinomial expansion</p>
+<div class="arithmatex">\[
+(x_1+x_2+···+x_r)^n=\sum_{(n_1,...,n_r):n_1+···n_r=n}^{}\binom{n}{n_1,n_2,...,n_r} x_1^{n_1}x_2^{n_2}···x_r^{n_r}
+\]</div>
 <p><strong>Proposition 1.12</strong><br />
 There are <span class="arithmatex">\(\binom{n+r-1}{r-1}\)</span> distinct ==nonnegative== integer-valued vectors <span class="arithmatex">\((n_1, n_2, . . . , n_r)\)</span> satisfying <span class="arithmatex">\(n_1 + · · · + n_r= n\)</span></p>
 <p><code>Proof</code></p>
