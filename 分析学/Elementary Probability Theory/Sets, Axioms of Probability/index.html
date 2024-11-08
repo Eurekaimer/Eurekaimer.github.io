@@ -1974,28 +1974,27 @@ If <span class="arithmatex">\(\{E_n,n\ge1\}\)</span> is either an increasing or 
 \end{align}
 \]</div>
 <p>Now we prove the result for increasing <span class="arithmatex">\(E_n\)</span> ,we do the same construction before.</p>
-<p>$$<br />
-\begin{align}<br />
-F_n&amp;=E_n\setminus\bigcup_{i=1}^{n-1}E_i=E_n\setminus E_{n-1}\notag <br />
-\</p>
-<p>RHS&amp;=P(\lim_{n\to\infty}E_n)=P(\bigcup_{i=1}^{\infty}E_i)=P(\bigcup_{i=1}^\infty F_i)\notag <br />
-\&amp;=\sum_{i=1}^{\infty}P(F_i)=\lim_{n\to\infty}\sum_{i=1}^{n}P(F_i)\notag <br />
-\&amp;=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}F_i)=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}E_i)=\lim_{n\to\infty}P(E_n)\notag </p>
-<p>\end{align}<br />
-$$</p>
+<div class="arithmatex">\[
+\begin{align}
+F_n&amp;=E_n\setminus\bigcup_{i=1}^{n-1}E_i=E_n\setminus E_{n-1}\notag \\
+RHS&amp;=P(\lim_{n\to\infty}E_n)=P(\bigcup_{i=1}^{\infty}E_i)=P(\bigcup_{i=1}^\infty F_i)\notag 
+\\&amp;=\sum_{i=1}^{\infty}P(F_i)=\lim_{n\to\infty}\sum_{i=1}^{n}P(F_i)\notag 
+\\&amp;=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}F_i)=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}E_i)=\lim_{n\to\infty}P(E_n)\notag 
+\end{align}
+\]</div>
 <p>Now let's focus on original example. We change the ball withdrawn to randomly.</p>
 <p>We consider the ball number 1. Let <span class="arithmatex">\(E_n\)</span> be the event that ball 1 is still in the urn after the <span class="arithmatex">\(n^{th}\)</span> withdraw.</p>
-<p>$$<br />
-\begin{align} \<br />
-E_1\subset E_2\subset E_3 &amp;is  decreasing\\notag </p>
-<p>P(ball  1  is in  the  urn at 12pm)&amp;=P(\bigcap_{n=1}^{\infty}E_n)\notag <br />
-\&amp;=\lim_{n\to\infty}P(E_n)\notag <br />
-\&amp;=\lim_{n\to\infty}\frac{9}{10}·\frac{18}{19}\notag ···=\lim_{n\to\infty}\prod_{k=1}^{n}\frac{9k}{9k+1}\notag <br />
-\&amp;=\lim_{n\to\infty}exp(\sum_{k=1}^{n}ln\frac{9k}{9k+1})\notag <br />
-\&amp;=0   \notag <br />
-(ln\frac{9k}{9k+1}\sim-\frac{1}{9k+1})\notag <br />
-\end{align}<br />
-$$</p>
+<div class="arithmatex">\[
+\begin{align} \\
+E_1\subset E_2\subset E_3\ &amp;is \ decreasing\\\notag 
+P(ball \ 1 \ is\ in \ the \ urn\ at\ 12pm)&amp;=P(\bigcap_{n=1}^{\infty}E_n)\notag 
+\\&amp;=\lim_{n\to\infty}P(E_n)\notag 
+\\&amp;=\lim_{n\to\infty}\frac{9}{10}·\frac{18}{19}\notag ···=\lim_{n\to\infty}\prod_{k=1}^{n}\frac{9k}{9k+1}\notag 
+\\&amp;=\lim_{n\to\infty}exp(\sum_{k=1}^{n}ln\frac{9k}{9k+1})\notag 
+\\&amp;=0\ \ \ \notag 
+(ln\frac{9k}{9k+1}\sim-\frac{1}{9k+1})\notag 
+\end{align}
+\]</div>
 <p>The discussion for other balls is the same . So we can get the conclusion.</p>
 <div class="arithmatex">\[
 \begin{align}
