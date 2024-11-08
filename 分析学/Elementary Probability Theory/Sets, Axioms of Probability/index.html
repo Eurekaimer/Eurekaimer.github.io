@@ -1656,11 +1656,21 @@
 <p>Now, let's begin the formal elementary probability theory's study.<br />
 Normally, we will establish the fundamental framework by showing the axioms of probability. Before doing this, We must ensure that you have a certain understanding of basic sets and set operations.</p>
 <h2 id="sets">Sets</h2>
-<p><strong>Motivations</strong>`<br />
- + the sex of a newborn child<br />
- + flipping two coins<br />
- + tossing two coins <br />
- + etc</p>
+<p><strong>Motivations</strong></p>
+<ul>
+<li>
+<p>the sex of a newborn child</p>
+</li>
+<li>
+<p>flipping two coins</p>
+</li>
+<li>
+<p>tossing two coins </p>
+</li>
+<li>
+<p>etc</p>
+</li>
+</ul>
 <p>We can't answer the above questions but know <strong>all the possibilities</strong>——<br />
 In other word , it called <strong>Sample Space</strong></p>
 <p><strong>Definition 2.1 (Sample Space)</strong><br />
@@ -1743,7 +1753,7 @@ events of interests: shading the appropriate regions of the diagram`</p>
 <p><span class="arithmatex">\(\subset\)</span></p>
 <p><span class="arithmatex">\(\omega \notin \bigcup_{i=1}^{n}E_i\)</span>  , For any <span class="arithmatex">\(\omega \notin E_i \to\omega \in E_i^c \  for \ all \ i\)</span> </p>
 <p><span class="arithmatex">\(s.t. \ \omega \in \bigcap_{i=1}^{n}E_i^c\)</span></p>
-<p>==**<span class="arithmatex">\(\supset\)</span></p>
+<p><span class="arithmatex">\(\supset\)</span></p>
 <p><span class="arithmatex">\(\omega \in \bigcap_{i=1}^{n}E_i^c\)</span> , For any i , <span class="arithmatex">\(\omega \notin E_i \to \omega \notin \bigcup_{i=1}^{n}E_i\)</span>,<span class="arithmatex">\(\omega \in (\bigcup_{i=1}^{n}E_i)^c \  \forall \ i\)</span> </p>
 <p><span class="arithmatex">\(s.t. \ \omega \in (\bigcup_{i=1}^{n}E_i)^c\)</span></p>
 <h2 id="axioms-of-probability">Axioms of Probability</h2>
@@ -1767,7 +1777,7 @@ Let <span class="arithmatex">\((S, \mathcal{A})\)</span> be a measurable space o
 <li>for any countably infinite sequence of events <span class="arithmatex">\((E_i)_{i\ge1}\)</span> that are mutually exclusive,</li>
 </ul>
 <div class="arithmatex">\[
-\mathcal{P}(\bigcup_{i=1}^{\infty}E_i)=\sum_{i=1}^{\infty}\mathcal{P}(E_i)
+\mathcal{P}(\bigcup_{i=1}^{\infty}E_i)=\sum_{i=1}^{\infty}\mathcal{P}(E_i)\notag 
 \]</div>
 <p>(<span class="arithmatex">\(\sigma\)</span>-additivity or countable addtivity)<br />
 Then <span class="arithmatex">\((S,\mathcal{A},\mathcal{P})\)</span> is called a <strong>probability space</strong>.</p>
@@ -1777,96 +1787,96 @@ Then <span class="arithmatex">\((S,\mathcal{A},\mathcal{P})\)</span> is called a
 We write down all the proofs because we first learn the rigorous parts of probability theory, in the chapters after this, I will omit some.</p>
 <p><strong>Property 1  (Probability of the impossible event)</strong></p>
 <div class="arithmatex">\[
-P(\emptyset)=0
+P(\emptyset)=0\notag
 \]</div>
 <p><code>Proof</code></p>
 <p>Let<span class="arithmatex">\(\ E_1=S\)</span> ,<span class="arithmatex">\(E_i=\emptyset \ for\ all \ i\ge2\)</span>, <span class="arithmatex">\(\{ E_i\}_{i=1}^{\infty} \ is \ a \ mutually \ exclusive \ sequence\)</span></p>
 <div class="arithmatex">\[
-\\ \begin{aligned} 
-\ P\left( \bigcup_{i=1}^{\infty}E_i \right)&amp;=P(S)\\
-&amp;\overset{(3)}{=}\sum_{i=1}^{\infty}P(E_i)=P(S)+\sum_{i=2}^{\infty}P(\emptyset)
+\begin{aligned} 
+\ P\left( \bigcup_{i=1}^{\infty}E_i \right)&amp;=P(S) \notag  \\
+&amp;\overset{(3)}{=}\sum_{i=1}^{\infty}P(E_i)=P(S)+\sum_{i=2}^{\infty}P(\emptyset)\notag 
 \end{aligned}
 \]</div>
 <div class="arithmatex">\[
-\sum_{i=2}^{\infty}P(\emptyset)=0 \overset{(1)}{\to} \   P(\emptyset)=0
+\sum_{i=2}^{\infty}P(\emptyset)=0 \overset{(1)}{\to} \   P(\emptyset)=0\notag 
 \]</div>
 <p><strong>Property 2  (Probability of a finite union of mutually exclusive events)</strong><br />
 For any finite sequence of events <span class="arithmatex">\(E_1,...,E_n\in \mathcal{A}\)</span> that are mutually exclusive<br />
 (that is, <span class="arithmatex">\(E_i\cap E_j=\emptyset \ if \ i \neq j\)</span>),</p>
 <div class="arithmatex">\[
- P(\bigcup_{i=1}^{n}E_i)=\sum_{i=1}^{n}P(E_i)
+P(\bigcup_{i=1}^{n}E_i)=\sum_{i=1}^{n}P(E_i)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <p><strong>Let <span class="arithmatex">\(E_k=\emptyset\)</span>  for all <span class="arithmatex">\(k&gt;n\)</span>   <span class="arithmatex">\(\{E_i\}_{i=1}^{\infty}\)</span> countable, mutually exclusive</strong></p>
 <div class="arithmatex">\[
 \begin{align}
-P(\bigcup_{i=1}^{\infty}E_i)=P(\bigcup_{i=1}^{n}E_i) &amp;\overset{(3)}{=}\sum_{i=1}^{\infty}P(E_i)
-\\&amp;=\sum_{i=1}^{n}P(E_i)+\sum_{i=n+1}^{\infty}P(\emptyset)
-\\&amp;=\sum_{i=1}^{n}P(E_i)
+P(\bigcup_{i=1}^{\infty}E_i)=P(\bigcup_{i=1}^{n}E_i) &amp;\overset{(3)}\notag {=}\sum_{i=1}^{\infty}P(E_i)\notag 
+\\&amp;=\sum_{i=1}^{n}P(E_i)+\sum_{i=n+1}^{\infty}P(\emptyset)\notag 
+\\&amp;=\sum_{i=1}^{n}P(E_i)\notag 
 \end{align}
 \]</div>
 <p><strong>Property 3  (Probability of included events)</strong></p>
 <p>For any two events <span class="arithmatex">\(E, F \in A\)</span>,</p>
 <div class="arithmatex">\[
-  E \subset F \Rightarrow P(E)\le  P(F).
+E \subset F \Rightarrow P(E)\le  P(F).\notag 
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
-E\subset F \ F=E\cup (F\setminus E)
-\\P(F)=P(E)+{\color{Blue}P(F\setminus E)\overset{(1)}{\ge}0}
-\\P(F)\ge P(E)
+E\subset F \ F=E\cup (F\setminus E)\notag 
+\\P(F)=P(E)+{\color{Blue}P(F\setminus E)\overset{(1)}{\ge}0}\notag 
+\\P(F)\ge P(E)\notag 
 \]</div>
 <p><strong>Property 4</strong><br />
 For any event <span class="arithmatex">\(E\in \mathcal{A}\)</span>,</p>
 <div class="arithmatex">\[
- P(E)\le 1
+P(E)\le 1\notag 
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
-E\subset S \ \overset{Property\ 3}{\Rightarrow}P(E)\le 1
+E\subset S \ \overset{Property\ 3}{\Rightarrow}P(E)\le 1\notag 
 \]</div>
 <p><strong>Property 5  (Law of total probability)</strong><br />
 Let <span class="arithmatex">\(F\in \mathcal{A}\)</span> be an event and <span class="arithmatex">\((E_i)_{i\ge 1}\)</span> be a countable partition of the sample space <span class="arithmatex">\(S\)</span> (that is, <span class="arithmatex">\(\bigcup_{i=1}^{\infty}E_i=S\  and \ E_i\cap E_j=\emptyset \ for \ i \neq j\)</span>),</p>
 <div class="arithmatex">\[
-  P(F)=\sum_{i=1}^{\infty}P(F\cap E_i)
+P(F)=\sum_{i=1}^{\infty}P(F\cap E_i)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
 \begin{align}
-P(F)&amp;=P(F\cap S)
-\\&amp;=P(F\cap (\bigcup_{i=1}^{\infty}E_i))
-\\&amp;=P(\bigcup_{i=1}^{\infty}F\cap E_i)
-\\&amp;\overset{(3)}{=}\sum_{i=1}^{\infty}P(F\cap E_i)
+P(F)&amp;=P(F\cap S)\notag 
+\\&amp;=P(F\cap (\bigcup_{i=1}^{\infty}E_i))\notag 
+\\&amp;=P(\bigcup_{i=1}^{\infty}F\cap E_i)\notag 
+\\&amp;\overset{(3)}{=}\sum_{i=1}^{\infty}P(F\cap E_i)\notag 
 \end{align}
 \]</div>
 <div class="arithmatex">\[
-because \ \{ F\cap E_i\}_{i=1}^{\infty}\ is \ mutually \ exclusive \ sequence
+because \ \{ F\cap E_i\}_{i=1}^{\infty}\ is \ mutually \ exclusive \ sequence\notag 
 \]</div>
 <p><strong>Property 6  (Probability of the complement)</strong><br />
 For any event <span class="arithmatex">\(E\in \mathcal{A}\)</span>,</p>
 <div class="arithmatex">\[
-  P(E^c)=1-P(E)
+P(E^c)=1-P(E)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
-1\overset{(2)}{=}P(S)=P(E\cup E^c)\overset{property 2}{=}P(E)+P(E^c)
+1\overset{(2)}{=}P(S)=P(E\cup E^c)\overset{property 2}{=}P(E)+P(E^c)\notag 
 \]</div>
 <p><strong>Property 7 (Probability of the union of 2 events)</strong><br />
 For any two events <span class="arithmatex">\(E,F\in \mathcal{A}\)</span>,</p>
 <div class="arithmatex">\[
-  P(E\cup F)=P(E)+P(F)-P(E\cap F)
+P(E\cup F)=P(E)+P(F)-P(E\cap F)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <p>$$<br />
 \begin{align}<br />
-F&amp;=(F\cap E)\cup(F\cap E^c)</p>
-<p>\(F\cap E)\cup(F\cap E^c)  &amp;is  mutually  exclusive<br />
+F&amp;=(F\cap E)\cup(F\cap E^c)\notag </p>
+<p>\(F\cap E)\cup(F\cap E^c)  &amp;is  mutually  exclusive\notag <br />
 \</p>
-<p>P(F)&amp;=P(F\cap E)+{\color{Red}P(F\cap E^c)}<br />
-\from  E\cup F&amp;=E\cup (F\cap E^c)<br />
-\P(E\cup F)&amp;=P(E)+{\color{Red}P(F\cap E^c)}<br />
+<p>P(F)&amp;=P(F\cap E)+{\color{Red}P(F\cap E^c)}\notag <br />
+\from  E\cup F&amp;=E\cup (F\cap E^c)\notag <br />
+\P(E\cup F)&amp;=P(E)+{\color{Red}P(F\cap E^c)}\notag <br />
 \ <br />
-&amp;=P(E)+P(F)-P(E\cap F)<br />
+&amp;=P(E)+P(F)-P(E\cap F)\notag <br />
 \end{align}</p>
 <p>\<br />
 $$</p>
@@ -1874,7 +1884,7 @@ $$</p>
 <p><strong>Property 8  (Inclusion-Exclusion Identity/Poincaré’s formula)</strong><br />
 For any two events <span class="arithmatex">\(E,F\in \mathcal{A}\)</span>,</p>
 <div class="arithmatex">\[
-  P(\bigcup_{i=1}^{n}E_i)=\sum_{k=1}^{n}(-1)^{k-1}\sum_{1\le i_1 &lt; ...&lt; i_k\le n}P(E_{i_1}\cap...\cap E_{i_k}),
+P(\bigcup_{i=1}^{n}E_i)=\sum_{k=1}^{n}(-1)^{k-1}\sum_{1\le i_1 &lt; ...&lt; i_k\le n}P(E_{i_1}\cap...\cap E_{i_k})\notag 
 \]</div>
 <p>where <span class="arithmatex">\(\sum\limits_{1\le i_1&lt;...&lt;i_k\le n}\)</span> means the sum for all subsets of <span class="arithmatex">\((1,...,n)\)</span> of size k.</p>
 <p><code>Proof</code></p>
@@ -1882,44 +1892,43 @@ For any two events <span class="arithmatex">\(E,F\in \mathcal{A}\)</span>,</p>
 <p><strong>Property 9</strong><br />
 For events <span class="arithmatex">\(E,F\)</span></p>
 <div class="arithmatex">\[
-P(E\cup F)\le P(E)+P(F)
+P(E\cup F)\le P(E)+P(F)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
 \begin{align}
-P(E\cup F)&amp;=P(E)+P(F)-P(E\cap F)
-\\&amp;\le P(E)+P(F)
+P(E\cup F)&amp;=P(E)+P(F)-P(E\cap F)\notag 
+\\&amp;\le P(E)+P(F)\notag 
 \end{align}
 \]</div>
 <p><strong>Property 10  (A generalization)</strong></p>
 <p>For a finite sequence of events <span class="arithmatex">\(E_1,...,E_n,\)</span></p>
 <div class="arithmatex">\[
- P(\bigcup_{i=1}^{n}E_i)\le \sum_{i=1}^{n}P(E_i)=P(E_i)+...+P(E_n)
+P(\bigcup_{i=1}^{n}E_i)\le \sum_{i=1}^{n}P(E_i)=P(E_i)+...+P(E_n)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
 \begin{align}
-P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(E_1\cup(\bigcup_{i=2}^{\infty}E_i))
-\\&amp;\le P(E_1)+P(\bigcup_{i=2}^{\infty}E_i)
+P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(E_1\cup(\bigcup_{i=2}^{\infty}E_i))\notag 
+\\&amp;\le P(E_1)+P(\bigcup_{i=2}^{\infty}E_i)\notag 
 \end{align}
 \]</div>
-<p>**</p>
 <p><strong>Property 11  (Boole’s Inequality)</strong><br />
 For a countable infinite sequence of events <span class="arithmatex">\(\{E_i\}_{i\ge1}\)</span></p>
 <div class="arithmatex">\[
- P(\bigcup_{i=1}^{\infty}E_i)\le\sum_{i=1}^{\infty}P(E_i)
+P(\bigcup_{i=1}^{\infty}E_i)\le\sum_{i=1}^{\infty}P(E_i)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <p>We construct a new sequence of events <span class="arithmatex">\(\{F_i\}_{i=1}^{\infty}\)</span> mutually exclusive.</p>
 <p>$$<br />
 \begin{align}</p>
-<p>Make  F_1=E_1   F_2=E_2 \setminus E_1<br />
- &amp;  F_k=E_k \setminus \bigcup_{i=1}^{k-1}E_i  (k\ge2)<br />
-\\bigcup_{i=1}^{n}E_i=\bigcup_{i=1}^{n}F_i,&amp; \bigcup_{i=1}^{\infty}E_i=\bigcup_{i=1}^{\infty}F_i<br />
-\Obviously,the  { F_i}_{i=1}^{\infty} &amp;are mutually  exclusive\</p>
-<p>P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(\bigcup_{i=1}^{\infty}F_i)<br />
-\&amp;=\sum_{i=1}^{\infty}P(F_i)<br />
-\&amp;\overset{F_k \subset E_k}{\le}\sum_{i=1}^{\infty}P(E_i)<br />
+<p>Make  F_1=E_1   F_2=E_2 \setminus E_1\notag <br />
+ &amp;  F_k=E_k \setminus \bigcup_{i=1}^{k-1}E_i  (k\ge2)\notag <br />
+\\bigcup_{i=1}^{n}E_i=\bigcup_{i=1}^{n}F_i,&amp; \notag \bigcup_{i=1}^{\infty}E_i=\bigcup_{i=1}^{\infty}F_i\notag <br />
+\Obviously,the  { F_i}_{i=1}^{\infty} &amp;are mutually  exclusive\\notag </p>
+<p>P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(\bigcup_{i=1}^{\infty}F_i)\notag <br />
+\&amp;=\sum_{i=1}^{\infty}P(F_i)\notag <br />
+\&amp;\overset{F_k \subset E_k}{\le}\sum_{i=1}^{\infty}P(E_i)\notag <br />
 \end{align}<br />
 $$</p>
 <p>$$ \color{Blue}Motivation   example:Infinitely  large  urn  and infinite balls $$</p>
@@ -1941,60 +1950,60 @@ $$</p>
 <p><strong>Definition 2.11 (Increasing/Decreasing sequences)</strong><br />
 A sequence of events <span class="arithmatex">\(\{E_n,n\ge1\}\)</span> is said to be an <em>increasing sequence</em> if</p>
 <div class="arithmatex">\[
-  E_1\subset E_2...\subset E_n\subset ...,
+E_1\subset E_2...\subset E_n\subset ...,\notag 
 \]</div>
 <p>and we define a new event { <span class="arithmatex">\(\lim\limits_{n\to \infty}E_n \ by \ \lim\limits_{n\to \infty}E_n=\bigcup\limits_{n=1}^{\infty}E_n\)</span> } <br />
 A sequence of events <span class="arithmatex">\(\{E_n,n\ge1\}\)</span> is said to be an <em>increasing sequence</em> if</p>
 <div class="arithmatex">\[
-  E_1\supset E_2...\supset E_n\supset ...,
+E_1\supset E_2...\supset E_n\supset ...,\notag 
 \]</div>
 <p>and we define a new event <span class="arithmatex">\({\lim\limits_{n\to \infty}}E_n \ by \ \lim\limits_{n\to \infty}E_n=\bigcap\limits_{n=1}^{\infty}E_n\)</span></p>
 <p><strong>Proposition 2.12 (Continuity property)</strong><br />
 If <span class="arithmatex">\(\{E_n,n\ge1\}\)</span> is either an increasing or a decreasing sequence, then</p>
 <div class="arithmatex">\[
-  \lim_{n\to\infty}P(E_n)=P(\lim_{n\to\infty }E_n)
+\lim_{n\to\infty}P(E_n)=P(\lim_{n\to\infty }E_n)\notag 
 \]</div>
 <p><code>Proof</code></p>
 <p>It suffices to discuss the increasing case since if ,</p>
 <p><span class="arithmatex">\(\{E_n \ n\ge1\}\)</span>is decreasing the <span class="arithmatex">\(\{E_n^c \ n\ge1 \}\)</span> is increasing.</p>
 <div class="arithmatex">\[
 \begin{align}
-\lim_{n\to\infty}P(E_n^c)\overset{increasing}{=}P(\lim_{n\to\infty}E_n^c)=P(\bigcup_{n=1}^{\infty}E_n^c)=P((\bigcap_{n=1}^{\infty}E_n)^c)=1-P(\bigcap_{n=1}^{\infty}E_n)
-\\\lim_{n\to\infty}P(E_n^c)=1-\lim_{n\to\infty}P(E_n)=1-P(\lim_{n\to\infty}E_n)=1-P(\bigcap_{n=1}^{\infty}E_n)
-\\\lim_{n\to\infty}P(E_n)=P(\lim_{n\to\infty}E_n) \\
+\lim_{n\to\infty}P(E_n^c)\overset{increasing}{=}P(\lim_{n\to\infty}E_n^c)=P(\bigcup_{n=1}^{\infty}E_n^c)=P((\bigcap_{n=1}^{\infty}E_n)^c)=1-P(\bigcap_{n=1}^{\infty}E_n)\notag 
+\\\lim_{n\to\infty}P(E_n^c)=1-\lim_{n\to\infty}P(E_n)=1-P(\lim_{n\to\infty}E_n)=1-P(\bigcap_{n=1}^{\infty}E_n)\notag 
+\\\lim_{n\to\infty}P(E_n)=P(\lim_{n\to\infty}E_n) \notag \\
 \end{align}
 \]</div>
 <p>Now we prove the result for increasing <span class="arithmatex">\(E_n\)</span> ,we do the same construction before.</p>
 <p>$$<br />
 \begin{align}<br />
-F_n&amp;=E_n\setminus\bigcup_{i=1}^{n-1}E_i=E_n\setminus E_{n-1}<br />
+F_n&amp;=E_n\setminus\bigcup_{i=1}^{n-1}E_i=E_n\setminus E_{n-1}\notag <br />
 \</p>
-<p>RHS&amp;=P(\lim_{n\to\infty}E_n)=P(\bigcup_{i=1}^{\infty}E_i)=P(\bigcup_{i=1}^\infty F_i)<br />
-\&amp;=\sum_{i=1}^{\infty}P(F_i)=\lim_{n\to\infty}\sum_{i=1}^{n}P(F_i)<br />
-\&amp;=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}F_i)=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}E_i)=\lim_{n\to\infty}P(E_n)</p>
+<p>RHS&amp;=P(\lim_{n\to\infty}E_n)=P(\bigcup_{i=1}^{\infty}E_i)=P(\bigcup_{i=1}^\infty F_i)\notag <br />
+\&amp;=\sum_{i=1}^{\infty}P(F_i)=\lim_{n\to\infty}\sum_{i=1}^{n}P(F_i)\notag <br />
+\&amp;=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}F_i)=\lim_{n\to\infty}P(\bigcup_{i=1}^{n}E_i)=\lim_{n\to\infty}P(E_n)\notag </p>
 <p>\end{align}<br />
 $$</p>
 <p>Now let's focus on original example. We change the ball withdrawn to randomly.</p>
 <p>We consider the ball number 1. Let <span class="arithmatex">\(E_n\)</span> be the event that ball 1 is still in the urn after the <span class="arithmatex">\(n^{th}\)</span> withdraw.</p>
 <p>$$<br />
 \begin{align} \<br />
-E_1\subset E_2\subset E_3 &amp;is  decreasing\</p>
-<p>P(ball  1  is in  the  urn at 12pm)&amp;=P(\bigcap_{n=1}^{\infty}E_n)<br />
-\&amp;=\lim_{n\to\infty}P(E_n)<br />
-\&amp;=\lim_{n\to\infty}\frac{9}{10}·\frac{18}{19}···=\lim_{n\to\infty}\prod_{k=1}^{n}\frac{9k}{9k+1}<br />
-\&amp;=\lim_{n\to\infty}exp(\sum_{k=1}^{n}ln\frac{9k}{9k+1})<br />
-\&amp;=0   <br />
-(ln\frac{9k}{9k+1}\sim-\frac{1}{9k+1})<br />
+E_1\subset E_2\subset E_3 &amp;is  decreasing\\notag </p>
+<p>P(ball  1  is in  the  urn at 12pm)&amp;=P(\bigcap_{n=1}^{\infty}E_n)\notag <br />
+\&amp;=\lim_{n\to\infty}P(E_n)\notag <br />
+\&amp;=\lim_{n\to\infty}\frac{9}{10}·\frac{18}{19}\notag ···=\lim_{n\to\infty}\prod_{k=1}^{n}\frac{9k}{9k+1}\notag <br />
+\&amp;=\lim_{n\to\infty}exp(\sum_{k=1}^{n}ln\frac{9k}{9k+1})\notag <br />
+\&amp;=0   \notag <br />
+(ln\frac{9k}{9k+1}\sim-\frac{1}{9k+1})\notag <br />
 \end{align}<br />
 $$</p>
 <p>The discussion for other balls is the same . So we can get the conclusion.</p>
 <div class="arithmatex">\[
 \begin{align}
-&amp;\ \ \ \ \ P(the\ urn \ is\ not\ empty\ at \ 12pm)
-\\&amp;=P(there\ is \ at\ least\ one\ ball\ in\ the\ urn\ at\ 12pm)
-\\&amp;=P(\bigcup_{n=1}^{\infty}F_n)\ \ (where\ F_n ={ball\ number\ n \ is\ in\ the\ urn\ at\ 12pm)}
-\\&amp;\overset{Boole's\ Inequality}{\le}\sum_{n=1}^{\infty}P(F_n)
-\\&amp;\overset{Axiom \ 1}{=}0
+&amp;\ \ \ \ \ P(the\ urn \ is\ not\ empty\ at \ 12pm)\notag 
+\\&amp;=P(there\ is \ at\ least\ one\ ball\ in\ the\ urn\ at\ 12pm)\notag 
+\\&amp;=P(\bigcup_{n=1}^{\infty}F_n)\ \ (where\ F_n ={ball\ number\ n \ is\ in\ the\ urn\ at\ 12pm)}\notag 
+\\&amp;\overset{Boole's\ Inequality}{\le}\sum_{n=1}^{\infty}P(F_n)\notag 
+\\&amp;\overset{Axiom \ 1}{=}0\notag 
 \end{align}
 \]</div>
 <h2 id="uniform-probability-measure">Uniform probability measure</h2>
@@ -2004,21 +2013,21 @@ Let <span class="arithmatex">\(S\)</span> be a finite sample space <span class="
 <p><strong>Properties</strong></p>
 <p>Let <span class="arithmatex">\((S,P(S),P)\)</span> be a probability space with uniform probability measure <span class="arithmatex">\(P\)</span> on a finite sample space <span class="arithmatex">\(S=\{ \omega_1,...,\omega _n\}\)</span>. Then</p>
 <div class="arithmatex">\[
-  \begin{align}
-  &amp;(1)P(\{\omega_i\})=\frac{1}{n},for \ i =1,...,n.
-  \\&amp;(2)For\ any\ event\ E,P(E)=\frac{|E|}{|S|}
+\begin{align}
+  &amp;(1)P(\{\omega_i\})=\frac{1}{n},for \ i =1,...,n.\notag 
+  \\&amp;(2)For\ any\ event\ E,P(E)=\frac{|E|}{|S|}\notag 
   \end{align}
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
 \begin{eqnarray}
-\\&amp;(1)S=\{\omega_1\}\cup\{\omega_2\}···\cup\{\omega_n\}
+\\&amp;(1)S=\{\omega_1\}\cup\{\omega_2\}···\cup\{\omega_n\}\notag 
 \\
 &amp;1=P(S)=P(\bigcup_{i=1}^{n}\omega_i)=\sum_{i=1}^{n}P(\omega_i)=n\alpha&amp;
-\\&amp;\alpha=\frac{1}{n}
+\\&amp;\alpha=\frac{1}{n}\notag 
 \\
-&amp;(2)P(E)=P(\bigcup_{i\in(1,...,n)\ \omega_i\in E}\{\omega_i\})=\sum_{i\in(1,2...n)\ \omega_i\in E} P(\{\omega_i\})
-\\&amp;=\frac{|E|\frac{1}{n}}{n·\frac{1}{n}}=\frac{|E|}{n}
+&amp;(2)P(E)=P(\bigcup_{i\in(1,...,n)\ \omega_i\in E}\{\omega_i\})=\sum_{i\in(1,2...n)\ \omega_i\in E} P(\{\omega_i\})\notag 
+\\&amp;=\frac{|E|\frac{1}{n}}{n·\frac{1}{n}}=\frac{|E|}{n}\notag 
 \end{eqnarray}
 \]</div>
 <h2 id="interesting-examples">Interesting Examples</h2>
@@ -2030,12 +2039,12 @@ Let <span class="arithmatex">\(S\)</span> be a finite sample space <span class="
 <p><span class="arithmatex">\(S=\{all \ possibel\ distribution\ to \ 4\ players\}\)</span> <span class="arithmatex">\(|S|=\binom{52}{13,13,13,13}\)</span></p>
 <div class="arithmatex">\[
 \begin{align}
-1.E&amp;=\{one\ of\ the\ players\ get\ all\ 13\ spades\}
-\\&amp;=\bigcup_{i=1}^{4}\{player\ i \ gets\ all\ 13\ spades\}
-\\&amp;=\sum_{i=1}^{4}P(player\ i\ gets\ 13 \ spades)
-\\&amp;=4\frac{\binom{39}{13,13,13}}{\binom{52}{13,13,13,13}}
-\\2.F&amp;=\{each\ player\ gets\ one\ ace\}
-\\&amp;P(F)=\frac{|F|}{|S|}=\frac{4\binom{48}{12,12,12,12}}{\binom{52}{13,13,13,13}}
+1.E&amp;=\{one\ of\ the\ players\ get\ all\ 13\ spades\}\notag 
+\\&amp;=\bigcup_{i=1}^{4}\{player\ i \ gets\ all\ 13\ spades\}\notag 
+\\&amp;=\sum_{i=1}^{4}P(player\ i\ gets\ 13 \ spades)\notag 
+\\&amp;=4\frac{\binom{39}{13,13,13}}{\binom{52}{13,13,13,13}}\notag 
+\\2.F&amp;=\{each\ player\ gets\ one\ ace\}\notag 
+\\&amp;P(F)=\frac{|F|}{|S|}=\frac{4\binom{48}{12,12,12,12}}{\binom{52}{13,13,13,13}}\notag 
 \\
 \end{align}
 \]</div>
@@ -2047,9 +2056,9 @@ Now we want to study for n people, what is the probability that no two of them c
 <p><span class="arithmatex">\(|S|=365^n\)</span></p>
 <div class="arithmatex">\[
 \begin{align}
-&amp;\ \ \ \ \ \  P(no\ two\ of\ them\ have\ the\ same\ birthday)
-\\&amp;=\frac{365·364···(365-n+)}{365^n}&lt;\frac{1}{2}\ \ when \ n\ge23
-\\&amp;when\ n=100,the \ probability&gt;\frac{3\times10^6}{3\times10^6+1}
+&amp;\ \ \ \ \ \  P(no\ two\ of\ them\ have\ the\ same\ birthday)\notag 
+\\&amp;=\frac{365·364···(365-n+)}{365^n}&lt;\frac{1}{2}\ \ when \ n\ge23\notag 
+\\&amp;when\ n=100,the \ probability&gt;\frac{3\times10^6}{3\times10^6+1}\notag 
 \end{align}
 \]</div>
 <h3 id="matching-problem"><strong>Matching Problem</strong></h3>
@@ -2059,23 +2068,23 @@ Now we want to study for n people, what is the probability that no two of them c
 <p>Let <span class="arithmatex">\(E_i=the \ i^{th}\ man\ selects\ his\ own\ hats\)</span></p>
 <div class="arithmatex">\[
 \begin{align}
-P(\bigcup_{i}^{N}E_i)&amp;=\sum_{i=1}^{N}P(E_i)-\sum_{1\le i_1\le i_2...\le N}P(E_{i_1}E_{i_2}...)+...+(-1)^{N+1}P(E_1..E_N)
+P(\bigcup_{i}^{N}E_i)&amp;=\sum_{i=1}^{N}P(E_i)-\sum_{1\le i_1\le i_2...\le \notag N}P(E_{i_1}E_{i_2}...)+...+(-1)^{N+1}P(E_1..E_N)\notag 
 \end{align}
 \]</div>
 <p>Note that  <span class="arithmatex">\(E_{i_1}E_{i_2}..E_{i_n}\)</span> represents the event that <span class="arithmatex">\(i_1^{th}...i_{n}^{th}\)</span> men get their own hats</p>
 <div class="arithmatex">\[
 \begin{align}
-P(E_{i_1}E_{i_2}..E_{i_n})&amp;=\frac{(N-n)!}{N!}
-\\\sum_{1\le i_1&lt;i_2...&lt;i_N\le N }P(E_{i_1}E_{i_2}..E_{i_n})&amp;=\binom{N}{n}\frac{(N-n)!}{N!}\frac{1}{N!}=\frac{1}{n!}
-\\P(\bigcup_{i=1}^{N}E_i)&amp;=1-\frac{1}{2!}+\frac{1}{3!}+...+(-1)^{N+1}\frac{1}{N!}
-\\&amp;=\sum_{k=1}^{N}(-1)^{k+1}\frac{1}{k!}
+P(E_{i_1}E_{i_2}..E_{i_n})&amp;=\frac{(N-n)!}{N!}\notag 
+\\\sum_{1\le i_1&lt;i_2...&lt;i_N\le N }P(E_{i_1}E_{i_2}..E_{i_n})&amp;=\binom{N}{n}\frac{(N-n)!}\notag {N!}\frac{1}{N!}=\frac{1}{n!}\notag 
+\\P(\bigcup_{i=1}^{N}E_i)&amp;=1-\frac{1}{2!}+\frac{1}{3!}+...+(-1)^{N+1}\frac{1}{N!}\notag 
+\\&amp;=\sum_{k=1}^{N}(-1)^{k+1}\frac{1}{k!}\notag 
 \end{align}
 \]</div>
 <p>the probability that no one selects his own hat is </p>
 <div class="arithmatex">\[
 \begin{align}
-1-P(\bigcup_{i=1}^{N}E_i)&amp;=1-\sum_{k=1}^{N}(-1)^{k+1}\frac{1}{k!}\\
-&amp;=\sum_{k=0}^{N}(-1)^k\frac{1}{k!}\overset{N\to\infty}{\to}e^{-1} 
+1-P(\bigcup_{i=1}^{N}E_i)&amp;=1-\sum_{k=1}^{N}(-1)^{k+1}\frac{1}{k!}\\\notag 
+&amp;=\sum_{k=0}^{N}(-1)^k\frac{1}{k!}\overset{N\to\infty}{\to}e^{-1} \notag 
 \end{align}
 \]</div>
 <p>Recall the <strong>Talor expansion</strong> of  <span class="arithmatex">\(e^x=\sum_{k=0}^{\infty}\frac{x^k}{k!}\)</span><br />
