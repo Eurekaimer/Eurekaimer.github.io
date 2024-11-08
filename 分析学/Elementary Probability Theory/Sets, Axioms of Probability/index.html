@@ -1864,22 +1864,19 @@ P(E^c)=1-P(E)\notag
 <p><strong>Property 7 (Probability of the union of 2 events)</strong><br />
 For any two events <span class="arithmatex">\(E,F\in \mathcal{A}\)</span>,</p>
 <div class="arithmatex">\[
-P(E\cup F)=P(E)+P(F)-P(E\cap F)\notag 
+P(E\cup F)=P(E)+P(F)-P(E\cap F)\notag
 \]</div>
 <p><code>Proof</code></p>
-<p>$$<br />
-\begin{align}<br />
-F&amp;=(F\cap E)\cup(F\cap E^c)\notag </p>
-<p>\(F\cap E)\cup(F\cap E^c)  &amp;is  mutually  exclusive\notag <br />
-\</p>
-<p>P(F)&amp;=P(F\cap E)+{\color{Red}P(F\cap E^c)}\notag <br />
-\from  E\cup F&amp;=E\cup (F\cap E^c)\notag <br />
-\P(E\cup F)&amp;=P(E)+{\color{Red}P(F\cap E^c)}\notag <br />
-\ <br />
-&amp;=P(E)+P(F)-P(E\cap F)\notag <br />
-\end{align}</p>
-<p>\<br />
-$$</p>
+<div class="arithmatex">\[
+\begin{align}
+F&amp;=(F\cap E)\cup(F\cap E^c)\notag 
+\\(F\cap E)\cup(F\cap E^c) \ &amp;is \ mutually \ exclusive\notag \\
+P(F)&amp;=P(F\cap E)+{\color{Red}P(F\cap E^c)}\notag 
+\\from \ E\cup F&amp;=E\cup (F\cap E^c)\notag 
+\\P(E\cup F)&amp;=P(E)+{\color{Red}P(F\cap E^c)}\notag \\ 
+&amp;=P(E)+P(F)-P(E\cap F)\notag 
+\end{align}
+\]</div>
 <p>The identity below is a very famous trick(when I'm in high school, I am amazed by it).</p>
 <p><strong>Property 8  (Inclusion-Exclusion Identity/Poincaré’s formula)</strong><br />
 For any two events <span class="arithmatex">\(E,F\in \mathcal{A}\)</span>,</p>
@@ -1916,21 +1913,21 @@ P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(E_1\cup(\bigcup_{i=2}^{\infty}E_i))\notag
 <p><strong>Property 11  (Boole’s Inequality)</strong><br />
 For a countable infinite sequence of events <span class="arithmatex">\(\{E_i\}_{i\ge1}\)</span></p>
 <div class="arithmatex">\[
-P(\bigcup_{i=1}^{\infty}E_i)\le\sum_{i=1}^{\infty}P(E_i)\notag 
+P(\bigcup_{i=1}^{\infty}E_i)\le\sum_{i=1}^{\infty}P(E_i)\notag
 \]</div>
 <p><code>Proof</code></p>
 <p>We construct a new sequence of events <span class="arithmatex">\(\{F_i\}_{i=1}^{\infty}\)</span> mutually exclusive.</p>
-<p>$$<br />
-\begin{align}</p>
-<p>Make  F_1=E_1   F_2=E_2 \setminus E_1\notag <br />
- &amp;  F_k=E_k \setminus \bigcup_{i=1}^{k-1}E_i  (k\ge2)\notag <br />
-\\bigcup_{i=1}^{n}E_i=\bigcup_{i=1}^{n}F_i,&amp; \notag \bigcup_{i=1}^{\infty}E_i=\bigcup_{i=1}^{\infty}F_i\notag <br />
-\Obviously,the  { F_i}_{i=1}^{\infty} &amp;are mutually  exclusive\\notag </p>
-<p>P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(\bigcup_{i=1}^{\infty}F_i)\notag <br />
-\&amp;=\sum_{i=1}^{\infty}P(F_i)\notag <br />
-\&amp;\overset{F_k \subset E_k}{\le}\sum_{i=1}^{\infty}P(E_i)\notag <br />
-\end{align}<br />
-$$</p>
+<div class="arithmatex">\[
+\begin{align}
+Make \ F_1=E_1 \ \ F_2=E_2 \setminus E_1\notag 
+\ &amp; \ F_k=E_k \setminus \bigcup_{i=1}^{k-1}E_i \ (k\ge2)\notag 
+\\\bigcup_{i=1}^{n}E_i=\bigcup_{i=1}^{n}F_i,&amp; \notag \bigcup_{i=1}^{\infty}E_i=\bigcup_{i=1}^{\infty}F_i\notag 
+\\Obviously,the \ \{ F_i\}_{i=1}^{\infty}\ &amp;are\ mutually \ exclusive\\\notag 
+P(\bigcup_{i=1}^{\infty}E_i)&amp;=P(\bigcup_{i=1}^{\infty}F_i)\notag 
+\\&amp;=\sum_{i=1}^{\infty}P(F_i)\notag 
+\\&amp;\overset{F_k \subset E_k}{\le}\sum_{i=1}^{\infty}P(E_i)\notag 
+\end{align}
+\]</div>
 <p>$$ \color{Blue}Motivation   example:Infinitely  large  urn  and infinite balls $$</p>
 <p>Suppose we have an infinitely large urn, and an infinite collection of balls labeled<br />
   as number 1, 2, 3, and so on. Consider an experiment as follows:</p>
@@ -2019,15 +2016,14 @@ Let <span class="arithmatex">\(S\)</span> be a finite sample space <span class="
 \]</div>
 <p><code>Proof</code></p>
 <div class="arithmatex">\[
-\begin{eqnarray}
-\\&amp;(1)S=\{\omega_1\}\cup\{\omega_2\}···\cup\{\omega_n\}\notag 
-\\
+\begin{align}
+\\&amp;(1)S=\{\omega_1\}\cup\{\omega_2\}···\cup\{\omega_n\}\notag \\
 &amp;1=P(S)=P(\bigcup_{i=1}^{n}\omega_i)=\sum_{i=1}^{n}P(\omega_i)=n\alpha&amp;
-\\&amp;\alpha=\frac{1}{n}\notag 
 \\
+&amp;\alpha=\frac{1}{n}\notag \\
 &amp;(2)P(E)=P(\bigcup_{i\in(1,...,n)\ \omega_i\in E}\{\omega_i\})=\sum_{i\in(1,2...n)\ \omega_i\in E} P(\{\omega_i\})\notag 
 \\&amp;=\frac{|E|\frac{1}{n}}{n·\frac{1}{n}}=\frac{|E|}{n}\notag 
-\end{eqnarray}
+\end{align}
 \]</div>
 <h2 id="interesting-examples">Interesting Examples</h2>
 <h3 id="poker-problem"><strong>Poker Problem</strong></h3>
@@ -2043,8 +2039,7 @@ Let <span class="arithmatex">\(S\)</span> be a finite sample space <span class="
 \\&amp;=\sum_{i=1}^{4}P(player\ i\ gets\ 13 \ spades)\notag 
 \\&amp;=4\frac{\binom{39}{13,13,13}}{\binom{52}{13,13,13,13}}\notag 
 \\2.F&amp;=\{each\ player\ gets\ one\ ace\}\notag 
-\\&amp;P(F)=\frac{|F|}{|S|}=\frac{4\binom{48}{12,12,12,12}}{\binom{52}{13,13,13,13}}\notag 
-\\
+\\&amp;P(F)=\frac{|F|}{|S|}=\frac{4\binom{48}{12,12,12,12}}{\binom{52}{13,13,13,13}}\notag \\
 \end{align}
 \]</div>
 <h3 id="birthday-problem"><strong>Birthday Problem</strong></h3>
