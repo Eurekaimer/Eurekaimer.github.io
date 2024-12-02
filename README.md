@@ -7,11 +7,10 @@
 
 ## 关于我
 
-![profile](imgs/profile.jpg){ align=left width="200" }
+![profile](imgs/profile.jpg)
 
 我是来自NKU的一名**统计学类**大类学生（分流意向是统计学），MBTI：INTJ，喜欢数学与一切logical and elegant的事物，目前最喜欢的动漫角色是小鞠知花，欢迎一起学习为宇宙写下注脚，以下是联系我的一些方式：
 
-- :material-mail: NKU邮箱(Email) ： `2313915@mail.nankai.edu.cn`
 - :material-mail: 163邮箱(Email)： `Eurekaimer@163.com`
 
 这里的笔记内容主要是NKU数学类课程的课程笔记和一些课后习题答案，也有参考外文经典教材时的读书笔记。
