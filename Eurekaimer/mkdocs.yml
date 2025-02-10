@@ -66,19 +66,14 @@ plugins:
   - callouts:
       aliases: false
   - git-revision-date-localized:
-      type: datetime
+      type: date
       custom_format: "%d. %B %Y"
       timezone: Asia/Shanghai
       locale: zh
       fallback_to_build_date: false
       enable_creation_date: true
       exclude:
-         - Blog/*
-         - 分析学/*
-         - 代数学/*
-         - 数学建模/*
-         #- 数据科学/*
-         #- 网络资源整合/*
+        - index.md
       enable_git_follow: true
       enabled: true
       strict: false
