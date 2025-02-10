@@ -4,130 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92458606-399b-404b-8523-523242a5b138" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/.vscode/blogs-snippets.code-snippets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/Blog/2024总结.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/Blog/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/Blog/工作流2.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/css/extra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/css/katex.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/imgs/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/imgs/xiaoju.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/javascripts/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/javascripts/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/代数学/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/南开大学数学分析月考真题/zhanwei.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/实分析/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/数学分析(Lecture Notes)/小鞠浴衣.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/数学分析(Lecture Notes)/预备知识(数学分析).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/概率论/Combinatorial Analysis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/概率论/Sets, Axioms of Probability.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/概率论/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/读书笔记/Royden(Reading Notes)/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/分析学/读书笔记/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/导航(初学者).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/启发式算法/模拟退火(SA).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/启发式算法/神经网络.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/启发式算法/蚁群算法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/启发式算法/遗传算法(GA).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/图论(Graph Theory).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/控制预测类/一元线性回归分析.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/控制预测类/回归分析概述.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/控制预测类/多元线性回归分析.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/控制预测类/时间序列ARIMA模型.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/控制预测类/灰色预测(GM(1,1)).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/控制预测类/非线性回归分析.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/机器学习模型算法/机器学习模型概述.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/机理分析类/微分方程.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/蒙特卡洛法(Monte Carlo).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/Topsis法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/主成分分析(PCA).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/基于熵权法对Topsis模型的修正.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/层次分析法(AHP).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/模糊综合评价.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/灰色关联分析(GRA).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/熵权法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/评价决策类/评价类问题.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/动态规划(DP).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/图论最短路径.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/多目标规划(MOP).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/整数规划和0-1规划.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/最大最小化规划.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/最小生成树.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/线性规划(LP).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数学建模/模型学习/运筹优化类/非线性规划.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/CS50x/CS50x.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/CS50x/Week 0 Scratch/Week 0 Scratch.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/CS50x/Week 1 C/Notes and codes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/CS50x/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/网络资源整合/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/docs/网络资源整合/知乎收藏.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/overrides/partials/comments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/Blog/2024总结/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/Blog/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/Blog/工作流2.0/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/css/extra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/css/katex.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/imgs/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/imgs/xiaoju.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/javascripts/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/javascripts/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/代数学/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/南开大学数学分析月考真题/zhanwei/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/实分析/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/数学分析(Lecture Notes)/小鞠浴衣.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/数学分析(Lecture Notes)/预备知识(数学分析)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/概率论/Combinatorial Analysis/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/概率论/Sets, Axioms of Probability/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/概率论/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/读书笔记/Royden(Reading Notes)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/读书笔记/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/导航(初学者)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/模拟退火(SA)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/神经网络/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/蚁群算法/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/遗传算法(GA)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/图论(Graph Theory)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/一元线性回归分析/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/回归分析概述/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/多元线性回归分析/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/时间序列ARIMA模型/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/灰色预测(GM(1,1))/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/非线性回归分析/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/机器学习模型算法/机器学习模型概述/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/机理分析类/微分方程/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/蒙特卡洛法(Monte Carlo)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/Topsis法/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/主成分分析(PCA)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/基于熵权法对Topsis模型的修正/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/层次分析法(AHP)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/模糊综合评价/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/灰色关联分析(GRA)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/熵权法/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/评价类问题/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/动态规划(DP)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/图论最短路径/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/多目标规划(MOP)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/整数规划和0-1规划/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/最大最小化规划/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/最小生成树/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/线性规划(LP)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/非线性规划/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/CS50x/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/Week 0 Scratch/Week 0 Scratch/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/Week 1 C/Notes and codes/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/知乎收藏/index.html" afterDir="false" />
+    <list default="true" id="92458606-399b-404b-8523-523242a5b138" name="更改" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" afterDir="false" />
     </list>
@@ -137,6 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -163,6 +47,21 @@
       <option name="presentableId" value="Default" />
       <updated>1739195908532</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1739198837559</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739198837559</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1739199053427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739199053427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
