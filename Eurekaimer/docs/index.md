@@ -8,14 +8,12 @@ hide:
 这里是 Eurekaimer 的数学小站，本站由 `mkdocs` 生成，持续更新中.
 
 
-
 !!! note "[Erica Jong](http://en.wikipedia.org/wiki/Erica_Jong)"
     *Advice is what we ask for when we already know the answer but wish we didn’t.* 
 
 !!! note "更新时间"
     最近更新时间为 *{{git_revision_date_localized}}* .
 
-  
 
 
 
@@ -75,7 +73,7 @@ hide:
 
 ### 友链
 
-+ [@Yui]([Yui](https://yui-5995.xlog.app/))：一位学弟的网页
++ [@Yui](https://yui-5995.xlog.app/)：一位学弟的网页
 
 ### Intoxicating and Useful
 

@@ -103,7 +103,7 @@ If use simple input the binary question each an answer, it will be difficult.
 Large language models(LLMs)
 
 
-```
+``` C
 #include<stdio.h>
 
 int main(void)

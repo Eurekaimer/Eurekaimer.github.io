@@ -38,9 +38,13 @@ theme:
 
 
 markdown_extensions:
+  - toc:
+      permalink: true
   - meta
   - nl2br
-  - admonition
+  - admonition #callouts
+  - codehilite:
+      linenums: true #代码高亮
   - pymdownx.details
   - footnotes
   - pymdownx.tabbed:
@@ -65,7 +69,7 @@ plugins:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
   - callouts:
       aliases: false
-  - git-revision-date-localized:
+  - git-revision-date-localized: #日期插件：显示更新日期和创建日期
       type: date
       custom_format: "%d. %B %Y"
       timezone: Asia/Shanghai
@@ -107,3 +111,42 @@ extra:
           data: 0
           note: >- 
             感谢反馈！
+
+#navigation
+nav:
+  - Home: "index.md"
+  - Blog:
+      - 2024工作总结: "Blog/2024总结.md"
+      - Chapter 0: "Blog/index.md"
+      - 工作流: "Blog/工作流2.0.md"
+  - 分析学:
+      - Preface: "分析学/index.md"
+      - 数学分析:
+        - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
+        - NKU数学分析真题: "分析学/南开大学数学分析月考真题/zhanwei.md"
+      - 实分析: "分析学/实分析/index.md"
+      - 概率论:
+          - Preface: "分析学/概率论/index.md"
+          - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
+          - 集合与概率论公理: "分析学/概率论/Sets, Axioms of Probability.md"
+      - 读书笔记:
+          - Preface: "分析学/读书笔记/index.md"
+          - Baby Rudin:
+              - The Real and Complex Number Systems: "分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md"
+          - Royden-Real-Analysis:
+              - Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
+  - 代数学:
+      - Preface: "代数学/index.md"
+  - 数据科学:
+      - Preface: "数据科学/index.md"
+      - CS50x:
+         - Intro: "数据科学/CS50x/CS50x.md"
+         - Calendar and remark: "数据科学/CS50x/index.md"
+         - Week 0 Scratch: "数据科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
+         - Week 1 C: "数据科学/CS50x/Week 1 C/Notes and codes.md"
+  - 数学建模:
+      - Preface: "数学建模/index.md"
+      - 导航(初学者): "数学建模/导航(初学者).md"
+  - 网络资源整合:
+      - 导言: "网络资源整合/index.md"
+      - 知乎收藏: "网络资源整合/知乎收藏.md"
