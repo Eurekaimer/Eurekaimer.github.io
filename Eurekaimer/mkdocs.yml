@@ -22,6 +22,7 @@ theme:
         name: Switch to light mode
       primary: blue grey
   features:
+    - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -67,6 +68,18 @@ markdown_extensions:
 plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
+  - statistics: #give an estimated time to read and some datas
+      ignore_languages:
+        - mermaid
+        - markdown
+  - blog:
+      enabled: false
+      blog_dir: Blog
+      blog_toc: true
+      post_dir: "Blog/posts"
+      post_date_format: long
+      post_readtime: true
+      post_readtime_words_per_minute: 265
   - callouts:
       aliases: false
   - git-revision-date-localized: #日期插件：显示更新日期和创建日期
@@ -88,9 +101,11 @@ extra_javascript:
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   - javascripts/config.js    # Customazation js
   - javascripts/main.js
+  - javascripts/extra.js
   - js/timeago.min.js
   - js/timeago_mkdocs_material.js
 extra_css:
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css    # Customazation css
 extra:
@@ -116,9 +131,9 @@ extra:
 nav:
   - Home: "index.md"
   - Blog:
-      - 2024工作总结: "Blog/2024总结.md"
-      - Chapter 0: "Blog/index.md"
-      - 工作流: "Blog/工作流2.0.md"
+      - 1: "Blog/index.md"
+      - 2: "Blog/posts/2024总结.md"
+      - 3: "Blog/posts/工作流2.0.md"
   - 分析学:
       - Preface: "分析学/index.md"
       - 数学分析:
