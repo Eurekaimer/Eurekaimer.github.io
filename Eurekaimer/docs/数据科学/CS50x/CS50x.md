@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # CS50x INTRO
 
 

@@ -1,15 +1,23 @@
 ---
+statistics: True
 comments: true
 hide:
   - navigation
 ---
+
+
+
 # Home
+
+!!! quote "[George Box](http://en.wikipedia.org/wiki/George_Box)"
+    *All models are wrong, but some are useful.* 
+
 
 这里是 Eurekaimer 的数学小站，本站由 `mkdocs` 生成，持续更新中.
 
 
-!!! note "[Erica Jong](http://en.wikipedia.org/wiki/Erica_Jong)"
-    *Advice is what we ask for when we already know the answer but wish we didn’t.* 
+本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。
+
 
 !!! note "更新时间"
     最近更新时间为 *{{git_revision_date_localized}}* .
@@ -62,7 +70,7 @@ hide:
 
 + [**mkdocs-git-revision-date-localized-plugin**](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)：日期显示 css.color.rgb:[140,73,90] 小鞠发色！
 
-!!! note "公告栏"
+!!! warning "公告栏"
     如有侵权，请联系我.
 
 > 特别鸣谢：@iceyear https://github.com/iceyear

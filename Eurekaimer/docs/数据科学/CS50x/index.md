@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # README
 
 Self-learning notes about Harvard CS50x.

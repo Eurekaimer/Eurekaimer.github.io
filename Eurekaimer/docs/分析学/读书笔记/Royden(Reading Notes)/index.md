@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # 评价
 
 

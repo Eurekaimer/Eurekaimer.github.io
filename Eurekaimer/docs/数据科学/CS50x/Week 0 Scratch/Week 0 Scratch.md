@@ -1,11 +1,14 @@
-# Syllabus
+---
+comments: true
+---
+## Syllabus
 
 >Computer Science. Computational Thinking. Problem Solving: Inputs, Outputs. Representation: Unary, Binary, Decimal, ASCII, Unicode, RGB. Abstraction. Algorithms. Running Times. Pseudocode. Scratch: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops; Events; Threads.
 
 
-# Notes
+## Notes
 
-## Binary
+### Binary
 
 
 >Computer is a base-2 system we can use 0 and 1 to represent all of it.
@@ -16,7 +19,7 @@ Case: use the hand to count the number by control the finger up and down, how ma
 The answer is 31 if you start with the 0(we have $2^{5}$ outcomes)
 
 
-### bit
+#### bit
 
 >For the computer, it is useful and simple because it imply the on and off.
 
@@ -24,7 +27,7 @@ binary digit-**BIT**!
 
 we can make the 1 value means on and 0 means off. and use light bulb to represent the fingers' up and down.
 
-### decimal
+#### decimal
 
 $123=100*1+10*2+1*3$
 
@@ -34,14 +37,14 @@ More often used than bit is byte, what is byte?
 A byte is 8 bit(or 8 bulbs) it can represent the 255.
 
 
-## ASCII
+### ASCII
 
 
 So how can we use them denote the number A?
 Assign every letter a number -for some reasons the A strats with 65(64+1).
 
 
-## Unicode
+### Unicode
 
 Unicode code point U+1F602 
 
@@ -49,7 +52,7 @@ Remark:
 The U+ is a conventional mark for unicode in computer science. 
 
 
-## Color
+### Color
 
 Zeros and ones can be used to represent color.
 
@@ -61,7 +64,7 @@ We will think more things can be represent by 0's and 1's so between the input a
 
 It's algorithms!
 
-## Algorithms
+### Algorithms
 
 Case: Find John Harvard in the book and take three algorithms.
 
@@ -96,7 +99,7 @@ They called functions and use conditions.
 
 And above it's a loop can go and go.
 
-## Artificial Intelligence
+### Artificial Intelligence
 
 If use simple input the binary question each an answer, it will be difficult.
 
@@ -113,7 +116,7 @@ int main(void)
 ```
 
 
-## Scratch
+### Scratch
 
 Through dragging and dropping some puzzles to make a program.
 
@@ -122,7 +125,7 @@ Very interesting parts.
 Ivy's Hardest Game --So difficult!(Can it passed?)
 
 
-# Sum up
+## Sum up
 
 In this lesson, you learned how this course sits in the wide world of computer science and programming. You learned…
 
@@ -140,7 +143,7 @@ In this lesson, you learned how this course sits in the wide world of computer s
 This was CS50! Welcome aboard! See you next time!
 
 
-# Problem Set 0
+## Problem Set 0
 
 >It’s time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch, at [scratch.mit.edu](https://scratch.mit.edu/), any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
 

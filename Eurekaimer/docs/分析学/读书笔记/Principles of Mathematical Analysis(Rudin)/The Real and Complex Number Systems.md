@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Introduction
 
 **A satisfied discussion of the main concepts of analysis** must be based on **an accurately defined number concept.**

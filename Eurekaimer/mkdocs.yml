@@ -68,18 +68,17 @@ markdown_extensions:
 plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
+  - tags
   - statistics: #give an estimated time to read and some datas
+  #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
       ignore_languages:
         - mermaid
         - markdown
+      page_check_metadata: comments
   - blog:
-      enabled: false
-      blog_dir: Blog
+      enabled: true #这玩意跟statisticas冲突了，我不知道问题在哪 而且我本人写blog比较随意而且一般有确定的主题干脆就直接乱扔了感觉无所谓
       blog_toc: true
-      post_dir: "Blog/posts"
-      post_date_format: long
-      post_readtime: true
-      post_readtime_words_per_minute: 265
+      post_readtime: false
   - callouts:
       aliases: false
   - git-revision-date-localized: #日期插件：显示更新日期和创建日期
@@ -130,10 +129,12 @@ extra:
 #navigation
 nav:
   - Home: "index.md"
-  - Blog:
-      - 1: "Blog/index.md"
-      - 2: "Blog/posts/2024总结.md"
-      - 3: "Blog/posts/工作流2.0.md"
+  - 开发日志:
+      - Preface: 更新日志/index.md
+  - 博客:
+      - blog/index.md
+      - 2024数学总结: blog/posts/2024总结.md
+      - workflow: blog/posts/工作流2.0.md
   - 分析学:
       - Preface: "分析学/index.md"
       - 数学分析:

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Chapter 1 :Combinatorial Analysis
 
 OK,this is the first chapter in the probability theory, we will review some definition and theorems we have learned in our high school. To make a good preparition for the future, I suggest you can find some not so easy problems to solve and test yourself(like the question in the Ross or any others).
