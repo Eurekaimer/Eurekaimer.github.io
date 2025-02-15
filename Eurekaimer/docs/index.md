@@ -7,7 +7,42 @@ hide:
 
 
 
+<center><font  color= #757575 size=6 class="ml3">“Welcome to Eurekaimer's Digital Garden”</font></center>
+<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>   
+
+<body>
+        <font color="#8C495A">
+        <p style="text-align: center; ">
+                <span>本站已经运行</span>
+                <span id='box1'></span>
+    </p>
+      <div id="box1"></div>
+      <script>
+        function timingTime(){
+          let start = '2024-10-28 00:00:00'
+          let startTime = new Date(start).getTime()
+          let currentTime = new Date().getTime()
+          let difference = currentTime - startTime
+          let m =  Math.floor(difference / (1000))
+          let mm = m % 60  // 秒
+          let f = Math.floor(m / 60)
+          let ff = f % 60 // 分钟
+          let s = Math.floor(f/ 60) // 小时
+          let ss = s % 24
+          let day = Math.floor(s  / 24 ) // 天数
+          return day + "天" + ss + "时" + ff + "分" + mm +'秒'
+        }
+        setInterval(()=>{
+          document.getElementById('box1').innerHTML = timingTime()
+        },1000)
+      </script>
+      </font>
+    </body>
+
+
 # Home
+
+## Preface
 
 !!! quote "[George Box](http://en.wikipedia.org/wiki/George_Box)"
     *All models are wrong, but some are useful.* 
@@ -160,4 +195,7 @@ hide:
 + 冰菓
 + 紫罗兰永恒花园
 + 败犬女主太多了
+
+
+
 
