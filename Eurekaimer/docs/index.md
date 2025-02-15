@@ -13,13 +13,13 @@ hide:
     *All models are wrong, but some are useful.* 
 
 
-这里是 Eurekaimer 的数学小站，本站由 `mkdocs` 生成，持续更新中.
+这里是 `Eurekaimer` 的数字花园，本站由 `mkdocs` 生成，持续更新中.
 
 
-本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。
+本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片.
 
 
-!!! note "更新时间"
+!!! info "更新时间"
     最近更新时间为 *{{git_revision_date_localized}}* .
 
 
@@ -33,8 +33,8 @@ hide:
 
 我是来自Nankai University的一名**统计学类**大类学生（分流意向是统计学），MBTI：INTJ，喜欢数学与一切logical and elegant的事物，目前最喜欢的动漫角色是小鞠知花，欢迎一起学习为宇宙写下注脚，以下是联系我的一些方式：
 
-- :material-mail: QQ邮箱(Email) ： `2507983039@qq.com`
-- :material-mail: 163邮箱(Email)： `Eurekaimer@163.com`
+- :octicons-mail-16: QQ邮箱(Email) ： `2507983039@qq.com`
+- :octicons-mail-16: 163邮箱(Email)： `Eurekaimer@163.com`
   
 
 这里的笔记内容主要是NKU统计学类课程的课程笔记和自我学习的成果输出，也有参考外文经典教材时的读书笔记。
@@ -43,15 +43,17 @@ hide:
 
 ### Personal Interest
 
-+ Analysis and Probability Theory
-+ Mathematical Statistic
-+ Data Science
-+ Machine Learning
-+ Anime
-+ Chess
++ :simple-wolframmathematica::Analysis and Probability Theory
++ :simple-simpleanalytics::Mathematical Statistic
++ :simple-datastax::Data Science
++ :simple-greatlearning::Machine Learning
++ :simple-myanimelist::Anime
++ :fontawesome-solid-chess-queen::Chess
 
 ### Timeline
 
++ 2020.09 - 2023.06 莆田第一中学
++ 2023.09 - present 南开大学统计与数据科学学院 
 
 
 ## 关于本站
@@ -59,21 +61,24 @@ hide:
 ### 建站纪念
 
 - 2024-10-28 本站建成，作为一个个人学习的一个小记录.
+- 2025-02-09 由于一些原因进行了一次迁移，原本的repo已经删除，现有的站点是按照原站点备份恢复的。
+- 2025-02-13 由于站点不再纯粹由数学组成，思考后本站点更名为`Eurekaimer's Digital Garden`
 
 
+### 建站流程
 
-### 本站的建站流程
+#### 框架选择
 
-+ 本站采用mkdocs框架产生
+至于为什么选择使用这一框架，主要是出于作者想要
 
-### Plugins
+#### Plugins
 
 + [**mkdocs-git-revision-date-localized-plugin**](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)：日期显示 css.color.rgb:[140,73,90] 小鞠发色！
 
 !!! warning "公告栏"
     如有侵权，请联系我.
 
-> 特别鸣谢：@iceyear https://github.com/iceyear
+> 特别鸣谢[@iceyear](https://github.com/iceyear)在建站过程中提供的技术支持
 
 
 
@@ -128,3 +133,5 @@ hide:
 + 轻音少女
 + 冰菓
 + 败犬女主太多了
+
+

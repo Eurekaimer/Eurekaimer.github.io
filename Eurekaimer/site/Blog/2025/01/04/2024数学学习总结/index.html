@@ -9,21 +9,23 @@
       
       
       
+        <link rel="prev" href="../../../../archive/2024/">
       
       
-      <link rel="icon" href="../../../../imgs/xiaoju.jpg">
+      
+      <link rel="icon" href="../../../../../imgs/xiaoju.jpg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
-        <title>主成分分析(PCA) - Eurekaimer的数学小站</title>
+        <title>2024数学学习总结 - Eurekaimer的数学小站</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -54,9 +56,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
     
-      <link rel="stylesheet" href="../../../../css/extra.css">
+      <link rel="stylesheet" href="../../../../../css/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -92,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pca" class="md-skip">
+        <a href="#2024" class="md-skip">
           跳转至
         </a>
       
@@ -108,9 +110,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../.." title="Eurekaimer的数学小站" class="md-header__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
+    <a href="../../../../.." title="Eurekaimer的数学小站" class="md-header__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
       
-  <img src="../../../../imgs/xiaoju.jpg" alt="logo">
+  <img src="../../../../../imgs/xiaoju.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              主成分分析(PCA)
+              2024数学学习总结
             
           </span>
         </div>
@@ -230,7 +232,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -249,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" class="md-tabs__link">
+        <a href="../../../../../%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" class="md-tabs__link">
           
   
     
@@ -265,11 +267,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
     
@@ -289,7 +293,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/" class="md-tabs__link">
+        <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/" class="md-tabs__link">
           
   
     
@@ -309,7 +313,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/" class="md-tabs__link">
+        <a href="../../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/" class="md-tabs__link">
           
   
     
@@ -329,7 +333,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" class="md-tabs__link">
+        <a href="../../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" class="md-tabs__link">
           
   
     
@@ -349,7 +353,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../" class="md-tabs__link">
+        <a href="../../../../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="md-tabs__link">
           
   
     
@@ -369,7 +373,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/" class="md-tabs__link">
+        <a href="../../../../../%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/" class="md-tabs__link">
           
   
     
@@ -399,7 +403,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -410,9 +416,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Eurekaimer的数学小站" class="md-nav__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
+    <a href="../../../../.." title="Eurekaimer的数学小站" class="md-nav__button md-logo" aria-label="Eurekaimer的数学小站" data-md-component="logo">
       
-  <img src="../../../../imgs/xiaoju.jpg" alt="logo">
+  <img src="../../../../../imgs/xiaoju.jpg" alt="logo">
 
     </a>
     Eurekaimer的数学小站
@@ -439,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +488,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" class="md-nav__link ">
+            <a href="../../../../../%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -514,6 +520,8 @@
       
   
   
+    
+  
   
   
     
@@ -532,21 +540,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../blog/" class="md-nav__link ">
+            <a href="../../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -557,13 +566,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             博客
@@ -576,10 +585,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../blog/2025/01/04/2024%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2024数学学习总结
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -588,6 +617,110 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      前言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      正文
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="正文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      小总结
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      吐槽部分
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      回归正文
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      碎碎念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="碎碎念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      2025年想做的事
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -600,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/2024/11/24/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%8F%82%E8%80%83/" class="md-nav__link">
+      <a href="../../../../2024/11/24/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%8F%82%E8%80%83/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2025/" class="md-nav__link">
+      <a href="../../../../archive/2025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,7 +894,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/" class="md-nav__link ">
+            <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -840,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Lecture%20Notes%29/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86%28%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%29/" class="md-nav__link">
+      <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%28Lecture%20Notes%29/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86%28%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E6%9C%88%E8%80%83%E7%9C%9F%E9%A2%98/zhanwei/" class="md-nav__link">
+      <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E6%9C%88%E8%80%83%E7%9C%9F%E9%A2%98/zhanwei/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -890,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E5%AE%9E%E5%88%86%E6%9E%90/" class="md-nav__link">
+      <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E5%AE%9E%E5%88%86%E6%9E%90/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -938,7 +1071,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/" class="md-nav__link ">
+            <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -971,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/Combinatorial%20Analysis/" class="md-nav__link">
+      <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/Combinatorial%20Analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -992,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/Sets%2C%20Axioms%20of%20Probability/" class="md-nav__link">
+      <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/Sets%2C%20Axioms%20of%20Probability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1048,7 +1181,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="md-nav__link ">
+            <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1125,7 +1258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Principles%20of%20Mathematical%20Analysis%28Rudin%29/The%20Real%20and%20Complex%20Number%20Systems/" class="md-nav__link">
+      <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Principles%20of%20Mathematical%20Analysis%28Rudin%29/The%20Real%20and%20Complex%20Number%20Systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1177,7 +1310,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Royden%28Reading%20Notes%29/" class="md-nav__link ">
+            <a href="../../../../../%E5%88%86%E6%9E%90%E5%AD%A6/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Royden%28Reading%20Notes%29/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1251,7 +1384,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/" class="md-nav__link ">
+            <a href="../../../../../%E4%BB%A3%E6%95%B0%E5%AD%A6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1311,7 +1444,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" class="md-nav__link ">
+            <a href="../../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1373,7 +1506,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/" class="md-nav__link ">
+            <a href="../../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1404,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/CS50x/" class="md-nav__link">
+      <a href="../../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/CS50x/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1427,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/Week%200%20Scratch/Week%200%20Scratch/" class="md-nav__link">
+      <a href="../../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/Week%200%20Scratch/Week%200%20Scratch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1448,7 +1581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/Week%201%20C/Notes%20and%20codes/" class="md-nav__link">
+      <a href="../../../../../%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/CS50x/Week%201%20C/Notes%20and%20codes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1509,7 +1642,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../" class="md-nav__link ">
+            <a href="../../../../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1542,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E5%AF%BC%E8%88%AA%28%E5%88%9D%E5%AD%A6%E8%80%85%29/" class="md-nav__link">
+      <a href="../../../../../%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%AF%BC%E8%88%AA%28%E5%88%9D%E5%AD%A6%E8%80%85%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1595,7 +1728,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/" class="md-nav__link ">
+            <a href="../../../../../%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1628,7 +1761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/%E7%9F%A5%E4%B9%8E%E6%94%B6%E8%97%8F/" class="md-nav__link">
+      <a href="../../../../../%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/%E7%9F%A5%E4%B9%8E%E6%94%B6%E8%97%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1657,6 +1790,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1678,26 +1813,44 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      基本概念
+      前言
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="基本概念">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      正文
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="正文">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      数据降维
+      背景
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      分析原理
+      小总结
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      吐槽部分
     </span>
   </a>
   
@@ -1709,73 +1862,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      建立模型
+      回归正文
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="建立模型">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      碎碎念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="碎碎念">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
-      标准化处理
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      计算协方差矩阵
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      计算特征值和特征向量
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      计算贡献率以及累计贡献率
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      写出主成分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      根据系数分析主成分代表的意义
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      做后续分析
+      2025年想做的事
     </span>
   </a>
   
@@ -1795,41 +1903,105 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    回到主页
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
                 
-                  
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/88918522?v=4" alt="Eurekaimer">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="https://github.com/Eurekaimer">Eurekaimer</a>
+                        
+                      </strong>
+                      <br>
+                      Math and Statistics
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    元数据
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-01-04 00:00:00" class="md-ellipsis">2025年1月4日</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
 
   
   
 
 
-<h1 id="pca">主成分分析(PCA)<a class="headerlink" href="#pca" title="Permanent link">&para;</a></h1>
-<h2 id="_1">基本概念<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>问题提出：简化变量</p>
-<p>目标：用较少的新变量代替原来较多的旧变量，并且<strong>尽可能多的保留原本变量所反映的信息</strong>？</p>
-<p>REMARK： 数学上的求极大无关组？</p>
-<h3 id="_2">数据降维<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>去除噪声和不重要的特征，可以接受一定量的信息损失 </p>
-<ul>
-<li>换特征</li>
-<li>减少特征</li>
-</ul>
-<p>几何意义是旋转坐标系，正比例函数改为坐标轴，那样就可以使用一个变量控制</p>
-<h3 id="_3">分析原理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>对于大多数情况，各个变量基本服从于正态分布（中心极限定理？），所以变量为2的数据散点分布大致为一个椭圆，可以在多元统计中找到。</p>
-<p>代数意义：找到一个低阶的投影矩阵，代替原本的信息矩阵。</p>
-<h2 id="_4">建立模型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="_5">标准化处理<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<h3 id="_6">计算协方差矩阵<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<h3 id="_7">计算特征值和特征向量<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<h3 id="_8">计算贡献率以及累计贡献率<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<h3 id="_9">写出主成分<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<h3 id="_10">根据系数分析主成分代表的意义<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<h3 id="_11">做后续分析<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<p>感觉上可以作为一个思想进行应用 对于大数据类均可以使用</p>
-<p>解释主成分才是比较困难的，需要能够较好地解释那些主成分（带有一些模糊性）</p>
-<p>优势是维数降低了，除非能够大大地降低维数，否则不应该采用。</p>
+<h1 id="2024">2024年度总结<a class="headerlink" href="#2024" title="Permanent link">&para;</a></h1>
+<h2 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>发现很久没有系统地回顾自己的学习生活了，刚好期末快考完了，所以极限来知乎水一篇年度回答(bushi)。鉴于我本人水平比较菜，也就是竭力伪装成一个正常大学牲的普通一年生活(请给出p值doge)，只是一点日常记录看看就好了，不要骂我不努力，万分感谢。</p>
+<h2 id="_2">正文<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">背景<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>本人某9大二普通学生，从去年(现在或许是前年了？虽然我写的时候还是去年)上大一以来就一直忙着混过一些必修课考试并抓准时机做补番和打游戏诸如此类的事情，没有做大量超出原本数分高代解几之类的学习。</p>
+<h3 id="_4">小总结<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>到2024年来学业和生活还算有了些起色，先是顶着语言debuff学习了一些英文教材和课程(但是回过头也不敢肯定自己学的多扎实)，然后是学习(折腾)了一些LaTeX和markdown相关的软件和操作，能用LaTeX写一些简单课程论文和课程笔记或许是我今年第二大的收获？第一大收获大概是对自己的英文水平有了一些自信，敢于去阅读一些上古英文文献和一些英文资料，上英文社区寻找资料了(科技点亮世界，而世界互相帮助的感觉真的很好)。</p>
+<p>因为个人还算兴趣比较广博的人，2024上半年可能什么都摸了摸(拓扑，实变，概率论)然后都感觉挺有意思的，看了些测度论和范畴论相关的(毕竟不需要什么门槛)，但是对于在知乎上甚嚣尘上的代数几何和PDE之类神秘古神语也敬而远之(前置知识也不是很够不太敢去碰，也不想当名词党，也不是那种擅长用什么学什么的人)，再然后就是发现对于概率论比较有兴趣，并且了解一番发现概率论需要建立在测度之上后有了一些冥冥之中的感觉，决定下一年要好好学习一些相关的理论。</p>
+<p>说到好好学习这里可能比较值得宕开一笔好好说道说道</p>
+<h3 id="_5">吐槽部分<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>Warning!!! 以下内容有很强的个人情绪</strong></p>
+<p>TMD，上个大学这么多事！好多无聊无意义的事情啊，我确实不是什么热衷社交的人，平常的爱好也只是看看番，打打游戏，顶多加上看数学书。我这种zz鼠鼠平常出门都恨不得走下水道，这么多推不掉的事属实震撼到我了，也是小小的变e了，常常思考别人的大学是否也是这么多事，一问都一个样，噫，乐！</p>
+<h2 id="_6">回归正文<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>对于好好学习这件事还是有一些看法，刚上大学的人(me yes)可能还有比较多学生思维吧(随便怎么叫吧)，具体大概表现就是不怎么敢翘课，然后想着每门课的成绩怎么保，怎么拿高分之类的，心里完全知道这些事可能并不是很有利于数学学习，然后就是一整个焦虑，而且大环境也很卷，总是有相关的保研和考研言论绑架，搞得不读研读博跟杀人放火了一样。然后看数学书也不是特别有经验，经常看到一半发现自己好像上面没看懂呢就给看下面了，然后看不懂一直打转压力更大了(现在感觉就是对于那套语言不是很习惯，也不是很能把握学习的重点，看书搁那验证证明，思考证明思路思考的太少了，一句话就是看书不带脑子)。</p>
+<p>这学期就感觉好多了，选择性上了很多课，有了很多收获。虽然不是我GPA高了，是我番看多了，游戏时长进步了，但是变得开心了，生活之余也经常有人劝我不焦虑的，私下认为这也是很难做到的，怎么可能不去思考自己的未来呢？但是我摆着摆着还真摆明白了，之前感觉有点云里雾里的东西现在看居然十分的自然，之前感觉肯定做不出的题，会在自己十分有耐心的抽丝剥茧中慢慢解决，这种一切完美闭环的感觉才是我一开始追求的美好，而不是什么“你GPA多少？”。数学书是有点明白怎么看的了，问题是有一些想法的了，感觉真的很棒。</p>
+<p>既然有了些经验就要利用一下了，我觉得我也终于可以开始做一些更深的数学探索了，那些快乐且充满希望的时光仿佛又回来了，希望明年能少摆点烂。</p>
+<h2 id="_7">碎碎念<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>其他的调剂大概就是在业余生活之中加了一些数学群，但是发现现在的数学群氛围大都不是特别好，动不动就是mol来mol去的，不是很感冒，也没什么意思，毕竟显然我也不是什么能被mol的玩意，遂摆之。</p>
+<p>然后就是跟数学不太相关的部分了，算是加了一些学弟?(确实没有学妹)，发现直系高中的学弟比我见到的大多数大学生都正常(由于是死宅无法根据身边统计学得出可信度较高的结论)，帮助答疑了一些问题，再然后就是把之前打算在大一接触的一些东西翻了出来打算慢慢开始学(主要是csdiy上的一些东西)，虽然不打算转码但是确实对这些看起来很有趣的东西没有什么抵抗力，也建了一个自己的个人网站玩算是一个纪念吧。</p>
+<h3 id="2025">2025年想做的事<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h3>
+<ol>
+<li>学习随机过程相关的理论</li>
+<li>可能不是太用得到的Fourier分析？</li>
+<li>学完实变之后再回顾一下数分高代？</li>
+<li>多看几本实分析和概率论相关的书作为补充</li>
+<li>拜读一些国内知名的讲义(如lww老师的代数学方法)</li>
+<li>希望尽快在保研、考研、润之间做出选择(唉)</li>
+</ol>
 
 
 
@@ -1852,7 +2024,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年2月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年2月13日</span>
   </span>
 
     
@@ -1862,7 +2034,7 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年2月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年2月13日</span>
   </span>
 
     
@@ -1873,6 +2045,8 @@
 
   
 
+
+  
 
 
   <form class="md-feedback" name="feedback" hidden>
@@ -1916,10 +2090,10 @@
   </form>
 
 
-                
-              </article>
-            </div>
-          
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1956,10 +2130,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "navigation.expand"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "navigation.expand"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
       
@@ -1969,15 +2143,15 @@
       
         <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       
-        <script src="../../../../javascripts/config.js"></script>
+        <script src="../../../../../javascripts/config.js"></script>
       
-        <script src="../../../../javascripts/main.js"></script>
+        <script src="../../../../../javascripts/main.js"></script>
       
-        <script src="../../../../javascripts/extra.js"></script>
+        <script src="../../../../../javascripts/extra.js"></script>
       
-        <script src="../../../../js/timeago.min.js"></script>
+        <script src="../../../../../js/timeago.min.js"></script>
       
-        <script src="../../../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
