@@ -69,20 +69,23 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
   - tags
-  - statistics: #give an estimated time to read and some datas
+  - statistics:
+  #give an estimated time to read and some datas
   #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
       ignore_languages:
         - mermaid
         - markdown
       page_check_metadata: comments
   - blog:
-      enabled: true #这玩意跟statisticas冲突了，我不知道问题在哪 而且我本人写blog比较随意而且一般有确定的主题干脆就直接乱扔了感觉无所谓
+      enabled: true
       blog_toc: true
       post_readtime: false
   - callouts:
       aliases: false
-  - git-revision-date-localized: #日期插件：显示更新日期和创建日期
-      type: date
+  - git-revision-date-localized:
+      #日期插件：显示更新日期和创建日期
+      #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
+      type: datetime #or date
       custom_format: "%d. %B %Y"
       timezone: Asia/Shanghai
       locale: zh

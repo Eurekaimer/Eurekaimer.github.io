@@ -78,10 +78,26 @@ hide:
 #### Plugins
 
 + [**mkdocs-git-revision-date-localized-plugin**](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)：日期显示 css.color.rgb:[140,73,90] 小鞠发色！
++ [mkdocs-callouts](https://github.com/sondregronas/mkdocs-callouts)：一个能够将Obsidian的callouts块自动转换为mkdocs支持语法的插件.
++ [**Material-plugins**](https://squidfunk.github.io/mkdocs-material/plugins/)
+  + [**Blog**](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
+  + [**Search**](https://squidfunk.github.io/mkdocs-material/plugins/search/)
+  + [**Tags**](https://squidfunk.github.io/mkdocs-material/plugins/tags/)
+
++ [**statistics**](https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file)：一个用于文档统计的插件，并且可给出预计阅读时间，感谢[TonyCrane](https://github.com/TonyCrane)的开源.
+
+#### Other extension
 
 
+<div class="grid cards" markdown>
 
-> 特别鸣谢[@iceyear](https://github.com/iceyear)在建站过程中提供的技术支持
+-   :material-notebook-edit-outline:{ .lg .middle } __参考资料__
+
+    ---
+
+    - 在构建本网站的过程中参考了[Wcowin同学的Mkdocs教程](https://wcowin.work/Mkdocs-Wcowin/)
+
+</div>
 
 
 
