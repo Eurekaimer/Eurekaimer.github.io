@@ -96,7 +96,7 @@ hide:
 ### 建站纪念
 
 - 2024-10-28 本站建成，作为一个个人学习的一个小记录.
-- 2025-02-09 由于一些原因进行了一次迁移，原本的repo已经删除，现有的站点是按照原站点备份恢复的。
+- 2025-02-10 由于一些原因进行了一次迁移，原本的repo已经删除，现有的站点是按照原站点备份恢复的。
 - 2025-02-13 由于站点不再纯粹由数学组成，思考后本站点更名为`Eurekaimer's Digital Garden`
 
 
@@ -115,10 +115,9 @@ hide:
 + [**mkdocs-git-revision-date-localized-plugin**](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)：日期显示 css.color.rgb:[140,73,90] 小鞠发色！
 + [mkdocs-callouts](https://github.com/sondregronas/mkdocs-callouts)：一个能够将Obsidian的callouts块自动转换为mkdocs支持语法的插件.
 + [**Material-plugins**](https://squidfunk.github.io/mkdocs-material/plugins/)
-  + [**Blog**](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
-  + [**Search**](https://squidfunk.github.io/mkdocs-material/plugins/search/)
-  + [**Tags**](https://squidfunk.github.io/mkdocs-material/plugins/tags/)
-
+      + [**Blog**](https://squidfunk.github.io/mkdocs-material/plugins/blog/)：一个方便写博客的内置插件
+      + [**Search**](https://squidfunk.github.io/mkdocs-material/plugins/search/)：内置的搜索插件
+      + [**Tags**](https://squidfunk.github.io/mkdocs-material/plugins/tags/)：一个给文件加标签的插件，方便管理
 + [**statistics**](https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file)：一个用于文档统计的插件，并且可给出预计阅读时间，感谢[TonyCrane](https://github.com/TonyCrane)的开源.
 
 #### Other extension
@@ -186,12 +185,11 @@ hide:
 
   
 
-### Favourite Anime
+## Favourite Anime
 
 排名不分先后：
 
 + 轻音少女
-+ GBC
 + 冰菓
 + 紫罗兰永恒花园
 + 败犬女主太多了

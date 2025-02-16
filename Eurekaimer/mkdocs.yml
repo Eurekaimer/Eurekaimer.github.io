@@ -69,7 +69,18 @@ markdown_extensions:
 plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
-  - tags
+
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+  - tags:
+      tags_file: tags.md
+
   - statistics:
   #give an estimated time to read and some datas
   #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
@@ -77,12 +88,15 @@ plugins:
         - mermaid
         - markdown
       page_check_metadata: comments
+
   - blog:
       enabled: true
       blog_toc: true
       post_readtime: false
+
   - callouts:
       aliases: false
+
   - git-revision-date-localized:
       #日期插件：显示更新日期和创建日期
       #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
@@ -97,6 +111,7 @@ plugins:
       enable_git_follow: true
       enabled: true
       strict: false
+
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
@@ -133,34 +148,34 @@ extra:
 #navigation
 nav:
   - Home: "index.md"
-  - 开发日志:
-      - Preface: 更新日志/index.md
+  - 更新日志: 更新日志/index.md
   - 博客:
       - blog/index.md
-      - 2024数学总结: blog/posts/2024总结.md
+      - 2024数学年度总结: blog/posts/2024总结.md
       - workflow: blog/posts/工作流2.0.md
+  - 二次元: 二次元/二次元.md
   - 分析学:
-      - Preface: "分析学/index.md"
+      - 分析学总览: "分析学/index.md"
       - 数学分析:
         - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
         - NKU数学分析真题: "分析学/南开大学数学分析月考真题/zhanwei.md"
       - 实分析: "分析学/实分析/index.md"
       - 概率论:
-          - Preface: "分析学/概率论/index.md"
+          - 初等概率论: "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
           - 集合与概率论公理: "分析学/概率论/Sets, Axioms of Probability.md"
       - 读书笔记:
-          - Preface: "分析学/读书笔记/index.md"
+          - 分析学读书笔记: "分析学/读书笔记/index.md"
           - Baby Rudin:
               - The Real and Complex Number Systems: "分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md"
           - Royden-Real-Analysis:
               - Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
   - 代数学:
-      - Preface: "代数学/index.md"
+      - 代数学总览: "代数学/index.md"
   - 数据科学:
       - Preface: "数据科学/index.md"
       - CS50x:
-         - Intro: "数据科学/CS50x/CS50x.md"
+         - CS50x Intro: "数据科学/CS50x/CS50x.md"
          - Calendar and remark: "数据科学/CS50x/index.md"
          - Week 0 Scratch: "数据科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
          - Week 1 C: "数据科学/CS50x/Week 1 C/Notes and codes.md"
@@ -171,4 +186,5 @@ nav:
       - 导言: "网络资源整合/index.md"
       - 知乎收藏: "网络资源整合/知乎收藏.md"
   - 友链: 友链/友链.md
+  - 标签: tags.md
 

@@ -1,5 +1,7 @@
 ---
 comments: true
+tags:
+  - Probability Theory
 ---
 # Chapter 2 :Sets, Axioms of Probability
 

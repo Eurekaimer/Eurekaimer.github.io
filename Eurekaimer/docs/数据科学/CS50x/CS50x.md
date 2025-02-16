@@ -1,5 +1,9 @@
 ---
 comments: true
+tags:
+  - CS
+  - CSDIY
+  - CS50x
 ---
 # CS50x INTRO
 

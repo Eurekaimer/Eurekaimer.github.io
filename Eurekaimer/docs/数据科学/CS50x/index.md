@@ -1,5 +1,8 @@
 ---
 comments: true
+tags:
+  - CS
+  - CS50x
 ---
 # README
 

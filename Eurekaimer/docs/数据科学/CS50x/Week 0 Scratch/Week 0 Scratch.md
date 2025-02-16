@@ -1,5 +1,7 @@
 ---
 comments: true
+tags:
+  - CS50x
 ---
 ## Syllabus
 

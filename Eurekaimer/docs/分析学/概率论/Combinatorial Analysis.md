@@ -1,5 +1,7 @@
 ---
 comments: true
+tags:
+  - Probability Theory
 ---
 # Chapter 1 :Combinatorial Analysis
 
