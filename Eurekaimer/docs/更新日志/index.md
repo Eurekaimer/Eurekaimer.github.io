@@ -28,8 +28,12 @@ tags:
 
 ### 2025-02-12 
 
-用`Javascrips`增加了页面线条背景，增加`statistics`插件、用`Giscus`搭建`Comment System`还更换了站点字体
+用`Javascrips`增加了页面线条背景，增加`statistics`插件、用GitHub上的`Giscus`插件搭建`Comment System`并且更换了站点字体
 
+
+### 2025-02-22
+
+增加了一些卡片样式，对首页内容进行了一些简化和归档
 
 ### 2025-02-10 
 
@@ -37,7 +41,7 @@ tags:
 
 ### 2025-02-08 
 
-增加了`mkdocs-git-revision-date-localized-plugin`和`mkdocs-callouts`插件，改进了一些页面布局
+增加了`mkdocs-git-revision-date-localized-plugin`和`mkdocs-callouts`插件
 
 ### 2025-01-20 
 
@@ -60,4 +64,4 @@ tags:
 
 ### 2024-10-28 
 
-建站纪念日，使用`mkdocs`+`GitHub Pages`+`MkDocs Material`搭建，命名为`Eurekaimer的数学小站`
+建站纪念日，使用`mkdocs`+`GitHub Pages`+`MkDocs Material`搭建，命名`Eurekaimer的数学小站`
