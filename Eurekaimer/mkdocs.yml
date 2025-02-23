@@ -108,6 +108,7 @@ plugins:
       enable_creation_date: true
       exclude:
         - 友链/友链.md
+        - ./blog
       enable_git_follow: true
       enabled: true
       strict: false
@@ -160,7 +161,9 @@ nav:
       - 数学分析:
         - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
         - NKU数学分析真题: "分析学/南开大学数学分析月考真题/zhanwei.md"
-      - 实分析: "分析学/实分析/index.md"
+      - 实分析:
+          - Preface: "分析学/实分析/index.md"
+          - HW1: 分析学/实分析/作业1.md
       - 概率论:
           - 初等概率论: "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
@@ -180,6 +183,8 @@ nav:
          - Calendar and remark: "数据科学/CS50x/index.md"
          - Week 0 Scratch: "数据科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
          - Week 1 C: "数据科学/CS50x/Week 1 C/Notes and codes.md"
+      - 统计与大数据软件:
+          - hw1: 数据科学/统计与大数据软件/hw1.md
   - 数学建模:
       - Preface: "数学建模/index.md"
       - 导航(初学者): "数学建模/导航(初学者).md"
