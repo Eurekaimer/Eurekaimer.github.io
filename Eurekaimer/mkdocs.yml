@@ -155,6 +155,7 @@ nav:
       - 2024数学年度总结: blog/posts/2024总结.md
       - workflow: blog/posts/工作流2.0.md
       - 2025寒假总结: blog/posts/2025寒假总结.md
+      - S4-Week-1: blog/posts/2025-02-23.md
   - 二次元: 二次元/二次元.md
   - 分析学:
       - 分析学总览: "分析学/index.md"
@@ -163,7 +164,7 @@ nav:
         - NKU数学分析真题: "分析学/南开大学数学分析月考真题/zhanwei.md"
       - 实分析:
           - Preface: "分析学/实分析/index.md"
-          - HW1: 分析学/实分析/作业1.md
+          - HW1: "分析学/实分析/作业1.md"
       - 概率论:
           - 初等概率论: "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
@@ -176,6 +177,9 @@ nav:
               - Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
   - 代数学:
       - 代数学总览: "代数学/index.md"
+  - 统计学:
+      - 数理统计:
+         -  茆-统计量及其分布: "统计学/数理统计/第五章 统计量及其分布.md"
   - 数据科学:
       - Preface: "数据科学/index.md"
       - CS50x:
@@ -184,7 +188,7 @@ nav:
          - Week 0 Scratch: "数据科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
          - Week 1 C: "数据科学/CS50x/Week 1 C/Notes and codes.md"
       - 统计与大数据软件:
-          - hw1: 数据科学/统计与大数据软件/hw1.md
+          - hw1: "数据科学/统计与大数据软件/hw1.md"
   - 数学建模:
       - Preface: "数学建模/index.md"
       - 导航(初学者): "数学建模/导航(初学者).md"
