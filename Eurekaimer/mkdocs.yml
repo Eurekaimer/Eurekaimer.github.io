@@ -99,6 +99,7 @@ plugins:
         - mermaid
         - markdown
       page_check_metadata: comments
+      #只有有评论区的才开启，也就是知识内容
 
   - blog:
       enabled: true
@@ -170,7 +171,8 @@ nav:
       - 2024数学年度总结: blog/posts/2024总结.md
       - workflow: blog/posts/工作流2.0.md
       - 2025寒假总结: blog/posts/2025寒假总结.md
-      - S4-Week-1: blog/posts/2025-02-23.md
+      - Semester-4-Week-1: blog/posts/2025-02-23.md
+      - Semester-4-Week-2: blog/posts/2025-03-02.md
   - 二次元: 二次元/二次元.md
   - 分析学:
       - 分析学总览: "分析学/index.md"
