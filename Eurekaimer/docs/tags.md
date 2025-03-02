@@ -10,7 +10,7 @@
 
 </div>
 
-<!-- material/tags -->
+<!-- material/tags { scope: true } -->
 
 
 

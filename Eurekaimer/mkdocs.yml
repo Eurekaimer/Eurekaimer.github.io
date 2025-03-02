@@ -1,4 +1,5 @@
 site_name: Eurekaimer's Digital Garden
+site_url: https://github.com/Eurekaimer/Eurekaimer.github.io
 repo_url: https://github.com/Eurekaimer/Eurekaimer.github.io
 repo_name: Eurekaimer.github.io
 theme:
@@ -29,8 +30,8 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.expand
-    -  - content.code.copy #代码复制
-    # - navigation.expand
+    - content.code.copy     # 启用代码复制
+    - content.code.annotate # 启用代码注释
   font:
     text: Inria Serif
   icon:
@@ -51,12 +52,21 @@ markdown_extensions:
   - footnotes
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true    # 自定义复选框样式
+      clickable_checkbox: true # 可点击
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tilde
+  - pymdownx.highlight:
+      auto_title: true # 显示语言名称
+      linenums: true
+      linenums_style: pymdownx-inline  # 表格式行号table inline pymdownx-inline
+      anchor_linenums: true  # 行号链接
+     # linenums: true  # 显示行号
   - pymdownx.arithmatex:
       generic: true
   - attr_list
@@ -70,6 +80,8 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
 
+  - meta
+
   - minify:
       minify_html: true
       minify_js: true
@@ -79,7 +91,6 @@ plugins:
       cache_safe: true
 
   - tags:
-      tags_file: tags.md
 
   - statistics:
   #give an estimated time to read and some datas
@@ -129,6 +140,10 @@ extra_css:
   - css/extra.css    # Customazation css
 extra:
   attachments: "imgs"
+  clipboard:
+    copy: 复制
+    copied: 已复制！
+    error: 复制失败
   analytics:
     provider: google
     property: G-XXXXXXXXXX
@@ -165,6 +180,9 @@ nav:
       - 实分析:
           - Preface: "分析学/实分析/index.md"
           - HW1: "分析学/实分析/作业1.md"
+          - HW2: "分析学/实分析/作业2.md"
+         # - test1: "分析学/实分析/test1.md"
+         # - test2: "分析学/实分析/test2.md"
       - 概率论:
           - 初等概率论: "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
@@ -173,8 +191,8 @@ nav:
           - 分析学读书笔记: "分析学/读书笔记/index.md"
           - Baby Rudin:
               - The Real and Complex Number Systems: "分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md"
-          - Royden-Real-Analysis:
-              - Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
+          - Royden-Real-Analysis: "分析学/读书笔记/Royden(Reading Notes)/index.md"
+            #- Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
   - 代数学:
       - 代数学总览: "代数学/index.md"
   - 统计学:
