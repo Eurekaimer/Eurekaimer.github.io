@@ -45,3 +45,9 @@ button.md-top {
   color: #518FC1; /* 修改字体颜色 */
 }
 
+.md-social__link svg {
+  max-height: 1rem;
+}
+
+
+
