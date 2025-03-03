@@ -27,6 +27,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+#    - navigation.footer 上下页的页脚
     - search.suggest
     - search.highlight
     - navigation.expand
@@ -139,7 +140,22 @@ extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css    # Customazation css
+
+copyright: Copyright &copy; 2024 - 2025 Eurekaimer
+
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Eurekaimer
+      name: GitHub
+    - icon: simple/wechat
+      link: https://space.bilibili.com/702046230?spm_id_from=333.1007.0.0
+      name: WeChat
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/702046230?spm_id_from=333.1007.0.0
+      name: space on bilibili
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<2507983039@qq.com>
   attachments: "imgs"
   clipboard:
     copy: 复制
@@ -209,6 +225,7 @@ nav:
          - Week 1 C: "数据科学/CS50x/Week 1 C/Notes and codes.md"
       - 统计与大数据软件:
           - hw1: "数据科学/统计与大数据软件/hw1.md"
+          - hw2: "数据科学/统计与大数据软件/hw2.md"
   - 数学建模:
       - Preface: "数学建模/index.md"
       - 导航(初学者): "数学建模/导航(初学者).md"
