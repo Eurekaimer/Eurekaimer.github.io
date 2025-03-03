@@ -149,13 +149,20 @@ extra:
       link: https://github.com/Eurekaimer
       name: GitHub
     - icon: simple/wechat
-      link: https://space.bilibili.com/702046230?spm_id_from=333.1007.0.0
+      link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/Wechat.jpg
       name: WeChat
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/702046230?spm_id_from=333.1007.0.0
       name: space on bilibili
     - icon: fontawesome/solid/paper-plane
       link: mailto:<2507983039@qq.com>
+      name: email 2507983039@qq.com
+    - icon: material/coffee
+      link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png
+      name: buy me a coffee
+    - icon: simple/qq
+      link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/QQ.png
+      name: QQ
   attachments: "imgs"
   clipboard:
     copy: 复制
@@ -187,8 +194,6 @@ nav:
       - 2024数学年度总结: blog/posts/2024总结.md
       - workflow: blog/posts/工作流2.0.md
       - 2025寒假总结: blog/posts/2025寒假总结.md
-      - Semester-4-Week-1: blog/posts/2025-02-23.md
-      - Semester-4-Week-2: blog/posts/2025-03-02.md
   - 二次元: 二次元/二次元.md
   - 分析学:
       - 分析学总览: "分析学/index.md"
