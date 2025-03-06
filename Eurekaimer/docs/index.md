@@ -110,6 +110,9 @@ hide:
 - 2025-02-10 由于一些原因进行了一次迁移，原本的repo已经删除，现有的站点是按照原站点备份恢复的。
 - 2025-02-13 由于站点不再纯粹由数学组成，思考后本站点更名为`Eurekaimer's Digital Garden`
 
+!!! warning "公告栏"
+    如有侵权，请联系我.
+
 
 ### 建站流程
 
@@ -145,9 +148,15 @@ hide:
 </div>
 
 
-!!! warning "公告栏"
-    如有侵权，请联系我.
+[//]: # (| Method      | Description                          |)
 
+[//]: # (| :---------: | :----------------------------------: |)
+
+[//]: # (| `GET`       | :material-check:     Fetch resource  |)
+
+[//]: # (| `PUT`       | :material-check-all: Update resource |)
+
+[//]: # (| `DELETE`    | :material-close:     Delete resource |)
 
 
 [请我喝下午茶 :material-coffee:](https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png){.md-button}

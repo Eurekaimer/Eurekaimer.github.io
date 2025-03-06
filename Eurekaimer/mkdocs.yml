@@ -75,11 +75,13 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html # image configuration
-  - tables
+  - tables # 数据表格
 
 plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
+
+#  - social 待装cairosvg
 
   - meta
 
@@ -106,6 +108,10 @@ plugins:
       enabled: true
       blog_toc: true
       post_readtime: false
+      categories_allowed:
+        - Holidays
+        - Semester-4
+        - 年度总结
 
   - callouts:
       aliases: false
@@ -157,9 +163,6 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:<2507983039@qq.com>
       name: email 2507983039@qq.com
-    - icon: material/coffee
-      link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png
-      name: buy me a coffee
     - icon: simple/qq
       link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/QQ.png
       name: QQ
@@ -194,7 +197,9 @@ nav:
       - 2024数学年度总结: blog/posts/2024总结.md
       - workflow: blog/posts/工作流2.0.md
       - 2025寒假总结: blog/posts/2025寒假总结.md
-  - 二次元: 二次元/二次元.md
+  - 二次元:
+      - 总评榜: 二次元/二次元.md
+      - 百合榜: 二次元/百合.md
   - 分析学:
       - 分析学总览: "分析学/index.md"
       - 数学分析:
