@@ -38,7 +38,6 @@ hide:
       </font>
     </body>
 
-
 # Home
 
 ## Preface
@@ -61,7 +60,7 @@ hide:
 
 ## About ME
 
-![profile](imgs/profile.jpg){ align=left width="200" }
+![profile](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ align=left width="200" }
 
 ### Who is me?
 
@@ -111,7 +110,7 @@ hide:
 - 2025-02-13 由于站点不再纯粹由数学组成，思考后本站点更名为`Eurekaimer's Digital Garden`
 
 !!! warning "公告栏"
-    如有侵权，请联系我.
+    本网站的所有内容均遵循 CC BY-SA 4.0 license.
 
 
 ### 建站流程

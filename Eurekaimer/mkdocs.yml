@@ -23,16 +23,28 @@ theme:
         name: Switch to light mode
       primary: blue grey
   features:
+    # navigation部分
     - navigation.indexes
+    # 启动粘性页面，也就是向下滑时顶部导航仍然存在 
     - navigation.tabs
     - navigation.tabs.sticky
+    # 退回顶部按钮
     - navigation.top
-#    - navigation.footer 上下页的页脚
+    - navigation.sections
+    - navigation.prune
+    - navigation.expand
+#   - navigation.footer 上下页的页脚
+    # toc部分
+    #- toc.integrate
+    #- toc.follow
+    # search部分
     - search.suggest
     - search.highlight
-    - navigation.expand
+    # content部分
     - content.code.copy     # 启用代码复制
     - content.code.annotate # 启用代码注释
+    - content.action.edit
+    - content.action.view
   font:
     text: Inria Serif
   icon:
@@ -147,7 +159,9 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css    # Customazation css
 
-copyright: Copyright &copy; 2024 - 2025 Eurekaimer
+
+# 页脚部分
+copyright: Copyright &copy; 2024 - 2025 <a href="https://github.com/Eurekaimer">Eurekaimer</a>.
 
 extra:
   social:
@@ -167,6 +181,16 @@ extra:
       link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/QQ.png
       name: QQ
   attachments: "imgs"
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+    - name: 日本语
+      link: /ja/
+      lang: ja
   clipboard:
     copy: 复制
     copied: 已复制！
