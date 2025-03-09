@@ -43,8 +43,8 @@ theme:
     # content部分
     - content.code.copy     # 启用代码复制
     - content.code.annotate # 启用代码注释
-    - content.action.edit
-    - content.action.view
+    - content.action.edit   # 启用源代码编辑
+    - content.action.view   # 启用源代码预览
   font:
     text: Inria Serif
   icon:
