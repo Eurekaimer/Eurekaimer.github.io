@@ -3,10 +3,12 @@ site_url: https://github.com/Eurekaimer/Eurekaimer.github.io
 repo_url: https://github.com/Eurekaimer/Eurekaimer.github.io
 repo_name: Eurekaimer.github.io
 theme:
+  # 修改图标
   favicon: imgs/xiaoju.jpg
   logo: imgs/xiaoju.jpg
-
+  # 语言
   language: zh
+  # 选用material主题
   name: material
   custom_dir: overrides
   palette:
@@ -119,8 +121,10 @@ plugins:
 
   - blog:
       enabled: true
-      blog_toc: true
+      blog_toc: false
       post_readtime: false
+      pagination: true
+      pagination_per_page: 4
       categories_allowed:
         - Holidays
         - Semester-4
@@ -170,6 +174,7 @@ extra_css:
 copyright: Copyright &copy; 2024 - 2025 <a href="https://github.com/Eurekaimer">Eurekaimer</a>.
 
 extra:
+  # 页脚出的社交链接
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Eurekaimer
@@ -187,6 +192,7 @@ extra:
       link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/QQ.png
       name: QQ
   attachments: "imgs"
+  # 语言切换部分
   alternate:
     - name: English
       link: /en/
@@ -197,10 +203,12 @@ extra:
     - name: 日本语
       link: /ja/
       lang: ja
+  # 代码复制部分
   clipboard:
     copy: 复制
     copied: 已复制！
     error: 复制失败
+  # 反馈系统
   analytics:
     provider: google
     property: G-XXXXXXXXXX
@@ -222,15 +230,15 @@ extra:
 nav:
   - Home: "index.md"
   - 博客:
-      - blog/index.md
-      - 更新日志: blog/posts/更新日志.md
-      - 建站纪念: blog/posts/建站纪念贴.md
-      - 2024数学年度总结: blog/posts/2024总结.md
-      - workflow: blog/posts/工作流2.0.md
-      - 2025寒假总结: blog/posts/2025寒假总结.md
+      - "blog/index.md"
+      - 更新日志: "blog/posts/更新日志.md"
+      - 建站纪念: "blog/posts/建站纪念贴.md"
+      - 2024数学年度总结: "blog/posts/2024总结.md"
+      - workflow: "blog/posts/工作流2.0.md"
+      - 2025寒假总结: "blog/posts/2025寒假总结.md"
   - 二次元:
-      - 总评榜: 二次元/二次元.md
-      - 百合榜: 二次元/百合.md
+      - 总评榜: "二次元/二次元.md"
+      - 百合榜: "二次元/百合.md"
   - 分析学:
       - 分析学总览: "分析学/index.md"
       - 数学分析:
@@ -253,26 +261,29 @@ nav:
             #- Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
   - 代数学:
       - 代数学总览: "代数学/index.md"
+      - 高等代数:
+          - 引言: "代数学/高等代数/index.md"
+          - 二次型: "代数学/高等代数/二次型.md"
   - 统计学:
       - 数理统计:
          -  茆-统计量及其分布: "统计学/数理统计/第五章 统计量及其分布.md"
-  - 数据科学:
-      - Preface: "数据科学/index.md"
+  - 计算机科学:
+      - Preface: "计算机科学/index.md"
       - CS50x:
-         - CS50x Intro: "数据科学/CS50x/CS50x.md"
-         - Calendar and remark: "数据科学/CS50x/index.md"
-         - Week 0 Scratch: "数据科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
-         - Week 1 C: "数据科学/CS50x/Week 1 C/Notes and codes.md"
+         - CS50x Intro: "计算机科学/CS50x/CS50x.md"
+         - Calendar and remark: "计算机科学/CS50x/index.md"
+         - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
+         - Week 1 C: "计算机科学/CS50x/Week 1 C/Notes and codes.md"
       - 统计与大数据软件:
-          - hw1: "数据科学/统计与大数据软件/hw1.md"
-          - hw2: "数据科学/统计与大数据软件/hw2.md"
+          - hw1: "计算机科学/统计与大数据软件/hw1.md"
+          - hw2: "计算机科学/统计与大数据软件/hw2.md"
   - 数学建模:
       - Preface: "数学建模/index.md"
       - 导航(初学者): "数学建模/导航(初学者).md"
   - 网络资源整合:
       - 导言: "网络资源整合/index.md"
       - 知乎收藏: "网络资源整合/知乎收藏.md"
-      - 有趣和有用的站点: 网络资源整合/有趣和有用的站点.md
-  - 友链: 友链/友链.md
-  - 标签: tags.md
+      - 有趣和有用的站点: "网络资源整合/有趣和有用的站点.md"
+  - 友链: "友链/友链.md"
+  - 标签: "tags.md"
 

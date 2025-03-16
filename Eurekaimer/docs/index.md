@@ -79,8 +79,8 @@ hide:
 这里的笔记内容主要是NKU统计学类课程的课程笔记和自我学习的成果输出，也有参考外文经典教材时的读书笔记。
 
 !!! warning "公告栏"
-    本网站的所有内容均遵循 CC BY-SA 4.0 license.
-
+    本网站的所有内容均遵循 [CC BY-SA 4.0 license](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License).
+    Reference: 移步[这里](blog/posts/建站纪念贴.md)
 
 如果喜欢这个小站，欢迎给一个 Star :material-star: 或者 Fork :fontawesome-solid-code-fork: 这个仓库。
 
