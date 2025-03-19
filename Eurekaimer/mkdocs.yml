@@ -226,7 +226,7 @@ extra:
           note: >- 
             感谢反馈！
 
-#navigation
+# navigation
 nav:
   - Home: "index.md"
   - 博客:
@@ -249,6 +249,7 @@ nav:
           - HW1: "分析学/实分析/作业1.md"
           - HW2: "分析学/实分析/作业2.md"
           - HW3: "分析学/实分析/作业3.md"
+          - HW4: "分析学/实分析/作业4.md"
       - 概率论:
           - 初等概率论: "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
@@ -273,10 +274,9 @@ nav:
   - 计算机科学:
       - Preface: "计算机科学/index.md"
       - CS50x:
-         - CS50x Intro: "计算机科学/CS50x/CS50x.md"
-         - Calendar and remark: "计算机科学/CS50x/index.md"
-         - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch/Week 0 Scratch.md"
-         - Week 1 C: "计算机科学/CS50x/Week 1 C/Notes and codes.md"
+         - CS50x: "计算机科学/CS50x/index.md"
+         - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch.md"
+         - Week 1 C: "计算机科学/CS50x/Week 1 C.md"
       - 统计与大数据软件:
           - hw1: "计算机科学/统计与大数据软件/hw1.md"
           - hw2: "计算机科学/统计与大数据软件/hw2.md"
