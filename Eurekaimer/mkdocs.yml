@@ -160,14 +160,13 @@ extra_javascript:
   - javascripts/config.js    # Customazation js
   - javascripts/main.js
   - javascripts/extra.js
-  - javascripts/mouse.js
   - js/timeago.min.js
   - js/timeago_mkdocs_material.js
 extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css    # Customazation css
-  - css/mouse.css
+  - css/customize.css # 搜索圆角
 
 
 # 页脚部分
@@ -282,9 +281,12 @@ nav:
           - hw2: "计算机科学/统计与大数据软件/hw2.md"
           - hw3: "计算机科学/统计与大数据软件/hw3.md"
           - hw4: "计算机科学/统计与大数据软件/hw4.md"
-  - 数学建模:
-      - Preface: "数学建模/index.md"
-      - 导航(初学者): "数学建模/导航(初学者).md"
+  - 科研竞赛:
+      - 数学建模:
+        - 数学建模: "数学建模/index.md"
+        - 导航(初学者): "数学建模/导航(初学者).md"
+      - 计量经济学:
+        - 计量经济学: "交叉融合/计量经济学/index.md"
   - 网络资源整合:
       - 导言: "网络资源整合/index.md"
       - 知乎收藏: "网络资源整合/知乎收藏.md"
