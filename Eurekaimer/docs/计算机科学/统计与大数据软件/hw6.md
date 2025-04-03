@@ -56,7 +56,7 @@ print(result_df)
     11  2  6
     12  2  7
     13  0  0
-    
+
 
 ## Problem 2
 
@@ -134,9 +134,8 @@ print(result)
     10    4.500000
     11    4.000000
     Name: value, dtype: float64
-    
 
-# Problem 3
+##  Problem 3
 
 扫雷游戏。创建一个dataframe来模拟扫雷游戏：
 
@@ -145,7 +144,7 @@ print(result)
 例如5 * 4的扫雷游戏，这个dataframe分别记录5 * 4个格子的坐标，这个dataframe为两列，20行，它的一部分如下：
 
 \  x  y
-  
+
 0  0  0
 
 1  0  1
@@ -252,9 +251,6 @@ print(new_df)
     2  4.0  NaN  5.0  2.0
     3  2.0  NaN  NaN  1.0
     4  1.0  2.0  2.0  1.0
-    
 
 
-```python
 
-```
