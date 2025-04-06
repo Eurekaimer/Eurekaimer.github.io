@@ -255,6 +255,14 @@ nav:
           - 初等概率论: "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
           - 集合与概率论公理: "分析学/概率论/Sets, Axioms of Probability.md"
+      - 随机过程:
+          - 随机过程: "分析学/随机过程/index.md"
+          - Lecture 1 - Introduction & Preliminaries: "分析学/随机过程/Lecture 1 - Introduction & Preliminaries.md"
+          - Lecture 2 - Poisson Processes: "分析学/随机过程/Lecture 2 - Poisson Processes.md"
+          - Lecture 3 - Extensions of Poisson Process: "分析学/随机过程/Lecture 3 - Extensions of Poisson Process.md"
+          - Lecture 4 - Discrete-time Markov Chains: "分析学/随机过程/Lecture 4 - Discrete-time Markov Chains.md"
+          - Lecture 5 - Classification of States: "分析学/随机过程/Lecture 5 - Classification of States.md"
+          - Lecture 6 - Limit Behaviour & Ergodic Theory: "分析学/随机过程/Lecture 6 - Limit Behaviour & Ergodic Theory.md"
       - 读书笔记:
           - 分析学读书笔记: "分析学/读书笔记/index.md"
           - Baby Rudin:
@@ -279,6 +287,9 @@ nav:
          - CS50x: "计算机科学/CS50x/index.md"
          - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch.md"
          - Week 1 C: "计算机科学/CS50x/Week 1 C.md"
+      - CS61A:
+          - CS61A: "计算机科学/CS61A/index.md"
+          - Week 1: "计算机科学/CS61A/Week 1.md"
       - 统计与大数据软件:
           - hw1: "计算机科学/统计与大数据软件/hw1.md"
           - hw2: "计算机科学/统计与大数据软件/hw2.md"

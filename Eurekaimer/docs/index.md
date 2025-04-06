@@ -63,7 +63,7 @@ hide:
     === "推荐文章"
 
         - [x] [2025寒假总结](https://www.eurekaimer.xyz/blog/2025/02/19/2025%E5%AF%92%E5%81%87%E6%80%BB%E7%BB%93/) 
-        - [x] [2024数学学习总结](https://www.eurekaimer.xyz/blog/2025/01/04/2024%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/) 
+        - [x] [CS61A](计算机科学/CS61A/index.md) 
 
     === "Quote"
 

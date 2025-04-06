@@ -91,7 +91,7 @@ set()
 
 <span class=mf>1000</span><span class=n>x1000</span><span class=w> </span><span class=n>矩阵的均值</span><span class=p>:</span><span class=w> </span><span class=o>-</span><span class=mf>3.6404961588248906e-05</span>
 <span class=mf>1000</span><span class=n>x1000</span><span class=w> </span><span class=n>矩阵的标准差</span><span class=p>:</span><span class=w> </span><span class=mf>0.9992766795454492</span>
-</code></pre></div></td></tr></table></div> <h2 id=problem-3>Problem 3<a class=headerlink href=#problem-3 title="Permanent link">&para;</a></h2> <p>给定一个一维数组，定义函数moving_average(a,n)计算此数组的滑动平均值，a为数组，n为窗口长度。给出例子并作图显示。</p> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-3-1 name=__codelineno-3-1></a><a href=#__codelineno-3-1><span class=linenos data-linenos=" 1 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>numpy</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>np</span>
+</code></pre></div></td></tr></table></div> <p>​ </p> <h2 id=problem-3>Problem 3<a class=headerlink href=#problem-3 title="Permanent link">&para;</a></h2> <p>给定一个一维数组，定义函数moving_average(a,n)计算此数组的滑动平均值，a为数组，n为窗口长度。给出例子并作图显示。</p> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-3-1 name=__codelineno-3-1></a><a href=#__codelineno-3-1><span class=linenos data-linenos=" 1 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>numpy</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>np</span>
 <a id=__codelineno-3-2 name=__codelineno-3-2></a><a href=#__codelineno-3-2><span class=linenos data-linenos=" 2 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>matplotlib.pyplot</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>plt</span>
 <a id=__codelineno-3-3 name=__codelineno-3-3></a><a href=#__codelineno-3-3><span class=linenos data-linenos=" 3 "></span></a>
 <a id=__codelineno-3-4 name=__codelineno-3-4></a><a href=#__codelineno-3-4><span class=linenos data-linenos=" 4 "></span></a><span class=c1># 定义的函数，计算滑动平均值</span>
@@ -116,7 +116,7 @@ set()
 <a id=__codelineno-3-23 name=__codelineno-3-23></a><a href=#__codelineno-3-23><span class=linenos data-linenos="23 "></span></a><span class=n>plt</span><span class=o>.</span><span class=n>legend</span><span class=p>()</span>
 <a id=__codelineno-3-24 name=__codelineno-3-24></a><a href=#__codelineno-3-24><span class=linenos data-linenos="24 "></span></a><span class=n>plt</span><span class=o>.</span><span class=n>grid</span><span class=p>(</span><span class=kc>True</span><span class=p>)</span>
 <a id=__codelineno-3-25 name=__codelineno-3-25></a><a href=#__codelineno-3-25><span class=linenos data-linenos="25 "></span></a><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
-</code></pre></div> <p><img alt=png src=output_7_0.png></p> <h2 id=problem-4>Problem 4<a class=headerlink href=#problem-4 title="Permanent link">&para;</a></h2> <p>对于一个任意二维数组，给定此数组中某个元素的位置(i,j)和一个长度值l,从此二维数组中提取出以此元素为中心，<br> 维数为(2 * l + 1,2 * l + 1)的方阵。<br> 如果越界，则使用0补齐。</p> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-4-1 name=__codelineno-4-1></a><a href=#__codelineno-4-1><span class=linenos data-linenos=" 1 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>numpy</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>np</span>
+</code></pre></div> <p>​ </p> <p><img alt=png src=https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/output_7_0.png></p> <h2 id=problem-4>Problem 4<a class=headerlink href=#problem-4 title="Permanent link">&para;</a></h2> <p>对于一个任意二维数组，给定此数组中某个元素的位置(i,j)和一个长度值l,从此二维数组中提取出以此元素为中心，<br> 维数为(2 * l + 1,2 * l + 1)的方阵。<br> 如果越界，则使用0补齐。</p> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-4-1 name=__codelineno-4-1></a><a href=#__codelineno-4-1><span class=linenos data-linenos=" 1 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>numpy</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>np</span>
 <a id=__codelineno-4-2 name=__codelineno-4-2></a><a href=#__codelineno-4-2><span class=linenos data-linenos=" 2 "></span></a>
 <a id=__codelineno-4-3 name=__codelineno-4-3></a><a href=#__codelineno-4-3><span class=linenos data-linenos=" 3 "></span></a>
 <a id=__codelineno-4-4 name=__codelineno-4-4></a><a href=#__codelineno-4-4><span class=linenos data-linenos=" 4 "></span></a><span class=k>def</span><span class=w> </span><span class=nf>extract_square_matrix</span><span class=p>(</span><span class=n>arr</span><span class=p>,</span> <span class=n>i</span><span class=p>,</span> <span class=n>j</span><span class=p>,</span> <span class=n>l</span><span class=p>):</span>
@@ -191,66 +191,12 @@ set()
 <a id=__codelineno-4-73 name=__codelineno-4-73></a><a href=#__codelineno-4-73><span class=linenos data-linenos="73 "></span></a><span class=n>l</span> <span class=o>=</span> <span class=mi>4</span>
 <a id=__codelineno-4-74 name=__codelineno-4-74></a><a href=#__codelineno-4-74><span class=linenos data-linenos="74 "></span></a><span class=n>submatrix</span> <span class=o>=</span> <span class=n>extract_square_matrix</span><span class=p>(</span><span class=n>arr</span><span class=p>,</span> <span class=n>i</span><span class=p>,</span> <span class=n>j</span><span class=p>,</span> <span class=n>l</span><span class=p>)</span>
 <a id=__codelineno-4-75 name=__codelineno-4-75></a><a href=#__codelineno-4-75><span class=linenos data-linenos="75 "></span></a><span class=nb>print</span><span class=p>(</span><span class=n>submatrix</span><span class=p>)</span>
-</code></pre></div> <div class=codehilite><table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span class=normal> 1</span>
-<span class=normal> 2</span>
-<span class=normal> 3</span>
-<span class=normal> 4</span>
-<span class=normal> 5</span>
-<span class=normal> 6</span>
-<span class=normal> 7</span>
-<span class=normal> 8</span>
-<span class=normal> 9</span>
-<span class=normal>10</span>
-<span class=normal>11</span>
-<span class=normal>12</span>
-<span class=normal>13</span>
-<span class=normal>14</span>
-<span class=normal>15</span>
-<span class=normal>16</span>
-<span class=normal>17</span>
-<span class=normal>18</span>
-<span class=normal>19</span>
-<span class=normal>20</span>
-<span class=normal>21</span>
-<span class=normal>22</span>
-<span class=normal>23</span>
-<span class=normal>24</span>
-<span class=normal>25</span>
-<span class=normal>26</span>
-<span class=normal>27</span>
-<span class=normal>28</span>
-<span class=normal>29</span>
-<span class=normal>30</span></pre></div></td><td class=code><div><pre><span></span><code><span class=k>[[ 2.  3.  4.]</span>
+</code></pre></div> <div class=codehilite><table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span class=normal>1</span>
+<span class=normal>2</span>
+<span class=normal>3</span></pre></div></td><td class=code><div><pre><span></span><code><span class=k>[[ 2.  3.  4.]</span>
 <span class=w> </span><span class=k>[ 6.  7.  8.]</span>
 <span class=w> </span><span class=k>[10. 11. 12.]]</span>
-
-
-<span class=k>[[ 0.  0.  0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  1.  2.  3.  4.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  5.  6.  7.  8.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  9. 10. 11. 12.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0. 13. 14. 15. 16.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  0.  0.  0.  0.]]</span>
-
-
-<span class=k>[[ 0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  1.  2.  3.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  5.  6.  7.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  9. 10. 11.]</span>
-<span class=w> </span><span class=k>[ 0.  0. 13. 14. 15.]]</span>
-
-
-<span class=k>[[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  1.  2.  3.  4.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  5.  6.  7.  8.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  9. 10. 11. 12.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0. 13. 14. 15. 16.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]</span>
-<span class=w> </span><span class=k>[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]]</span>
-</code></pre></div></td></tr></table></div> <h2 id=problem-5>Problem 5<a class=headerlink href=#problem-5 title="Permanent link">&para;</a></h2> <p>设二次函数 p(x)=ax^2+bx+c过点(x_i,y_i) for i=1, 2, 3. 求a，b，c的值。</p> <p>例如过这三个点(-1,1),(0,-1),(2,7)，则可以得到一个线性方程组，使用numpy.linalg中solve函数解方程即可。</p> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-5-1 name=__codelineno-5-1></a><a href=#__codelineno-5-1><span class=linenos data-linenos=" 1 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>numpy</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>np</span>
+</code></pre></div></td></tr></table></div> <p>​ <br> [[ 0. 0. 0. 0. 0. 0. 0.]<br> [ 0. 0. 0. 0. 0. 0. 0.]<br> [ 0. 0. 0. 1. 2. 3. 4.]<br> [ 0. 0. 0. 5. 6. 7. 8.]<br> [ 0. 0. 0. 9. 10. 11. 12.]<br> [ 0. 0. 0. 13. 14. 15. 16.]<br> [ 0. 0. 0. 0. 0. 0. 0.]]</p> <p>​ <br> [[ 0. 0. 0. 0. 0.]<br> [ 0. 0. 1. 2. 3.]<br> [ 0. 0. 5. 6. 7.]<br> [ 0. 0. 9. 10. 11.]<br> [ 0. 0. 13. 14. 15.]]</p> <p>​ <br> [[ 0. 0. 0. 0. 0. 0. 0. 0. 0.]<br> [ 0. 0. 0. 0. 0. 0. 0. 0. 0.]<br> [ 0. 0. 0. 0. 0. 0. 0. 0. 0.]<br> [ 0. 0. 1. 2. 3. 4. 0. 0. 0.]<br> [ 0. 0. 5. 6. 7. 8. 0. 0. 0.]<br> [ 0. 0. 9. 10. 11. 12. 0. 0. 0.]<br> [ 0. 0. 13. 14. 15. 16. 0. 0. 0.]<br> [ 0. 0. 0. 0. 0. 0. 0. 0. 0.]<br> [ 0. 0. 0. 0. 0. 0. 0. 0. 0.]]</p> <h2 id=problem-5>Problem 5<a class=headerlink href=#problem-5 title="Permanent link">&para;</a></h2> <p>设二次函数 p(x)=ax^2+bx+c过点(x_i,y_i) for i=1, 2, 3. 求a，b，c的值。</p> <p>例如过这三个点(-1,1),(0,-1),(2,7)，则可以得到一个线性方程组，使用numpy.linalg中solve函数解方程即可。</p> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-5-1 name=__codelineno-5-1></a><a href=#__codelineno-5-1><span class=linenos data-linenos=" 1 "></span></a><span class=kn>import</span><span class=w> </span><span class=nn>numpy</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=nn>np</span>
 <a id=__codelineno-5-2 name=__codelineno-5-2></a><a href=#__codelineno-5-2><span class=linenos data-linenos=" 2 "></span></a>
 <a id=__codelineno-5-3 name=__codelineno-5-3></a><a href=#__codelineno-5-3><span class=linenos data-linenos=" 3 "></span></a>
 <a id=__codelineno-5-4 name=__codelineno-5-4></a><a href=#__codelineno-5-4><span class=linenos data-linenos=" 4 "></span></a><span class=c1># 利用基本的线性代数知识求解</span>
@@ -280,7 +226,7 @@ set()
 <a id=__codelineno-5-28 name=__codelineno-5-28></a><a href=#__codelineno-5-28><span class=linenos data-linenos="28 "></span></a>    <span class=nb>print</span><span class=p>(</span><span class=sa>f</span><span class=s2>&quot;二次函数系数: a = </span><span class=si>{</span><span class=n>a</span><span class=si>}</span><span class=s2>, b = </span><span class=si>{</span><span class=n>b</span><span class=si>}</span><span class=s2>, c = </span><span class=si>{</span><span class=n>c</span><span class=si>}</span><span class=s2>&quot;</span><span class=p>)</span>    
 </code></pre></div> <div class=codehilite><table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span class=normal>1</span></pre></div></td><td class=code><div><pre><span></span><code><span class=err>二次函数系数</span><span class=o>:</span><span class=w> </span><span class=n>a</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=mf>2.0</span><span class=o>,</span><span class=w> </span><span class=n>b</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=o>-</span><span class=mf>0.0</span><span class=o>,</span><span class=w> </span><span class=n>c</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=o>-</span><span class=mf>1.0</span>
 </code></pre></div></td></tr></table></div> <div class=highlight><span class=filename>Python</span><pre><span></span><code><a id=__codelineno-6-1 name=__codelineno-6-1></a><a href=#__codelineno-6-1><span class=linenos data-linenos="1 "></span></a>
-</code></pre></div> <aside class=md-source-file> <span class=md-source-file__fact> <span class=md-icon title=最后更新> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg> </span> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年3月31日 09:34:21</span> </span> <span class=md-source-file__fact> <span class=md-icon title=创建日期> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg> </span> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年3月31日 09:34:21</span> </span> </aside> <form class=md-feedback name=feedback hidden> <fieldset> <legend class=md-feedback__title> 本页面内容是否对您有帮助? </legend> <div class=md-feedback__inner> <div class=md-feedback__list> <button class="md-feedback__icon md-icon" type=submit title=有帮助 data-md-value=1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg> </button> <button class="md-feedback__icon md-icon" type=submit title=没帮助 data-md-value=0> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg> </button> </div> <div class=md-feedback__note> <div data-md-value=1 hidden> 感谢反馈！ </div> <div data-md-value=0 hidden> 感谢反馈！ </div> </div> </div> </fieldset> </form> <h2 id=__comments>评论</h2> <script src=https://giscus.app/client.js data-repo=Eurekaimer/Eurekaimer.github.io data-repo-id=R_kgDON3QK-w data-category=Announcements data-category-id=DIC_kwDON3QK-84Cm7VD data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=preferred_color_scheme data-lang=zh-CN crossorigin=anonymous async>
+</code></pre></div> <aside class=md-source-file> <span class=md-source-file__fact> <span class=md-icon title=最后更新> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg> </span> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年4月3日 22:42:59</span> </span> <span class=md-source-file__fact> <span class=md-icon title=创建日期> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg> </span> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年3月31日 09:34:21</span> </span> </aside> <form class=md-feedback name=feedback hidden> <fieldset> <legend class=md-feedback__title> 本页面内容是否对您有帮助? </legend> <div class=md-feedback__inner> <div class=md-feedback__list> <button class="md-feedback__icon md-icon" type=submit title=有帮助 data-md-value=1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg> </button> <button class="md-feedback__icon md-icon" type=submit title=没帮助 data-md-value=0> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg> </button> </div> <div class=md-feedback__note> <div data-md-value=1 hidden> 感谢反馈！ </div> <div data-md-value=0 hidden> 感谢反馈！ </div> </div> </div> </fieldset> </form> <h2 id=__comments>评论</h2> <script src=https://giscus.app/client.js data-repo=Eurekaimer/Eurekaimer.github.io data-repo-id=R_kgDON3QK-w data-category=Announcements data-category-id=DIC_kwDON3QK-84Cm7VD data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=preferred_color_scheme data-lang=zh-CN crossorigin=anonymous async>
 </script> <script>
     var giscus = document.querySelector("script[src*=giscus]")
 
