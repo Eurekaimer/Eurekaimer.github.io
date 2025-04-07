@@ -22,8 +22,8 @@ $$P_{ij}^{(n)}\to0,\quad n\to\infty $$
 
 > [!NOTE] Definition 6.1(平均返回时间)
 > 对于常返状态$i$的平均返回时间定义为
-> $$\mu_{ii}\overset{\Delta}{=}\sum\limits_{n=1}^{\infty} nf_{ii}^{(n)}
-$$
+> 
+> $$\mu_{ii}\overset{\Delta}{=}\sum\limits_{n=1}^{\infty} nf_{ii}^{(n)}$$
 
 利用平均返回时间可以进一步对常返状态分类
 
@@ -36,8 +36,9 @@ $$
 
 > [!tip] Theorem 6.3(弱遍历定理)
 > 设$\left\{ X_{n} \right\}$是不可约常返Markov链，那么对$\forall i,j$状态
-> $$\lim\limits_{ n \to \infty } \frac{1}{n}\sum\limits_{k=0}^{n-1} P_{ij}^{(k)}= \frac{1}{\mu_{jj}}
-$$
+> 
+> $$\lim\limits_{ n \to \infty } \frac{1}{n}\sum\limits_{k=0}^{n-1} P_{ij}^{(k)}= \frac{1}{\mu_{jj}}$$
+
 
 
 `Proof.`
@@ -48,11 +49,15 @@ $$
 > [!NOTE] Lemma 6.4(Hardy&Littlewood)
 > 设$\forall n ,a_{n}\geqslant 0$，记幂级数$A(z)$为$\sum\limits_{n=0}^{\infty}a_{n}z^{n},0\leqslant z<1$
 > 则有
-> $$\lim\limits_{ n \to \infty } \frac{1}{n}\sum\limits_{k=0}^{n-1} a_{k}=\lim\limits_{ z \to 1^{-} }(1-z)A(z) 
-$$
+> 
+> $$\lim\limits_{ n \to \infty } \frac{1}{n}\sum\limits_{k=0}^{n-1} a_{k}=\lim\limits_{ z \to 1^{-} }(1-z)A(z)$$
+> 
+
 设$P_{ij}(z)\overset{\Delta}{=}\sum\limits_{n=0}^{\infty}P_{ij}^{(n)}z^{n}$，由引理得
 
-$$\lim\limits_{ n \to \infty } \frac{1}{n}\sum\limits_{k=0}^{n-1}P_{ij}^{(k)}=\lim\limits_{ z \to 1^{-} }(1-z)\sum\limits_{n=0}^{\infty} P_{ij}^{(k)}z^{n}
+
+$$
+\lim\limits_{ n \to \infty } \frac{1}{n}\sum\limits_{k=0}^{n-1}P_{ij}^{(k)}=\lim\limits_{ z \to 1^{-} }(1-z)\sum\limits_{n=0}^{\infty} P_{ij}^{(k)}z^{n}
 $$
 
 回顾Theorem 5.11的证明中
@@ -133,7 +138,7 @@ $$\frac{1}{\mu_{jj}}\geqslant\frac{P_{ij}^{(m)}}{\mu_{ii}}>0$$
 进一步，如果Markov链的状态是有限的，和常返性一样，有下面结论：
 
 > [!NOTE] Proposition 6.6
->有限状态Markou链必然存在正常返态
+>有限状态Markov链必然存在正常返态
 
 `Proof`
 

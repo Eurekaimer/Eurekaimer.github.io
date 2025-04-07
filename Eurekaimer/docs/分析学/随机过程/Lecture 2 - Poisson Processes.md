@@ -19,6 +19,7 @@
 > 如果随机过程$\left\{ N(t),t \geqslant 0 \right\}$表示时间段内发生的事件总数，则称随机过程$N(t)$为计数过程(Counting processes)
 
 It should qualified:
+
 + $N(t)\geqslant 0$
 + $N(t)$是整数
 + 单调性

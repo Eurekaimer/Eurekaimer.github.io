@@ -18,6 +18,7 @@
 $$
 P_{ik}^{(n+m)}=\sum\limits_{j\in E}P_{ij}^{(n)}P_{jk}^{(m)}\geqslant P_{ij}^{(n)}P_{jk}^{(m)}>0
 $$
+
 即若$i\to j,j\to k$，那么$i\to k$
 
 
@@ -62,9 +63,9 @@ $$
 > [!NOTE] Definition 5.5(周期性)
 > 状态$i\in E$的周期(period)定义为
 > 
-> $$ d_{i} \overset{\Delta}{=} gcd\left\{  {n,P_{ii}^{(n)}>0}\right\}  
-$$
-若$d_{i}=1$，则称状态$i$是非周期的
+> $$ d_{i} \overset{\Delta}{=} gcd\left\{  {n,P_{ii}^{(n)}>0}\right\}$$
+> 
+> 若$d_{i}=1$，则称状态$i$是非周期的
 
 
 > [!NOTE] 命题 5.6
@@ -90,6 +91,7 @@ P_{ii}^{(m+(k+1)d_{j}+n)}&\geqslant P_{ij}^{(m)}P_{jj}^{((k+1)d_{j})}P_{ji}^{(n)
 利用周期性，可以利用互通性对状态进行进一步分类，下面不妨先考虑只有一个互通类的Markov链也就是不可约的Markov链
 
 由不可约性，由命题5.6，每个状态周期相同，不妨记为$d$，给定某个状态之后$i_{0}$，我们定义下面集合
+
 $$
 \begin{aligned}
 C_{0}&\overset{\Delta}{=}\left\{ j\in E,P_{ij}^{(n)}>0,n\equiv 0 (mod\ d) \right\} \\
@@ -98,6 +100,7 @@ C_{1}&\overset{\Delta}{=}\left\{ j\in E,P_{ij}^{(n)}>0,n\equiv 1 (mod\ d) \right
 C_{d-1}&\overset{\Delta}{=}\left\{ j\in E,P_{ij}^{(n)}>0,n\equiv d-1 (mod\ d) \right\} 
 \end{aligned}
 $$
+
 根据模的余数分类构成了一个最小剩余
 
 那么状态集合$E=C_{0}\bigcup C_{1}\bigcup\dots \bigcup C_{d-1}$
@@ -111,12 +114,16 @@ $$
 由于$i\in C_{p}$,则存在$a=kd+p$，其中$k\in N$使得$P_{i_{0}i}^{(a)}>0$
 
 对$a+1=kd+p+1$
+
 $$
 P_{i_{0}i}^{(n+1)}\geqslant P_{i_{0}i}^{(a)}P_{ij}>0
 $$
+
 即$j\in C_{p+1}$
 
 注：当$0\leqslant k \leqslant d-1$时，从$C_{k}$中的状态转移到$C_{k+1}$，然后从$C_{d-1}$回到$C_{0}$，即经过适当的行列置换，它的转移矩阵可以表示为：
+
+
 $$
 P=\begin{pmatrix}
 0 & A_{0,1} & \dots & 0 & 0 \\
@@ -146,10 +153,9 @@ $$\tau_{j}\overset{\Delta}{=}\inf \left\{ n \geqslant 1: X_{n}=j \right\} $$
 > 设$\left\{ X_{n} \right\}$为一个状态空间为$E$的Markov链，则经过$n$步从状态$i$到$j$的首达概率为
 > 
 > $$\begin{aligned}
->f_{ij}^{(n)}&\overset{\Delta}{=}P\left( \tau_{j}=n\mid X_{0}=i \right) \\
+> f_{ij}^{(n)}&\overset{\Delta}{=}P\left( \tau_{j}=n\mid X_{0}=i \right) \\
 > &=P\left(  X_{n}=j,X_{n-1}\neq j \dots ,X_{1}\neq j \mid X_{0}=i\right) 
-\end{aligned}
-$$
+> \end{aligned}$$
 
 
 注：定义事件$A_{n}\overset{\Delta}{=}\left\{ X_{n}=j,X_{n-1}\neq j \dots ,X_{1}\neq j \mid X_{0}=i \right\}$
@@ -317,6 +323,7 @@ $$\sum_{j=1}^NP_{ij}^{(k)}=1$$
 
 > [!example] Example 5.15 ( $d$ 维简单随机游走的常返性）
 >设$\xi_{1},\xi_{2},\ldots$ .是取值于$E=\mathbb{Z}^{d}$独立同分布随机向量，满足
+> 
 > $$P(\xi_1=e_i)=P(\xi_1=-e_i)=\frac{1}{2d},\quad i=1,\dots,d$$
 > 
 > 其中$e_i$ 是第$i$个坐标为1，其余为0的方向向量。
