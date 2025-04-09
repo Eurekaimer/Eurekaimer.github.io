@@ -1,6 +1,5 @@
 # 随机过程
 
-
 > [!tldr] 课程简介
 > 所属大学：南开大学
 > 主讲教师：赵尉辰(Weichen Zhao)
@@ -29,37 +28,37 @@
 
 
 
-## [Lecture 1 - Introduction & Preliminaries](./Lecture 1 - Introduction & Preliminaries.md)
+## [Lecture 1 - Introduction & Preliminaries](./Assets/Lecture 1 - Introduction & Preliminaries.md)
 
 
 
 
 
-## [Lecture 2 - Poisson Processes.md](./Lecture 2 - Poisson Processes.md)
+## [Lecture 2 - Poisson Processes](./Assets/Lecture 2 - Poisson Processes.md)
 
 
 
 
 
-## [Lecture 3 - Extensions of Poisson Process.md](./Lecture 3 - Extensions of Poisson Process.md)
+## [Lecture 3 - Extensions of Poisson Process](./Assets/Lecture 3 - Extensions of Poisson Process.md)
 
 
 
 
 
-## [Lecture 4 - Discrete-time Markov Chains.md](./Lecture 4 - Discrete-time Markov Chains.md)
+## [Lecture 4 - Discrete-time Markov Chains](./Assets/Lecture 4 - Discrete-time Markov Chains.md)
 
 
 
 
 
-## [Lecture 5 - Classification of States.md](./Lecture 5 - Classification of States.md)
+## [Lecture 5 - Classification of States](./Assets/Lecture 5 - Classification of States.md)
 
 
 
 
 
-## [Lecture 6 - Limit Behaviour & Ergodic Theory.md](./Lecture 6 - Limit Behaviour & Ergodic Theory.md)
+## [Lecture 6 - Limit Behaviour & Ergodic Theory](./Assets/Lecture 6 - Limit Behaviour & Ergodic Theory.md)
 
 
 

@@ -34,7 +34,7 @@ theme:
     - navigation.tabs.sticky
     # 退回顶部按钮
     - navigation.top
-    - navigation.sections
+    # - navigation.sections 分节
     - navigation.prune
     - navigation.expand
 #   - navigation.footer 上下页的页脚
@@ -240,29 +240,29 @@ nav:
       - 总评榜: "二次元/二次元.md"
       - 百合榜: "二次元/百合.md"
   - 分析学:
-      - 分析学总览: "分析学/index.md"
+      - "分析学/index.md"
       - 数学分析:
         - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
         - NKU数学分析真题: "分析学/南开大学数学分析月考真题/zhanwei.md"
       - 实分析:
-          - Preface: "分析学/实分析/index.md"
+          - "分析学/实分析/index.md"
           - HW1: "分析学/实分析/作业1.md"
           - HW2: "分析学/实分析/作业2.md"
           - HW3: "分析学/实分析/作业3.md"
           - HW4: "分析学/实分析/作业4.md"
           - HW5: "分析学/实分析/作业5.md"
       - 概率论:
-          - 初等概率论: "分析学/概率论/index.md"
+          - "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
           - 集合与概率论公理: "分析学/概率论/Sets, Axioms of Probability.md"
       - 随机过程:
-          - 随机过程: "分析学/随机过程/index.md"
-          - Lecture 1 - Introduction & Preliminaries: "分析学/随机过程/Lecture 1 - Introduction & Preliminaries.md"
-          - Lecture 2 - Poisson Processes: "分析学/随机过程/Lecture 2 - Poisson Processes.md"
-          - Lecture 3 - Extensions of Poisson Process: "分析学/随机过程/Lecture 3 - Extensions of Poisson Process.md"
-          - Lecture 4 - Discrete-time Markov Chains: "分析学/随机过程/Lecture 4 - Discrete-time Markov Chains.md"
-          - Lecture 5 - Classification of States: "分析学/随机过程/Lecture 5 - Classification of States.md"
-          - Lecture 6 - Limit Behaviour & Ergodic Theory: "分析学/随机过程/Lecture 6 - Limit Behaviour & Ergodic Theory.md"
+          - "分析学/随机过程/index.md"
+          - Lecture 1 - Introduction & Preliminaries: "分析学/随机过程/Assets/Lecture 1 - Introduction & Preliminaries.md"
+          - Lecture 2 - Poisson Processes: "分析学/随机过程/Assets/Lecture 2 - Poisson Processes.md"
+          - Lecture 3 - Extensions of Poisson Process: "分析学/随机过程/Assets/Lecture 3 - Extensions of Poisson Process.md"
+          - Lecture 4 - Discrete-time Markov Chains: "分析学/随机过程/Assets/Lecture 4 - Discrete-time Markov Chains.md"
+          - Lecture 5 - Classification of States: "分析学/随机过程/Assets/Lecture 5 - Classification of States.md"
+          - Lecture 6 - Limit Behaviour & Ergodic Theory: "分析学/随机过程/Assets/Lecture 6 - Limit Behaviour & Ergodic Theory.md"
       - 读书笔记:
           - 分析学读书笔记: "分析学/读书笔记/index.md"
           - Baby Rudin:
@@ -270,13 +270,13 @@ nav:
           - Royden-Real-Analysis: "分析学/读书笔记/Royden(Reading Notes)/index.md"
             #- Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
   - 代数学:
-      - 代数学总览: "代数学/index.md"
+      - "代数学/index.md"
       - 高等代数:
           - 引言: "代数学/高等代数/index.md"
           - 二次型: "代数学/高等代数/二次型.md"
   - 统计学:
       - 数理统计:
-         - 引言: "统计学/数理统计/index.md"
+         - "统计学/数理统计/index.md"
          -  茆-统计量及其分布: "统计学/数理统计/第五章 统计量及其分布.md"
       - 运筹与优化:
           - 引言: "统计学/运筹与优化/index.md"
