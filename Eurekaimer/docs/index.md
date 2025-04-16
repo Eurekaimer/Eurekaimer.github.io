@@ -51,7 +51,7 @@ hide:
 -   :simple-homepage:{ .lg .middle } __公告栏__
 
     ---
-    ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="340" height="226" style="border-radius: 25px;" }
+    ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="360" height="240" style="border-radius: 25px;" }
 
     可以听听歌啊！(播放曲目随站长品味而改变)
 
