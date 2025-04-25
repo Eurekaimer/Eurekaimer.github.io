@@ -1,3 +1,7 @@
+---
+tags:
+  - 国外公开课
+---
 # CS61A
 
 
@@ -27,23 +31,22 @@
 
 以下是所有内容的完成情况(按照顺序排列):
 
-- [x] Week 1 2025.4.5
-  - [x] [Disc 00](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/dis/disc00)
-  - [x] Reading
-    - [x] [Ch. 1.1 Getting Started](https://www.composingprograms.com/pages/11-getting-started.html)
-    - [x] [Ch. 1.2 Elements of Programming](https://www.composingprograms.com/pages/12-elements-of-programming.html)
-    - [x] [Ch. 1.3  Defining New Functions](https://www.composingprograms.com/pages/13-defining-new-functions.html)
-  - [x] [Videos(Functions)](https://www.youtube.com/watch?v=zYC7tKfKPtM&list=PL6BsET-8jgYULSxiV2garZ0FxbnXR08MP)
-  - [x] [Lab 0: Getting Started](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/lab/lab00)
-    - [ ] [Solution](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/lab/sol-lab00)
-  - [x] [HW 1: Functions, Control](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/homework/hw01)
-    - [ ] [Solution](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/homework/sol-hw01)
-
-- [ ] Week 2 time(TBA)
-  - [ ] [Videos(Control)](https://www.youtube.com/watch?v=IPec2A7j2bY&list=PL6BsET-8jgYVCz97Y75GRXSWbb4sTpDIR)
-  - [ ] Reading
-    - [ ] [Ch. 1.4 Getting Started]())
-    - [ ] [Ch. 1.5 Elements of Programming]()
+- [x] [Week 1](./Week%201.md) 2025.4.5 
+     - [x] [Disc 00](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/dis/disc00) 
+     - [x] Reading 
+         - [x] [Ch. 1.1 Getting Started](https://www.composingprograms.com/pages/11-getting-started.html) 
+         - [x] [Ch. 1.2 Elements of Programming](https://www.composingprograms.com/pages/12-elements-of-programming.html) 
+     - [x] [Ch. 1.3  Defining New Functions](https://www.composingprograms.com/pages/13-defining-new-functions.html) 
+     - [x] [Videos(Functions)](https://www.youtube.com/watch?v=zYC7tKfKPtM&list=PL6BsET-8jgYULSxiV2garZ0FxbnXR08MP) 
+     - [x] [Lab 0: Getting Started](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/lab/lab00) 
+         - [ ] [Solution](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/lab/sol-lab00) 
+     - [x] [HW 1: Functions, Control](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/homework/hw01) 
+         - [ ] [Solution](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en/homework/sol-hw01)  
+- [ ] Week 2 time(TBA) 
+     - [ ] [Videos(Control)](https://www.youtube.com/watch?v=IPec2A7j2bY&list=PL6BsET-8jgYVCz97Y75GRXSWbb4sTpDIR) 
+     - [ ] Reading 
+         - [ ] [Ch. 1.4 Getting Started]()  
+         - [ ] [Ch. 1.5 Elements of Programming]() 
 
 
 ## 资源汇总

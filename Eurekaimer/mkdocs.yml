@@ -294,6 +294,7 @@ nav:
       - CS61A:
           - CS61A: "计算机科学/CS61A/index.md"
           - Week 1: "计算机科学/CS61A/Week 1.md"
+          - Week 2: "计算机科学/CS61A/Week 2.md"
       - 统计与大数据软件:
           - hw1: "计算机科学/统计与大数据软件/hw1.md"
           - hw2: "计算机科学/统计与大数据软件/hw2.md"

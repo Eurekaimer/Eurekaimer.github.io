@@ -2,12 +2,11 @@
 title: Week 1
 ---
 
-
 # Week 1
 
 ## Summary
 
-大致需要2.5h完成
+大致需要3.5h完成
 
 1. 建议先看Videos再看Reading，这样对Reading的内容有一个粗略的把握看书会更快
 2. 一定要写Lab和HW
@@ -47,7 +46,7 @@ Chapter 1: Building Abstractions with Functions
 
 ### Ch. 1.2
 
-As videos and  some addition
+As videos and some addition
 
 >The possibility of binding names to values and later retrieving those values by name means that the interpreter must maintain some sort of memory that keeps track of the names, values, and bindings. This memory is called an _environment_.
 
@@ -70,11 +69,13 @@ Defining New Functions
 
 ## Videos(1h)
 
-### Call expression
+### Functions
+
+#### Call expression
 
 + expresstion tree
 + recursion
-### Names, Assignment, and User-Defined Functions
+#### Names, Assignment, and User-Defined Functions
 
 Discussion Qustion 1
 
@@ -93,11 +94,11 @@ Answer: 3
 
 
 
-### Environment Diagrams
+#### Environment Diagrams
 
 给出了Environment Diagrams的概念，目前粗略感觉就是一个简单的可视化过程(类似单纯形表的东西)
 
-### Defining Functions
+#### Defining Functions
 
 assignment is binding name to values and function can be more powerful to bind names to expressions.
 
@@ -107,7 +108,7 @@ Execution procedure for def statements:
 + set the body
 + bind name to that function in the current frame
 
-### Print and None
+#### Print and None
 
 Interesting case
 ```python
@@ -141,7 +142,6 @@ None  None
 还是比较简单的，比较有趣的是Q4是冰雹猜想，不过确实也是很多OJ上的老题了
 
 Remark:
-
 + Q1注意返回的是`f(a,b)`，所以你需要输入的是函数
 + Q4冰雹猜想需要注意初始的数和迭代后的1也都需要print
 + 61A的AIdebug真的好玩，玩过头了
