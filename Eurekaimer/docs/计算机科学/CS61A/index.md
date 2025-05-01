@@ -1,6 +1,7 @@
 ---
 tags:
   - 国外公开课
+  - CS
 ---
 # CS61A
 
@@ -33,24 +34,27 @@ tags:
 
 
 
-
-- [x] [Week 1](./Week%201.md) 2025.4.5
+- [x] [61A-Week-1](Week%201.md) 2025.4.5
 	- [x] Disc 00
 	- [x] Reading
 	- [x] Videos(Functions)
-	- [x] Lab 00: Getting Started
-	- [x] HW 01: Functions, Control
-- [x] [Week 2](./Week%202.md) 2025.4.25
+	- [x] Lab 00
+	- [x] HW 01
+- [x] [61A-Week-2](Week%202.md) 2025.4.25
 	- [x] Videos(Control,Higher-Order Functions,Environments)
 	- [x] Reading
 	- [x] Lab 01
 	- [x] Disc 01
 	- [x] HW 02: Higher-Order Functions
 	- [ ] Project 1: The Game of Hog
-- [x] [Week 3](./Week%203.md  5e) 2025.4.27
+- [x] [61A-Week-3](Week%203.md) 2025.4.27
 	- [x] Videos(Functional Abstraction,Function Examples)
 	- [x] Lab 02
 	- [x] Disc 02
+- [x] [61A-Week-4](Week%204.md) 2025.4.30
+	- [x] Videos(Recursion,Tree Recursion)
+	- [x] HW 03
+	- [x] Disc 03
 
 
 

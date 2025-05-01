@@ -1,8 +1,6 @@
 ---
 comments: true
 tags:
-  - Reading Notes
-  - Rudin
   - Mathematical Analysis
 ---
 # Introduction

@@ -242,8 +242,12 @@ nav:
   - 分析学:
       - "分析学/index.md"
       - 数学分析:
+        - "分析学/数学分析(Lecture Notes)/index.md"
         - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
-        - NKU数学分析真题: "分析学/南开大学数学分析月考真题/zhanwei.md"
+        - NKU数学分析真题: "分析学/南开大学数学分析月考真题/index.md"
+        - 南开大学数学分析答案:
+          - "分析学/南开大学数学分析答案(在编)/index.md"
+          - 多元函数的极限与连续: "分析学/南开大学数学分析答案(在编)/多元函数的极限与连续_NKU(答案).md"
       - 实分析:
           - "分析学/实分析/index.md"
           - 第1章 集合与实数集: "分析学/实分析/第1章 集合与实数集.md"
@@ -262,11 +266,9 @@ nav:
           - Lecture 5 - Classification of States: "分析学/随机过程/Assets/Lecture 5 - Classification of States.md"
           - Lecture 6 - Limit Behaviour & Ergodic Theory: "分析学/随机过程/Assets/Lecture 6 - Limit Behaviour & Ergodic Theory.md"
       - 读书笔记:
-          - 分析学读书笔记: "分析学/读书笔记/index.md"
+          - "分析学/读书笔记/index.md"
           - Baby Rudin:
               - The Real and Complex Number Systems: "分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md"
-          - Royden-Real-Analysis: "分析学/读书笔记/Royden(Reading Notes)/index.md"
-            #- Preface: "分析学/读书笔记/Royden(Reading Notes)/index.md"
   - 代数学:
       - "代数学/index.md"
       - 高等代数:
@@ -291,6 +293,8 @@ nav:
           - CS61A: "计算机科学/CS61A/index.md"
           - Week 1: "计算机科学/CS61A/Week 1.md"
           - Week 2: "计算机科学/CS61A/Week 2.md"
+          - Week 3: "计算机科学/CS61A/Week 3.md"
+          - Week 4: "计算机科学/CS61A/Week 4.md"
       - 统计与大数据软件:
           - hw1: "计算机科学/统计与大数据软件/hw1.md"
           - hw2: "计算机科学/统计与大数据软件/hw2.md"

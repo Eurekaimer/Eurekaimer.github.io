@@ -3,7 +3,7 @@ comments: true
 tags:
   - CS
   - CS50x
-  - CSDIY
+  - 国外公开课
 ---
 # CS50x
 

@@ -8,7 +8,10 @@
 ## Videos(1h)
 
 
-### Lambda Function Environments
+### Functional Abstraction
+
+
+#### Lambda Function Environments
 
 
 This is main case:
@@ -23,7 +26,7 @@ f(lambda y: a + y)(a)
 # we can get 4(2 * (1 + 1))
 ```
 
-### Return
+#### Return
 
 
 ```Python
@@ -52,19 +55,22 @@ sqrt = inverse(square)
 
 
 
-### Abstraction
+#### Abstraction
 
 
 Choose a name for valued function or parameters.
 
 Some name guideline. 
 
-### Errors & Tracebacks
+#### Errors & Tracebacks
 
 Teach you check some errors and read tracebacks
 
 
-### Midterm 1 Review
+### Function Examples
+
+
+#### Midterm 1 Review
 
 
 + WWPP
@@ -112,7 +118,7 @@ horse(mask)
 
 
 
-### Implementing Functions
+#### Implementing Functions
 
 Strategy:
 
@@ -134,7 +140,7 @@ def remove(n, digit):
 	return kept
 ```
 
-### Decoraters
+#### Decoraters
 
 ```Python
 def trace1(fn):
