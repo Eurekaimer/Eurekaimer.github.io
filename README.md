@@ -3,6 +3,17 @@
 # My first blog-website
 
 
+## Star History
+
+<a href="https://www.star-history.com/#Eurekaimer/Eurekaimer.github.io&Timeline">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Eurekaimer/Eurekaimer.github.io&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Eurekaimer/Eurekaimer.github.io&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Eurekaimer/Eurekaimer.github.io&type=Timeline" />
+ </picture>
+</a>
+
+
 ## 关于本站
 
 ### 建站纪念
