@@ -93,7 +93,7 @@ Very Interesting!
 
 some examples and we can change any iteration case to recursion type.
 
-### The Recursion
+### Tree Recursion
 
 #### Order of Recursive Calls
 
