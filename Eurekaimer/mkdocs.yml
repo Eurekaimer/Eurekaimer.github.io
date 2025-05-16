@@ -168,6 +168,8 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css    # Customazation css
   - css/customize.css # 搜索圆角
+  - css/mouse_color.css
+  - css/mouse_pattern_svg.css
 
 
 # 页脚部分
@@ -297,6 +299,7 @@ nav:
           - Week 2: "计算机科学/CS61A/Week 2.md"
           - Week 3: "计算机科学/CS61A/Week 3.md"
           - Week 4: "计算机科学/CS61A/Week 4.md"
+          - Week 5: "计算机科学/CS61A/Week 5.md"
           - Hog: "计算机科学/CS61A/Project 1-The Game of Hog.md"
       - 统计与大数据软件:
           - hw1: "计算机科学/统计与大数据软件/hw1.md"
@@ -306,6 +309,9 @@ nav:
           - hw5: "计算机科学/统计与大数据软件/hw5.md"
           - hw6: "计算机科学/统计与大数据软件/hw6.md"
           - hw7: "计算机科学/统计与大数据软件/hw7.md"
+      - 实用教程:
+          - "计算机科学/实用教程/index.md"
+          - 命令行的艺术: "计算机科学/实用教程/命令行的艺术.md"
   - 科研竞赛:
       - 数学建模:
         - 数学建模: "数学建模/index.md"

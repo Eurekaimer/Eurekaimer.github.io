@@ -48,7 +48,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :simple-homepage:{ .lg .middle } __公告栏:本站已有10w字！(撒花)__
+-   :simple-homepage:{ .lg .middle } __公告栏:修改了鼠标样式(目前比较抽象)__
 
     ---
     ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="360" height="240" style="border-radius: 25px;" }
