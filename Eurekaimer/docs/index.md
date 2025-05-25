@@ -62,8 +62,8 @@ hide:
     - [x] 最近更新时间为 *{{git_site_revision_date_localized}}* .
     === "推荐文章"
 
-        - [x] [2025寒假总结](https://www.eurekaimer.xyz/blog/2025/02/19/2025%E5%AF%92%E5%81%87%E6%80%BB%E7%BB%93/) 
         - [x] [CS61A](计算机科学/CS61A/index.md) 
+        - [x] [GBC快闪](https://www.eurekaimer.xyz/blog/2025/05/19/gbc%E5%BF%AB%E9%97%AA/)
 
     === "Quote"
 

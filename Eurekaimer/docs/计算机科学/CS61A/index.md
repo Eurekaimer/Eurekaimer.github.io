@@ -46,7 +46,7 @@ tags:
 	- [x] Lab 01
 	- [x] Disc 01
 	- [x] HW 02: Higher-Order Functions
-	- [ ] Project 1: The Game of Hog
+	- [x] [Hog](Project%201-The%20Game%20of%20Hog.md)
 - [x] [61A-Week-3](Week%203.md) 2025.4.27
 	- [x] Videos(Functional Abstraction,Function Examples)
 	- [x] Lab 02
@@ -55,6 +55,16 @@ tags:
 	- [x] Videos(Recursion,Tree Recursion)
 	- [x] HW 03
 	- [x] Disc 03
+- [x] [61A-Week-5](Week%205.md) 2025.5.12
+	- [x] Videos(Sequences,Containers,Data Abstraction)
+	- [x] Lab 03
+	- [x] Disc 04
+	- [x] [Cats](Project%202-CS%2061A%20Autocorrected%20Typing%20Software.md)
+- [x] [61A-Week-6] 2025.5.13
+	- [x] Videos
+	- [x] Lab 04
+	- [x] Disc 05
+- [ ] [61A-Week-7]
 
 
 
