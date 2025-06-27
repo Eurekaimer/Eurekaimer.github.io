@@ -127,9 +127,9 @@ plugins:
       pagination: true
       pagination_per_page: 4
       categories_allowed:
-        - Holidays
-        - Semester-4
+        - 假期总结
         - 年度总结
+        - 学期总结
         - 不平凡的日子
         - 旅行
 
@@ -239,6 +239,7 @@ nav:
       - 2024数学年度总结: "blog/posts/2024总结.md"
       - workflow: "blog/posts/工作流.md"
       - 2025寒假总结: "blog/posts/2025寒假总结.md"
+      - 大二下学期总结: "blog/posts/大二下学期总结.md"
   - 二次元:
       - 总评榜: "二次元/二次元.md"
       - 百合榜: "二次元/百合.md"
