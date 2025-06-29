@@ -6,52 +6,57 @@
   <component name="ChangeListManager">
     <list default="true" id="92458606-399b-404b-8523-523242a5b138" name="更改" comment="week4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/Blog/posts/周报-S4/2025-05-25.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/Blog/posts/周报-S4/2025-05-25.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/Blog/posts/周报-S4/2025-06-08.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/Blog/posts/周报-S4/2025-06-08.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/计算机科学/CS61A/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/计算机科学/CS61A/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/23/semester-4-week-01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/23/semester-4-week-01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/02/semester-4-week-02/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/02/semester-4-week-02/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/23/semester-4-week-01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/02/semester-4-week-02/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/04/工作流v42/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/04/工作流v42/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/09/semester-4-week-03/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/09/semester-4-week-03/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/16/semester-4-week-04/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/16/semester-4-week-04/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/23/semester-4-week-05/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/23/semester-4-week-05/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/30/semester-4-week-06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/30/semester-4-week-06/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/04/semester-4-week-07/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/04/semester-4-week-07/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/08/semester-4-week-08/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/08/semester-4-week-08/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/16/semester-4-week-09/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/16/semester-4-week-09/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/27/semester-4-week-10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/27/semester-4-week-10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/01/semester-4-week-11/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/01/semester-4-week-11/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/10/semester-4-week-12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/10/semester-4-week-12/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/11/semester-4-week-13/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/11/semester-4-week-13/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/09/semester-4-week-03/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/16/semester-4-week-04/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/23/semester-4-week-05/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/30/semester-4-week-06/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/04/semester-4-week-07/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/08/semester-4-week-08/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/16/semester-4-week-09/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/04/27/semester-4-week-10/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/01/semester-4-week-11/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/10/semester-4-week-12/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/11/semester-4-week-13/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/21/semester-4-week-14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/21/semester-4-week-14/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/26/semester-4-week-15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/26/semester-4-week-15/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/21/semester-4-week-14/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/26/semester-4-week-15/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/07/semester-4-week-16/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/holidays/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/semester-4/page/4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/年度总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/年度总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/旅行/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/旅行/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/6/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/search/search_index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/克林索尔的夏天/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/克林索尔的夏天/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/计算机科学资料站/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/计算机科学资料站/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

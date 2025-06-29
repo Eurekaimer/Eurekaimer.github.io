@@ -14,11 +14,11 @@ tags:
 完成的时间轴：TBA(To be anounced)(2025.04.05-)
 
 
-- [ ] 版本选用：2024spring
+- [x] 版本选用：2024spring
 
 > 由于一些版权上的问题UCB似乎向非UCB的学习者封闭了Archive的通道，所以这里建议选用国内的备份站点和B站的视频
 
-- [ ] 时间安排：预计200h
+- [x] 时间安排：预计200h
 
 - [x] 语言：Python
 
@@ -60,10 +60,11 @@ tags:
 	- [x] Lab 03
 	- [x] Disc 04
 	- [x] [Cats](Project%202-CS%2061A%20Autocorrected%20Typing%20Software.md)
-- [x] [61A-Week-6] 2025.5.13
+- [x] [61A-Week-6](Week%206.md) 2025.5.13
 	- [x] Videos
 	- [x] Lab 04
 	- [x] Disc 05
+	- [x] HW 04
 - [ ] [61A-Week-7]
 
 
@@ -95,3 +96,8 @@ CS61a的资源参考(24spring)如下：
 
 + 在线评测如何local使用OK(不通过UCBedu邮箱)的问题: 在正确的目录中(ls contains ok) type `python ok --local` in terminal
 
+
+
+### HW 03 
+
++ 关于匿名实现递归的信仰之跃
