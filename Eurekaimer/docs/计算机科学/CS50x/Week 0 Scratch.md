@@ -1,9 +1,8 @@
 ---
 comments: true
 title: Week 0 Scratch
-tags:
-  - CS50x
 ---
+
 # Week 0 Scratch
 
 ## Syllabus
@@ -111,7 +110,7 @@ If use simple input the binary question each an answer, it will be difficult.
 Large language models(LLMs)
 
 
-``` C
+```
 #include<stdio.h>
 
 int main(void)
@@ -130,7 +129,7 @@ Very interesting parts.
 Ivy's Hardest Game --So difficult!(Can it passed?)
 
 
-## Sum up
+## Summing up
 
 In this lesson, you learned how this course sits in the wide world of computer science and programming. You learned…
 
