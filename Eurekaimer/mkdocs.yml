@@ -24,10 +24,10 @@
 
 # Project information
 site_name: Eurekaimer's Digital Garden
-site_url: https://www.eurekaimer.xyz/Stat
+site_url: https://www.eurekaimer.xyz
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
-repo_url: https://github.com/Eurekaimer/Garden
-repo_name: Garden
+repo_url: https://github.com/Eurekaimer
+repo_name: Eurekaimer.github.io
 theme:
   # 修改图标
   favicon: imgs/xiaoju.jpg
