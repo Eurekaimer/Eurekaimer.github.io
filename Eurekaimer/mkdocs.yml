@@ -1,8 +1,33 @@
+# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# -----------------------------------------------------------------------------
+# Recommended: set up configuration validation, see https://t.ly/xpZXU
+# -----------------------------------------------------------------------------
+
+# Project information
 site_name: Eurekaimer's Digital Garden
-site_url: https://www.eurekaimer.xyz/
+site_url: https://www.eurekaimer.xyz/Stat
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
-repo_url: https://github.com/Eurekaimer/Eurekaimer.github.io
-repo_name: Eurekaimer.github.io
+repo_url: https://github.com/Eurekaimer/Garden
+repo_name: Garden
 theme:
   # 修改图标
   favicon: imgs/xiaoju.jpg
@@ -94,6 +119,8 @@ markdown_extensions:
   - tables # 数据表格
 
 plugins:
+  #List
+  #search meta minify blog tags statistics git-revision-date-localized callouts
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
 
@@ -110,17 +137,6 @@ plugins:
         remove_comments: true
       cache_safe: true
 
-  - tags:
-
-  - statistics:
-  #give an estimated time to read and some datas
-  #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
-      ignore_languages:
-        - mermaid
-        - markdown
-      page_check_metadata: comments
-      #只有有评论区的才开启，也就是知识内容
-
   - blog:
       enabled: true
       blog_toc: false
@@ -134,27 +150,40 @@ plugins:
         - 不平凡的日子
         - 旅行
 
+  - tags:
+
+  - statistics:
+      #give an estimated time to read and some datas
+      #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
+      ignore_languages:
+        - mermaid
+        - markdown
+      page_check_metadata: comments
+      #只有有评论区的才开启，也就是知识内容
+
+  - git-revision-date-localized:
+      #日期插件：显示更新日期和创建日期
+      #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
+      type: datetime #or date
+      custom_format: "%d. %B %Y"
+      timezone: Asia/Shanghai
+      locale: zh
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - 友链/友链.md
+        - ./blog
+      enable_git_follow: true
+      enabled: true
+      strict: false
+
+
+
   #- toc
 
   - callouts:
       #需要安装才可使用 https://github.com/sondregronas/mkdocs-callouts
       aliases: false
-
-  # - git-revision-date-localized:
-  #     #日期插件：显示更新日期和创建日期
-  #     #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
-  #     type: datetime #or date
-  #     custom_format: "%d. %B %Y"
-  #     timezone: Asia/Shanghai
-  #     locale: zh
-  #     fallback_to_build_date: false
-  #     enable_creation_date: true
-  #     exclude:
-  #       - 友链/友链.md
-  #       - ./blog
-  #     enable_git_follow: true
-  #     enabled: true
-  #     strict: false
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
@@ -242,18 +271,32 @@ nav:
       - workflow: "blog/posts/工作流.md"
       - 2025寒假总结: "blog/posts/2025寒假总结.md"
       - 大二下学期总结: "blog/posts/大二下学期总结.md"
-  - 二次元:
-      - 总评榜: "二次元/二次元.md"
-      - 百合榜: "二次元/百合.md"
+  - 友链: "友链/友链.md"
+  - 计算机科学:
+      - Preface: "计算机科学/index.md"
+      - CS50x:
+          - CS50x: "计算机科学/CS50x/index.md"
+          - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch.md"
+          - Week 1 C: "计算机科学/CS50x/Week 1 C.md"
+      - CS61A:
+          - CS61A: "计算机科学/CS61A/index.md"
+          - Week 1: "计算机科学/CS61A/Week 1.md"
+          - Week 2: "计算机科学/CS61A/Week 2.md"
+          - Week 3: "计算机科学/CS61A/Week 3.md"
+          - Week 4: "计算机科学/CS61A/Week 4.md"
+          - Week 5: "计算机科学/CS61A/Week 5.md"
+          - Week 6: "计算机科学/CS61A/Week 6.md"
+          - Hog: "计算机科学/CS61A/Project 1-The Game of Hog.md"
+          - Cats: "计算机科学/CS61A/Project 2-CS 61A Autocorrected Typing Software.md"
   - 分析学:
       - "分析学/index.md"
       - 数学分析:
-        - "分析学/数学分析(Lecture Notes)/index.md"
-        - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
-        - NKU数学分析真题: "分析学/南开大学数学分析月考真题/index.md"
-        - 南开大学数学分析答案:
-          - "分析学/南开大学数学分析答案(在编)/index.md"
-          - 多元函数的极限与连续: "分析学/南开大学数学分析答案(在编)/多元函数的极限与连续_NKU(答案).md"
+          - "分析学/数学分析(Lecture Notes)/index.md"
+          - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
+          - NKU数学分析真题: "分析学/南开大学数学分析月考真题/index.md"
+          - 南开大学数学分析答案:
+              - "分析学/南开大学数学分析答案(在编)/index.md"
+              - 多元函数的极限与连续: "分析学/南开大学数学分析答案(在编)/多元函数的极限与连续_NKU(答案).md"
       - 实分析:
           - "分析学/实分析/index.md"
           - 第1章 集合与实数集: "分析学/实分析/第1章 集合与实数集.md"
@@ -280,50 +323,32 @@ nav:
       - 高等代数:
           - 引言: "代数学/高等代数/index.md"
           - 二次型: "代数学/高等代数/二次型.md"
+  - 二次元:
+      - 总评榜: "二次元/二次元.md"
+      - 百合榜: "二次元/百合.md"
   - 统计学:
       - 数理统计:
-         - "统计学/数理统计/index.md"
-         - 基本概念: "统计学/数理统计/Assets/基本概念.md"
-         - 点估计: "统计学/数理统计/Assets/点估计.md"
-         - 假设检验——显著性检验: "统计学/数理统计/Assets/假设检验——显著性检验.md"
-         - 25数理统计期中: "统计学/数理统计/Assets/25数理统计期中.md"
+          - "统计学/数理统计/index.md"
+          - 基本概念: "统计学/数理统计/Assets/基本概念.md"
+          - 点估计: "统计学/数理统计/Assets/点估计.md"
+          - 假设检验——显著性检验: "统计学/数理统计/Assets/假设检验——显著性检验.md"
+          - 25数理统计期中: "统计学/数理统计/Assets/25数理统计期中.md"
       - 运筹与优化:
           - 引言: "统计学/运筹与优化/index.md"
           - 线性规划与目标规划: "统计学/运筹与优化/线性规划与目标规划.md"
           - 无约束问题: "统计学/运筹与优化/无约束问题.md"
-  - 计算机科学:
-      - Preface: "计算机科学/index.md"
-      - CS50x:
-         - CS50x: "计算机科学/CS50x/index.md"
-         - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch.md"
-         - Week 1 C: "计算机科学/CS50x/Week 1 C.md"
-      - CS61A:
-          - CS61A: "计算机科学/CS61A/index.md"
-          - Week 1: "计算机科学/CS61A/Week 1.md"
-          - Week 2: "计算机科学/CS61A/Week 2.md"
-          - Week 3: "计算机科学/CS61A/Week 3.md"
-          - Week 4: "计算机科学/CS61A/Week 4.md"
-          - Week 5: "计算机科学/CS61A/Week 5.md"
-          - Week 6: "计算机科学/CS61A/Week 6.md"
-          - Hog: "计算机科学/CS61A/Project 1-The Game of Hog.md"
-          - Cats: "计算机科学/CS61A/Project 2-CS 61A Autocorrected Typing Software.md"
-      - 统计与大数据软件:
-          - "计算机科学/统计与大数据软件/index.md"
-          - Py-Lecture-1 基本操作: "计算机科学/统计与大数据软件/Py-Lecture-1 基本操作.md"
-      - 实用教程:
-          - "计算机科学/实用教程/index.md"
-          - 命令行的艺术: "计算机科学/实用教程/命令行的艺术.md"
+  - 网络资源整合:
+      - "网络资源整合/index.md"
+      - 数学(统计学)讲义收集: "网络资源整合/数学(统计学)讲义收集.md"
+      - 计算机科学资料站: "网络资源整合/计算机科学资料站.md"
+      - 克林索尔的夏天: "网络资源整合/克林索尔的夏天.md"
   - 科研竞赛:
       - 数学建模:
         - 数学建模: "数学建模/index.md"
         - 导航(初学者): "数学建模/导航(初学者).md"
       - 计量经济学:
         - 计量经济学: "交叉融合/计量经济学/index.md"
-  - 网络资源整合:
-      - "网络资源整合/index.md"
-      - 数学(统计学)讲义收集: "网络资源整合/数学(统计学)讲义收集.md"
-      - 计算机科学资料站: "网络资源整合/计算机科学资料站.md"
-      - 克林索尔的夏天: "网络资源整合/克林索尔的夏天.md"
-  - 友链: "友链/友链.md"
   - 标签: "tags.md"
+
+
 
