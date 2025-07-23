@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92458606-399b-404b-8523-523242a5b138" name="更改" comment="week4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" afterDir="false" />
-    </list>
+    <list default="true" id="92458606-399b-404b-8523-523242a5b138" name="更改" comment="week4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739195908532</updated>
-      <workItem from="1753246377470" duration="684000" />
+      <workItem from="1753246377470" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1739198837559</created>
