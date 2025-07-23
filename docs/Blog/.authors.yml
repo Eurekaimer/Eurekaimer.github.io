@@ -1,0 +1,8 @@
+authors:
+  Eurekaimer:
+    name: Eurekaimer    # Author name
+    description: Math and Statistics # Author description
+    avatar: https://avatars.githubusercontent.com/u/88918522?v=4         # Author avatar
+    #得到头像网址的方法-输入https://github.com/Username.png-方法来自Stack Overflow
+    #https://stackoverflow.com/questions/22932422/get-github-avatar-from-email-or-name 感谢
+    url: https://github.com/Eurekaimer

@@ -1,0 +1,357 @@
+# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# -----------------------------------------------------------------------------
+# Recommended: set up configuration validation, see https://t.ly/xpZXU
+# -----------------------------------------------------------------------------
+
+# Project information
+site_name: Eurekaimer's Digital Garden
+site_url: https://www.eurekaimer.xyz
+edit_uri: edit/main/docs # 编辑按钮跳转的链接
+repo_url: https://github.com/Eurekaimer
+repo_name: Eurekaimer.github.io
+theme:
+  # 修改图标
+  favicon: imgs/xiaoju.jpg
+  logo: imgs/xiaoju.jpg
+  # 语言
+  language: zh
+  # 选用material主题
+  name: material
+  custom_dir: overrides
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: purple
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: blue grey
+  features:
+    # navigation部分
+    - navigation.indexes
+    # 启动粘性页面，也就是向下滑时顶部导航仍然存在 
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # 退回顶部按钮
+    - navigation.top
+    # - navigation.sections 分节
+    - navigation.prune
+    - navigation.expand
+#   - navigation.footer 上下页的页脚
+    # toc部分
+    #- toc.integrate
+    #- toc.follow
+    # search部分
+    - search.suggest
+    - search.highlight
+    # content部分
+    - content.code.copy     # 启用代码复制
+    - content.code.annotate # 启用代码注释
+    - content.action.edit   # 启用源代码编辑
+    - content.action.view   # 启用源代码预览
+  font:
+    text: Inria Serif
+  icon:
+    admonition: # change icon of admonition
+      example: octicons/telescope-16
+
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - meta
+  - nl2br
+  - admonition #callouts
+  - codehilite:
+      linenums: true #代码高亮
+  - pymdownx.details
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true    # 自定义复选框样式
+      clickable_checkbox: true # 可点击
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      auto_title: true # 显示语言名称
+      linenums: true
+      linenums_style: pymdownx-inline  # 表格式行号table inline pymdownx-inline
+      anchor_linenums: true  # 行号链接
+     # linenums: true  # 显示行号
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html # image configuration
+  - tables # 数据表格
+
+plugins:
+  #List
+  #search meta minify blog tags statistics git-revision-date-localized callouts
+  - search:
+      separator: '[\s\u200b\-]'  # Enhance Chinese Search
+
+#  - social 待装cairosvg
+
+  - meta
+
+  - minify:
+      #需要安装才可使用
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+  - blog:
+      enabled: true
+      blog_toc: false
+      post_readtime: false
+      pagination: true
+      pagination_per_page: 4
+      categories_allowed:
+        - 假期总结
+        - 年度总结
+        - 学期总结
+        - 不平凡的日子
+        - 旅行
+
+  - tags:
+
+  - statistics:
+      #give an estimated time to read and some datas
+      #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
+      ignore_languages:
+        - mermaid
+        - markdown
+      page_check_metadata: comments
+      #只有有评论区的才开启，也就是知识内容
+
+  - git-revision-date-localized:
+      #日期插件：显示更新日期和创建日期
+      #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
+      type: datetime #or date
+      custom_format: "%d. %B %Y"
+      timezone: Asia/Shanghai
+      locale: zh
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - 友链/友链.md
+        - ./blog
+      enable_git_follow: true
+      enabled: true
+      strict: false
+
+
+
+  #- toc
+
+  - callouts:
+      #需要安装才可使用 https://github.com/sondregronas/mkdocs-callouts
+      aliases: false
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  - javascripts/config.js    # Customazation js
+  - javascripts/main.js
+  - javascripts/extra.js
+  - js/timeago.min.js
+  - js/timeago_mkdocs_material.js
+extra_css:
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  - css/extra.css    # Customazation css
+  - css/customize.css # 搜索圆角
+  - css/mouse_color.css
+  - css/mouse_pattern_svg.css
+
+
+# 页脚部分
+copyright: Copyright &copy; 2024 - 2025 <a href="https://github.com/Eurekaimer">Eurekaimer</a>.
+
+extra:
+  # 页脚出的社交链接
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Eurekaimer
+      name: GitHub
+    - icon: simple/wechat
+      link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/Wechat.jpg
+      name: WeChat
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/702046230?spm_id_from=333.1007.0.0
+      name: space on bilibili
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<2507983039@qq.com>
+      name: email 2507983039@qq.com
+    - icon: simple/qq
+      link: https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/QQ.png
+      name: QQ
+  attachments: "imgs"
+  # 语言切换部分
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+    - name: 日本语
+      link: /ja/
+      lang: ja
+  # 代码复制部分
+  clipboard:
+    copy: 复制
+    copied: 已复制！
+    error: 复制失败
+  # 反馈系统
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: 本页面内容是否对您有帮助?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 有帮助
+          data: 1
+          note: >-
+            感谢反馈！
+        - icon: material/thumb-down-outline
+          name: 没帮助
+          data: 0
+          note: >- 
+            感谢反馈！
+
+# navigation
+nav:
+  - Home: "index.md"
+  - 博客:
+      - "blog/index.md"
+      - 更新日志: "blog/posts/更新日志.md"
+      - 建站纪念: "blog/posts/建站纪念贴.md"
+      - 2024数学年度总结: "blog/posts/2024总结.md"
+      - workflow: "blog/posts/工作流.md"
+      - 2025寒假总结: "blog/posts/2025寒假总结.md"
+      - 大二下学期总结: "blog/posts/大二下学期总结.md"
+  - 友链: "友链/友链.md"
+  - 二次元:
+      - 总评榜: "二次元/二次元.md"
+      - 百合榜: "二次元/百合.md"
+  - 统计学:
+    - 数理统计:
+        - "统计学/数理统计/index.md"
+        - 基本概念: "统计学/数理统计/Assets/基本概念.md"
+        - 点估计: "统计学/数理统计/Assets/点估计.md"
+        - 假设检验——显著性检验: "统计学/数理统计/Assets/假设检验——显著性检验.md"
+        - 25数理统计期中: "统计学/数理统计/Assets/25数理统计期中.md"
+    - 回归分析:
+        - "统计学/回归分析/index.md"
+
+    - 运筹与优化:
+        - 引言: "统计学/运筹与优化/index.md"
+        - 线性规划与目标规划: "统计学/运筹与优化/线性规划与目标规划.md"
+        - 无约束问题: "统计学/运筹与优化/无约束问题.md"
+  - 数据科学:
+      - Preface: "计算机科学/index.md"
+      - CS50x:
+          - CS50x: "计算机科学/CS50x/index.md"
+          - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch.md"
+          - Week 1 C: "计算机科学/CS50x/Week 1 C.md"
+      - CS61A:
+          - CS61A: "计算机科学/CS61A/index.md"
+          - Week 1: "计算机科学/CS61A/Week 1.md"
+          - Week 2: "计算机科学/CS61A/Week 2.md"
+          - Week 3: "计算机科学/CS61A/Week 3.md"
+          - Week 4: "计算机科学/CS61A/Week 4.md"
+          - Week 5: "计算机科学/CS61A/Week 5.md"
+          - Week 6: "计算机科学/CS61A/Week 6.md"
+          - Hog: "计算机科学/CS61A/Project 1-The Game of Hog.md"
+          - Cats: "计算机科学/CS61A/Project 2-CS 61A Autocorrected Typing Software.md"
+  - 分析学:
+      - "分析学/index.md"
+      - 数学分析:
+          - "分析学/数学分析(Lecture Notes)/index.md"
+          - 预备知识: "分析学/数学分析(Lecture Notes)/预备知识(数学分析).md"
+          - NKU数学分析真题: "分析学/南开大学数学分析月考真题/index.md"
+          - 南开大学数学分析答案:
+              - "分析学/南开大学数学分析答案(在编)/index.md"
+              - 多元函数的极限与连续: "分析学/南开大学数学分析答案(在编)/多元函数的极限与连续_NKU(答案).md"
+      - 实分析:
+          - "分析学/实分析/index.md"
+          - 第1章 集合与实数集: "分析学/实分析/第1章 集合与实数集.md"
+          - 习题1: "分析学/实分析/周性伟-Ch1.md"
+          - 习题2: "分析学/实分析/周性伟-Ch2.md"
+      - 概率论:
+          - "分析学/概率论/index.md"
+          - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
+          - 集合与概率论公理: "分析学/概率论/Sets, Axioms of Probability.md"
+      - 随机过程:
+          - "分析学/随机过程/index.md"
+          - Lecture 1 - Introduction & Preliminaries: "分析学/随机过程/Assets/Lecture 1 - Introduction & Preliminaries.md"
+          - Lecture 2 - Poisson Processes: "分析学/随机过程/Assets/Lecture 2 - Poisson Processes.md"
+          - Lecture 3 - Extensions of Poisson Process: "分析学/随机过程/Assets/Lecture 3 - Extensions of Poisson Process.md"
+          - Lecture 4 - Discrete-time Markov Chains: "分析学/随机过程/Assets/Lecture 4 - Discrete-time Markov Chains.md"
+          - Lecture 5 - Classification of States: "分析学/随机过程/Assets/Lecture 5 - Classification of States.md"
+          - Lecture 6 - Limit Behaviour & Ergodic Theory: "分析学/随机过程/Assets/Lecture 6 - Limit Behaviour & Ergodic Theory.md"
+      - 读书笔记:
+          - "分析学/读书笔记/index.md"
+          - Baby Rudin:
+              - The Real and Complex Number Systems: "分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md"
+  - 代数学:
+      - "代数学/index.md"
+      - 高等代数:
+          - 引言: "代数学/高等代数/index.md"
+          - 二次型: "代数学/高等代数/二次型.md"
+  - 网络资源整合:
+      - "网络资源整合/index.md"
+      - 数学(统计学)讲义收集: "网络资源整合/数学(统计学)讲义收集.md"
+      - 计算机科学资料站: "网络资源整合/计算机科学资料站.md"
+      - 克林索尔的夏天: "网络资源整合/克林索尔的夏天.md"
+  - 科研竞赛:
+      - 数学建模:
+        - 数学建模: "数学建模/index.md"
+        - 导航(初学者): "数学建模/导航(初学者).md"
+      - 计量经济学:
+        - 计量经济学: "交叉融合/计量经济学/index.md"
+  - 标签: "tags.md"
+
+
+
