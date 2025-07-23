@@ -4,7 +4,188 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="" />
+    <list default="true" id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/bundle.56ea9cef.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/bundle.56ea9cef.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/bundle.c8b220af.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/bundle.c8b220af.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.ar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.da.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.de.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.du.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.el.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.es.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.fi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.fr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.he.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.hi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.hu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.hy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.it.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.ja.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.jp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.kn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.ko.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.multi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.nl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.no.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.pt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.ro.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.ru.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.sa.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.stemmer.support.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.sv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.ta.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.te.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.th.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.tr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.vi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/min/lunr.zh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/tinyseg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/lunr/wordcut.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/workers/search.d50fe291.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/workers/search.d50fe291.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/workers/search.f8cc74c7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/javascripts/workers/search.f8cc74c7.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/stylesheets/main.342714a4.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/stylesheets/main.342714a4.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/stylesheets/main.8608ea7d.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/stylesheets/main.8608ea7d.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/stylesheets/palette.06af60db.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/assets/stylesheets/palette.06af60db.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/04/工作流v42/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/假期总结/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/学期总结/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/年度总结/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/旅行/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/css/customize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/css/extra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/css/katex.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/css/mouse_color.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/css/mouse_pattern_svg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/imgs/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/imgs/xiaoju.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/imgs/xiaoju.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/javascripts/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/javascripts/extra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/overrides/partials/comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/overrides/partials/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/search/search_index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/tags/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/二次元/百合/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/交叉融合/计量经济学/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/代数学/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/代数学/高等代数/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/代数学/高等代数/二次型/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/南开大学数学分析月考真题/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/南开大学数学分析答案(在编)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/南开大学数学分析答案(在编)/多元函数的极限与连续_NKU(答案)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/实分析/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/实分析/周性伟-Ch1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/实分析/周性伟-Ch2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/实分析/第1章 集合与实数集/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/数学分析(Lecture Notes)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/数学分析(Lecture Notes)/小鞠浴衣.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/数学分析(Lecture Notes)/预备知识(数学分析)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/概率论/Combinatorial Analysis/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/概率论/Sets, Axioms of Probability/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/概率论/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/读书笔记/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/Assets/Lecture 1 - Introduction &amp; Preliminaries/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/Assets/Lecture 2 - Poisson Processes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/Assets/Lecture 3 - Extensions of Poisson Process/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/Assets/Lecture 4 - Discrete-time Markov Chains/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/Assets/Lecture 5 - Classification of States/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/Assets/Lecture 6 - Limit Behaviour &amp; Ergodic Theory/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/随机过程/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/友链/友链/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/导航(初学者)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/模拟退火(SA)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/神经网络/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/蚁群算法/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/启发式算法/遗传算法(GA)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/图论(Graph Theory)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/一元线性回归分析/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/回归分析概述/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/多元线性回归分析/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/时间序列ARIMA模型/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/灰色预测(GM(1,1))/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/控制预测类/非线性回归分析/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/机器学习模型算法/机器学习模型概述/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/机理分析类/微分方程/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/蒙特卡洛法(Monte Carlo)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/Topsis法/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/主成分分析(PCA)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/基于熵权法对Topsis模型的修正/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/层次分析法(AHP)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/模糊综合评价/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/灰色关联分析(GRA)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/熵权法/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/评价决策类/评价类问题/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/动态规划(DP)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/图论最短路径/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/多目标规划(MOP)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/整数规划和0-1规划/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/最大最小化规划/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/最小生成树/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/线性规划(LP)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数学建模/模型学习/运筹优化类/非线性规划/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/数理统计/Assets/25数理统计期中/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/数理统计/Assets/25数理统计期中试卷.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/数理统计/Assets/假设检验——显著性检验/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/数理统计/Assets/基本概念/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/数理统计/Assets/点估计/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/数理统计/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/运筹与优化/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/运筹与优化/无约束问题/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/统计学/运筹与优化/线性规划与目标规划/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/克林索尔的夏天/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/数学(统计学)讲义收集/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/网络资源整合/计算机科学资料站/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS50x/Week 0 Scratch/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS50x/Week 1 C/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS50x/Week 2 Arrays/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS50x/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Project 1-The Game of Hog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Project 2-CS 61A Autocorrected Typing Software/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Week 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Week 2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Week 3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Week 4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Week 5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/Week 6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/CS61A/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/实用教程/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/实用教程/命令行的艺术/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/统计与大数据软件/Py-Lecture-1 基本操作/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/计算机科学/统计与大数据软件/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +200,12 @@
     &quot;assignee&quot;: &quot;Eurekaimer&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Eurekaimer/Garden.git&quot;,
-    &quot;accountId&quot;: &quot;3fe9fc24-29a5-423f-94a6-2965f1847e05&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Eurekaimer/Eurekaimer.github.io.git",
+    "accountId": "3fe9fc24-29a5-423f-94a6-2965f1847e05"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -53,6 +234,113 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,6 +359,7 @@
       <updated>1739194727187</updated>
       <workItem from="1753264834850" duration="1293000" />
       <workItem from="1753267324525" duration="758000" />
+      <workItem from="1753268496346" duration="65000" />
     </task>
     <servers />
   </component>
