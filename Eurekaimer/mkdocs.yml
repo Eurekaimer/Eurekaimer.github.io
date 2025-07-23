@@ -161,21 +161,21 @@ plugins:
       page_check_metadata: comments
       #只有有评论区的才开启，也就是知识内容
 
-  - git-revision-date-localized:
-      #日期插件：显示更新日期和创建日期
-      #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
-      type: datetime #or date
-      custom_format: "%d. %B %Y"
-      timezone: Asia/Shanghai
-      locale: zh
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - 友链/友链.md
-        - ./blog
-      enable_git_follow: true
-      enabled: true
-      strict: false
+  # - git-revision-date-localized:
+  #     #日期插件：显示更新日期和创建日期
+  #     #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
+  #     type: datetime #or date
+  #     custom_format: "%d. %B %Y"
+  #     timezone: Asia/Shanghai
+  #     locale: zh
+  #     fallback_to_build_date: false
+  #     enable_creation_date: true
+  #     exclude:
+  #       - 友链/友链.md
+  #       - ./blog
+  #     enable_git_follow: true
+  #     enabled: true
+  #     strict: false
 
 
 
