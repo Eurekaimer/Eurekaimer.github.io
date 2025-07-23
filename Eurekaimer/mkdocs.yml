@@ -140,21 +140,21 @@ plugins:
       #需要安装才可使用 https://github.com/sondregronas/mkdocs-callouts
       aliases: false
 
-  - git-revision-date-localized:
-      #日期插件：显示更新日期和创建日期
-      #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
-      type: datetime #or date
-      custom_format: "%d. %B %Y"
-      timezone: Asia/Shanghai
-      locale: zh
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - 友链/友链.md
-        - ./blog
-      enable_git_follow: true
-      enabled: true
-      strict: false
+  # - git-revision-date-localized:
+  #     #日期插件：显示更新日期和创建日期
+  #     #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
+  #     type: datetime #or date
+  #     custom_format: "%d. %B %Y"
+  #     timezone: Asia/Shanghai
+  #     locale: zh
+  #     fallback_to_build_date: false
+  #     enable_creation_date: true
+  #     exclude:
+  #       - 友链/友链.md
+  #       - ./blog
+  #     enable_git_follow: true
+  #     enabled: true
+  #     strict: false
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
