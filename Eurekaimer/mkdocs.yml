@@ -102,6 +102,7 @@ plugins:
   - meta
 
   - minify:
+      #需要安装才可使用
       minify_html: true
       minify_js: true
       minify_css: true
@@ -136,6 +137,7 @@ plugins:
   #- toc
 
   - callouts:
+      #需要安装才可使用 https://github.com/sondregronas/mkdocs-callouts
       aliases: false
 
   - git-revision-date-localized:
