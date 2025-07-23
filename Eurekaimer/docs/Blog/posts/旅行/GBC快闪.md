@@ -1,9 +1,10 @@
 ---
 title: GBC快闪
 date: 
-  created: 2025-05-19
+  created: 2025-05-19 
   updated: 2025-05-19
---- 
+---
+
 # GBC快闪
 
 nina镇楼
