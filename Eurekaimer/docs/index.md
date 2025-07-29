@@ -62,7 +62,7 @@ hide:
     - [x] 最近更新时间为 *{{git_site_revision_date_localized}}* .
     === "推荐文章"
 
-        - [x] [CS61A](计算机科学/CS61A/index.md) 
+        - [x] [CS61A](数据科学/CS61A/index.md) 
         - [x] [GBC快闪](https://www.eurekaimer.xyz/blog/2025/05/19/gbc%E5%BF%AB%E9%97%AA/)
 
     === "Quote"

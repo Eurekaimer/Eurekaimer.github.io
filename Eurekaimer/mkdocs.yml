@@ -139,9 +139,6 @@ plugins:
 
   - blog:
       enabled: true
-      blog_toc: false
-      post_readtime: false
-      pagination: true
       pagination_per_page: 4
       categories_allowed:
         - 假期总结
@@ -161,21 +158,21 @@ plugins:
       page_check_metadata: comments
       #只有有评论区的才开启，也就是知识内容
 
-  # - git-revision-date-localized:
-  #     #日期插件：显示更新日期和创建日期
-  #     #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
-  #     type: datetime #or date
-  #     custom_format: "%d. %B %Y"
-  #     timezone: Asia/Shanghai
-  #     locale: zh
-  #     fallback_to_build_date: false
-  #     enable_creation_date: true
-  #     exclude:
-  #       - 友链/友链.md
-  #       - ./blog
-  #     enable_git_follow: true
-  #     enabled: true
-  #     strict: false
+  - git-revision-date-localized:
+      #日期插件：显示更新日期和创建日期
+      #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
+      type: datetime #or date
+      custom_format: "%d. %B %Y"
+      timezone: Asia/Shanghai
+      locale: zh
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - 友链/友链.md
+        - ./blog
+      enable_git_follow: true
+      enabled: true
+      strict: false
 
 
 
@@ -290,21 +287,21 @@ nav:
         - 线性规划与目标规划: "统计学/运筹与优化/线性规划与目标规划.md"
         - 无约束问题: "统计学/运筹与优化/无约束问题.md"
   - 数据科学:
-      - Preface: "计算机科学/index.md"
+      - Preface: "数据科学/index.md"
       - CS50x:
-          - CS50x: "计算机科学/CS50x/index.md"
-          - Week 0 Scratch: "计算机科学/CS50x/Week 0 Scratch.md"
-          - Week 1 C: "计算机科学/CS50x/Week 1 C.md"
+          - CS50x: "数据科学/CS50x/index.md"
+          - Week 0 Scratch: "数据科学/CS50x/Week 0 Scratch.md"
+          - Week 1 C: "数据科学/CS50x/Week 1 C.md"
       - CS61A:
-          - CS61A: "计算机科学/CS61A/index.md"
-          - Week 1: "计算机科学/CS61A/Week 1.md"
-          - Week 2: "计算机科学/CS61A/Week 2.md"
-          - Week 3: "计算机科学/CS61A/Week 3.md"
-          - Week 4: "计算机科学/CS61A/Week 4.md"
-          - Week 5: "计算机科学/CS61A/Week 5.md"
-          - Week 6: "计算机科学/CS61A/Week 6.md"
-          - Hog: "计算机科学/CS61A/Project 1-The Game of Hog.md"
-          - Cats: "计算机科学/CS61A/Project 2-CS 61A Autocorrected Typing Software.md"
+          - CS61A: "数据科学/CS61A/index.md"
+          - Week 1: "数据科学/CS61A/Week 1.md"
+          - Week 2: "数据科学/CS61A/Week 2.md"
+          - Week 3: "数据科学/CS61A/Week 3.md"
+          - Week 4: "数据科学/CS61A/Week 4.md"
+          - Week 5: "数据科学/CS61A/Week 5.md"
+          - Week 6: "数据科学/CS61A/Week 6.md"
+          - Hog: "数据科学/CS61A/Project 1-The Game of Hog.md"
+          - Cats: "数据科学/CS61A/Project 2-CS 61A Autocorrected Typing Software.md"
   - 分析学:
       - "分析学/index.md"
       - 数学分析:
@@ -346,6 +343,15 @@ nav:
       - 计算机科学资料站: "网络资源整合/计算机科学资料站.md"
       - 克林索尔的夏天: "网络资源整合/克林索尔的夏天.md"
   - 科研竞赛:
+      - "科研竞赛/index.md"
+      - LaTeX:
+        - 引言: "科研竞赛/LaTeX/index.md"
+        - 安装和配置: "科研竞赛/LaTeX/LaTeX(VScode).md"
+      - Python:
+        - 安装和配置: "科研竞赛/Python/Python安装和配置.md"
+      - 工具:
+        - 图床(PicGo+GitHub): "科研竞赛/Tools/图床搭建.md"
+        - Obsidian: "科研竞赛/Tools/Obsidian_Chain.md"
       - 数学建模:
         - 数学建模: "数学建模/index.md"
         - 导航(初学者): "数学建模/导航(初学者).md"
