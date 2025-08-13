@@ -23,6 +23,7 @@
 # -----------------------------------------------------------------------------
 
 # Project information
+site_description: All models are wrong, but some are useful.
 site_name: Eurekaimer's Digital Garden
 site_url: https://www.eurekaimer.xyz
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
@@ -146,6 +147,15 @@ plugins:
         - 学期总结
         - 不平凡的日子
         - 旅行
+
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+      enabled: true
 
   - tags:
 
