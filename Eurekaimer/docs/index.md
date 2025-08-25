@@ -48,14 +48,14 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :simple-homepage:{ .lg .middle } __公告栏:修改了鼠标样式(目前比较抽象)__
+-   :simple-homepage:{ .lg .middle } __公告栏:沉迷科研(IDEA未发 -> 暂时不更新)__
 
     ---
     ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="360" height="240" style="border-radius: 25px;" }
 
     可以听听歌啊！(播放曲目随站长品味而改变)
 
-     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=13279997469&auto=1&height=90"></iframe>
+     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=14195806769&auto=1&height=90"></iframe>
 
     - [x] 这里是 `Eurekaimer` 的数字花园，本站由 `mkdocs` 生成，持续更新中.
     - [x] 本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片.
