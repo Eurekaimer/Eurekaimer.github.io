@@ -1,6 +1,6 @@
 本站的所有内容以[ CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/)开放。
 =======
-# My first blog-website
+# My Homepage
 
 
 ## Star History
@@ -41,7 +41,9 @@
       + [**Blog**](https://squidfunk.github.io/mkdocs-material/plugins/blog/)：一个方便写博客的内置插件
       + [**Search**](https://squidfunk.github.io/mkdocs-material/plugins/search/)：内置的搜索插件
       + [**Tags**](https://squidfunk.github.io/mkdocs-material/plugins/tags/)：一个给文件加标签的插件，方便管理
+      + [**RSS**](https://squidfunk.github.io/mkdocs-material/tutorials/blogs/engage/?h=rss#rss-feeds)：加入RSS功能，方便访客订阅
 + [**statistics**](https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file)：一个用于文档统计的插件，并且可给出预计阅读时间，感谢[TonyCrane](https://github.com/TonyCrane)的开源.
++ [**Jupyter**](https://github.com/danielfrg/mkdocs-jupyter): 一个帮助mkdocs兼容jupyter notebook格式的插件，极大的方便了笔记的统一(可以直接将ipynb格式文件放入了)
 
 #### Other extension
 
