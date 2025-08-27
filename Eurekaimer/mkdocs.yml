@@ -124,6 +124,8 @@ plugins:
   #search meta minify blog tags statistics git-revision-date-localized callouts
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
+  - mkdocs-jupyter
+  # 支持jupyter的插件
 
 #  - social 待装cairosvg
 
@@ -314,6 +316,9 @@ nav:
           - Week 6: "数据科学/CS61A/Week 6.md"
           - Hog: "数据科学/CS61A/Project 1-The Game of Hog.md"
           - Cats: "数据科学/CS61A/Project 2-CS 61A Autocorrected Typing Software.md"
+      - 西瓜书:
+          - 西瓜书: "数据科学/西瓜书/index.md"
+          - "数据科学/西瓜书/demo.ipynb"
   - 分析学:
       - "分析学/index.md"
       - 数学分析:

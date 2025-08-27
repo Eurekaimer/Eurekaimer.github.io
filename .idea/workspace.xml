@@ -7,6 +7,8 @@
     <list default="true" id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/实用教程/命令行的艺术.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" afterDir="false" />
@@ -14,11 +16,6 @@
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_json_created.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_json_created.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_json_updated.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_json_updated.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_created.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_created.xml" afterDir="false" />

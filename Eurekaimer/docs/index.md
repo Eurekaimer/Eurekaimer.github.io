@@ -55,7 +55,7 @@ hide:
 
     可以听听歌啊！(播放曲目随站长品味而改变)
 
-     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=14195806769&auto=1&height=90"></iframe>
+     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2089023383&auto=1&height=66"></iframe>
 
     - [x] 这里是 `Eurekaimer` 的数字花园，本站由 `mkdocs` 生成，持续更新中.
     - [x] 本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片.
