@@ -5,6 +5,54 @@ tags:
 ---
 # CS61A
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar Example</title>
+  <style>
+    /* 设置进度条外容器 */
+    .progress {
+      width: 100%;
+      height: 30px;
+      background-color: #e0e0e0; /* 进度条背景色 */
+      border-radius: 5px;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    /* 设置进度条内部分 (动态) */
+    .progress-bar {
+      height: 100%;
+      background-color: red; /* 红色进度条 */
+      width: 0; /* 默认宽度为 0 */
+      border-radius: 5px;
+      position: absolute;
+      animation: progress 3s ease-out forwards; /* 动画效果 */
+    }
+
+    /* 进度条动画 */
+    @keyframes progress {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 40%; /* 最终宽度设置为 25% */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="progress">
+  <div class="progress-bar"></div> <!-- 只保留进度条，没有内部数字 -->
+</div>
+
+
+</body>
+</html>
 
 ## 前言
 
@@ -65,7 +113,11 @@ tags:
 	- [x] Lab 04
 	- [x] Disc 05
 	- [x] HW 04
-- [ ] [61A-Week-7]
+- [x] [61A-Week-7](Week%207.md) 2025.9.2
+	- [x] Videos(Iterators, Generators, Objects)
+	- [x] Lab 05
+	- [x] Disc 06
+	- [x] HW 05
 
 
 
@@ -89,7 +141,11 @@ CS61a的资源参考(24spring)如下：
 也可以使用[24fall备份(可fork完成作业)](https://github.com/InsideEmpire/CS61A-Assignments?tab=readme-ov-file#%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E)
 
 
-## 遇到的问题
+## Question and Feedback
+
+
+实际上，这门课的视频几乎可以说是完全包含于textbook中了，我认为如果有一定基础完全可以不看视频直接看书本然后完成lab和hw即可
+
 
 
 ### Lab 00
