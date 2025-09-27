@@ -60,10 +60,9 @@ hide:
     - [x] 这里是 `Eurekaimer` 的数字花园，本站由 `mkdocs` 生成，持续更新中.
     - [x] 本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片.
     - [x] 最近更新时间为 *{{git_site_revision_date_localized}}* .
-    === "推荐文章"
+    === "推荐"
 
-        - [x] [CS61A](数据科学/CS61A/index.md) 
-        - [x] [GBC快闪](https://www.eurekaimer.xyz/blog/2025/05/19/gbc%E5%BF%AB%E9%97%AA/)
+        - [x] [学术主页](https://www.eurekaimer.xyz/Academic/) 
 
     === "Quote"
 
@@ -78,6 +77,11 @@ hide:
     === "PC端/Mac"
 
         请点击上方导航栏选择你感兴趣的部分
+
+    <!-- === "不背单词"
+
+        [![leftover's bbdc stats](https://stat.leftover.cn/bbdc?userId=988693129&nickname=Eurekaimer)](https://github.com/left0ver/github-bbdc-stat) -->
+
     
 
 </div>

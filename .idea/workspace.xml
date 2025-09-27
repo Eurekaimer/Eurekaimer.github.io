@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/CS61A/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/CS61A/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/二次元/二次元.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/二次元/二次元.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/友链/友链.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/友链/友链.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" afterDir="false" />
@@ -15,6 +15,16 @@
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2024/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/archive/2025/page/2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/不平凡的日子/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/假期总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/假期总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/学期总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/学期总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/年度总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/年度总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/category/旅行/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/category/旅行/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/page/2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_json_created.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_json_created.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_json_updated.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_json_updated.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_created.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_created.xml" afterDir="false" />
@@ -24,21 +34,12 @@
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/分析学/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/分析学/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/Week 0 Scratch/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/Week 0 Scratch/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/Week 1 C/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/Week 1 C/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS50x/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Project 1-The Game of Hog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Project 1-The Game of Hog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Project 2-CS 61A Autocorrected Typing Software/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Project 2-CS 61A Autocorrected Typing Software/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/友链/友链/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/友链/友链/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/Week 7/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/CS61A/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/实用教程/命令行的艺术/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/数据挖掘与机器学习/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/数据挖掘与机器学习/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/数据挖掘与机器学习/关于二分类问题中两种标签体系下逻辑斯谛回归损失函数的等价性证明/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/数据挖掘与机器学习/关于二分类问题中两种标签体系下逻辑斯谛回归损失函数的等价性证明/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +81,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/HuangZg/OneDrive/Desktop/Eurekaimer.github.io&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
