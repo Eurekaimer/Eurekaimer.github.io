@@ -125,7 +125,7 @@ plugins:
   #search meta minify blog tags statistics git-revision-date-localized callouts
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
-  # - mkdocs-jupyter
+  - mkdocs-jupyter
   # 支持jupyter的插件
 
 #  - social 待装cairosvg

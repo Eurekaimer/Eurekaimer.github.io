@@ -48,7 +48,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :simple-homepage:{ .lg .middle } __公告栏:沉迷科研(IDEA未发 -> 暂时不更新)__
+-   :simple-homepage:{ .lg .middle } __公告栏:上线了不背单词进度(欢迎push__
 
     ---
     ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="360" height="240" style="border-radius: 25px;" }
@@ -60,6 +60,7 @@ hide:
     - [x] 这里是 `Eurekaimer` 的数字花园，本站由 `mkdocs` 生成，持续更新中.
     - [x] 本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片.
     - [x] 最近更新时间为 *{{git_site_revision_date_localized}}* .
+    
     === "推荐"
 
         - [x] [学术主页](https://www.eurekaimer.xyz/Academic/) 
@@ -78,7 +79,7 @@ hide:
 
         请点击上方导航栏选择你感兴趣的部分
 
-    <!-- === "不背单词"
+    === "不背单词"
 
         [![leftover's bbdc stats](https://stat.leftover.cn/bbdc?userId=988693129&nickname=Eurekaimer)](https://github.com/left0ver/github-bbdc-stat) -->
 
