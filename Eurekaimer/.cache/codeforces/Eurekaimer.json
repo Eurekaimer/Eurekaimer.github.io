@@ -1,0 +1,134 @@
+{
+  "contribution": 0,
+  "lastOnlineTimeSeconds": 1762509987,
+  "rating": 425,
+  "friendOfCount": 0,
+  "titlePhoto": "https://userpic.codeforces.org/4408618/title/d7c881ffe7eb96b5.jpg",
+  "rank": "newbie",
+  "handle": "Eurekaimer",
+  "maxRating": 425,
+  "avatar": "https://userpic.codeforces.org/4408618/avatar/42670f39201ce1d3.jpg",
+  "registrationTimeSeconds": 1731048908,
+  "maxRank": "newbie",
+  "recent_submissions": [
+    {
+      "id": 342300695,
+      "contestId": 2145,
+      "creationTimeSeconds": 1759765933,
+      "relativeTimeSeconds": 4633,
+      "problem": {
+        "contestId": 2145,
+        "index": "C",
+        "name": "Monocarp's String",
+        "type": "PROGRAMMING",
+        "rating": 1300,
+        "tags": [
+          "binary search",
+          "greedy",
+          "strings"
+        ]
+      },
+      "author": {
+        "contestId": 2145,
+        "participantId": 220988954,
+        "members": [
+          {
+            "handle": "Eurekaimer"
+          }
+        ],
+        "participantType": "CONTESTANT",
+        "ghost": false,
+        "startTimeSeconds": 1759761300
+      },
+      "programmingLanguage": "PyPy 3-64",
+      "verdict": "WRONG_ANSWER",
+      "testset": "TESTS",
+      "passedTestCount": 1,
+      "timeConsumedMillis": 265,
+      "memoryConsumedBytes": 7475200
+    },
+    {
+      "id": 342297418,
+      "contestId": 2145,
+      "creationTimeSeconds": 1759765625,
+      "relativeTimeSeconds": 4325,
+      "problem": {
+        "contestId": 2145,
+        "index": "B",
+        "name": "Deck of Cards",
+        "type": "PROGRAMMING",
+        "rating": 1000,
+        "tags": [
+          "greedy",
+          "implementation"
+        ]
+      },
+      "author": {
+        "contestId": 2145,
+        "participantId": 220988954,
+        "members": [
+          {
+            "handle": "Eurekaimer"
+          }
+        ],
+        "participantType": "CONTESTANT",
+        "ghost": false,
+        "startTimeSeconds": 1759761300
+      },
+      "programmingLanguage": "PyPy 3-64",
+      "verdict": "OK",
+      "testset": "TESTS",
+      "passedTestCount": 10,
+      "timeConsumedMillis": 249,
+      "memoryConsumedBytes": 8192000
+    },
+    {
+      "id": 342287181,
+      "contestId": 2145,
+      "creationTimeSeconds": 1759764771,
+      "relativeTimeSeconds": 3471,
+      "problem": {
+        "contestId": 2145,
+        "index": "C",
+        "name": "Monocarp's String",
+        "type": "PROGRAMMING",
+        "rating": 1300,
+        "tags": [
+          "binary search",
+          "greedy",
+          "strings"
+        ]
+      },
+      "author": {
+        "contestId": 2145,
+        "participantId": 220988954,
+        "members": [
+          {
+            "handle": "Eurekaimer"
+          }
+        ],
+        "participantType": "CONTESTANT",
+        "ghost": false,
+        "startTimeSeconds": 1759761300
+      },
+      "programmingLanguage": "PyPy 3-64",
+      "verdict": "WRONG_ANSWER",
+      "testset": "TESTS",
+      "passedTestCount": 1,
+      "timeConsumedMillis": 217,
+      "memoryConsumedBytes": 7884800
+    }
+  ],
+  "solvedCount": 2,
+  "contests": [
+    {
+      "contestId": 2145,
+      "contestName": "Educational Codeforces Round 183 (Rated for Div. 2)",
+      "handle": "Eurekaimer",
+      "rank": 10186,
+      "ratingUpdateTimeSeconds": 1759768500,
+      "oldRating": 0,
+      "newRating": 425
+    }
+  ]
+}

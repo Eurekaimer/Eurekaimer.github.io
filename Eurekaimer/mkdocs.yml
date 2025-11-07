@@ -131,6 +131,14 @@ plugins:
 #  - social 待装cairosvg
 
   - meta
+  
+  # Codeforces插件
+  - codeforces:  # 根据setup.py中的entry_point名称
+      cache_dir: '.cache/codeforces'
+      cache_ttl: 3600
+      default_username: ''
+      default_width: '100%'
+      default_theme: 'light'
 
   - minify:
       #需要安装才可使用
@@ -212,6 +220,7 @@ extra_css:
   - css/customize.css # 搜索圆角
   - css/mouse_color.css
   - css/mouse_pattern_svg.css
+  - plugins/mkdocs_codeforces_plugin/codeforces.css
 
 
 # 页脚部分

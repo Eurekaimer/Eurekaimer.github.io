@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+codeforces = mkdocs_codeforces_plugin.plugin:CodeforcesPlugin
