@@ -7,9 +7,9 @@ var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-};
+// 移除Node.js模块加载器，在浏览器中不需要
+// 定义一个空的__commonJS函数以避免错误
+var __commonJS = function() { return {}; };
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -704,13 +704,9 @@ var require_uFuzzy_cjs = __commonJS({
   }
 });
 
-// src/main.ts
-var main_exports = {};
-__export(main_exports, {
-  default: () => CalloutSuggestions
-});
-module.exports = __toCommonJS(main_exports);
-var import_obsidian2 = require("obsidian");
+// src/main.ts - 修改为浏览器兼容格式
+var CalloutSuggestions = CalloutSuggestions || {};
+// 移除Node.js模块导出语法，在浏览器中直接使用全局变量
 
 // node_modules/.pnpm/obsidian-callout-manager@1.0.2-alpha1_obsidian-undocumented@0.1.3_obsidian@1.5.7-1_@codemirro_zzpe3qzwug6aru6edqqkwqbcm4/node_modules/obsidian-callout-manager/dist/api-esm.mjs
 function __awaiter(thisArg, _arguments, P, generator) {
@@ -828,8 +824,12 @@ var CalloutParser = class {
 };
 
 // src/suggest/callout-suggest.ts
-var import_obsidian = require("obsidian");
-var uFuzzy = require_uFuzzy_cjs();
+// 移除Node.js模块导入
+// 在浏览器中直接使用全局变量或空对象
+var import_obsidian = window.obsidian || {};
+// 移除Node.js模块导入
+// 假设uFuzzy已经在全局作用域中定义，或者使用空对象
+var uFuzzy = window.uFuzzy || {};
 var CalloutSuggest = class extends import_obsidian.EditorSuggest {
   constructor(app, plugin) {
     super(app);
