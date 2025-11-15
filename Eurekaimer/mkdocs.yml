@@ -165,6 +165,7 @@ plugins:
   - statistics:
       #give an estimated time to read and some datas
       #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
+      #pip install mkdocs-statistics-plugin
       ignore_languages:
         - mermaid
         - markdown
@@ -183,7 +184,7 @@ plugins:
       exclude:
         - 友链/友链.md
         - ./blog
-      enable_git_follow: true
+      enable_git_follow: false
       enabled: true
       strict: false
 

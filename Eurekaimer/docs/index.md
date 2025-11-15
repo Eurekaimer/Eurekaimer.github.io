@@ -9,7 +9,27 @@ hide:
 
 <style>
 .md-grid {
-  max-width: 1000px;
+  max-width: 1440px;  /* 增加最大宽度，适合大屏幕 */
+  padding: 0 20px;    /* 添加左右内边距 */
+}
+
+/* 响应式设计 - 不同屏幕尺寸的适配 */
+@media (max-width: 1920px) {
+  .md-grid {
+    max-width: 90%;  /* 2K屏幕使用90%宽度 */
+  }
+}
+
+@media (max-width: 1366px) {
+  .md-grid {
+    max-width: 95%;  /* 普通屏幕使用95%宽度 */
+  }
+}
+
+@media (max-width: 1024px) {
+  .md-grid {
+    max-width: 100%;  /* 小屏幕使用全宽 */
+  }
 }
 </style>
 
@@ -46,12 +66,30 @@ hide:
     </body>
 
 
+<style>
+/* 优化卡片布局 */
+.grid.cards {
+  gap: 1.5rem;  /* 增加卡片间距 */
+}
+
+.grid.cards > ul {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));  /* 增加最小宽度 */
+}
+
+/* 大屏幕优化 */
+@media (min-width: 1600px) {
+  .grid.cards > ul {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));  /* 大屏幕更大卡片 */
+  }
+}
+</style>
+
 <div class="grid cards" markdown>
 
--   :simple-homepage:{ .lg .middle } __公告栏:上线了不背单词进度(欢迎push__
+-   :simple-homepage:{ .lg .middle } 公告栏:目前正在研究高维统计和信息论(欢迎交流)
 
     ---
-    ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="360" height="240" style="border-radius: 25px;" }
+    ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" }
 
     可以听听歌啊！(播放曲目随站长品味而改变)
 
@@ -79,17 +117,28 @@ hide:
 
         请点击上方导航栏选择你感兴趣的部分
 
-    === "不背单词"
-
-        [![leftover's bbdc stats](https://stat.leftover.cn/bbdc?userId=988693129&nickname=Eurekaimer)](https://github.com/left0ver/github-bbdc-stat) -->
 
     
 
 </div>
 <style>
+    /* 响应式图片优化 */
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
     @media only screen and (max-width: 768px) {
         .responsive-image {
             display: none;
+        }
+    }
+    
+    /* 大屏幕优化 */
+    @media (min-width: 1600px) {
+        .responsive-image {
+            margin-left: 2rem;
         }
     }
 </style>
@@ -104,8 +153,8 @@ hide:
 
     ---
 
-    - From： Nankai University
-    - Major： Statistics
+    - From: Nankai University
+    - Major: Statistics
     - MBTI: INTJ
     - Love: 小鞠知花/数学/Logical and Elegant Things
 
@@ -143,8 +192,20 @@ hide:
     - [x] 欢迎给一个 Star :material-star: 或者 Fork :fontawesome-solid-code-fork: 这个仓库
 
     [请我喝下午茶 :material-coffee:](https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png){.md-button}
+
+-   :yum:{ .lg .middle } __Yuri__
+
+    ---
+
+    - [x] 一周一次[399]
+    - [x] 终将成为你
+    - [x] 安达与岛村
+    
+-   :octicons-goal-16:{ .lg .middle } __Goal__
+
+    ---
+
+    - [ ] GBC_Shanghai
+    - [ ] One paper before 2026.6
+
 </div>
-
-
-
-
