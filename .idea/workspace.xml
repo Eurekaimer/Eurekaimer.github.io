@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/.cache/codeforces/Eurekaimer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Garden.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Garden.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/西瓜书/demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/数据科学/西瓜书/demo.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/mkdocs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/codeforces.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/mkdocs_codeforces_plugin.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/mkdocs_codeforces_plugin.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/mkdocs_codeforces_plugin.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/mkdocs_codeforces_plugin.egg-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/mkdocs_codeforces_plugin.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/mkdocs_codeforces_plugin.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/plugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/plugins/mkdocs_codeforces_plugin/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurekaimer/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,25 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/blog/Eurekaimer.github.io",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HuangZg/OneDrive/Desktop/Eurekaimer.github.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="Eurekaimer.github.io" />
