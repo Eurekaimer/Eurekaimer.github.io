@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/docs/统计学/数理统计/Assets/25数理统计期中.md" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/docs/统计学/数理统计/Assets/25数理统计期中.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2024/10/28/建站纪念/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/01/04/2024数学学习总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/02/19/2025寒假总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/04/工作流v42/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/03/04/工作流v42/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/05/19/gbc快闪/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/06/28/大二下学期总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/09/12/2025暑假总结/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/09/12/2025暑假总结/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/blog/2025/10/28/更新日志/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_json_created.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_json_created.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_json_updated.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_json_updated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_created.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_created.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_updated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/feed_rss_updated.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/search/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/sitemap.xml.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/二次元/二次元/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/友链/友链/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/友链/友链/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eurekaimer/site/数据科学/西瓜书/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eurekaimer/site/数据科学/西瓜书/demo/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Eurekaimer&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Eurekaimer/Eurekaimer.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;3fe9fc24-29a5-423f-94a6-2965f1847e05&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2sqt2j8yFsLoZru4peMpXQT5M74" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HuangZg/OneDrive/Desktop/Eurekaimer.github.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="Eurekaimer.github.io" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="4ae8b0f1-f340-4926-8b60-600c6bfa424d" name="更改" comment="" />
+      <created>1739194727187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739194727187</updated>
+      <workItem from="1753264834850" duration="1293000" />
+      <workItem from="1753267324525" duration="758000" />
+      <workItem from="1753268496346" duration="65000" />
+      <workItem from="1753793043065" duration="2500000" />
+      <workItem from="1754403032868" duration="1977000" />
+      <workItem from="1754481087561" duration="2333000" />
+      <workItem from="1755058471755" duration="5135000" />
+      <workItem from="1755180444076" duration="37000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

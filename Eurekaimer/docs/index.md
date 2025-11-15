@@ -86,14 +86,18 @@ hide:
 
 <div class="grid cards" markdown>
 
+<<<<<<< HEAD
 -   :simple-homepage:{ .lg .middle } 公告栏:目前正在研究高维统计和信息论(欢迎交流)
+=======
+-   :simple-homepage:{ .lg .middle } __公告栏:目前沉迷泛函分析
+>>>>>>> parent of 06ce14d5 (Revert "Add mkdocs-codeforces-plugin")
 
     ---
     ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" }
 
     可以听听歌啊！(播放曲目随站长品味而改变)
 
-     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2089023383&auto=1&height=66"></iframe>
+     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2089023383&auto=0&height=66"></iframe>
 
     - [x] 这里是 `Eurekaimer` 的数字花园，本站由 `mkdocs` 生成，持续更新中.
     - [x] 本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片.
@@ -117,8 +121,11 @@ hide:
 
         请点击上方导航栏选择你感兴趣的部分
 
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> parent of 06ce14d5 (Revert "Add mkdocs-codeforces-plugin")
 
 </div>
 <style>
@@ -197,11 +204,18 @@ hide:
 
     ---
 
+<<<<<<< HEAD
     - [x] 一周一次[399]
     - [x] 终将成为你
     - [x] 安达与岛村
     
 -   :octicons-goal-16:{ .lg .middle } __Goal__
+=======
+{% codeforces username="Eurekaimer" width="100%" theme="light" %}
+
+
+
+>>>>>>> parent of 06ce14d5 (Revert "Add mkdocs-codeforces-plugin")
 
     ---
 
