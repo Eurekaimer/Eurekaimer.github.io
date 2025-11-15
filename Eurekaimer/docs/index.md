@@ -86,27 +86,8 @@ hide:
 
 <div class="grid cards" markdown>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 -   :simple-homepage:{ .lg .middle } 公告栏:目前正在研究高维统计和信息论(欢迎交流)
-=======
--   :simple-homepage:{ .lg .middle } __公告栏:目前沉迷泛函分析
->>>>>>> parent of 06ce14d5 (Revert "Add mkdocs-codeforces-plugin")
-=======
--   :simple-homepage:{ .lg .middle } __公告栏:上线了不背单词进度(欢迎push__
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
--   :simple-homepage:{ .lg .middle } __公告栏:上线了不背单词进度(欢迎push__
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
--   :simple-homepage:{ .lg .middle } __公告栏:上线了不背单词进度(欢迎push__
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
--   :simple-homepage:{ .lg .middle } __公告栏:上线了不背单词进度(欢迎push__
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
 
     ---
     ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" }
@@ -137,37 +118,7 @@ hide:
 
         请点击上方导航栏选择你感兴趣的部分
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-    
-=======
->>>>>>> parent of 06ce14d5 (Revert "Add mkdocs-codeforces-plugin")
-=======
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-    === "不背单词"
-
-        [![leftover's bbdc stats](https://stat.leftover.cn/bbdc?userId=988693129&nickname=Eurekaimer)](https://github.com/left0ver/github-bbdc-stat) -->
-
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
 
 </div>
 <style>
@@ -237,39 +188,20 @@ hide:
     ---
 
     - [x] 请在搬运或是引用本站内容前查询相关开源协议
-    - [x] Reference: 移步[这里](blog/posts/建站纪念贴.md)
+    - [x] Reference: 移步[这里](Blog/posts/建站纪念贴.md)
     - [x] 欢迎给一个 Star :material-star: 或者 Fork :fontawesome-solid-code-fork: 这个仓库
 
     [请我喝下午茶 :material-coffee:](https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png){.md-button}
 
--   :yum:{ .lg .middle } __Yuri__
+-   :white_flower:{ .lg .middle } __Yuri__
 
     ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     - [x] 一周一次[399]
     - [x] 终将成为你
     - [x] 安达与岛村
     
--   :octicons-goal-16:{ .lg .middle } __Goal__
-=======
-{% codeforces username="Eurekaimer" width="100%" theme="light" %}
-
-
-
->>>>>>> parent of 06ce14d5 (Revert "Add mkdocs-codeforces-plugin")
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
-=======
->>>>>>> parent of 40ab7323 (Add mkdocs-codeforces-plugin)
+-   :octicons-goal-16:{ .lg .middle } __Goals__
 
     ---
 

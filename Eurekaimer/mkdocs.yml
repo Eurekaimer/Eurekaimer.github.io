@@ -126,12 +126,7 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
   - mkdocs-jupyter
-  # 支持jupyter的插件
-
-#  - social 待装cairosvg
-
   - meta
-
   - minify:
       #需要安装才可使用
       minify_html: true
@@ -140,9 +135,9 @@ plugins:
       htmlmin_opts:
         remove_comments: true
       cache_safe: true
-
   - blog:
       enabled: true
+      blog_dir: Blog
       pagination_per_page: 4
       categories_allowed:
         - 假期总结
@@ -150,7 +145,8 @@ plugins:
         - 学期总结
         - 不平凡的日子
         - 旅行
-
+  - typeset:
+      enabled: true
   - rss:
       match_path: blog/posts/.*
       date_from_meta:
@@ -159,19 +155,16 @@ plugins:
         - categories
         - tags
       enabled: true
-
   - tags:
-
   - statistics:
       #give an estimated time to read and some datas
       #https://github.com/TonyCrane/mkdocs-statistics-plugin?tab=readme-ov-file
-      #pip install mkdocs-statistics-plugin
       ignore_languages:
         - mermaid
         - markdown
       page_check_metadata: comments
-      #只有有评论区的才开启，也就是知识内容
-
+      #只有有评论区的才开启，也就是知识内容才需要统计
+      enabled: true
   - git-revision-date-localized:
       #日期插件：显示更新日期和创建日期
       #https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html
@@ -184,14 +177,9 @@ plugins:
       exclude:
         - 友链/友链.md
         - ./blog
-      enable_git_follow: false
+      enable_git_follow: true
       enabled: true
       strict: false
-
-
-
-  #- toc
-
   - callouts:
       #需要安装才可使用 https://github.com/sondregronas/mkdocs-callouts
       aliases: false
@@ -213,8 +201,7 @@ extra_css:
   - css/customize.css # 搜索圆角
   - css/mouse_color.css
   - css/mouse_pattern_svg.css
-
-
+  
 # 页脚部分
 copyright: Copyright &copy; 2024 - 2025 <a href="https://github.com/Eurekaimer">Eurekaimer</a>.
 
@@ -275,14 +262,14 @@ extra:
 nav:
   - Home: "index.md"
   - 博客:
-      - "blog/index.md"
-      - 更新日志: "blog/posts/更新日志.md"
-      - 建站纪念: "blog/posts/建站纪念贴.md"
-      - 2024数学年度总结: "blog/posts/2024总结.md"
-      - workflow: "blog/posts/工作流.md"
-      - 2025寒假总结: "blog/posts/2025寒假总结.md"
-      - 2025暑假总结: "blog/posts/2025暑假总结.md"
-      - 大二下学期总结: "blog/posts/大二下学期总结.md"
+      - "Blog/index.md"
+      - 更新日志: "Blog/posts/更新日志.md"
+      - 建站纪念: "Blog/posts/建站纪念贴.md"
+      - 2024数学年度总结: "Blog/posts/2024总结.md"
+      - workflow: "Blog/posts/工作流.md"
+      - 2025寒假总结: "Blog/posts/2025寒假总结.md"
+      - 2025暑假总结: "Blog/posts/2025暑假总结.md"
+      - 大二下学期总结: "Blog/posts/大二下学期总结.md"
   - 友链: "友链/友链.md"
   - 二次元:
       - 总评榜: "二次元/二次元.md"
