@@ -9,7 +9,7 @@ hide:
 
 <style>
 .md-grid {
-  max-width: 1000px;
+  max-width: 1400px;
 }
 </style>
 
@@ -48,7 +48,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :simple-homepage:{ .lg .middle } __公告栏:目前沉迷泛函分析
+-   :simple-homepage:{ .lg .middle } 公告栏:目前在研究高维统计和信息论(欢迎交流)
 
     ---
     ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="360" height="240" style="border-radius: 25px;" }
@@ -102,8 +102,7 @@ hide:
     - From： Nankai University
     - Major： Statistics
     - MBTI: INTJ
-    - Love: 小鞠知花/数学/Logical and Elegant Things
-
+    - Love: 小鞠知花/GBC/数学
     页脚处是联系我的一些方式：
 
 -   :simple-sparkfun:{ .lg .middle } __Personal Interest__
@@ -134,15 +133,27 @@ hide:
     ---
 
     - [x] 请在搬运或是引用本站内容前查询相关开源协议
-    - [x] Reference: 移步[这里](blog/posts/建站纪念贴.md)
+    - [x] Reference: 移步[这里](Blog/posts/建站纪念贴.md)
     - [x] 欢迎给一个 Star :material-star: 或者 Fork :fontawesome-solid-code-fork: 这个仓库
 
     [请我喝下午茶 :material-coffee:](https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png){.md-button}
+
+-   :white_flower:{ .lg .middle } __Yuri__
+
+    ---
+
+    - [x] 一周一次买下同班同学[399]
+    - [x] 安达与岛村
+    - [x] 终将成为你
+
+-   :octicons-goal-16:{ .lg .middle } __Goals__
+
+    ---
+
+    - [ ] Togetoge_Shanghai
+    - [ ] Write a paper
+
 </div>
-
-
-
-{% codeforces username="Eurekaimer" width="100%" theme="light" %}
 
 
 

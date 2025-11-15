@@ -20,4 +20,3 @@
 
 mkdocs-material
 requests>=2.0.0
--e plugins/mkdocs_codeforces_plugin
