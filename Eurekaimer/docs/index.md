@@ -188,7 +188,7 @@ hide:
     ---
 
     - [x] 请在搬运或是引用本站内容前查询相关开源协议
-    - [x] Reference: 移步[这里](Blog/posts/建站纪念贴.md)
+    - [x] Reference: 移步[这里](blog/posts/建站纪念贴.md)
     - [x] 欢迎给一个 Star :material-star: 或者 Fork :fontawesome-solid-code-fork: 这个仓库
 
     [请我喝下午茶 :material-coffee:](https://raw.githubusercontent.com/Eurekaimer/MyIMGs/refs/heads/main/img/buy_me_a_coffee.png){.md-button}
