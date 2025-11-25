@@ -125,7 +125,7 @@ plugins:
   #search meta minify blog tags statistics git-revision-date-localized callouts
   - search:
       separator: '[\s\u200b\-]'  # Enhance Chinese Search
-  #- mkdocs-jupyter
+  - mkdocs-jupyter
   - meta
   - minify:
       #需要安装才可使用
@@ -147,6 +147,7 @@ plugins:
         - 旅行
   - typeset:
       enabled: true
+  - social:
   - rss:
       match_path: blog/posts/.*
       date_from_meta:
@@ -263,6 +264,7 @@ nav:
   - Home: "index.md"
   - 博客:
       - "blog/index.md"
+      - 我与我周旋久: "blog/posts/我与我周旋久.md"
       - 更新日志: "blog/posts/更新日志.md"
       - 建站纪念: "blog/posts/建站纪念贴.md"
       - 2024数学年度总结: "blog/posts/2024总结.md"
