@@ -1,6 +1,6 @@
 ---
-title:  
 statistics: True
+page_statistics: False
 comments: true
 hide:
     - toc
@@ -32,9 +32,6 @@ hide:
   }
 }
 </style>
-
-<center><font  color= #757575 size=6 class="ml3">“Welcome to Eurekaimer's Digital Garden”</font></center>
-<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>   
 
 <body>
         <font color="#8C495A">
@@ -84,13 +81,16 @@ hide:
 }
 </style>
 
+
 <div class="grid cards" markdown>
 
 
 -   :simple-homepage:{ .lg .middle } 公告栏:目前正在研究高维统计和信息论(欢迎交流)
 
     ---
-    ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" }
+    <!-- ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" } -->
+
+    ![image](Eurekaimer.png){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" }
 
     可以听听歌啊！(播放曲目随站长品味而改变)
 
@@ -197,7 +197,7 @@ hide:
 
     ---
 
-    - [x] 一周一次[399]
+    - [x] 一周一次[400]
     - [x] 终将成为你
     - [x] 安达与岛村
     

@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- 开屏动画容器 -->
+<div id="splash-screen" style="display:none;">
+    <!-- 背景图层 -->
+    <div id="splash-bg-container">
+        <!-- 确保图片路径正确: docs/assets/images/kon.png -->
+        <img id="splash-bg-img" src="{{ base_url }}/assets/images/kon.png" alt="Background">
+        <div id="splash-overlay"></div>
+    </div>
+
+    <!-- 标题层 -->
+    <div id="splash-title">Eurekaimer</div>
+    
+    <!-- 碎片容器 -->
+    <div id="splash-container"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.css" />
+
+<style>
+    /* === 1. 布局与容器 === */
+    #splash-screen {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'LXGW WenKai Lite', sans-serif;
+        background-color: #000;
+        overflow: hidden;
+    }
+
+    /* === 2. 背景处理 === */
+    #splash-bg-container {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 0;
+    }
+
+    #splash-bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transform: scale(1.15);
+        filter: blur(4px) grayscale(30%); /* 模糊度加到4px，让文字更凸显 */
+        transition: opacity 2s ease, transform 6s linear;
+    }
+
+    #splash-bg-img.active {
+        opacity: 0.5; 
+        transform: scale(1.0);
+    }
+
+    #splash-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.45); /* 遮罩稍微加深 */
+        pointer-events: none;
+    }
+
+    /* === 3. 碎片样式 === */
+    .splash-fragment {
+        position: absolute;
+        color: #fff;
+        font-size: 18px; /* 字号加大 */
+        font-weight: 600; /* 半加粗 */
+        letter-spacing: 1px;
+        opacity: 0;
+        white-space: nowrap;
+        user-select: none;
+        transition: all 1.8s cubic-bezier(0.25, 1, 0.5, 1);
+        z-index: 10;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.9); /* 重阴影 */
+    }
+
+    /* 特殊标记：上下锚点的词可以稍微大一点 */
+    .anchor-word {
+        font-size: 20px;
+        color: #ffdef5; /* 微微泛粉白 */
+        z-index: 11;
+    }
+
+    /* === 4. 主标题 === */
+    #splash-title {
+        position: absolute;
+        font-size: 4.5rem;
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 12px;
+        opacity: 0;
+        z-index: 20;
+        transform: scale(0.9);
+        transition: opacity 1.5s ease, transform 1.5s ease;
+        text-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+
+    @media screen and (max-width: 768px) {
+        #splash-title { font-size: 2.2rem; letter-spacing: 4px; }
+        .splash-fragment { font-size: 14px; }
+        .anchor-word { font-size: 16px; }
+    }
+</style>
+
+<script>
+(function() {
+    // 调试开关
+    if (sessionStorage.getItem('eurekaimer_intro_played')) return;
+
+    const splash = document.getElementById('splash-screen');
+    const bgImg = document.getElementById('splash-bg-img');
+    splash.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    // === 核心配置 ===
+    const config = {
+        fragmentCount: 22, // 减少数量，保证绝对空旷
+        baseScale: 25,     // 保持大尺寸
+        duration: 5000
+    };
+
+    // 建议把最重要的两个词放在数组最前面
+    const words = [
+        'Eureka', 'Aimer', // 锚点1(上) & 锚点2(下)
+        'Music', 'Komari', 'Friendship', 'Algebra', 'Analysis',
+        'Logic', 'Proof', 'Space', 'Model', 'Limit', 
+        'Truth', 'Innocence', 'Poetry', 'Eternity', 'Calculus', 'Statistics',
+        'Probability', 'Convergence', 'Inductive', 'Manifold'
+    ];
+
+    const container = document.getElementById('splash-container');
+    const title = document.getElementById('splash-title');
+    let fragments = [];
+
+    function getHeartPosition(t) {
+        const x = 16 * Math.pow(Math.sin(t), 3);
+        const y = -(13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+        return { x, y };
+    }
+
+    function initSplash() {
+        setTimeout(() => { bgImg.classList.add('active'); }, 100);
+
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        const isMobile = window.innerWidth < 768;
+        const scale = isMobile ? config.baseScale * 0.45 : config.baseScale;
+
+        // 1. 生成碎片
+        for (let i = 0; i < config.fragmentCount; i++) {
+            const el = document.createElement('div');
+            el.classList.add('splash-fragment');
+            el.innerText = words[i % words.length];
+
+            // 0和1号元素是锚点
+            if (i === 0 || i === 1) el.classList.add('anchor-word');
+
+            // 初始随机位置
+            const randAngle = Math.random() * Math.PI * 2;
+            const randDist = 120 + Math.random() * 200;
+            el.style.left = (centerX + Math.cos(randAngle) * randDist) + 'px';
+            el.style.top = (centerY + Math.sin(randAngle) * randDist) + 'px';
+            el.style.transform = `translate(-50%, -50%) scale(0.6)`;
+            
+            container.appendChild(el);
+            fragments.push({ el, index: i });
+
+            setTimeout(() => { el.style.opacity = 0.9; }, 200 + Math.random() * 500);
+        }
+
+        // 2. 汇聚成爱心 (1.5秒后)
+        setTimeout(() => {
+            // 计算除去锚点后，每边需要多少个词
+            const sideCount = (config.fragmentCount - 2) / 2; 
+
+            fragments.forEach((item, i) => {
+                let t;
+                let finalScale = scale;
+
+                // === 强制分配位置逻辑 ===
+                
+                if (i === 0) {
+                    // 【绝对锚点 1】: 正上方凹陷处
+                    t = 0; 
+                    // 稍微往下一点点避免碰到屏幕边缘 (y轴向下偏移一点)
+                } 
+                else if (i === 1) {
+                    // 【绝对锚点 2】: 正下方尖端
+                    t = Math.PI; 
+                } 
+                else {
+                    // 【两侧分布】
+                    // 剩余的词，一半放左边，一半放右边
+                    const remainingIndex = i - 2;
+                    
+                    // 我们定义“安全范围”：避免接近 0 和 PI
+                    // 右侧范围: 0.15PI -> 0.85PI
+                    // 左侧范围: 1.15PI -> 1.85PI
+                    const safeStart = 0.15 * Math.PI;
+                    const safeEnd = 0.85 * Math.PI;
+                    const range = safeEnd - safeStart;
+                    const step = range / (sideCount - 1);
+
+                    if (remainingIndex < sideCount) {
+                        // 右侧半圆
+                        t = safeStart + remainingIndex * step;
+                    } else {
+                        // 左侧半圆
+                        const leftIndex = remainingIndex - sideCount;
+                        // 左侧镜像过去
+                        t = (2 * Math.PI - safeStart) - leftIndex * step;
+                    }
+
+                    // 只有侧面的词才做“错落”效果 (Zig-Zag)
+                    if (i % 2 !== 0) {
+                        finalScale = scale * 1.15; // 奇数索引向外推
+                    }
+                }
+
+                const pos = getHeartPosition(t);
+
+                item.el.style.left = (centerX + pos.x * finalScale) + 'px';
+                item.el.style.top = (centerY + pos.y * finalScale) + 'px';
+                item.el.style.opacity = 1;
+                item.el.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        }, 1500);
+
+        // 3. 标题显示
+        setTimeout(() => {
+            title.style.opacity = 1;
+            title.style.transform = 'scale(1)';
+
+            fragments.forEach(item => {
+                const currentLeft = parseFloat(item.el.style.left);
+                const currentTop = parseFloat(item.el.style.top);
+                const dirX = currentLeft - centerX;
+                const dirY = currentTop - centerY;
+
+                item.el.style.transition = 'all 1.2s ease-out';
+                item.el.style.opacity = 0;
+                item.el.style.transform = `translate(-50%, -50%) translate(${dirX * 0.25}px, ${dirY * 0.25}px)`;
+            });
+        }, 3500);
+
+        // 4. 结束
+        setTimeout(() => {
+            splash.style.transition = 'opacity 1s ease';
+            splash.style.opacity = 0;
+            document.body.style.overflow = '';
+            sessionStorage.setItem('eurekaimer_intro_played', 'true');
+            setTimeout(() => splash.remove(), 1000);
+        }, 5500);
+    }
+
+    if (bgImg.complete) { initSplash(); } 
+    else { bgImg.onload = initSplash; setTimeout(initSplash, 1000); }
+})();
+</script>
+
+{{ super() }}
+{% endblock %}
