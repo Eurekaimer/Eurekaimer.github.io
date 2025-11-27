@@ -236,68 +236,214 @@
     if (bgImg.complete) { initSplash(); } 
     else { bgImg.onload = initSplash; setTimeout(initSplash, 1000); }
 })();
-</script> <a href=https://github.com/Eurekaimer/Eurekaimer.github.io/edit/main/docs/友链/友链.md title=编辑此页 class="md-content__button md-icon" rel=edit> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg> </a> <a href=https://github.com/Eurekaimer/Eurekaimer.github.io/raw/main/docs/友链/友链.md title=查看本页的源代码 class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg> </a> <h1>⚓ 友链</h1> <p>欢迎交换友链(排名不分先后)，想要交换友链请在<a href=https://eurekaimer.github.io/ >Home</a>评论区留言</p> <div class=post-body> <div id=links> <style>
-/* 用于大屏幕和小屏幕的通用样式 */
-.card {
-    width: 45%;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition-duration: 0.15s;
-    margin-bottom: 1rem;
-    display: flex;
- }
- .card:nth-child(odd) {
-    float: left;
- }
- .card:nth-child(even) {
-    float: right;
- }
- .card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
- }
- .card a {
-    border: none;
- }
- .card .ava {
-    width: 3rem!important;
-    height: 3rem!important;
-    margin: 0!important;
-    margin-right: 1em!important;
-    border-radius: 4px;
- }
- .card .card-header {
-    font-style: italic;
-    overflow: hidden;
-    width: 100%;
- }
- .card .card-header a {
-    font-style: normal;
-    color: #608DBD;
-    font-weight: bold;
-    text-decoration: none;
- }
- .card .card-header a:hover {
-    color: #d480aa;
-    text-decoration: none;
- }
- .card .card-header .info {
-    font-style: normal;
-    color: #a3a3a3;
-    font-size: 14px;
-    min-width: 0;
-    overflow: hidden;
-    white-space: normal;
- }
- /* 媒体查询：小屏幕 */
- @media (max-width: 768px) {
-    .card {
-       width: 100%; /* 在小屏幕上显示为单列 */
-       float: none; /* 清除浮动 */
+</script> <a href=https://github.com/Eurekaimer/Eurekaimer.github.io/edit/main/docs/友链/友链.md title=编辑此页 class="md-content__button md-icon" rel=edit> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg> </a> <a href=https://github.com/Eurekaimer/Eurekaimer.github.io/raw/main/docs/友链/友链.md title=查看本页的源代码 class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg> </a> <h1>⚓ 友链</h1> <p>欢迎交换友链(排名不分先后)，想要交换友链请在<a href=https://eurekaimer.github.io/ >Home</a>评论区留言</p> <script src=https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js></script> <div id=friend-graph style="width: 100%; height: 600px; border-radius: 8px;"></div> <script>
+  // 1. 定义友链数据
+  // 在 relations 中填入对方的 name 即可建立次级连线
+  const friendsData = [
+    {
+      name: "Eurekaimer",
+      img: "https://avatars.githubusercontent.com/u/88918522?s=400&u=c9494d29a9573c1d393929f5ebb785f2613ff4e7&v=4",
+      desc: "学术主页 - 也就是博主本人",
+      link: "https://www.eurekaimer.xyz/Academic/",
+      isCenter: true 
+    },
+    {
+      name: "Meraki's bar",
+      img: "https://avatars.githubusercontent.com/u/187371253?v=4",
+      desc: "一位学弟的博客",
+      link: "https://meraki111.netlify.app/",
+      // Wcowin 和 Meraki 认识，只要在其中一人这边写上对方名字即可
+      relations: ["Wcowin"] 
+    },
+    {
+      name: "Ice Year",
+      img: "https://blog.iceyear.eu.org/android-chrome-512x512.webp",
+      desc: "Il n’y a pas de hasard, il n’y a que des rendez-vous.",
+      link: "https://blog.iceyear.eu.org",
+      // Ice Year 认识 Yon Zilch 和 春风少年兄
+      relations: ["Yon Zilch", "春风少年兄"]
+    },
+    {
+      name: "春风少年兄",
+      img: "https://avatars.githubusercontent.com/u/138082074?v=4",
+      desc: "你在世纪大道东门",
+      link: "https://blog.0pt.icu/",
+      // 春风少年兄 认识 Yon Zilch (Ice Year 已经在上面连过他了，这里不用重复连 Ice Year)
+      relations: ["Yon Zilch"]
+    },
+    {
+      name: "Yon Zilch",
+      img: "https://avatars.githubusercontent.com/u/141223334?v=4",
+      desc: "From the yon, into zilch. Life, a vanished dream.",
+      link: "https://blog.yon.im/"
+    },
+    {
+      name: "Wcowin",
+      img: "https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp",
+      desc: "循此苦旅，以达星辰",
+      link: "https://wcowin.work/"
     }
- }
-      </style> <div class=links-content> <div class=link-navigation> <div class=card> <img class=ava src="https://avatars.githubusercontent.com/u/88918522?s=400&u=c9494d29a9573c1d393929f5ebb785f2613ff4e7&v=4"> <div class=card-header> <div> <a href=https://www.eurekaimer.xyz/Academic/ target=“_blank”>Academic homepage</a> </div> <div class=info>学术主页</div> </div> </div> <div class=card> <img class=ava src="https://avatars.githubusercontent.com/u/187371253?v=4"> <div class=card-header> <div> <a href=https://meraki111.netlify.app/ target=“_blank”>Meraki's bar</a> </div> <div class=info>一位学弟的博客</div> </div> </div> <div class=card> <img class=ava src=https://blog.iceyear.eu.org/android-chrome-512x512.webp> <div class=card-header> <div> <a href="https://blog.iceyear.eu.org " target=“_blank”>Ice Year の位面</a> </div> <div class=info>Il n’y a pas de hasard, il n’y a que des rendez-vous.</div> </div> </div> <div class=card> <img class=ava src="https://avatars.githubusercontent.com/u/138082074?v=4"> <div class=card-header> <div> <a href="https://blog.0pt.icu/ " target=“_blank”>春风少年兄</a> </div> <div class=info>你在世纪大道东门</div> </div> </div> <div class=card> <img class=ava src="https://avatars.githubusercontent.com/u/141223334?v=4"> <div class=card-header> <div> <a href="https://blog.yon.im/ " target=“_blank”>Yon Zilch</a> </div> <div class=info>From the yon, into zilch. Life, a vanished dream.</div> </div> </div> <div class=card> <img class=ava src=" https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp"> <div class=card-header> <div> <a href=" https://wcowin.work/" target=“_blank”>Wcowin's Blog</a> </div> <div class=info>循此苦旅，以达星辰</div> </div> </div> </div> </div> </div> </div> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg> 回到页面顶部 </button> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Copyright &copy; 2024 - 2025 <a href=https://github.com/Eurekaimer>Eurekaimer</a>. </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> <div class=footer-visit-count> <div class=footer-meta-item> <a href="https://icp.gov.moe/?keyword=20252030" target=_blank class=icp-link>萌ICP备20252030号</a> </div> </div> <style>
+  ];
+
+  // --- 核心工具函数：将图片转换为圆形 Base64 (保持不变) ---
+  const getCircleImage = (url) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.crossOrigin = 'Anonymous'; 
+      img.src = url;
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const size = Math.min(img.width, img.height);
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(img, (img.width - size) / 2, (img.height - size) / 2, size, size, 0, 0, size, size);
+        try { resolve('image://' + canvas.toDataURL()); } 
+        catch (e) { resolve('image://' + url); }
+      };
+      img.onerror = () => { resolve('image://' + url); };
+    });
+  };
+
+  // --- 主逻辑 ---
+  const initGraph = async () => {
+    const chartDom = document.getElementById('friend-graph');
+    const myChart = echarts.init(chartDom);
+    myChart.showLoading();
+
+    // 1. 处理节点和图片
+    const processedNodes = await Promise.all(friendsData.map(async (item) => {
+        const circleImg = await getCircleImage(item.img);
+
+        // 调整大小：你是 100， 朋友是 50
+        const size = item.isCenter ? 100 : 50;
+
+        return {
+            name: item.name,
+            symbol: circleImg,
+            symbolSize: size,
+            value: item.desc, 
+            link: item.link,
+            // 你的名字加粗且字号大一点
+            label: {
+                show: true,
+                position: 'bottom',
+                color: 'inherit',
+                fontSize: item.isCenter ? 16 : 12,
+                fontWeight: item.isCenter ? 'bold' : 'normal',
+                distance: 10
+            }
+        };
+    }));
+
+    // 2. 构建连线
+    const edges = [];
+    const centerNode = friendsData.find(f => f.isCenter);
+
+    // (A) 主线：所有人连向你
+    processedNodes.forEach(node => {
+        if (node.name !== centerNode.name) {
+            edges.push({
+                source: centerNode.name,
+                target: node.name,
+                lineStyle: {
+                    color: '#999',
+                    width: 2, // 主线稍微粗一点
+                    opacity: 0.6,
+                    curveness: 0.1
+                }
+            });
+        }
+    });
+
+    // (B) 次级线：朋友互联
+    friendsData.forEach(item => {
+        if (item.relations && item.relations.length > 0) {
+            item.relations.forEach(targetName => {
+                edges.push({
+                    source: item.name,
+                    target: targetName,
+                    lineStyle: {
+                        color: '#608DBD', // 次级关系用稍微不同的颜色（淡蓝色）
+                        width: 1.5,
+                        opacity: 0.5,
+                        curveness: 0.2 // 稍微弯一点，避免直线重叠
+                    }
+                });
+            });
+        }
+    });
+
+    // 3. 配置项
+    const option = {
+        backgroundColor: 'transparent',
+
+        tooltip: {
+            trigger: 'item',
+            backgroundColor: 'rgba(50, 50, 50, 0.9)',
+            borderColor: '#333',
+            textStyle: { color: '#fff' },
+            formatter: function (params) {
+                if (params.dataType === 'node') {
+                    return `
+                        <div style="text-align:center; padding: 5px;">
+                        <strong style="font-size:14px;">${params.name}</strong><br/>
+                        <span style="font-size:12px; opacity: 0.8; line-height: 1.5;">${params.data.value}</span>
+                        </div>
+                    `;
+                }
+            }
+        },
+
+        series: [{
+            type: 'graph',
+            layout: 'force',
+            data: processedNodes,
+            links: edges,
+            roam: true,
+            draggable: true,
+            // 调整力学参数，适应变大的节点
+            force: {
+                repulsion: 800, // 斥力调大，防止大节点重叠
+                edgeLength: [100, 200], // 连线长度范围
+                gravity: 0.08
+            },
+            itemStyle: {
+                borderColor: '#fff',
+                borderWidth: 2,
+                shadowBlur: 10,
+                shadowColor: 'rgba(0, 0, 0, 0.2)'
+            },
+            // 选中高亮样式
+            emphasis: {
+                focus: 'adjacency', // 鼠标悬停时，只高亮相关联的节点和边
+                lineStyle: {
+                    width: 4
+                }
+            }
+        }]
+    };
+
+    myChart.hideLoading();
+    myChart.setOption(option);
+
+    myChart.on('click', function (params) {
+        if (params.dataType === 'node' && params.data.link) {
+            window.open(params.data.link, '_blank');
+        }
+    });
+
+    window.addEventListener('resize', function () {
+        myChart.resize();
+    });
+  };
+
+  initGraph();
+</script> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg> 回到页面顶部 </button> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Copyright &copy; 2024 - 2025 <a href=https://github.com/Eurekaimer>Eurekaimer</a>. </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> <div class=footer-visit-count> <div class=footer-meta-item> <a href="https://icp.gov.moe/?keyword=20252030" target=_blank class=icp-link>萌ICP备20252030号</a> </div> </div> <style>
     .footer-visit-count {
         display: flex;
         justify-content: center;
