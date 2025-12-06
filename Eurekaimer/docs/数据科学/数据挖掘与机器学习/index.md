@@ -39,6 +39,14 @@
 	+ Recommend the textbook(Sheldon Ross)
 
 
+[Chapter 3: 信息论基础](./Assets/DMML_Lecture3%20信息论基础.md)
+
+[Chapter 9: 判别分析](./Assets/DMML_Lecture9%20判别分析.md)
+
+[Chapter 12：KNN](./Assets/DMML_Lecture12%20KNN.md)
+
+[Chapter 13：神经网络基础](./Assets/DMML_Lecture13%20NNs.md)
+
 ## 24Fall
 
 这里还从一个Github仓库中摘取了另一位老师的24年在DMML课程上的Slides，并且交给Gemini3进行处理后做成了简单的笔记用于对比学习和复习
