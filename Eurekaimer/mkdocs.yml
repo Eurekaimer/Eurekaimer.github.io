@@ -284,9 +284,8 @@ nav:
         - 25数理统计期中: "统计学/数理统计/Assets/25数理统计期中.md"
     - 回归分析:
         - "统计学/回归分析/index.md"
-        - 王松桂回归分析:
-          - "统计学/回归分析/王松桂/index.md"
-          - 第一章: "统计学/回归分析/王松桂/第一章-引论-王松桂.md"
+        - Chapter 1 引论: "统计学/回归分析/第一章-引论-王松桂.md"
+        # - 
     - 运筹与优化:
         - 引言: "统计学/运筹与优化/index.md"
         - 线性规划与目标规划: "统计学/运筹与优化/线性规划与目标规划.md"
@@ -319,6 +318,9 @@ nav:
           - Chapter 12 KNN: "数据科学/数据挖掘与机器学习/Assets/DMML_Lecture12 KNN.md"
           - Chapter 13 神经网络基础: "数据科学/数据挖掘与机器学习/Assets/DMML_Lecture13 NNs.md"
           - Note_Loss_Equivalence: "数据科学/数据挖掘与机器学习/关于二分类问题中两种标签体系下逻辑斯谛回归损失函数的等价性证明.md"
+      - 分布式存储与计算:
+          - 分布式存储与计算: "数据科学/分布式存储与计算/index.md"
+          - Lab: "数据科学/分布式存储与计算/分布式存储与计算_LAB.md"
   - "📐 分析学":
       - "分析学/index.md"
       - 数学分析:
@@ -333,6 +335,14 @@ nav:
           - 第1章 集合与实数集: "分析学/实分析/第1章 集合与实数集.md"
           - 习题1: "分析学/实分析/周性伟-Ch1.md"
           - 习题2: "分析学/实分析/周性伟-Ch2.md"
+      - 泛函分析:
+          - "分析学/泛函分析/index.md"
+          - 第1章 绪论: "分析学/泛函分析/Functional_Analysis-Preliminaries(Lecture).md"
+          - 第2章 Banach Spaces: "分析学/泛函分析/Banach Spaces.md"
+          - 第3章 Hilbert Spaces: "分析学/泛函分析/Hilbert Spaces.md"
+          - 第4章 Continuous Linear Operators: "分析学/泛函分析/Continuous linear operators.md"
+          - 第5章 Some Big theorems: "分析学/泛函分析/Some big thorems.md"
+          - 23期末试卷: "分析学/泛函分析/泛函分析2023-2024期末.md"
       - 概率论:
           - "分析学/概率论/index.md"
           - 组合分析: "分析学/概率论/Combinatorial Analysis.md"
