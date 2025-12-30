@@ -1,9 +1,0 @@
-mkdocs
-mkdocs-material
-mkdocs-jupyter
-mkdocs-social-plugin
-mkdocs-minify-plugin
-mkdocs-rss-plugin
-mkdocs-git-revision-date-localized-plugin
-mkdocs-statistics-plugin
-mkdocs-callouts

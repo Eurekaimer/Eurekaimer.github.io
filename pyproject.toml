@@ -1,0 +1,17 @@
+[project]
+name = "eurekaimer-github-io"
+version = "0.1.0"
+description = "Eurekaimer's Digital Garden"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-callouts>=1.16.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.5.0",
+    "mkdocs-jupyter>=0.25.1",
+    "mkdocs-material>=9.7.1",
+    "mkdocs-minify-plugin>=0.8.0",
+    "mkdocs-rss-plugin>=1.17.7",
+    "mkdocs-social-plugin>=0.1.0",
+    "mkdocs-statistics-plugin>=0.1.5",
+]
