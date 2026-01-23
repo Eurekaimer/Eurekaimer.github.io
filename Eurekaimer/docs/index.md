@@ -85,7 +85,7 @@ hide:
 <div class="grid cards" markdown>
 
 
--   :simple-homepage:{ .lg .middle } 公告栏:目前正在研究高维统计和信息论(欢迎交流)
+-   :simple-homepage:{ .lg .middle } 公告栏:目前正在疑惑自己的研究
 
     ---
     <!-- ![image](https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg){ class="responsive-image" align=right width="480" height="320" style="border-radius: 25px;" } -->
@@ -156,7 +156,7 @@ hide:
     - From: Nankai University
     - Major: Statistics
     - MBTI: INTJ
-    - Love: 小鞠知花/数学/Logical and Elegant Things
+    - Love: 小鞠知花/Yuri/数学/Logical and Elegant Things
 
     页脚处是联系我的一些方式：
 
@@ -197,7 +197,7 @@ hide:
 
     ---
 
-    - [x] 一周一次[400]
+    - [x] 一周一次[405]
     - [x] 终将成为你
     - [x] 安达与岛村
     
@@ -206,6 +206,7 @@ hide:
     ---
 
     - [ ] GBC_Shanghai
+    - [x] Journey to ChangSha
     - [ ] One paper before 2026.6
 
 </div>
