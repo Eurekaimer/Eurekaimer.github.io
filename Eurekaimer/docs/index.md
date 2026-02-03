@@ -84,7 +84,6 @@ hide:
 
 <div class="grid cards" markdown>
 
-
 -   :simple-homepage:{ .lg .middle } 公告栏:目前正在疑惑自己的研究
 
     ---
@@ -103,6 +102,7 @@ hide:
     === "推荐"
 
         - [x] [学术主页](https://www.eurekaimer.xyz/Academic/) 
+        - [x] [笔记站](https://www.eurekaimer.xyz/Stathelper/)
 
     === "Quote"
 
@@ -121,30 +121,6 @@ hide:
 
 
 </div>
-<style>
-    /* 响应式图片优化 */
-    .responsive-image {
-        max-width: 100%;
-        height: auto;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    @media only screen and (max-width: 768px) {
-        .responsive-image {
-            display: none;
-        }
-    }
-    
-    /* 大屏幕优化 */
-    @media (min-width: 1600px) {
-        .responsive-image {
-            margin-left: 2rem;
-        }
-    }
-</style>
-
-
-
 
 
 <div class="grid cards" markdown>

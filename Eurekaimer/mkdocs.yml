@@ -260,8 +260,8 @@ extra:
 
 # navigation
 nav:
-  - "🏛️ 主页": "index.md"
-  - "✒️ 博客":
+  - "主页": "index.md"
+  - "博客":
       - "blog/index.md"
       - 2025年度总结: "blog/posts/2025年度总结.md"
       - 我与我周旋久: "blog/posts/我与我周旋久.md"
@@ -272,11 +272,8 @@ nav:
       - 2025寒假总结: "blog/posts/2025寒假总结.md"
       - 2025暑假总结: "blog/posts/2025暑假总结.md"
       - 大二下学期总结: "blog/posts/大二下学期总结.md"
-  - "⚓ 友链": "友链/友链.md"
-  - "📺  二次元":
-      - 总评榜: "二次元/二次元.md"
-      - 百合榜: "二次元/百合.md"
-  - "📉 统计学":
+  - "友链": "友链/友链.md"
+  - "统计学":
     - 数理统计:
         - "统计学/数理统计/index.md"
         - 基本概念: "统计学/数理统计/Assets/基本概念.md"
@@ -291,7 +288,7 @@ nav:
         - 引言: "统计学/运筹与优化/index.md"
         - 线性规划与目标规划: "统计学/运筹与优化/线性规划与目标规划.md"
         - 无约束问题: "统计学/运筹与优化/无约束问题.md"
-  - "💾 数据科学":
+  - "数据科学":
       - Preface: "数据科学/index.md"
       - CS50x:
           - CS50x: "数据科学/CS50x/index.md"
@@ -322,7 +319,7 @@ nav:
       - 分布式存储与计算:
           - 分布式存储与计算: "数据科学/分布式存储与计算/index.md"
           - Lab: "数据科学/分布式存储与计算/分布式存储与计算_LAB.md"
-  - "📐 分析学":
+  - "分析学":
       - "分析学/index.md"
       - 数学分析:
           - "分析学/数学分析(Lecture Notes)/index.md"
@@ -362,32 +359,12 @@ nav:
           - "分析学/读书笔记/index.md"
           - Baby Rudin:
               - The Real and Complex Number Systems: "分析学/读书笔记/Principles of Mathematical Analysis(Rudin)/The Real and Complex Number Systems.md"
-  - "#️⃣ 代数学":
+  - "代数学":
       - "代数学/index.md"
       - 高等代数:
           - 引言: "代数学/高等代数/index.md"
           - 二次型: "代数学/高等代数/二次型.md"
-  - "🗂️ 网络资源整合":
-      - "网络资源整合/index.md"
-      - 数学(统计学)讲义收集: "网络资源整合/数学(统计学)讲义收集.md"
-      - 计算机科学资料站: "网络资源整合/计算机科学资料站.md"
-      - 克林索尔的夏天: "网络资源整合/克林索尔的夏天.md"
-  - "🔬 科研竞赛":
-      - "科研竞赛/index.md"
-      - LaTeX:
-        - 引言: "科研竞赛/LaTeX/index.md"
-        - 安装和配置: "科研竞赛/LaTeX/LaTeX(VScode).md"
-      - Python:
-        - 安装和配置: "科研竞赛/Python/Python安装和配置.md"
-      - 工具:
-        - 图床(PicGo+GitHub): "科研竞赛/Tools/图床搭建.md"
-        - Obsidian: "科研竞赛/Tools/Obsidian_Chain.md"
-      - 数学建模:
-        - 数学建模: "数学建模/index.md"
-        - 导航(初学者): "数学建模/导航(初学者).md"
-      - 计量经济学:
-        - 计量经济学: "交叉融合/计量经济学/index.md"
-  - "🔖 标签": "tags.md"
+  - "标签": "tags.md"
 
 
 

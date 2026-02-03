@@ -14,4 +14,5 @@ dependencies = [
     "mkdocs-rss-plugin>=1.17.7",
     "mkdocs-social-plugin>=0.1.0",
     "mkdocs-statistics-plugin>=0.1.5",
+    "requests>=2.32.5",
 ]
