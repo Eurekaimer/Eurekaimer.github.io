@@ -258,6 +258,9 @@ extra:
           note: >- 
             感谢反馈！
 
+hooks:
+  - hooks.py
+
 # navigation
 nav:
   - "主页": "index.md"
