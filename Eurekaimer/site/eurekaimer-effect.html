@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurekaimer - 循环展示</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* 纯白背景 */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'LXGW WenKai Lite', sans-serif;
+        }
+
+        /* 碎片基础样式 */
+        .fragment {
+            position: absolute;
+            color: #888; 
+            font-size: 14px;
+            opacity: 0; /* 初始不可见 */
+            white-space: nowrap;
+            user-select: none;
+            /* 这里的 transition 稍微慢一点，让移动过程更优雅 */
+            transition: top 1.5s ease-in-out, left 1.5s ease-in-out, opacity 1s ease, transform 1.5s ease-in-out, color 1.5s ease;
+            z-index: 1;
+        }
+
+        /* 最终主标题样式 */
+        #main-title {
+            position: absolute;
+            font-size: 4rem;
+            color: #5e3c58;
+            font-weight: normal;
+            opacity: 0;
+            letter-spacing: 4px;
+            transform: scale(0.9);
+            transition: opacity 1.5s ease, transform 1.5s ease;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main-title">Eurekaimer</div>
+    <!-- 碎片容器 -->
+    <div id="fragment-container"></div>
+
+    <script>
+        // === 配置区域 ===
+        const config = {
+            fragmentCount: 36,  // 碎片数量
+            heartScale: 12,     // 爱心大小
+            scatterRadius: 0.8, // 初始散落范围系数
+            
+            // 时间轴配置 (单位 ms)
+            times: {
+                scatterDuration: 100,  // 多少毫秒后开始显示散落
+                moveToHeart: 2500,     // 多少毫秒后开始聚集成爱心
+                showTitle: 5000,       // 多少毫秒后显示标题(并隐藏碎片)
+                fadeOutTitle: 9000,    // 多少毫秒后标题消失
+                nextLoop: 11000        // 多少毫秒后开始下一次循环
+            }
+        };
+
+        const words = [
+            '真理', '探索', '逻辑', '证明', '优雅', '结构', 
+            '数理', '统计', '分析', '代数', '几何', '拓扑',
+            '极简', '纯粹', '秩序', '混沌', '分形', '维度',
+            '收敛', '极限', '连续', '映射', '空间', '测度',
+            '模型', '算法', '代码', '灵感', '思考', '记录',
+            '博弈', '优化', '拟合', '回归', '样本', '分布'
+        ];
+
+        const container = document.getElementById('fragment-container');
+        const title = document.getElementById('main-title');
+        let fragments = [];
+
+        // 爱心曲线方程
+        function getHeartPosition(t) {
+            const x = 16 * Math.pow(Math.sin(t), 3);
+            const y = -(13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+            return { x, y };
+        }
+
+        // 清理当前所有碎片
+        function clearFragments() {
+            container.innerHTML = '';
+            fragments = [];
+        }
+
+        // 创建碎片并初始化位置（随机散落状态）
+        function createAndScatter() {
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+
+            for (let i = 0; i < config.fragmentCount; i++) {
+                const el = document.createElement('div');
+                el.classList.add('fragment');
+                el.innerText = words[i % words.length];
+
+                // 随机初始位置
+                const randX = (Math.random() - 0.5) * window.innerWidth * config.scatterRadius;
+                const randY = (Math.random() - 0.5) * window.innerHeight * config.scatterRadius;
+
+                // 设置初始坐标
+                el.style.left = (centerX + randX) + 'px';
+                el.style.top = (centerY + randY) + 'px';
+                el.style.transform = 'translate(-50%, -50%) scale(0.8)'; // 初始稍小
+
+                container.appendChild(el);
+                fragments.push(el);
+
+                // 稍微延迟淡入，制造层次感
+                setTimeout(() => {
+                    el.style.opacity = 0.6;
+                }, 50 + Math.random() * 500);
+            }
+        }
+
+        // 将碎片移动成爱心形状
+        function toHeartShape() {
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+
+            fragments.forEach((el, index) => {
+                const t = (index / config.fragmentCount) * Math.PI * 2;
+                const pos = getHeartPosition(t);
+
+                const finalX = centerX + pos.x * config.heartScale;
+                const finalY = centerY + pos.y * config.heartScale;
+
+                el.style.left = finalX + 'px';
+                el.style.top = finalY + 'px';
+                el.style.opacity = 1;
+                el.style.color = '#9c81ac'; // 变色为淡紫
+                el.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        }
+
+        // 显示标题，隐藏碎片
+        function showMainTitle() {
+            // 标题出现
+            title.style.opacity = 1;
+            title.style.transform = 'scale(1)';
+
+            // 碎片扩散消失
+            fragments.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translate(-50%, -50%) scale(1.5)'; // 放大消失
+            });
+        }
+
+        // 隐藏标题（为下一次循环做准备）
+        function hideMainTitle() {
+            title.style.opacity = 0;
+            title.style.transform = 'scale(0.9)';
+        }
+
+        // 动画主循环
+        function animationLoop() {
+            // 0. 清理旧数据（防止DOM堆积）
+            clearFragments();
+
+            // 1. 创建并散落
+            setTimeout(createAndScatter, config.times.scatterDuration);
+
+            // 2. 汇聚成爱心
+            setTimeout(toHeartShape, config.times.moveToHeart);
+
+            // 3. 显示标题
+            setTimeout(showMainTitle, config.times.showTitle);
+
+            // 4. 隐藏标题
+            setTimeout(hideMainTitle, config.times.fadeOutTitle);
+
+            // 5. 开启下一次循环
+            setTimeout(animationLoop, config.times.nextLoop);
+        }
+
+        // 启动
+        window.onload = animationLoop;
+
+    </script>
+</body>
+</html>
