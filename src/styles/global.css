@@ -33,3 +33,34 @@
 :target {
   scroll-margin-block: 1rem;
 }
+
+/* ===== Red dashed HR with dots (global, for instant render on page transitions) ===== */
+.app-prose hr {
+  position: relative;
+  margin: 2.5em 0;
+  border: none;
+  height: 0;
+  border-top: 2px dashed var(--accent, #b91c1c);
+  background: none;
+  overflow: visible;
+}
+
+.app-prose hr::before,
+.app-prose hr::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent, #b91c1c);
+}
+
+.app-prose hr::before {
+  left: 0;
+}
+
+.app-prose hr::after {
+  right: 0;
+}

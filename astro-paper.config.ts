@@ -7,7 +7,7 @@ export default defineAstroPaperConfig({
     description: "A quiet personal homepage.",
     author: "Eurekaimer",
     profile: "https://github.com/Eurekaimer",
-    ogImage: "eurekaimer.png",
+    ogImage: "profile.jpg",
     lang: "en",
     timezone: "Asia/Shanghai",
     dir: "ltr",

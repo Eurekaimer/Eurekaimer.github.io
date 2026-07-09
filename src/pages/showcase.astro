@@ -1,0 +1,126 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+const items = [
+  { img: "/showcase/GBC.webp", quote: "所谓的答案 大概也只是形式上的常识罢了" },
+  { img: "/showcase/冰菓.webp", quote: "折木弄花千蝶反田 蔷薇穹下旷世恋语" },
+  { img: "/showcase/凉.webp", quote: "失去了个性就和死没区别" },
+  { img: "/showcase/Anon.webp", quote: "Anon酱可爱捏" },
+  { img: "/showcase/周次.webp", quote: "我想要再多看到宫城的笑容" },
+  { img: "/showcase/四谎.webp", quote: "落樱入梦满薰香 梦醒犹记四月谎" },
+  { img: "/showcase/安达与岛村.webp", quote: "一起去祭典吧" },
+  { img: "https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/%E6%B0%B4%E4%B8%8B%E5%90%BB.png", quote: "我们真的只是朋友" },
+  { img: "/showcase/恋语轻唱.webp", quote: "细雨般的恋爱" },
+  { img: "/showcase/我推是恶役大小姐.webp", quote: "零是属于我的" },
+  { img: "/showcase/白箱.webp", quote: "写给动漫人的情书" },
+  { img: "/showcase/紫罗兰.webp", quote: "花无凋零之日 意无传达之期" },
+  { img: "/showcase/终将成为你.webp", quote: "我喜欢永远不会喜欢上我的你" },
+  { img: "/showcase/Furien.webp", quote: "老东西可爱捏" },
+  { img: "/showcase/熏香花朵凛然绽放.webp", quote: "正因为是你 我才想要了解" },
+  { img: "/showcase/友利奈绪.webp", quote: "" },
+  { img: "/showcase/KON.webp", quote: "あぁ カミサマどうして" },
+];
+---
+
+<Layout
+  title="Showcase | Eurekaimer"
+  description="Anime collections and favorite scenes."
+>
+  <Header />
+  <main id="main-content" class="app-layout py-10">
+    <h1 class="mb-2 text-3xl font-semibold tracking-wide">Showcase</h1>
+    <p class="text-muted-foreground mb-8 leading-7">
+      A small gallery of anime scenes and characters I love.
+    </p>
+
+    <div class="showcase-grid">
+      {
+        items.map((item) => (
+          <div class="showcase-item">
+            <div class="showcase-card">
+              <img
+                src={item.img}
+                alt=""
+                loading="lazy"
+                class="showcase-img"
+              />
+              <div class="showcase-overlay">
+                <p class="showcase-quote">{item.quote}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .showcase-grid {
+    columns: 3;
+    column-gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .showcase-grid {
+      columns: 2;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .showcase-grid {
+      columns: 1;
+    }
+  }
+
+  .showcase-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  .showcase-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .showcase-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .showcase-img {
+    width: 100%;
+    display: block;
+    border-radius: 0.75rem;
+  }
+
+  .showcase-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    border-radius: 0.75rem;
+  }
+
+  .showcase-card:hover .showcase-overlay {
+    opacity: 1;
+  }
+
+  .showcase-quote {
+    color: #fff;
+    font-size: 0.95rem;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+  }
+</style>
