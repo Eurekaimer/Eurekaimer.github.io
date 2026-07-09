@@ -28,7 +28,7 @@
     }
 
     a {
-      @apply text-foreground hover:text-accent wrap-break-word decoration-dashed underline-offset-4 focus-visible:no-underline;
+      @apply wrap-break-word transition-colors focus-visible:no-underline;
     }
 
     ul {
@@ -120,4 +120,48 @@
       @apply border-border rounded-sm border px-0.5 py-px;
     }
   }
+}
+
+/* ===== Prose link overrides (unlayered, higher priority than Tailwind Typography) ===== */
+.app-prose a {
+  color: var(--accent, #b91c1c);
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+
+.app-prose a:hover {
+  color: var(--accent-hover, #7f1d1d);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.app-prose a:focus-visible {
+  text-decoration-line: none;
+}
+
+/* ===== Fancy link: same unlayered priority ===== */
+.fancy-link {
+  color: var(--accent, #b91c1c);
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease,
+    text-decoration-style 150ms ease;
+}
+
+.fancy-link:hover {
+  color: var(--accent-hover, #7f1d1d);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.fancy-link:focus-visible {
+  outline: 2px solid var(--accent, #b91c1c);
+  outline-offset: 3px;
+  border-radius: 2px;
 }

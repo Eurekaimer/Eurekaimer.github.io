@@ -43,11 +43,11 @@ const homePath = getRelativeLocaleUrl(locale, "");
       - <img>: 头像图片，替换 public/profile.jpg 即可
       ============================================================ -->
     <section id="hero" class="border-border border-b pt-10 pb-10 sm:pt-16 sm:pb-14">
-      <div class="grid gap-8 sm:grid-cols-[1fr_220px] sm:items-center">
+      <div class="grid gap-8 sm:grid-cols-[1fr_260px] sm:items-center">
         <div>
-          <!-- 顶部小标签（日文推し标语），可改成你喜欢的 -->
-          <p class="text-accent mb-3 text-sm font-medium tracking-wide uppercase">
-            小鞠知花は最高の推し
+          <!-- 标语（可改成你喜欢的句子） -->
+          <p class="text-accent mb-3 text-center text-2xl italic font-light tracking-wide sm:text-3xl">
+            「小鞠知花は最高の推し」
           </p>
           <!-- 你的名字 -->
           <h1 class="my-4 text-4xl leading-tight font-bold sm:text-5xl">
@@ -88,15 +88,26 @@ const homePath = getRelativeLocaleUrl(locale, "");
             </LinkButton>
           </div>
         </div>
-        <!-- 头像：替换 public/profile.jpg 即可换头像 -->
-        <img
-          src="/profile.jpg"
-          alt="Eurekaimer profile image"
-          width="220"
-          height="220"
-          loading="eager"
-          class="border-border bg-muted mx-auto aspect-square rounded object-cover shadow-sm sm:mx-0"
-        />
+        <!-- 头像区：不规则圆角框 + 图片 -->
+        <div
+          class="mx-auto flex aspect-square w-full max-w-[260px] items-center justify-center p-2 sm:mx-0"
+          style="
+            border-radius: 42% 58% 48% 52% / 45% 40% 55% 50%;
+            border: 2px solid var(--accent, #b91c1c);
+          "
+        >
+          <img
+            src="/profile.jpg"
+            alt="Eurekaimer profile image"
+            width="260"
+            height="260"
+            loading="eager"
+            class="bg-muted h-full w-full object-cover shadow-sm"
+            style="
+              border-radius: 40% 60% 52% 48% / 43% 42% 58% 48%;
+            "
+          />
+        </div>
       </div>
     </section>
 
@@ -144,10 +155,10 @@ const homePath = getRelativeLocaleUrl(locale, "");
           Academic notes and life writing now live in their own focused spaces.
         </p>
         <ul class="space-y-2 leading-7">
-          <li><a href="https://www.eurekaimer.icu/Stathelper/">Notes site</a></li>
-          <li><a href="https://www.eurekaimer.icu/blog/">Focus on life blog</a></li>
-          <li><a href={getRelativeLocaleUrl(locale, "friends")}>Friends</a></li>
-          <li><a href="mailto:2507983039@qq.com">2507983039@qq.com</a></li>
+          <li><a href="https://www.eurekaimer.icu/Stathelper/" class="fancy-link">Notes site</a></li>
+          <li><a href="https://www.eurekaimer.icu/blog/" class="fancy-link">Focus on life blog</a></li>
+          <li><a href={getRelativeLocaleUrl(locale, "friends")} class="fancy-link">Friends</a></li>
+          <li><a href="mailto:2507983039@qq.com" class="fancy-link">2507983039@qq.com</a></li>
         </ul>
       </div>
     </section>

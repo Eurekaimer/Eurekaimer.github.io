@@ -17,9 +17,7 @@ const { title, description, ...props } = data;
   <a
     href={getPostUrl(id, filePath, Astro.currentLocale)}
     class:list={[
-      "text-accent inline-block text-lg font-medium",
-      "decoration-dashed underline-offset-4 hover:underline",
-      "focus-visible:no-underline focus-visible:underline-offset-0",
+      "inline-block text-lg font-medium fancy-link",
     ]}
   >
     <Heading transition:name={toTransitionName(title)}>
