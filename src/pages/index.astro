@@ -1,0 +1,172 @@
+---
+// ============================================================
+// 导入模块 — 一般不需要修改这里
+// ============================================================
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import BlueBirdIcon from "@/components/BlueBirdIcon.astro";
+import config from "@/config";
+
+const locale = Astro.currentLocale ?? config.site.lang;
+const homePath = getRelativeLocaleUrl(locale, "");
+---
+
+<!-- ============================================================
+  Layout 是整页的容器，控制 <head> 标签（标题、描述、SEO 等）。
+  - title: 浏览器标签页标题
+  - description: SEO 描述，用于搜索引擎和社交分享
+  ============================================================ -->
+<Layout
+  title="Eurekaimer"
+  description="A minimal personal homepage for Eurekaimer."
+>
+  <!-- ========== 页眉导航栏 ========== -->
+  <Header />
+
+  <!-- ========== 页面主体内容 ========== -->
+  <main
+    id="main-content"
+    data-layout="index"
+    data-home-path={homePath}
+    class="app-layout"
+  >
+    <!-- ============================================================
+      【区块 1】Hero 头像区
+      修改你的名字、简介、头像、链接按钮
+      - <h1>: 你的名字/标题
+      - <p>: 个人简介
+      - <LinkButton>: 链接按钮（Notes、Blog、GitHub 等）
+      - <img>: 头像图片，替换 public/profile.jpg 即可
+      ============================================================ -->
+    <section id="hero" class="border-border border-b pt-10 pb-10 sm:pt-16 sm:pb-14">
+      <div class="grid gap-8 sm:grid-cols-[1fr_220px] sm:items-center">
+        <div>
+          <!-- 顶部小标签（日文推し标语），可改成你喜欢的 -->
+          <p class="text-accent mb-3 text-sm font-medium tracking-wide uppercase">
+            小鞠知花は最高の推し
+          </p>
+          <!-- 你的名字 -->
+          <h1 class="my-4 text-4xl leading-tight font-bold sm:text-5xl">
+            Eurekaimer
+          </h1>
+          <!-- 个人简介段落 -->
+          <p class="max-w-2xl text-lg leading-8">
+            I am a statistics student at Nankai University. I care about
+            probability, mathematical statistics, data science, and tools that
+            make thinking feel lighter. This site is a quiet front door to my
+            notes, life blog, friends, and public work.
+          </p>
+          <!-- 日语附言 -->
+          <p class="mt-4 max-w-2xl leading-7 italic">
+            霙のオーボエが好き。<BlueBirdIcon />
+          </p>
+          <!-- 链接按钮组：修改 href 即可更换链接地址 -->
+          <div class="mt-6 flex flex-wrap gap-3">
+            <LinkButton href="https://www.eurekaimer.icu/Stathelper/">
+              Notes
+              <IconArrowRight class="inline-block rtl:-rotate-180" />
+            </LinkButton>
+            <LinkButton href="https://www.eurekaimer.icu/blog/">
+              Life Blog
+              <IconArrowRight class="inline-block rtl:-rotate-180" />
+            </LinkButton>
+            <LinkButton href="https://github.com/Eurekaimer">
+              GitHub
+              <IconArrowRight class="inline-block rtl:-rotate-180" />
+            </LinkButton>
+            <LinkButton href={getRelativeLocaleUrl(locale, "about")}>
+              About
+              <IconArrowRight class="inline-block rtl:-rotate-180" />
+            </LinkButton>
+            <LinkButton href={getRelativeLocaleUrl(locale, "friends")}>
+              Friends
+              <IconArrowRight class="inline-block rtl:-rotate-180" />
+            </LinkButton>
+          </div>
+        </div>
+        <!-- 头像：替换 public/profile.jpg 即可换头像 -->
+        <img
+          src="/profile.jpg"
+          alt="Eurekaimer profile image"
+          width="220"
+          height="220"
+          loading="eager"
+          class="border-border bg-muted mx-auto aspect-square rounded object-cover shadow-sm sm:mx-0"
+        />
+      </div>
+    </section>
+
+    <!-- ============================================================
+      【区块 2】About + Interests 双栏
+      左边是个人简介，右边是兴趣列表
+      ============================================================ -->
+    <section class="grid gap-10 border-border border-b py-10 sm:grid-cols-2">
+      <div>
+        <h2 class="mb-3 text-2xl font-semibold tracking-wide">About</h2>
+        <p class="leading-7">
+          I am currently based at Nankai University, majoring in Statistics at
+          the School of Statistics and Data Science. I like logical, elegant
+          things: proofs, models, careful writing, clean interfaces, and music
+          that can make a small scene feel exact.
+        </p>
+      </div>
+      <div>
+        <h2 class="mb-3 text-2xl font-semibold tracking-wide">Interests</h2>
+        <ul class="space-y-2 leading-7">
+          <li>Analysis and probability theory</li>
+          <li>Mathematical statistics</li>
+          <li>Data science and machine learning</li>
+          <li>Anime, Yuri, and chess</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      【区块 3】Education + Elsewhere 双栏
+      左边是教育经历，右边是外部链接
+      ============================================================ -->
+    <section class="grid gap-10 py-10 sm:grid-cols-2">
+      <div>
+        <h2 class="mb-3 text-2xl font-semibold tracking-wide">Education</h2>
+        <ol class="space-y-2 leading-7">
+          <li>2020.09 - 2023.06: Putian No.1 Middle School</li>
+          <li>2023.09 - 2024.09: College of Life Sciences, Nankai University</li>
+          <li>2024.09 - present: School of Statistics and Data Science, Nankai University</li>
+        </ol>
+      </div>
+      <div>
+        <h2 class="mb-3 text-2xl font-semibold tracking-wide">Elsewhere</h2>
+        <p class="mb-4 leading-7">
+          Academic notes and life writing now live in their own focused spaces.
+        </p>
+        <ul class="space-y-2 leading-7">
+          <li><a href="https://www.eurekaimer.icu/Stathelper/">Notes site</a></li>
+          <li><a href="https://www.eurekaimer.icu/blog/">Focus on life blog</a></li>
+          <li><a href={getRelativeLocaleUrl(locale, "friends")}>Friends</a></li>
+          <li><a href="mailto:2507983039@qq.com">2507983039@qq.com</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 页脚（版权、运行时间等） ========== -->
+  <Footer />
+</Layout>
+
+<!-- ============================================================
+  脚本：记录返回 URL，供其他页面"返回首页"使用，不需要修改
+  ============================================================ -->
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+      ?.dataset;
+    const baseRoot = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+    if (indexLayout?.layout) {
+      sessionStorage.setItem("backUrl", indexLayout.homePath ?? baseRoot);
+    }
+  });
+</script>

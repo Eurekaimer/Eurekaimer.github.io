@@ -1,0 +1,112 @@
+﻿---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Main from "@/components/Main.astro";
+import GiscusComments from "@/components/GiscusComments.astro";
+
+const friends = [
+  {
+    name: "Eurekaimer",
+    image:
+      "https://avatars.githubusercontent.com/u/88918522?s=400&u=c9494d29a9573c1d393929f5ebb785f2613ff4e7&v=4",
+    description: "Academic homepage",
+    href: "https://www.eurekaimer.icu/",
+  },
+  {
+    name: "Meraki's bar",
+    image: "https://avatars.githubusercontent.com/u/187371253?v=4",
+    description: "A junior student's blog.",
+    href: "https://meraki111.netlify.app/",
+  },
+  {
+    name: "Ice Year",
+    image: "https://avatars.githubusercontent.com/iceyear",
+    description: "Il n'y a pas de hasard, il n'y a que des rendez-vous.",
+    href: "https://blog.iceyear.eu.org",
+  },
+  {
+    name: "春风少年兄",
+    image: "https://avatars.githubusercontent.com/u/138082074?v=4",
+    description: "你在世纪大道东门",
+    href: "https://blog.0pt.icu/",
+  },
+  {
+    name: "Yon Zilch",
+    image: "https://avatars.githubusercontent.com/u/141223334?v=4",
+    description: "From the yon, into zilch. Life, a vanished dream.",
+    href: "https://blog.yon.im/",
+  },
+  {
+    name: "Wcowin",
+    image: "https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp",
+    description: "循此苦旅，以达星辰",
+    href: "https://wcowin.work/",
+  },
+];
+---
+
+<Layout title="Friends | Eurekaimer" description="Friends and links.">
+  <Header />
+  <Main pageTitle="Friends">
+    <p class="text-muted-foreground mb-8 leading-7">
+      A small list of friends and sites I like. Leave a message below if you
+      would like to exchange links.
+    </p>
+
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {
+        friends.map(friend => (
+          <li>
+            <a
+              href={friend.href}
+              target="_blank"
+              class="border-border hover:border-accent flex h-full items-center gap-4 rounded border p-4 no-underline transition-colors"
+            >
+              <img
+                src={friend.image}
+                alt=""
+                width="56"
+                height="56"
+                loading="lazy"
+                class="bg-muted size-14 shrink-0 rounded object-cover"
+              />
+              <span class="min-w-0">
+                <span class="text-foreground block font-semibold">
+                  {friend.name}
+                </span>
+                <span class="text-muted-foreground mt-1 block text-sm leading-6">
+                  {friend.description}
+                </span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- ========== 友链交换区 ========== -->
+    <section class="border-border mt-12 border-t pt-8">
+      <h2 class="mb-4 text-2xl font-semibold tracking-wide">Link Exchange</h2>
+      <blockquote
+        class="border-accent bg-muted text-muted-foreground my-4 rounded border-s-4 p-4 text-sm leading-7"
+      >
+        <p class="mb-2 font-semibold">My site info for exchange:</p>
+        <ul class="space-y-1">
+          <li><strong>Name:</strong> Eurekaimer</li>
+          <li><strong>URL:</strong> https://www.eurekaimer.icu</li>
+          <li><strong>Avatar:</strong> https://avatars.githubusercontent.com/u/88918522?s=400</li>
+          <li><strong>Description:</strong> 小舟从此逝</li>
+        </ul>
+        <p class="mt-3">
+          If you'd like to exchange links, leave a comment below with your site
+          info (name, URL, avatar, and a short description). I'll add you to the
+          list!
+        </p>
+      </blockquote>
+      <GiscusComments mapping="specific" term="friends" />
+    </section>
+  </Main>
+  <Footer />
+</Layout>
+
