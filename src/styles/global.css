@@ -23,7 +23,7 @@
 
 @utility app-layout {
   max-width: var(--layout-width, 72rem);
-  @apply mx-auto w-full px-4;
+  @apply mx-auto w-full px-4 sm:px-6;
 }
 
 @utility active-nav {
@@ -63,4 +63,34 @@
 
 .app-prose hr::after {
   right: 0;
+}
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+.app-prose {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 639px) {
+  .app-prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .app-prose pre {
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+  }
 }
