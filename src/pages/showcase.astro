@@ -29,8 +29,8 @@ const items = [
   description="Anime collections and favorite scenes."
 >
   <Header />
-  <main id="main-content" class="app-layout py-10">
-    <h1 class="mb-2 text-3xl font-semibold tracking-wide">Showcase</h1>
+  <main id="main-content" class="app-layout py-8 sm:py-10">
+    <h1 class="mb-2 text-2xl font-semibold tracking-wide sm:text-3xl">Showcase</h1>
     <p class="text-muted-foreground mb-8 leading-7">
       A small gallery of anime scenes and characters I love.
     </p>
@@ -122,5 +122,13 @@ const items = [
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     line-height: 1.5;
+  }
+</style>
+
+<style>
+  @media (hover: none) {
+    .showcase-overlay {
+      opacity: 1;
+    }
   }
 </style>
