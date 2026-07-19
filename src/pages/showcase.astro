@@ -11,7 +11,10 @@ const items = [
   { img: "/showcase/周次.webp", quote: "我想要再多看到宫城的笑容" },
   { img: "/showcase/四谎.webp", quote: "落樱入梦满薰香 梦醒犹记四月谎" },
   { img: "/showcase/安达与岛村.webp", quote: "一起去祭典吧" },
-  { img: "https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/%E6%B0%B4%E4%B8%8B%E5%90%BB.png", quote: "我们真的只是朋友" },
+  {
+    img: "https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/%E6%B0%B4%E4%B8%8B%E5%90%BB.png",
+    quote: "我们真的只是朋友",
+  },
   { img: "/showcase/恋语轻唱.webp", quote: "细雨般的恋爱" },
   { img: "/showcase/我推是恶役大小姐.webp", quote: "零是属于我的" },
   { img: "/showcase/白箱.webp", quote: "写给动漫人的情书" },
@@ -30,22 +33,19 @@ const items = [
 >
   <Header />
   <main id="main-content" class="app-layout py-8 sm:py-10">
-    <h1 class="mb-2 text-2xl font-semibold tracking-wide sm:text-3xl">Showcase</h1>
+    <h1 class="mb-2 text-2xl font-semibold tracking-wide sm:text-3xl">
+      Showcase
+    </h1>
     <p class="text-muted-foreground mb-8 leading-7">
       A small gallery of anime scenes and characters I love.
     </p>
 
     <div class="showcase-grid">
       {
-        items.map((item) => (
+        items.map(item => (
           <div class="showcase-item">
             <div class="showcase-card">
-              <img
-                src={item.img}
-                alt=""
-                loading="lazy"
-                class="showcase-img"
-              />
+              <img src={item.img} alt="" loading="lazy" class="showcase-img" />
               <div class="showcase-overlay">
                 <p class="showcase-quote">{item.quote}</p>
               </div>
@@ -85,7 +85,9 @@ const items = [
     position: relative;
     overflow: hidden;
     border-radius: 0.75rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .showcase-card:hover {
