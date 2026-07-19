@@ -17,10 +17,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
   - title: 浏览器标签页标题
   - description: SEO 描述，用于搜索引擎和社交分享
   ============================================================ -->
-<Layout
-  title="Eurekaimer"
-  description="A simple homepage for Eurekaimer."
->
+<Layout title="Eurekaimer" description="A simple homepage for Eurekaimer.">
   <!-- ========== 页眉导航栏 ========== -->
   <Header />
 
@@ -39,35 +36,46 @@ const homePath = getRelativeLocaleUrl(locale, "");
       - <LinkButton>: 链接按钮（Notes、Blog、GitHub 等）
       - <img>: 头像图片，替换 public/profile.jpg 即可
       ============================================================ -->
-    <section id="hero" class="border-border border-b pt-10 pb-10 sm:pt-16 sm:pb-14">
-      <div class="grid gap-8 sm:grid-cols-[3fr_2fr] sm:items-center">
+    <section id="hero" class="border-border border-b py-8 sm:pt-16 sm:pb-14">
+      <div class="grid gap-10 sm:grid-cols-[3fr_2fr] sm:items-center">
         <div>
           <!-- 你的名字 -->
-          <h1 class="my-4 text-4xl leading-tight font-bold sm:text-5xl">
+          <h1 class="my-3 text-3xl leading-tight font-bold sm:my-4 sm:text-5xl">
             Eurekaimer
           </h1>
 
           <!-- 个人简介 — 分段描述，修改时每段一个 <p> -->
-          <div class="max-w-2xl space-y-4 text-lg leading-8">
+          <div
+            class="max-w-2xl space-y-3 text-base leading-7 sm:space-y-4 sm:text-lg sm:leading-8"
+          >
             <p>
-              I am a lifelong learner majoring in Statistics at Nankai University, with a passion for probability, mathematics, computer science, and tools that make thinking feel lighter.
+              I am a lifelong learner majoring in Statistics at Nankai
+              University, with a passion for probability, mathematics, computer
+              science, and tools that make thinking feel lighter.
             </p>
             <p>
-              I love Yuri/GL anime, the gentle worlds of Houbunsha and Kyoto Animation, and games such as Slay the Spire and Counter-Strike.
+              I love Yuri/GL anime, the gentle worlds of Houbunsha and Kyoto
+              Animation, and games such as Slay the Spire and Counter-Strike.
             </p>
             <p>
-              Eurekaimer — <span lang="grc">εὕρηκα</span> × aimer — is my small signature for curiosity, affection, and the wish to find what I love and love what I find.
+              Eurekaimer — <span lang="grc">εὕρηκα</span> × aimer — is my small signature
+              for curiosity, affection, and the wish to find what I love and love
+              what I find.
             </p>
             <p>
-              「Wir müssen wissen. Wir werden wissen!」 Don’t hesitate to reach out through the social links.
+              「Wir müssen wissen. Wir werden wissen!」 Don’t hesitate to reach
+              out through the social links.
             </p>
           </div>
-
         </div>
         <!-- 右栏：标语 + 头像 -->
-        <div class="flex flex-col items-center gap-4 sm:items-end">
+        <div
+          class="mx-auto flex w-full max-w-56 flex-col items-center gap-3 sm:mx-0 sm:max-w-80 sm:items-end sm:gap-4 sm:justify-self-end"
+        >
           <!-- 标语（对准头像上方） -->
-          <p class="text-accent text-center text-2xl italic font-light tracking-wide sm:text-3xl">
+          <p
+            class="text-accent text-center text-xl font-light tracking-wide italic sm:text-3xl"
+          >
             「小鞠知花は最高の推し」
           </p>
           <!-- 头像区：不规则圆角框 -->
@@ -93,27 +101,41 @@ const homePath = getRelativeLocaleUrl(locale, "");
         </div>
 
         <!-- 导航链接：跨两列居中，| 分隔 -->
-        <div class="text-muted-foreground col-span-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-lg">
+        <div
+          class="text-muted-foreground border-border flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-t pt-5 text-base sm:col-span-2 sm:gap-x-4 sm:border-t-0 sm:pt-0 sm:text-lg"
+        >
           <span class="text-accent font-bold whitespace-nowrap">
-            <span class="text-accent/40 mr-0.5 text-xl align-[-0.15em] select-none" aria-hidden="true">「</span>
+            <span
+              class="text-accent/40 mr-0.5 align-[-0.15em] text-xl select-none"
+              aria-hidden="true">「</span
+            >
             神様、どうして私に鳥かごの開け方を教えたの
-            <span class="text-accent/40 ml-0.5 text-xl align-[-0.15em] select-none" aria-hidden="true">」</span>
+            <span
+              class="text-accent/40 ml-0.5 align-[-0.15em] text-xl select-none"
+              aria-hidden="true">」</span
+            >
           </span>
-          <span aria-hidden="true">|</span>
-          <a href="https://www.eurekaimer.icu/Stathelper/" class="fancy-link">Notes</a>
-          <span aria-hidden="true">|</span>
-          <a href="https://www.eurekaimer.icu/blog/" class="fancy-link">Daily Blog</a>
-          <span aria-hidden="true">|</span>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href="https://www.eurekaimer.icu/Stathelper/" class="fancy-link"
+            >Notes</a
+          >
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href="https://www.eurekaimer.icu/blog/" class="fancy-link"
+            >Daily Blog</a
+          >
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
           <a href="https://github.com/Eurekaimer" class="fancy-link">GitHub</a>
-          <span aria-hidden="true">|</span>
-          <a href={getRelativeLocaleUrl(locale, "about")} class="fancy-link">About</a>
-          <span aria-hidden="true">|</span>
-          <a href={getRelativeLocaleUrl(locale, "friends")} class="fancy-link">Friends</a>
-        </div>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href={getRelativeLocaleUrl(locale, "about")} class="fancy-link"
+            >About</a
+          >
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href={getRelativeLocaleUrl(locale, "friends")} class="fancy-link"
+            >Friends</a
+          >
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- ========== 页脚（版权、运行时间等） ========== -->

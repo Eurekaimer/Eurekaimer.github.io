@@ -1,66 +1,48 @@
 # Eurekaimer
 
-This repository contains the main site for [www.eurekaimer.icu](https://www.eurekaimer.icu/). It uses [AstroPaper](https://github.com/satnaing/astro-paper) as a minimal Astro-based personal homepage.
+[![Website](https://img.shields.io/badge/website-eurekaimer.icu-b91c1c?style=flat-square)](https://www.eurekaimer.icu/)
+[![Astro](https://img.shields.io/badge/Astro-6.4-BC52EE?style=flat-square&logo=astro&logoColor=white)](https://astro.build/)
+[![CI](https://img.shields.io/github/actions/workflow/status/Eurekaimer/Eurekaimer.github.io/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/Eurekaimer/Eurekaimer.github.io/actions/workflows/ci.yml)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/Eurekaimer/Eurekaimer.github.io/deploy.yml?branch=main&style=flat-square&label=Pages)](https://github.com/Eurekaimer/Eurekaimer.github.io/actions/workflows/deploy.yml)
 
-The old MkDocs digital garden has been split into smaller sites:
+The source of my personal homepage, [www.eurekaimer.icu](https://www.eurekaimer.icu/). It is a small front door to my notes, daily writing, projects, and interests, built with [Astro](https://astro.build/) and adapted from [AstroPaper](https://github.com/satnaing/astro-paper).
 
-- Main Site: <https://www.eurekaimer.icu/>
-- Notes: <https://www.eurekaimer.icu/Stathelper/>
-- Focus on life blog: <https://www.eurekaimer.icu/blog/>
+## Why Astro
 
-## Why AstroPaper
+I considered [Hugo](https://gohugo.io/), [MkDocs](https://www.mkdocs.org/), and [Jekyll](https://jekyllrb.com/) before choosing Astro.
 
-AstroPaper was chosen for two main reasons:
+- **Hugo** is exceptionally fast and well suited to conventional blogs, but Astro gives me a more familiar component model for shaping a distinctive homepage.
+- **MkDocs** remains an excellent choice for structured notes and documentation, which is why my notes live separately. A personal homepage, however, needs more freedom in layout and presentation.
+- **Jekyll** integrates naturally with GitHub Pages, but Astro offers a more modern TypeScript-based workflow and a broader component ecosystem.
+- **Astro** keeps the final site mostly static while allowing interactive features only where they are useful. That balance makes the site fast, maintainable, and easy to personalize.
 
-**Minimalism.** The theme keeps the site lightweight — no heavy frameworks, no unnecessary JavaScript. Pages are static HTML by default, with JavaScript only where truly needed (theme toggle, Giscus comments). This means fast load times and a clean reading experience.
+AstroPaper provides a restrained foundation; the content, visual identity, and page structure are customized for this site.
 
-**Separation of concerns.** Content and presentation are cleanly separated:
-- **Content** lives in `src/content/` as Markdown files (e.g., `about.md`), editable without touching any component code.
-- **Configuration** is centralized in `astro-paper.config.ts` — site metadata, social links, feature toggles are all in one place.
-- **Layout & components** in `src/layouts/` and `src/components/` handle the presentation layer. Shared pieces (Header, Footer, Socials) are reused across all pages.
-- **Pages** in `src/pages/` are thin Astro components that compose layouts and content together.
+## Site map
 
-This structure makes the site easy to maintain: change a social link in config, edit about text in a markdown file, tweak the homepage layout in `index.astro` — each concern has a single, obvious home.
+| Site                                            | Purpose                               |
+| ----------------------------------------------- | ------------------------------------- |
+| [Main site](https://www.eurekaimer.icu/)        | Profile, projects, and links          |
+| [Notes](https://www.eurekaimer.icu/Stathelper/) | Study notes and reference material    |
+| [Daily blog](https://www.eurekaimer.icu/blog/)  | Informal writing and everyday records |
 
 ## Development
-
-Install dependencies and start the local server:
 
 ```bash
 pnpm install
 pnpm run dev
 ```
 
-Build locally:
+Before publishing, run:
 
 ```bash
+pnpm run lint
+pnpm run format:check
 pnpm run build
 ```
 
-Preview the production build:
-
-```bash
-pnpm run preview
-```
-
-## Deployment
-
-This site is intended to deploy with GitHub Pages and GitHub Actions.
-
-Repository settings to confirm on GitHub:
-
-- Settings -> Pages -> Source: GitHub Actions
-- Custom domain: `www.eurekaimer.icu`
-- DNS: the `www` CNAME record should point to `Eurekaimer.github.io`
-
-After checking the build locally, publish with:
-
-```bash
-git add .
-git commit -m "Migrate main site to AstroPaper"
-git push origin main
-```
+The site is deployed to [GitHub Pages](https://pages.github.com/) through [GitHub Actions](https://github.com/features/actions).
 
 ## License
 
-Original writing is shared under CC BY-SA 4.0 where applicable. AstroPaper is distributed under its own license; see `LICENSE` for the theme license included in this repository.
+The AstroPaper-derived theme code is available under the [MIT License](LICENSE). Original writing and media remain the property of their respective authors unless otherwise stated.
