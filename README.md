@@ -20,11 +20,11 @@ AstroPaper provides a restrained foundation; the content, visual identity, and p
 
 ## Site map
 
-| Site | Purpose |
-| --- | --- |
-| [Main site](https://www.eurekaimer.icu/) | Profile, projects, and links |
-| [Notes](https://www.eurekaimer.icu/Stathelper/) | Study notes and reference material |
-| [Daily blog](https://www.eurekaimer.icu/blog/) | Informal writing and everyday records |
+| Site                                            | Purpose                               |
+| ----------------------------------------------- | ------------------------------------- |
+| [Main site](https://www.eurekaimer.icu/)        | Profile, projects, and links          |
+| [Notes](https://www.eurekaimer.icu/Stathelper/) | Study notes and reference material    |
+| [Daily blog](https://www.eurekaimer.icu/blog/)  | Informal writing and everyday records |
 
 ## Development
 
