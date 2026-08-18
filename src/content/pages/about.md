@@ -35,21 +35,13 @@ This site is a compact front door to my notes, blog, and public work. It says wh
 
 - **2024.09 – present:** School of Statistics and Data Science, Nankai University
 - **2023.09 – 2024.09:** College of Life Sciences, Nankai University
-- **2020.09 – 2023.06:** Putian No.1 Middle School
+- **2020.09 – 2023.06:** Fujian Putian No. 1 Middle School
 
 ---
 
 ## Experience
 
 _Coming soon — a record of internships, projects, and other adventures._
-
----
-
-## Papers
-
-- [ ] TBA
-- [ ] TBA
-- [ ] TBA
 
 ---
 
