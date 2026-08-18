@@ -1,0 +1,18 @@
+name = "eurekaimer-umami-stats"
+main = "src/index.ts"
+compatibility_date = "2026-08-18"
+
+# Website id is a server constant (allowed by spec). The API key must NOT live
+# here or in the repo — set it as a secret:
+#
+#   cd workers/umami-stats
+#   npx wrangler secret put UMAMI_API_KEY
+#   npx wrangler deploy
+[vars]
+UMAMI_WEBSITE_ID = "a30cfbd2-8c6d-48f2-aeb6-e6297914ac2c"
+
+# Serves the footer's `/api/umami-stats` on the blog origin (eurekaimer.icu is
+# behind Cloudflare). If the zone isn't on this account, drop this block and
+# deploy to *.workers.dev, updating src/components/Footer.astro accordingly.
+[[routes]]
+pattern = "eurekaimer.icu/api/umami-stats"

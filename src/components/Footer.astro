@@ -16,7 +16,9 @@ const currentYear = new Date().getFullYear();
   <div
     class="border-border flex flex-col items-center gap-4 border-t py-6 text-sm sm:py-5"
   >
-    <div class="text-muted-foreground flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center">
+    <div
+      class="text-muted-foreground flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center"
+    >
       <span>Copyright &#169; 2024-{currentYear}</span>
       <span class="hidden sm:inline">|</span>
       <a href="https://icp.gov.moe/?keyword=20252030" target="_blank">
@@ -33,11 +35,18 @@ const currentYear = new Date().getFullYear();
           AstroPaper
         </a>
       </span>
+      <!-- Filled at runtime from the /api/umami-stats proxy; hidden until data loads -->
+      <span id="site-visits" class="flex items-center gap-x-2" hidden>
+        <span class="hidden sm:inline">|</span>
+        <span id="site-visits-count"></span>
+      </span>
     </div>
   </div>
 </footer>
 
 <script>
+  // Visit stats come from the Cloudflare Worker proxy /api/umami-stats, which
+  // keeps the Umami API key server-side. See workers/umami-stats.
   const startTime = new Date("2024-10-28T00:00:00+08:00").getTime();
 
   function updateRuntime() {
@@ -53,6 +62,34 @@ const currentYear = new Date().getFullYear();
     target.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
+  async function updateVisitCount() {
+    const container = document.querySelector<HTMLElement>("#site-visits");
+    const count = document.querySelector<HTMLElement>("#site-visits-count");
+    if (!container || !count) return;
+    try {
+      const res = await fetch("/api/umami-stats");
+      if (!res.ok) throw new Error("stats endpoint failed");
+      const { pageviews, visitors } = (await res.json()) as {
+        pageviews: number;
+        visitors: number;
+      };
+      const fmt = new Intl.NumberFormat("en-US");
+      count.textContent = `${fmt.format(pageviews)} pageviews · ${fmt.format(
+        visitors
+      )} visitors`;
+      container.hidden = false;
+    } catch {
+      // Endpoint down or not deployed yet — leave the footer exactly as-is:
+      // no error text, no partial layout shift.
+      container.hidden = true;
+    }
+  }
+
   updateRuntime();
   setInterval(updateRuntime, 1000);
+  updateVisitCount();
+  setInterval(updateVisitCount, 60_000);
+
+  // Re-fetch after client-side navigations (Astro view transitions swap the footer).
+  document.addEventListener("astro:page-load", updateVisitCount);
 </script>
