@@ -35,7 +35,7 @@ const currentYear = new Date().getFullYear();
           AstroPaper
         </a>
       </span>
-      <!-- Filled at runtime from the /api/umami-stats proxy; hidden until data loads -->
+      <!-- Filled at runtime from the Umami public share API; hidden until data loads -->
       <span id="site-visits" class="flex items-center gap-x-2" hidden>
         <span class="hidden sm:inline">|</span>
         <span id="site-visits-count"></span>
@@ -45,8 +45,11 @@ const currentYear = new Date().getFullYear();
 </footer>
 
 <script>
-  // Visit stats come from the Cloudflare Worker proxy /api/umami-stats, which
-  // keeps the Umami API key server-side. See workers/umami-stats.
+  // Visit stats use the public Umami share API — no API key, no backend.
+  // 1) resolve the share link to a read-only token, 2) query website stats.
+  const UMAMI_SHARE_ID = "lZCS1iezV7sf6M52";
+  const UMAMI_GATEWAY = "https://gateway-us.umami.is/api";
+
   const startTime = new Date("2024-10-28T00:00:00+08:00").getTime();
 
   function updateRuntime() {
@@ -62,25 +65,53 @@ const currentYear = new Date().getFullYear();
     target.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
+  async function fetchUmamiStats() {
+    const share = await fetch(`${UMAMI_GATEWAY}/share/${UMAMI_SHARE_ID}`);
+    if (!share.ok) throw new Error("share resolve failed");
+    const { websiteId, token } = (await share.json()) as {
+      websiteId: string;
+      token: string;
+    };
+
+    const endAt = Date.now();
+    // Last 30 days covers the whole (now) lifetime of this site.
+    const startAt = endAt - 30 * 24 * 60 * 60 * 1000;
+    const res = await fetch(
+      `${UMAMI_GATEWAY}/websites/${websiteId}/stats?startAt=${startAt}&endAt=${endAt}`,
+      {
+        headers: {
+          "x-umami-share-token": token,
+          "x-umami-share-context": "1",
+        },
+      }
+    );
+    if (!res.ok) throw new Error("stats request failed");
+    return res.json();
+  }
+
   async function updateVisitCount() {
     const container = document.querySelector<HTMLElement>("#site-visits");
     const count = document.querySelector<HTMLElement>("#site-visits-count");
     if (!container || !count) return;
     try {
-      const res = await fetch("/api/umami-stats");
-      if (!res.ok) throw new Error("stats endpoint failed");
-      const { pageviews, visitors } = (await res.json()) as {
+      const data = (await fetchUmamiStats()) as {
         pageviews: number;
         visitors: number;
+        comparison?: { pageviews: number; visitors: number };
       };
+      // Fresh sites: the gateway reports the recorded sessions under
+      // `comparison` while `pageviews` is still 0 — fall back so the counter
+      // shows real numbers instead of 0 until the main window fills in.
+      const pageviews = data.pageviews || data.comparison?.pageviews || 0;
+      const visitors = data.visitors || data.comparison?.visitors || 0;
       const fmt = new Intl.NumberFormat("en-US");
       count.textContent = `${fmt.format(pageviews)} pageviews · ${fmt.format(
         visitors
       )} visitors`;
       container.hidden = false;
     } catch {
-      // Endpoint down or not deployed yet — leave the footer exactly as-is:
-      // no error text, no partial layout shift.
+      // Share link invalid or the gateway is unreachable — leave the footer
+      // exactly as-is: no error text, no partial layout shift.
       container.hidden = true;
     }
   }
