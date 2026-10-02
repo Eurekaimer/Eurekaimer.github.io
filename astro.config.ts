@@ -1,8 +1,4 @@
-import {
-  defineConfig,
-  envField,
-  svgoOptimizer,
-} from "astro/config";
+import { defineConfig, envField, svgoOptimizer } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
@@ -19,6 +15,7 @@ import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
 
 export default defineConfig({
+  srcDir: ".",
   site: config.site.url,
   integrations: [
     mdx(),

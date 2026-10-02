@@ -5,16 +5,8 @@
   .app-prose {
     @apply prose;
 
-    h1,
-    h2,
-    h3,
-    h4,
     th {
-      @apply text-foreground mb-3;
-    }
-
-    h3 {
-      @apply italic;
+      @apply text-foreground;
     }
 
     p,
@@ -122,6 +114,97 @@
   }
 }
 
+/* Unlayered rules keep the hierarchy consistent in prose and utility-styled UI. */
+html {
+  font-synthesis: none;
+}
+
+body {
+  font-family: var(--font-app);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+strong,
+b,
+em,
+i {
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+  font-family: var(--font-app);
+  font-weight: 400;
+  font-style: normal;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  line-height: 1.15;
+  margin-block: 0 0.65em;
+  font-style: italic;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  line-height: 1.25;
+  margin-block: 1.5em 0.6em;
+  font-style: italic;
+}
+
+h3 {
+  font-size: clamp(1.375rem, 2.5vw, 1.625rem);
+  line-height: 1.3;
+  margin-block: 1.4em 0.55em;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-block: 1.25em 0.5em;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-block: 1.2em 0.45em;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-block: 1.15em 0.4em;
+}
+
+/* Nested emphasis and utility classes must not change a heading's face. */
+:is(h1, h2, h3, h4, h5, h6) * {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: inherit;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-mono);
+  font-weight: 400;
+}
+
+:is(code, pre, kbd, samp) * {
+  font-family: inherit;
+  font-weight: 400;
+}
 /* ===== Prose link overrides (unlayered, higher priority than Tailwind Typography) ===== */
 .app-prose a {
   color: var(--accent, #b91c1c);
@@ -164,35 +247,4 @@
   outline: 2px solid var(--accent, #b91c1c);
   outline-offset: 3px;
   border-radius: 2px;
-}
-
-/* ===== Red dashed horizontal divider with dots ===== */
-.app-prose hr {
-  position: relative;
-  margin: 2.5em 0;
-  border: none;
-  height: 0;
-  border-top: 2px dashed var(--accent, #b91c1c);
-  background: none;
-  overflow: visible;
-}
-
-.app-prose hr::before,
-.app-prose hr::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--accent, #b91c1c);
-}
-
-.app-prose hr::before {
-  left: 0;
-}
-
-.app-prose hr::after {
-  right: 0;
 }

@@ -9,7 +9,7 @@ const { title = "Discussion", mapping = "pathname", term } = Astro.props;
 ---
 
 <section class="border-border mt-12 border-t pt-8">
-  <h2 class="mb-4 text-2xl font-semibold tracking-wide">{title}</h2>
+  <h2>{title}</h2>
   <script
     is:inline
     src="https://giscus.app/client.js"
@@ -26,6 +26,5 @@ const { title = "Discussion", mapping = "pathname", term } = Astro.props;
     data-theme="preferred_color_scheme"
     data-lang="zh-CN"
     crossorigin="anonymous"
-    async
-  ></script>
+    async></script>
 </section>

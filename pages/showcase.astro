@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import "@/styles/showcase.css";
 
 const items = [
   { img: "/showcase/GBC.webp", quote: "所谓的答案 大概也只是形式上的常识罢了" },
@@ -33,9 +34,7 @@ const items = [
 >
   <Header />
   <main id="main-content" class="app-layout py-8 sm:py-10">
-    <h1 class="mb-2 text-2xl font-semibold tracking-wide sm:text-3xl">
-      Showcase
-    </h1>
+    <h1 class="mb-2 text-2xl tracking-wide sm:text-3xl">Showcase</h1>
     <p class="text-muted-foreground mb-8 leading-7">
       A small gallery of anime scenes and characters I love.
     </p>
@@ -57,80 +56,3 @@ const items = [
   </main>
   <Footer />
 </Layout>
-
-<style>
-  .showcase-grid {
-    columns: 3;
-    column-gap: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    .showcase-grid {
-      columns: 2;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .showcase-grid {
-      columns: 1;
-    }
-  }
-
-  .showcase-item {
-    break-inside: avoid;
-    margin-bottom: 1rem;
-  }
-
-  .showcase-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.75rem;
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease;
-  }
-
-  .showcase-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  .showcase-img {
-    width: 100%;
-    display: block;
-    border-radius: 0.75rem;
-  }
-
-  .showcase-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 1rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 50%);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-    border-radius: 0.75rem;
-  }
-
-  .showcase-card:hover .showcase-overlay {
-    opacity: 1;
-  }
-
-  .showcase-quote {
-    color: #fff;
-    font-size: 0.95rem;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    line-height: 1.5;
-  }
-</style>
-
-<style>
-  @media (hover: none) {
-    .showcase-overlay {
-      opacity: 1;
-    }
-  }
-</style>

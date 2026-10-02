@@ -4,7 +4,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import { resolveDefaultOgImagePath } from "@/utils/resolveDefaultOgImagePath";
 import { getAssetPath } from "@/utils/withBase";
 import config from "@/config";
-import "@/styles/global.css";
+import globalStylesheet from "@/styles/global.css?url";
 
 type Props = {
   title?: string;
@@ -38,6 +38,7 @@ const rssHref = getRelativeLocaleUrl(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href={globalStylesheet} />
     <link rel="icon" type="image/jpeg" href={getAssetPath("favicon.jpg")} />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
@@ -113,36 +114,6 @@ const rssHref = getRelativeLocaleUrl(
       data-website-id="a30cfbd2-8c6d-48f2-aeb6-e6297914ac2c"></script>
 
     <ClientRouter />
-
-    <!-- global HR style — always loaded, survives page transitions -->
-    <style is:global>
-      .app-prose hr {
-        position: relative;
-        margin: 2.5em 0;
-        border: none;
-        height: 0;
-        border-top: 2px dashed var(--accent, #b91c1c);
-        background: none;
-        overflow: visible;
-      }
-      .app-prose hr::before,
-      .app-prose hr::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: var(--accent, #b91c1c);
-      }
-      .app-prose hr::before {
-        left: 0;
-      }
-      .app-prose hr::after {
-        right: 0;
-      }
-    </style>
   </head>
   <body
     class="bg-background font-app text-foreground selection:text-foreground flex min-h-svh flex-col selection:bg-pink-200"

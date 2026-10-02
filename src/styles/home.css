@@ -1,0 +1,16 @@
+.profile-caption {
+  width: 100%;
+  font-size: clamp(1rem, 1.8vw, 1.375rem);
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.profile-frame {
+  border-radius: 42% 58% 48% 52% / 45% 40% 55% 50%;
+  border: 2px solid var(--accent, #b91c1c);
+}
+
+.profile-image {
+  border-radius: 40% 60% 52% 48% / 43% 42% 58% 48%;
+}

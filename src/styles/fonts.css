@@ -1,0 +1,5 @@
+/* Static 400 faces are bundled locally; subset files load only when used. */
+@import "@fontsource/libertinus-serif/400.css";
+@import "@fontsource/libertinus-serif/400-italic.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/400-italic.css";

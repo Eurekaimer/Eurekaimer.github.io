@@ -7,6 +7,7 @@ import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import config from "@/config";
+import "@/styles/home.css";
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const homePath = getRelativeLocaleUrl(locale, "");
@@ -40,7 +41,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
       <div class="grid gap-10 sm:grid-cols-[3fr_2fr] sm:items-center">
         <div>
           <!-- 你的名字 -->
-          <h1 class="my-3 text-3xl leading-tight font-bold sm:my-4 sm:text-5xl">
+          <h1 class="my-3 text-3xl leading-tight sm:my-4 sm:text-5xl">
             Eurekaimer
           </h1>
 
@@ -73,18 +74,10 @@ const homePath = getRelativeLocaleUrl(locale, "");
           class="mx-auto flex w-full max-w-56 flex-col items-center gap-3 sm:mx-0 sm:max-w-80 sm:items-end sm:gap-4 sm:justify-self-end"
         >
           <!-- 标语（对准头像上方） -->
-          <p
-            class="text-accent text-center text-xl font-light tracking-wide italic sm:text-3xl"
-          >
-            「小鞠知花は最高の推し」
-          </p>
+          <p class="profile-caption text-accent">「小鞠知花は最高の推し」</p>
           <!-- 头像区：不规则圆角框 -->
           <div
-            class="flex aspect-square w-full items-center justify-center p-2"
-            style="
-              border-radius: 42% 58% 48% 52% / 45% 40% 55% 50%;
-              border: 2px solid var(--accent, #b91c1c);
-            "
+            class="profile-frame flex aspect-square w-full items-center justify-center p-2"
           >
             <img
               src="/profile.jpg"
@@ -92,10 +85,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
               width="260"
               height="260"
               loading="eager"
-              class="bg-muted h-full w-full object-cover shadow-sm"
-              style="
-                border-radius: 40% 60% 52% 48% / 43% 42% 58% 48%;
-              "
+              class="profile-image bg-muted h-full w-full object-cover shadow-sm"
             />
           </div>
         </div>
@@ -104,7 +94,9 @@ const homePath = getRelativeLocaleUrl(locale, "");
         <div
           class="text-muted-foreground border-border flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-t pt-5 text-base sm:col-span-2 sm:gap-x-4 sm:border-t-0 sm:pt-0 sm:text-lg"
         >
-          <span class="text-accent font-bold whitespace-nowrap">
+          <span
+            class="text-accent text-center whitespace-normal sm:whitespace-nowrap"
+          >
             <span
               class="text-accent/40 mr-0.5 align-[-0.15em] text-xl select-none"
               aria-hidden="true">「</span
@@ -116,15 +108,15 @@ const homePath = getRelativeLocaleUrl(locale, "");
             >
           </span>
           <span class="hidden sm:inline" aria-hidden="true">|</span>
-          <a href="https://www.eurekaimer.icu/Stathelper/" class="fancy-link"
+          <a href="https://www.eurekaimer.icu/notes/" class="fancy-link"
             >Notes</a
           >
           <span class="hidden sm:inline" aria-hidden="true">|</span>
-          <a href="https://www.eurekaimer.icu/blog/" class="fancy-link"
-            >Daily Blog</a
-          >
-          <span class="hidden sm:inline" aria-hidden="true">|</span>
           <a href="https://github.com/Eurekaimer" class="fancy-link">GitHub</a>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href={getRelativeLocaleUrl(locale, "cv")} class="fancy-link"
+            >Academic CV</a
+          >
           <span class="hidden sm:inline" aria-hidden="true">|</span>
           <a href={getRelativeLocaleUrl(locale, "about")} class="fancy-link"
             >About</a

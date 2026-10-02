@@ -8,8 +8,8 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: ui-monospace, "Cascadia Code", "SFMono-Regular", "Consolas",
-    "Liberation Mono", monospace;
+  --font-app: "Libertinus Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
 }
 
 /* Light theme values */

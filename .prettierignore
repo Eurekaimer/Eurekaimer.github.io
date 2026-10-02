@@ -3,6 +3,8 @@
 
 # Except these files & folders
 !/src
+!/pages
+!content.config.ts
 !/public
 !/.github
 !tsconfig.json

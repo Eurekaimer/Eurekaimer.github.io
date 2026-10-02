@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+type Props = {
+  frontmatter: {
+    title: string;
+    description: string;
+    ogImage?: string;
+    canonicalURL?: string;
+  };
+};
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout
+  title={`${frontmatter.title} | ${config.site.title}`}
+  description={frontmatter.description}
+  ogImage={frontmatter.ogImage}
+  canonicalURL={frontmatter.canonicalURL}
+>
+  <Header />
+  <Breadcrumb />
+  <Main pageTitle={frontmatter.title} class="app-prose profile-page">
+    <slot />
+  </Main>
+  <Footer />
+</Layout>
+
+<style>
+  :global(main.profile-page) {
+    max-width: var(--layout-width, 72rem);
+  }
+</style>
