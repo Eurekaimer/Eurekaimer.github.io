@@ -35,7 +35,7 @@ export default defineAstroPaperConfig({
     },
     {
       name: "wechat",
-      url: "https://cdn.jsdelivr.net/gh/Eurekaimer/TOUKO-WEBP-01@main/objects/default/sha256/53/d6/53d681d9a1e5b70cfc6c4d9515c0e3360b62e8f6d244594175d762bc725ccef6.webp",
+      url: "https://img.eurekaimer.icu/objects/default/sha256/53/d6/53d681d9a1e5b70cfc6c4d9515c0e3360b62e8f6d244594175d762bc725ccef6.webp",
       linkTitle: "WeChat QR code",
     },
     {
@@ -45,7 +45,7 @@ export default defineAstroPaperConfig({
     },
     {
       name: "qq",
-      url: "https://cdn.jsdelivr.net/gh/Eurekaimer/TOUKO-WEBP-01@main/objects/default/sha256/1e/a7/1ea78440f5ed224131662c762a0198a573eb2fd77ce91e83f12156cc3bbdb75b.webp",
+      url: "https://img.eurekaimer.icu/objects/default/sha256/1e/a7/1ea78440f5ed224131662c762a0198a573eb2fd77ce91e83f12156cc3bbdb75b.webp",
       linkTitle: "QQ QR code",
     },
     {
